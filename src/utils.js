@@ -966,6 +966,10 @@ export function calScore(art) {
     characters
   )) {
     let score = 0;
+    // 双暴头修正分数
+    if (art.position === 'head' && ['critical', 'criticalDamage'].includes(art.mainTag.name)) {
+      score += (10 * (w.critical || 0));
+    }
     for (const name of subStats) {
       console.log(name);
       const weights = Object.assign(
