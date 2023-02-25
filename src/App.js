@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Row, Image, Avatar, Modal, Rate } from "antd";
+import { Col, Row, Image, Avatar, Modal, Rate, Divider } from "antd";
 import { positionToLocale, artifactTags, getScore } from "./utils";
 import artifactIcons from "./gen_artifact_icon";
 import artifact from "./gen_artifact";
@@ -129,35 +129,38 @@ function App() {
         </Row>
       </Modal>
       {list.map(({ txt, arts }) => (
-        <Row key={txt} gutter={0}>
-          <Col span={4}>
-            {txt}({arts.length})
-          </Col>
-          <Col span={20}>
-            <Row gutter={0}>
-              {arts
-                .sort((a, b) => b.scores?.[0].score - a.scores?.[0].score)
-                .map((art) => (
-                  <Col flex key={art.id} onClick={() => showModal(art)} offset={1}>
-                    <Image
-                      className="art-img"
-                      preview={false}
-                      width={80}
-                      src={art.icon}
-                    />
-                    <Avatar
-                      className="character-badge"
-                      src={
-                        art.scores?.[0].badge ||
-                        `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${art.scores?.[0].characterName}.png`
-                      }
-                    />
-                    <div>{art.scores?.[0].score}分</div>
-                  </Col>
-                ))}
-            </Row>
-          </Col>
-        </Row>
+        <div key={txt} style={{'text-align': 'center'}}>
+          <Divider />
+          <Row gutter={0}>
+            <Col span={4}>
+              {txt}({arts.length})
+            </Col>
+            <Col span={20}>
+              <Row gutter={0}>
+                {arts
+                  .sort((a, b) => b.scores?.[0].score - a.scores?.[0].score)
+                  .map((art) => (
+                    <Col flex key={art.id} onClick={() => showModal(art)} offset={1}>
+                      <Image
+                        className="art-img"
+                        preview={false}
+                        width={80}
+                        src={art.icon}
+                      />
+                      <Avatar
+                        className="character-badge"
+                        src={
+                          art.scores?.[0].badge ||
+                          `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${art.scores?.[0].characterName}.png`
+                        }
+                      />
+                      <div>{art.scores?.[0].score}分</div>
+                    </Col>
+                  ))}
+              </Row>
+            </Col>
+          </Row>
+        </div>
       ))}
     </div>
   );
