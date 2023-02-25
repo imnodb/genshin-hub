@@ -265,6 +265,7 @@ export const positions = ["flower", "feather", "sand", "cup", "head"];
 export const characters = {
   Diluc: {
     weights: {
+      fireBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -276,6 +277,7 @@ export const characters = {
   },
   HuTao: {
     weights: {
+      fireBonus: 2,
       critical: 1,
       criticalDamage: 1,
       lifeStatic: 0.8,
@@ -289,6 +291,7 @@ export const characters = {
   },
   Klee: {
     weights: {
+      fireBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -300,6 +303,7 @@ export const characters = {
   },
   Yoimiya: {
     weights: {
+      fireBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -311,6 +315,7 @@ export const characters = {
   },
   Amber: {
     weights: {
+      fireBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -322,6 +327,8 @@ export const characters = {
   },
   Bennett: {
     weights: {
+      fireBonus: 2,
+      cureEffect: 2,
       critical: 0.5,
       criticalDamage: 0.5,
       lifeStatic: 1,
@@ -348,6 +355,7 @@ export const characters = {
   },
   Xiangling: {
     weights: {
+      fireBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -373,6 +381,7 @@ export const characters = {
   },
   Yanfei: {
     weights: {
+      fireBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -1014,6 +1023,20 @@ export function calScore(art) {
         score = 0;
       } else {
         score += (10 * w.critical);
+      }
+    }
+    // 治疗加成头
+    if (art.position === 'head' && art.mainTag.name === 'cureEffect') {
+      // if (!w.critical) {
+      //   score = 0;
+      // } else {
+      //   score += (10 * w.critical);
+      // }
+    }
+    // 大攻击、大生命、大防御、元素精通、充能效率 的 沙漏、杯子、头
+    for (const iterator of ['attackPercentage', 'lifePercentage', 'defendPercentage', 'elementalMastery', 'recharge']) {
+      if (art.mainTag.name === iterator && !w[iterator]) {
+        score = 0;
       }
     }
     scores.push({ characterName, badge, score: Math.floor(score) });
