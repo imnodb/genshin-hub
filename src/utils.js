@@ -525,6 +525,7 @@ export const characters = {
   },
   Jean: {
     weights: {
+      cureEffect: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -548,6 +549,7 @@ export const characters = {
   },
   Venti: {
     weights: {
+      windBonus: 2,
       critical: 1,
       criticalDamage: 1,
       elementalMastery: 0.75,
@@ -559,6 +561,7 @@ export const characters = {
   },
   Wanderer: {
     weights: {
+      windBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -568,6 +571,7 @@ export const characters = {
   },
   Xiao: {
     weights: {
+      windBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -578,6 +582,7 @@ export const characters = {
   },
   Faruzan: {
     weights: {
+      windBonus: 2,
       critical: 1,
       criticalDamage: 1,
       recharge: 0.75,
@@ -588,6 +593,7 @@ export const characters = {
   },
   Sayu: {
     weights: {
+      cureEffect: 2,
       elementalMastery: 1,
       recharge: 0.55,
       critical: 0.5,
@@ -599,6 +605,7 @@ export const characters = {
   },
   ShikanoinHeizou: {
     weights: {
+      windBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
