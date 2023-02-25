@@ -628,6 +628,7 @@ export const characters = {
   },
   Cyno: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       elementalMastery: 0.75,
@@ -638,6 +639,7 @@ export const characters = {
   },
   Keqing: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -648,6 +650,7 @@ export const characters = {
   },
   RaidenShogun: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       recharge: 0.75,
@@ -659,6 +662,7 @@ export const characters = {
   },
   YaeMiko: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -670,6 +674,7 @@ export const characters = {
   },
   Beidou: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -681,6 +686,7 @@ export const characters = {
   },
   Dori: {
     weights: {
+      cureEffect: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -693,6 +699,7 @@ export const characters = {
   },
   Fischl: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -703,6 +710,7 @@ export const characters = {
   },
   KujouSara: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -714,6 +722,7 @@ export const characters = {
   },
   KukiShinobu: {
     weights: {
+      cureEffect: 2,
       lifeStatic: 1,
       lifePercentage: 1,
       critical: 1,
@@ -726,6 +735,7 @@ export const characters = {
   },
   Lisa: {
     weights: {
+      thunderBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -736,6 +746,7 @@ export const characters = {
   },
   Razor: {
     weights: {
+      physicalBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
