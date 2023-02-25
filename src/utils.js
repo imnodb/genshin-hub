@@ -368,6 +368,7 @@ export const characters = {
   },
   Xinyan: {
     weights: {
+      physicalBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -393,6 +394,7 @@ export const characters = {
   },
   Aloy: {
     weights: {
+      iceBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -403,6 +405,7 @@ export const characters = {
   },
   Eula: {
     weights: {
+      physicalBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -414,6 +417,7 @@ export const characters = {
   },
   Ganyu: {
     weights: {
+      iceBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -425,6 +429,7 @@ export const characters = {
   },
   KamisatoAyaka: {
     weights: {
+      iceBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -436,6 +441,7 @@ export const characters = {
   },
   Qiqi: {
     weights: {
+      cureEffect: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 1,
@@ -458,6 +464,7 @@ export const characters = {
   },
   Chongyun: {
     weights: {
+      iceBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -483,6 +490,7 @@ export const characters = {
   },
   Kaeya: {
     weights: {
+      iceBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -505,6 +513,7 @@ export const characters = {
   },
   Rosaria: {
     weights: {
+      iceBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -1035,7 +1044,7 @@ export function calScore(art) {
     }
     // 大攻击、大生命、大防御、元素精通、充能效率 的 沙漏、杯子、头
     for (const iterator of ['attackPercentage', 'lifePercentage', 'defendPercentage', 'elementalMastery', 'recharge']) {
-      if (art.mainTag.name === iterator && !w[iterator]) {
+      if (art.mainTag.name === iterator && (!w[iterator] || w[iterator] < 0.6)) {
         score = 0;
       }
     }
