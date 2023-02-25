@@ -352,7 +352,6 @@ export const characters = {
       criticalDamage: 1,
       attackStatic: 0.75,
       attackPercentage: 0.75,
-
       elementalMastery: 0.75,
       recharge: 0.55,
     },
@@ -563,9 +562,9 @@ export const characters = {
     weights: {
       critical: 1,
       criticalDamage: 1,
+      recharge: 0.75,
       attackStatic: 0.55,
       attackPercentage: 0.55,
-      recharge: 0.75,
     },
     ace: 211,
   },
@@ -626,9 +625,9 @@ export const characters = {
     weights: {
       critical: 1,
       criticalDamage: 1,
+      recharge: 0.75,
       attackStatic: 0.75,
       attackPercentage: 0.75,
-      recharge: 0.75,
     },
     ace: 215,
     badge: tf.RaidenShogunDefault.badge,
@@ -865,8 +864,8 @@ export const characters = {
   },
   Ningguang: {
     weights: {
-      defendStatic: 1,
-      defendPercentage: 1,
+      critical: 1,
+      criticalDamage: 1,
       attackStatic: 0.75,
       attackPercentage: 0.75,
     },
@@ -914,7 +913,7 @@ export const characters = {
       attackStatic: 0.55,
       attackPercentage: 0.55,
     },
-    ace: 210,
+    ace: 200,
   },
   Tighnari: {
     weights: {
