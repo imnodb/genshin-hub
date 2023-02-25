@@ -946,6 +946,7 @@ export const characters = {
   },
   Alhaitham: {
     weights: {
+      dendroBonus: 2,
       critical: 1,
       criticalDamage: 1,
       elementalMastery: 1,
@@ -967,6 +968,7 @@ export const characters = {
   },
   Tighnari: {
     weights: {
+      dendroBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -977,6 +979,7 @@ export const characters = {
   },
   Collei: {
     weights: {
+      dendroBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -988,6 +991,7 @@ export const characters = {
   },
   Yaoyao: {
     weights: {
+      cureEffect: 2,
       critical: 0.5,
       criticalDamage: 0.5,
       attackStatic: 0.5,
@@ -1066,16 +1070,12 @@ export function calScore(art) {
         score += (10 * w.critical);
       }
     }
-    // 治疗加成头
-    if (art.position === 'head' && art.mainTag.name === 'cureEffect') {
-      // if (!w.critical) {
-      //   score = 0;
-      // } else {
-      //   score += (10 * w.critical);
-      // }
+    // 杯子
+    if (art.position === 'cup' && !w[art.mainTag.name]) {
+        score = 0;
     }
-    // 大攻击、大生命、大防御、元素精通、充能效率 的 沙漏、杯子、头
-    for (const iterator of ['attackPercentage', 'lifePercentage', 'defendPercentage', 'elementalMastery', 'recharge']) {
+    // 大攻击、大生命、大防御、元素精通、充能效率、治疗加成 的 沙漏、杯子、头
+    for (const iterator of ['attackPercentage', 'lifePercentage', 'defendPercentage', 'elementalMastery', 'recharge', 'cureEffect']) {
       if (art.mainTag.name === iterator && (!w[iterator] || w[iterator] < 0.6)) {
         score = 0;
       }
