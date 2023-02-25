@@ -862,6 +862,7 @@ export const characters = {
   },
   Albedo: {
     weights: {
+      rockBonus: 2,
       critical: 1,
       criticalDamage: 1,
       defendStatic: 1,
@@ -871,6 +872,7 @@ export const characters = {
   },
   AratakiItto: {
     weights: {
+      rockBonus: 2,
       critical: 1,
       criticalDamage: 1,
       defendStatic: 1,
@@ -884,6 +886,7 @@ export const characters = {
   },
   Zhongli: {
     weights: {
+      rockBonus: 2,
       critical: 1,
       criticalDamage: 1,
       lifeStatic: 0.8,
@@ -896,6 +899,7 @@ export const characters = {
   },
   Gorou: {
     weights: {
+      rockBonus: 2,
       defendStatic: 1,
       defendPercentage: 1,
       recharge: 0.9,
@@ -908,6 +912,7 @@ export const characters = {
   },
   Ningguang: {
     weights: {
+      rockBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -917,6 +922,7 @@ export const characters = {
   },
   Noelle: {
     weights: {
+      rockBonus: 2,
       critical: 1,
       criticalDamage: 1,
       defendStatic: 1,
