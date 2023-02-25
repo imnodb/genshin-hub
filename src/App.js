@@ -86,6 +86,8 @@ function App() {
   return (
     <div className="App">
       <Modal
+        width="80vw"
+        style={{top:'50px'}}
         footer={null}
         open={isModalOpen}
         onOk={handleOk}
@@ -127,20 +129,20 @@ function App() {
         </Row>
       </Modal>
       {list.map(({ txt, arts }) => (
-        <Row key={txt} gutter={10}>
-          <Col span={2}>
+        <Row key={txt} gutter={0}>
+          <Col span={4}>
             {txt}({arts.length})
           </Col>
           <Col span={20}>
-            <Row gutter={10}>
+            <Row gutter={0}>
               {arts
                 .sort((a, b) => b.scores?.[0].score - a.scores?.[0].score)
                 .map((art) => (
-                  <Col key={art.id} onClick={() => showModal(art)}>
+                  <Col flex key={art.id} onClick={() => showModal(art)} offset={1}>
                     <Image
                       className="art-img"
                       preview={false}
-                      width={100}
+                      width={80}
                       src={art.icon}
                     />
                     <Avatar
