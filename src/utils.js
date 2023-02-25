@@ -756,6 +756,7 @@ export const characters = {
   },
   KamisatoAyato: {
     weights: {
+      waterBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -768,6 +769,7 @@ export const characters = {
   },
   Mona: {
     weights: {
+      waterBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -789,6 +791,8 @@ export const characters = {
   },
   SangonomiyaKokomi: {
     weights: {
+      waterBonus: 2,
+      cureEffect: 2,
       lifeStatic: 1,
       lifePercentage: 1,
       recharge: 0.55,
@@ -801,6 +805,7 @@ export const characters = {
   },
   Tartaglia: {
     weights: {
+      waterBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
@@ -811,6 +816,7 @@ export const characters = {
   },
   Yelan: {
     weights: {
+      waterBonus: 2,
       critical: 1,
       criticalDamage: 1,
       lifeStatic: 0.8,
@@ -822,6 +828,7 @@ export const characters = {
   },
   Barbara: {
     weights: {
+      cureEffect: 2,
       lifeStatic: 1,
       lifePercentage: 1,
       critical: 1,
@@ -844,6 +851,7 @@ export const characters = {
   },
   Xingqiu: {
     weights: {
+      waterBonus: 2,
       critical: 1,
       criticalDamage: 1,
       attackStatic: 0.75,
