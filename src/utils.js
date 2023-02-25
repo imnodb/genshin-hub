@@ -965,10 +965,7 @@ export function calScore(art) {
     characters
   )) {
     let score = 0;
-    // 双暴头修正分数
-    if (art.position === 'head' && ['critical', 'criticalDamage'].includes(art.mainTag.name)) {
-      score += (10 * (w.critical || 0));
-    }
+
     for (const name of subStats) {
       console.log(name);
       const weights = Object.assign(
@@ -1009,6 +1006,14 @@ export function calScore(art) {
 
         default:
           break;
+      }
+    }
+    // 双暴头修正分数
+    if (art.position === 'head' && ['critical', 'criticalDamage'].includes(art.mainTag.name)) {
+      if (!w.critical) {
+        score = 0;
+      } else {
+        score += (10 * w.critical);
       }
     }
     scores.push({ characterName, badge, score: Math.floor(score) });
