@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { Col, Row, Image, Avatar, Modal, Rate, Divider, Badge } from "antd";
 import { positionToLocale, artifactTags, getScore } from "./utils";
 import artifactIcons from "./gen_artifact_icon";
 import artifact from "./gen_artifact";
-import mona from "./artifacts_mona.json";
+import mona from "./mona.json";
 import "./App.css";
 
 console.log({ mona });
@@ -35,13 +36,7 @@ for (const [pos, arts] of Object.entries(mona)) {
   }
   console.log([pos, arts]);
   for (const art of arts) {
-    if (art.level < 16) {
-      continue;
-    }
-    // if (art.setName !== 'crimsonWitch') {
-    //   continue;
-    // }
-    // console.log(art);
+    art.id = uuidv4();
     art.icon = artifactIcons[art.setName]?.[art.position]?.url;
     art.scores = getScore(art);
     const maxScore = getScore(art)?.[0]?.score;
@@ -77,7 +72,7 @@ function App() {
     setIsModalOpen(false);
   };
   const Fixed = (artifact, v) => {
-    console.log(artifact);
+    // console.log(artifact);
     if (artifact?.percentage) {
       return (v * 100).toFixed?.(1) + "%";
     }

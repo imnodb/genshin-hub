@@ -16,6 +16,129 @@ export function positionToLocale(name) {
       return "理之冠";
   }
 }
+// 强化出新属性的权重
+export const tagWeights = {
+  lifeStatic: {
+    lifeStatic: 0,
+    attackStatic: 1579,
+    defendStatic: 1579,
+    lifePercentage: 1053,
+    attackPercentage: 1053,
+    defendPercentage: 1053,
+    recharge: 1053,
+    elementalMastery: 1053,
+    critical: 789,
+    criticalDamage: 789,
+  },
+  attackStatic: {
+    lifeStatic: 1579,
+    attackStatic: 0,
+    defendStatic: 1579,
+    lifePercentage: 1053,
+    attackPercentage: 1053,
+    defendPercentage: 1053,
+    recharge: 1053,
+    elementalMastery: 1053,
+    critical: 789,
+    criticalDamage: 789,
+  },
+  lifePercentage: {
+    lifeStatic: 1500,
+    attackStatic: 1500,
+    defendStatic: 1500,
+    lifePercentage: 0,
+    attackPercentage: 1000,
+    defendPercentage: 1000,
+    recharge: 1000,
+    elementalMastery: 1000,
+    critical: 750,
+    criticalDamage: 750,
+  },
+  attackPercentage: {
+    lifeStatic: 1500,
+    attackStatic: 1500,
+    defendStatic: 1500,
+    lifePercentage: 1000,
+    attackPercentage: 0,
+    defendPercentage: 1000,
+    recharge: 1000,
+    elementalMastery: 1000,
+    critical: 750,
+    criticalDamage: 750,
+  },
+  defendPercentage: {
+    lifeStatic: 1500,
+    attackStatic: 1500,
+    defendStatic: 1500,
+    lifePercentage: 1000,
+    attackPercentage: 1000,
+    defendPercentage: 0,
+    recharge: 1000,
+    elementalMastery: 1000,
+    critical: 750,
+    criticalDamage: 750,
+  },
+  recharge: {
+    lifeStatic: 1500,
+    attackStatic: 1500,
+    defendStatic: 1500,
+    lifePercentage: 1000,
+    attackPercentage: 1000,
+    defendPercentage: 1000,
+    recharge: 0,
+    elementalMastery: 1000,
+    critical: 750,
+    criticalDamage: 750,
+  },
+  elementalMastery: {
+    lifeStatic: 1500,
+    attackStatic: 1500,
+    defendStatic: 1500,
+    lifePercentage: 1000,
+    attackPercentage: 1000,
+    defendPercentage: 1000,
+    recharge: 1000,
+    elementalMastery: 0,
+    critical: 750,
+    criticalDamage: 750,
+  },
+  critical: {
+    lifeStatic: 1463,
+    attackStatic: 1463,
+    defendStatic: 1463,
+    lifePercentage: 976,
+    attackPercentage: 976,
+    defendPercentage: 976,
+    recharge: 976,
+    elementalMastery: 976,
+    critical: 0,
+    criticalDamage: 732,
+  },
+  criticalDamage: {
+    lifeStatic: 1463,
+    attackStatic: 1463,
+    defendStatic: 1463,
+    lifePercentage: 976,
+    attackPercentage: 976,
+    defendPercentage: 976,
+    recharge: 976,
+    elementalMastery: 976,
+    critical: 732,
+    criticalDamage: 0,
+  },
+  other: {
+    lifeStatic: 1364,
+    attackStatic: 1364,
+    defendStatic: 1364,
+    lifePercentage: 909,
+    attackPercentage: 909,
+    defendPercentage: 909,
+    recharge: 909,
+    elementalMastery: 909,
+    critical: 682,
+    criticalDamage: 682,
+  },
+};
 export const artifactEff = {
   4: {
     critical: [0.022, 0.025, 0.028, 0.031],
@@ -1646,7 +1769,7 @@ export function calScore(art) {
     Object.fromEntries(subStats.map((name) => [name, 0])),
     Object.fromEntries(art.normalTags.map(({ name, value }) => [name, value]))
   );
-  console.log(normalTags);
+  // console.log(normalTags);
 
   for (const [
     characterName,
@@ -1766,21 +1889,54 @@ export function getScore(art) {
   }
   if (art.star === 5 && art.level < 20) {
     const normalTags = art.normalTags.map((tag) => Object.assign({}, tag));
-    console.log("art-------\n");
-    console.log(art);
-    if (normalTags.length === 3) {
-      console.log("补一条属性");
-    }
-    const count = Math.ceil((20 - art.level) / 4);
-    console.log(count);
-    for (let index = 0; index < count; index++) {
-      console.log(`强化第${index + 1}次`);
-      for (const tag of normalTags) {
-        console.log(tag, "tag");
-        tag.value += artifactEff[5][tag.name].reduce((p, v) => p + v) / 4 / 4;
+    // console.log("art-------\n");
+    // console.log(art);
+    // 每个副属性强化一次的预期值
+    const AverageEff = Object.fromEntries(
+      Object.entries(artifactEff[5]).map(([eff, values]) => [
+        eff,
+        values.reduce((p, v) => p + v) / values.length,
+      ])
+    );
+
+    const tagCount = Math.ceil((20 - art.level) / 4);
+    // console.log(tagCount);
+    for (let index = 0; index < tagCount; index++) {
+      // console.log(`强化第${index + 1}次`);
+      if (normalTags.length === 3) {
+        // console.log("补一条属性", art.mainTag.name);
+        // console.log(AverageEff);
+        const existingTags = [
+          art.mainTag.name,
+          ...normalTags.map(({ name }) => name),
+        ];
+        // console.log(existingTags);
+        const wishTags = Object.entries(AverageEff).filter(
+          ([eff]) => !existingTags.includes(eff)
+        );
+        // console.log(wishTags.map(([eff]) => eff));
+        const tagWeight = tagWeights[art.mainTag.name] || tagWeights.other;
+        const weightCount = wishTags.reduce(
+          (p, [eff]) => p + tagWeight[eff],
+          0
+        );
+        // console.log(weightCount);
+
+        wishTags.forEach(([eff, v]) => {
+          // console.log([eff, v]);
+          normalTags.push({
+            name: eff,
+            value: (v * tagWeight[eff]) / weightCount,
+          });
+        });
+      } else {
+        for (const tag of normalTags) {
+          // console.log(tag, "tag");
+          tag.value += AverageEff[tag.name] / 4;
+        }
       }
     }
-    console.log(normalTags, "normalTags");
+    // console.log(normalTags, "normalTags");
     return calScore(
       Object.assign({}, art, {
         normalTags,
