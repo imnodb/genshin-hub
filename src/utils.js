@@ -737,6 +737,14 @@ export const characters = {
     },
     ace: 191,
     badge: tf.JeanDefault.badge,
+    artifacts: [
+      {
+        setNames: ["viridescentVenerer4"],
+        sand: ["attackPercentage", "recharge"],
+        cup: ["attackPercentage"],
+        head: ["cureEffect"],
+      },
+    ],
   },
   KaedeharaKazuha: {
     weights: {
@@ -749,6 +757,14 @@ export const characters = {
     },
     ace: 180,
     badge: tf.KaedeharaKazuhaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["viridescentVenerer4"],
+        sand: ["elementalMastery"],
+        cup: ["elementalMastery"],
+        head: ["elementalMastery"],
+      },
+    ],
   },
   Venti: {
     weights: {
@@ -761,6 +777,20 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 226,
+    artifacts: [
+      {
+        setNames: ["viridescentVenerer4"],
+        sand: ["recharge", "attackPercentage"],
+        cup: ["windBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: ["viridescentVenerer4"],
+        sand: ["elementalMastery", "recharge"],
+        cup: ["elementalMastery"],
+        head: ["elementalMastery"],
+      },
+    ],
   },
   Wanderer: {
     weights: {
@@ -771,6 +801,14 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 200,
+    artifacts: [
+      {
+        setNames: ["DesertPavilionChronicle4"],
+        sand: ["attackPercentage"],
+        cup: ["windBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Xiao: {
     weights: {
@@ -782,6 +820,14 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 211,
+    artifacts: [
+      {
+        setNames: ["VermillionHereafter4"],
+        sand: ["attackPercentage"],
+        cup: ["windBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Faruzan: {
     weights: {
@@ -793,6 +839,14 @@ export const characters = {
       attackPercentage: 0.55,
     },
     ace: 211,
+    artifacts: [
+      {
+        setNames: ["tenacityOfTheMillelith4"],
+        sand: ["recharge"],
+        cup: ["windBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Sayu: {
     weights: {
@@ -805,6 +859,14 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 186,
+    artifacts: [
+      {
+        setNames: ["viridescentVenerer4"],
+        sand: ["elementalMastery"],
+        cup: ["attackPercentage"],
+        head: ["cureEffect"],
+      },
+    ],
   },
   ShikanoinHeizou: {
     weights: {
@@ -817,6 +879,14 @@ export const characters = {
     },
     ace: 195,
     badge: tf.ShikanoinHeizouDefault.badge,
+    artifacts: [
+      {
+        setNames: ["viridescentVenerer4"],
+        sand: ["attackPercentage"],
+        cup: ["windBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Sucrose: {
     weights: {
@@ -828,6 +898,14 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 211,
+    artifacts: [
+      {
+        setNames: ["viridescentVenerer4"],
+        sand: ["recharge"],
+        cup: ["elementalMastery"],
+        head: ["elementalMastery", ],
+      },
+    ],
   },
   Cyno: {
     weights: {
