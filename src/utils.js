@@ -903,7 +903,7 @@ export const characters = {
         setNames: ["viridescentVenerer4"],
         sand: ["recharge"],
         cup: ["elementalMastery"],
-        head: ["elementalMastery", ],
+        head: ["elementalMastery"],
       },
     ],
   },
@@ -917,6 +917,20 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 215,
+    artifacts: [
+      {
+        setNames: ["GildedDreams4"],
+        sand: ["elementalMastery", "attackPercentage"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: ["thunderingFury4"],
+        sand: ["elementalMastery"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Keqing: {
     weights: {
@@ -928,6 +942,14 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
+    artifacts: [
+      {
+        setNames: ["thunderingFury4"],
+        sand: ["attackPercentage"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   RaidenShogun: {
     weights: {
@@ -940,6 +962,14 @@ export const characters = {
     },
     ace: 215,
     badge: tf.RaidenShogunDefault.badge,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["recharge"],
+        cup: ["thunderBonus", "attackPercentage"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   YaeMiko: {
     weights: {
@@ -952,6 +982,26 @@ export const characters = {
     },
     ace: 215,
     badge: tf.YaeMikoDefault.badge,
+    artifacts: [
+      {
+        setNames: ["GildedDreams4"],
+        sand: ["attackPercentage"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: [
+          "thunderingFury2",
+          "gladiatorFinale2",
+          "EchoesOfAnOffering2",
+          "shimenawaReminiscence2",
+          "VermillionHereafter2",
+        ],
+        sand: ["attackPercentage"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Beidou: {
     weights: {
@@ -964,6 +1014,14 @@ export const characters = {
       recharge: 0.5,
     },
     ace: 205,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["recharge"],
+        cup: ["thunderBonus", "attackPercentage"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Dori: {
     weights: {
@@ -977,6 +1035,14 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 196,
+    artifacts: [
+      {
+        setNames: ["oceanHuedClam4"],
+        sand: ["recharge", "lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["cureEffect"],
+      },
+    ],
   },
   Fischl: {
     weights: {
@@ -988,6 +1054,20 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
+    artifacts: [
+      {
+        setNames: [
+          "thunderingFury2",
+          "gladiatorFinale2",
+          "EchoesOfAnOffering2",
+          "shimenawaReminiscence2",
+          "VermillionHereafter2",
+        ],
+        sand: ["attackPercentage"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   KujouSara: {
     weights: {
@@ -1000,6 +1080,14 @@ export const characters = {
     },
     ace: 191,
     badge: tf.KujouSaraDefault.badge,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["recharge"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   KukiShinobu: {
     weights: {
@@ -1013,6 +1101,20 @@ export const characters = {
     },
     ace: 206,
     badge: tf.KukiShinobuDefault.badge,
+    artifacts: [
+      {
+        setNames: ["GildedDreams4"],
+        sand: ["elementalMastery"],
+        cup: ["elementalMastery"],
+        head: ["elementalMastery", "cureEffect"],
+      },
+      {
+        setNames: ["FlowerOfParadiseLost4"],
+        sand: ["elementalMastery"],
+        cup: ["elementalMastery"],
+        head: ["elementalMastery"],
+      },
+    ],
   },
   Lisa: {
     weights: {
@@ -1024,6 +1126,20 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 195,
+    artifacts: [
+      {
+        setNames: [
+          "thunderingFury2",
+          "gladiatorFinale2",
+          "EchoesOfAnOffering2",
+          "shimenawaReminiscence2",
+          "VermillionHereafter2",
+        ],
+        sand: ["attackPercentage"],
+        cup: ["thunderBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Razor: {
     weights: {
@@ -1034,6 +1150,14 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 180,
+    artifacts: [
+      {
+        setNames: ["gladiatorFinale4"],
+        sand: ["attackPercentage"],
+        cup: ["physicalBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   KamisatoAyato: {
     weights: {
