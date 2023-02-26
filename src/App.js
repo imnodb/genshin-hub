@@ -99,7 +99,7 @@ function App() {
         <p>
           {Fixed(artifactTags[ModalData.mainTag?.name], ModalData.mainTag?.value)}
         </p>
-        <Rate disabled defaultValue={ModalData.star} />
+        <Rate disabled value={ModalData.star} />
         <p>+{ModalData.level}</p>
         {ModalData.normalTags?.map(({ name, value }) => {
           return (
