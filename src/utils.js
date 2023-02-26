@@ -1639,8 +1639,6 @@ export const characters = {
   },
 };
 
-export function expectScore(art) {}
-
 export function calScore(art) {
   let scores = [];
 
@@ -1751,9 +1749,43 @@ export function calScore(art) {
     }
     scores.push({ characterName, badge, score: Math.floor(score) });
   }
-  return scores.sort((a, b) => b.score - a.score);
+  return scores.length
+    ? scores.sort((a, b) => b.score - a.score)
+    : [
+        {
+          characterName: "",
+          badge: "https://www.miyoushe.com/mainPage/ys-logo-v2.png",
+          score: 0,
+        },
+      ];
 }
 
 export function getScore(art) {
-  return art.star === 5 && art.level === 20 ? calScore(art) : expectScore(art);
+  if (art.star === 4) {
+    return undefined;
+  }
+  if (art.star === 5 && art.level < 20) {
+    const normalTags = art.normalTags.map((tag) => Object.assign({}, tag));
+    console.log("art-------\n");
+    console.log(art);
+    if (normalTags.length === 3) {
+      console.log("补一条属性");
+    }
+    const count = Math.ceil((20 - art.level) / 4);
+    console.log(count);
+    for (let index = 0; index < count; index++) {
+      console.log(`强化第${index + 1}次`);
+      for (const tag of normalTags) {
+        console.log(tag, "tag");
+        tag.value += artifactEff[5][tag.name].reduce((p, v) => p + v) / 4 / 4;
+      }
+    }
+    console.log(normalTags, "normalTags");
+    return calScore(
+      Object.assign({}, art, {
+        normalTags,
+      })
+    );
+  }
+  return calScore(art);
 }

@@ -1,12 +1,13 @@
 .App {
 }
 .art-img {
-  background: rgb(211, 159, 81);
   border-bottom-right-radius: 30%;
 }
 .character-badge {
   background: #fff;
   position: absolute;
-  right: -5px;
+  /* right: -5px;
+  top: -5px; */
   top: -5px;
+  left: -5px;
 }
