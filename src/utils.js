@@ -1371,6 +1371,18 @@ export const characters = {
       defendPercentage: 1,
     },
     ace: 205,
+    artifacts: [
+      {
+        setNames: [
+          "huskOfOpulentDreams4",
+          "archaicPetra4",
+          "tenacityOfTheMillelith4",
+        ],
+        sand: ["defendPercentage"],
+        cup: ["rockBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   AratakiItto: {
     weights: {
@@ -1385,6 +1397,14 @@ export const characters = {
     },
     ace: 221,
     badge: tf.AratakiIttoDefault.badge,
+    artifacts: [
+      {
+        setNames: ["huskOfOpulentDreams4"],
+        sand: ["defendPercentage"],
+        cup: ["rockBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Zhongli: {
     weights: {
@@ -1398,6 +1418,20 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 197,
+    artifacts: [
+      {
+        setNames: ["tenacityOfTheMillelith4"],
+        sand: ["lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["lifePercentage"],
+      },
+      {
+        setNames: ["archaicPetra2", "noblesseOblige2"],
+        sand: ["lifePercentage"],
+        cup: ["rockBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Gorou: {
     weights: {
@@ -1411,6 +1445,14 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 183,
+    artifacts: [
+      {
+        setNames: ["noblesseOblige4"],
+        sand: ["recharge"],
+        cup: ["rockBonus"],
+        head: ["critical"],
+      },
+    ],
   },
   Ningguang: {
     weights: {
@@ -1421,6 +1463,20 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 200,
+    artifacts: [
+      {
+        setNames: [
+          "archaicPetra2",
+          "gladiatorFinale2",
+          "EchoesOfAnOffering2",
+          "shimenawaReminiscence2",
+          "VermillionHereafter2",
+        ],
+        sand: ["attackPercentage"],
+        cup: ["rockBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Noelle: {
     weights: {
@@ -1435,6 +1491,14 @@ export const characters = {
     },
     ace: 206,
     badge: tf.NoelleDefault.badge,
+    artifacts: [
+      {
+        setNames: ["huskOfOpulentDreams4"],
+        sand: ["defendPercentage"],
+        cup: ["rockBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Yunjin: {
     weights: {
@@ -1445,6 +1509,14 @@ export const characters = {
       criticalDamage: 0.5,
     },
     ace: 183,
+    artifacts: [
+      {
+        setNames: ["huskOfOpulentDreams4"],
+        sand: ["defendPercentage"],
+        cup: ["defendPercentage"],
+        head: ["critical", "defendPercentage"],
+      },
+    ],
   },
   Alhaitham: {
     weights: {
