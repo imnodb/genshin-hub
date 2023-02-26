@@ -1529,6 +1529,14 @@ export const characters = {
     },
     ace: 210,
     badge: tf.AlhaithamDefault.badge,
+    artifacts: [
+      {
+        setNames: ["GildedDreams4"],
+        sand: ["elementalMastery"],
+        cup: ["dendroBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Nahida: {
     weights: {
@@ -1539,6 +1547,14 @@ export const characters = {
       attackPercentage: 0.55,
     },
     ace: 200,
+    artifacts: [
+      {
+        setNames: ["DeepwoodMemories4"],
+        sand: ["elementalMastery"],
+        cup: ["elementalMastery"],
+        head: ["elementalMastery"],
+      },
+    ],
   },
   Tighnari: {
     weights: {
@@ -1550,6 +1566,14 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
+    artifacts: [
+      {
+        setNames: ["GildedDreams4", "wandererTroupe4"],
+        sand: ["elementalMastery"],
+        cup: ["dendroBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Collei: {
     weights: {
@@ -1562,6 +1586,14 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 226,
+    artifacts: [
+      {
+        setNames: ["DeepwoodMemories4", "noblesseOblige4"],
+        sand: ["attackPercentage"],
+        cup: ["dendroBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Yaoyao: {
     weights: {
@@ -1575,6 +1607,35 @@ export const characters = {
       recharge: 0.75,
     },
     ace: 180,
+    artifacts: [
+      {
+        setNames: ["tenacityOfTheMillelith4"],
+        sand: ["lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["cureEffect"],
+      },
+    ],
+  },
+  PlayerGirl: {
+    weights: {
+      // 草
+      critical: 1,
+      criticalDamage: 1,
+      attackStatic: 0.75,
+      attackPercentage: 0.75,
+      elementalMastery: 0.75,
+      recharge: 0.55,
+    },
+    ace: 206,
+    artifacts: [
+      // 草
+      {
+        setNames: ["DeepwoodMemories4"],
+        sand: ["elementalMastery"],
+        cup: ["dendroBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
 };
 
