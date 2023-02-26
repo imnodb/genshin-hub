@@ -274,13 +274,14 @@ export const characters = {
     },
     ace: 215,
     badge: tf.DilucDefault.badge,
-    pos: {
-      flower: ["crimsonWitch"],
-      feather: ["crimsonWitch"],
-      sand: ["attackPercentage", "elementalMastery"],
-      cup: ["fireBonus"],
-      head: ["critical", "criticalDamage"],
-    },
+    artifacts: [
+      {
+        setNames: ["crimsonWitch4"],
+        sand: ["attackPercentage", "elementalMastery"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   HuTao: {
     weights: {
@@ -295,6 +296,14 @@ export const characters = {
     },
     ace: 226,
     badge: tf.HuTaoDefault.badge,
+    artifacts: [
+      {
+        setNames: ["crimsonWitch4", "shimenawaReminiscence4"],
+        sand: ["lifePercentage", "elementalMastery"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Klee: {
     weights: {
@@ -307,6 +316,14 @@ export const characters = {
     },
     ace: 215,
     badge: tf.KleeDefault.badge,
+    artifacts: [
+      {
+        setNames: ["crimsonWitch4"],
+        sand: ["attackPercentage"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Yoimiya: {
     weights: {
@@ -319,6 +336,14 @@ export const characters = {
     },
     ace: 215,
     badge: tf.YoimiyaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["EchoesOfAnOffering4", "shimenawaReminiscence4"],
+        sand: ["attackPercentage"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Amber: {
     weights: {
@@ -331,6 +356,14 @@ export const characters = {
     },
     ace: 195,
     badge: tf.AmberDefault.badge,
+    artifacts: [
+      {
+        setNames: ["EchoesOfAnOffering4"],
+        sand: ["attackPercentage"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Bennett: {
     weights: {
@@ -346,6 +379,20 @@ export const characters = {
     },
     ace: 160,
     badge: tf.BennettDefault.badge,
+    artifacts: [
+      {
+        setNames: ["noblesseOblige4"],
+        sand: ["recharge"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: ["noblesseOblige4"],
+        sand: ["recharge"],
+        cup: ["lifePercentage"],
+        head: ["cureEffect"],
+      },
+    ],
   },
   Thoma: {
     weights: {
@@ -359,6 +406,14 @@ export const characters = {
     },
     ace: 193,
     badge: tf.ThomaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate2", "tenacityOfTheMillelith2"],
+        sand: ["recharge"],
+        cup: ["lifePercentage"],
+        head: ["critical", "criticalDamage", "lifePercentage"],
+      },
+    ],
   },
   Xiangling: {
     weights: {
@@ -372,6 +427,14 @@ export const characters = {
     },
     ace: 226,
     badge: tf.XianglingDefault.badge,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["recharge", "elementalMastery"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Xinyan: {
     weights: {
@@ -386,6 +449,14 @@ export const characters = {
     },
     ace: 206,
     badge: tf.XinyanDefault.badge,
+    artifacts: [
+      {
+        setNames: ["paleFlame2", "bloodstainedChivalry2"],
+        sand: ["attackPercentage"],
+        cup: ["physicalBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Yanfei: {
     weights: {
@@ -398,6 +469,14 @@ export const characters = {
     },
     ace: 195,
     badge: tf.YanfeiDefault.badge,
+    artifacts: [
+      {
+        setNames: ["wandererTroupe4"],
+        sand: ["attackPercentage"],
+        cup: ["fireBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Aloy: {
     weights: {
@@ -1018,7 +1097,7 @@ export const characters = {
   },
 };
 
-export function expectScore(art) { }
+export function expectScore(art) {}
 
 export function calScore(art) {
   let scores = [];
@@ -1029,27 +1108,30 @@ export function calScore(art) {
   );
   console.log(normalTags);
 
-  for (const [characterName, { weights: w, badge, pos }] of Object.entries(
-    characters
-  )) {
+  for (const [
+    characterName,
+    { weights: w, badge, artifacts },
+  ] of Object.entries(characters)) {
     let score = 0;
 
     // 只计算需要套装的花跟羽毛
     if (
       ["flower", "feather"].includes(art.position) &&
-      pos?.[art.position] &&
-      !pos[art.position].includes(art.setName)
+      artifacts?.length &&
+      !artifacts
+        .reduce((p, { setNames }) => p.concat(setNames), [])
+        .find((n) => n.startsWith(art.setName))
     ) {
       continue;
     }
     // 只计算主属性正确的 沙漏、杯子、头
-    if (
-      ["sand", "cup", "head"].includes(art.position) &&
-      pos?.[art.position] &&
-      !pos[art.position].includes(art.mainTag.name)
-    ) {
-      continue;
-    }
+    // if (
+    //   ["sand", "cup", "head"].includes(art.position) &&
+    //   pos?.[art.position] &&
+    //   !pos[art.position].includes(art.mainTag.name)
+    // ) {
+    //   continue;
+    // }
     // 双暴头修正分数
     if (
       art.position === "head" &&
@@ -1082,7 +1164,7 @@ export function calScore(art) {
       }
     }
     for (const name of subStats) {
-      console.log(name);
+      // console.log(name);
       const weights = Object.assign(
         Object.fromEntries(subStats.map((name) => [name, 0])),
         w
