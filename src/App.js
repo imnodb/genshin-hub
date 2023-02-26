@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { Col, Row, Image, Avatar, Modal, Rate, Divider, Badge } from "antd";
+import {
+  Col,
+  Row,
+  Image,
+  Avatar,
+  Modal,
+  Rate,
+  Divider,
+  Badge,
+  Select,
+  Tag,
+} from "antd";
 import { positionToLocale, artifactTags, getScore } from "./utils";
 import artifactIcons from "./gen_artifact_icon";
 import artifact from "./gen_artifact";
@@ -53,11 +64,19 @@ for (const [pos, arts] of Object.entries(mona)) {
   }
   // break;
 }
-console.log(list);
+console.log("list----\n", list);
+
+console.log(artifactIcons);
+
+const options = Object.entries(artifactIcons).map(([name, { art }]) => ({
+  label: artifact[name]?.chs,
+  value: name,
+}));
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [ModalData, setModalData] = useState({});
+  const [selectedValue, setselectedValue] = useState([]);
 
   const showModal = (art) => {
     console.log(art);
@@ -77,6 +96,10 @@ function App() {
       return (v * 100).toFixed?.(1) + "%";
     }
     return v;
+  };
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
+    setselectedValue(value);
   };
   return (
     <div className="App">
@@ -129,6 +152,34 @@ function App() {
           })}
         </Row>
       </Modal>
+      圣遗物总数： {list.reduce((p, { arts }) => p + arts.length, 0)}
+      <Select
+        mode="multiple"
+        allowClear
+        style={{ width: "100%" }}
+        placeholder="Please select"
+        defaultValue={[]}
+        onChange={handleChange}
+        options={options}
+        dropdownRender={(menu) => <>{menu}</>}
+        tagRender={({ label, value, closable, onClose }) => {
+          const onPreventMouseDown = (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+          };
+          return (
+            <Tag
+              onMouseDown={onPreventMouseDown}
+              closable={closable}
+              onClose={onClose}
+              style={{ marginRight: 3 }}
+            >
+              <Avatar src={artifactIcons[value]?.head.url} />
+              {label}
+            </Tag>
+          );
+        }}
+      />
       {list.map(({ txt, arts }) => (
         <div key={txt} style={{ textAlign: "center" }}>
           <Divider />
@@ -139,6 +190,11 @@ function App() {
             <Col span={20}>
               <Row gutter={0}>
                 {arts
+                  .filter((art) =>
+                    selectedValue.length
+                      ? selectedValue.includes(art.setName)
+                      : true
+                  )
                   .sort((a, b) => b.scores?.[0].score - a.scores?.[0].score)
                   .map((art) => (
                     <Col
