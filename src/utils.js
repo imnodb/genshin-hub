@@ -1125,13 +1125,15 @@ export function calScore(art) {
       continue;
     }
     // 只计算主属性正确的 沙漏、杯子、头
-    // if (
-    //   ["sand", "cup", "head"].includes(art.position) &&
-    //   pos?.[art.position] &&
-    //   !pos[art.position].includes(art.mainTag.name)
-    // ) {
-    //   continue;
-    // }
+    if (
+      ["sand", "cup", "head"].includes(art.position) &&
+      artifacts?.length &&
+      !artifacts
+        .reduce((p, v) => p.concat(v[art.position]), [])
+        .includes(art.mainTag.name)
+    ) {
+      continue;
+    }
     // 双暴头修正分数
     if (
       art.position === "head" &&
