@@ -274,6 +274,9 @@ export const characters = {
     },
     ace: 215,
     badge: tf.DilucDefault.badge,
+    sand: ["attackPercentage", "elementalMastery"],
+    cup: ["fireBonus"],
+    head: ["critical", "criticalDamage"],
   },
   HuTao: {
     weights: {
@@ -450,6 +453,9 @@ export const characters = {
     },
     ace: 196,
     badge: tf.QiqiDefault.badge,
+    sand: ["attackPercentage"],
+    cup: ["attackPercentage"],
+    head: ["cureEffect"],
   },
   Shenhe: {
     weights: {
@@ -1020,6 +1026,38 @@ export function calScore(art) {
   )) {
     let score = 0;
 
+
+    // 双暴头修正分数
+    if (
+      art.position === "head" &&
+      ["critical", "criticalDamage"].includes(art.mainTag.name)
+    ) {
+      if (!w.critical) {
+        continue;
+      } else {
+        score += 10 * w.critical;
+      }
+    }
+    // 杯子
+    if (art.position === "cup" && !w[art.mainTag.name]) {
+      continue;
+    }
+    // 大攻击、大生命、大防御、元素精通、充能效率、治疗加成 的 沙漏、杯子、头
+    for (const iterator of [
+      "attackPercentage",
+      "lifePercentage",
+      "defendPercentage",
+      "elementalMastery",
+      "recharge",
+      "cureEffect",
+    ]) {
+      if (
+        art.mainTag.name === iterator &&
+        (!w[iterator] || w[iterator] < 0.6)
+      ) {
+        continue;
+      }
+    }
     for (const name of subStats) {
       console.log(name);
       const weights = Object.assign(
@@ -1060,24 +1098,6 @@ export function calScore(art) {
 
         default:
           break;
-      }
-    }
-    // 双暴头修正分数
-    if (art.position === 'head' && ['critical', 'criticalDamage'].includes(art.mainTag.name)) {
-      if (!w.critical) {
-        score = 0;
-      } else {
-        score += (10 * w.critical);
-      }
-    }
-    // 杯子
-    if (art.position === 'cup' && !w[art.mainTag.name]) {
-        score = 0;
-    }
-    // 大攻击、大生命、大防御、元素精通、充能效率、治疗加成 的 沙漏、杯子、头
-    for (const iterator of ['attackPercentage', 'lifePercentage', 'defendPercentage', 'elementalMastery', 'recharge', 'cureEffect']) {
-      if (art.mainTag.name === iterator && (!w[iterator] || w[iterator] < 0.6)) {
-        score = 0;
       }
     }
     scores.push({ characterName, badge, score: Math.floor(score) });

@@ -87,7 +87,7 @@ function App() {
     <div className="App">
       <Modal
         width="80vw"
-        style={{top:'50px'}}
+        style={{ top: '50px' }}
         footer={null}
         open={isModalOpen}
         onOk={handleOk}
@@ -129,7 +129,7 @@ function App() {
         </Row>
       </Modal>
       {list.map(({ txt, arts }) => (
-        <div key={txt} style={{'text-align': 'center'}}>
+        <div key={txt} style={{ 'text-align': 'center' }}>
           <Divider />
           <Row gutter={0}>
             <Col span={4}>
