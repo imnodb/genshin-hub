@@ -195,6 +195,7 @@ const template =
 
 const getName = (name) => template.replace("#", name);
 
+// eslint-disable-next-line
 export default {
   AetherAnemo: {
     name: "AetherAnemo",
