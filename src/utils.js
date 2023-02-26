@@ -1171,6 +1171,14 @@ export const characters = {
     },
     ace: 210,
     badge: tf.KamisatoAyatoDefault.badge,
+    artifacts: [
+      {
+        setNames: ["EchoesOfAnOffering4", "heartOfDepth4"],
+        sand: ["attackPercentage"],
+        cup: ["waterBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Mona: {
     weights: {
@@ -1183,6 +1191,20 @@ export const characters = {
       recharge: 0.75,
     },
     ace: 230,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["attackPercentage"],
+        cup: ["waterBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: ["noblesseOblige4"],
+        sand: ["recharge"],
+        cup: ["waterBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Nilou: {
     weights: {
@@ -1193,6 +1215,14 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 200,
+    artifacts: [
+      {
+        setNames: ["tenacityOfTheMillelith2", "wandererTroupe2"],
+        sand: ["lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["lifePercentage"],
+      },
+    ],
   },
   SangonomiyaKokomi: {
     weights: {
@@ -1207,6 +1237,20 @@ export const characters = {
     },
     ace: 177,
     badge: tf.SangonomiyaKokomiDefault.badge,
+    artifacts: [
+      {
+        setNames: ["tenacityOfTheMillelith4"],
+        sand: ["lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["cureEffect"],
+      },
+      {
+        setNames: ["oceanHuedClam4"],
+        sand: ["lifePercentage"],
+        cup: ["waterBonus"],
+        head: ["cureEffect"],
+      },
+    ],
   },
   Tartaglia: {
     weights: {
@@ -1218,6 +1262,21 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
+    artifacts: [
+      {
+        setNames: [
+          "heartOfDepth2",
+          "wandererTroupe2",
+          "gladiatorFinale2",
+          "EchoesOfAnOffering2",
+          "shimenawaReminiscence2",
+          "VermillionHereafter2",
+        ],
+        sand: ["attackPercentage"],
+        cup: ["waterBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Yelan: {
     weights: {
@@ -1230,6 +1289,14 @@ export const characters = {
     },
     ace: 212,
     badge: tf.YelanDefault.badge,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["lifePercentage", "recharge"],
+        cup: ["waterBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Barbara: {
     weights: {
@@ -1243,6 +1310,14 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 196,
+    artifacts: [
+      {
+        setNames: ["maidenBeloved4"],
+        sand: ["lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["cureEffect"],
+      },
+    ],
   },
   Candace: {
     weights: {
@@ -1253,6 +1328,14 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 196,
+    artifacts: [
+      {
+        setNames: ["noblesseOblige4"],
+        sand: ["lifePercentage", "recharge"],
+        cup: ["lifePercentage"],
+        head: ["critical", "criticalDamage", "lifePercentage"],
+      },
+    ],
   },
   Xingqiu: {
     weights: {
@@ -1264,6 +1347,20 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 211,
+    artifacts: [
+      {
+        setNames: ["heartOfDepth2", "noblesseOblige2"],
+        sand: ["attackPercentage"],
+        cup: ["waterBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["recharge"],
+        cup: ["waterBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Albedo: {
     weights: {
