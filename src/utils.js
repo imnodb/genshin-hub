@@ -488,6 +488,20 @@ export const characters = {
     },
     ace: 180,
     badge: tf.AloyDefault.badge,
+    artifacts: [
+      {
+        setNames: [
+          "blizzardStrayer2",
+          "gladiatorFinale2",
+          "EchoesOfAnOffering2",
+          "shimenawaReminiscence2",
+          "VermillionHereafter2",
+        ],
+        sand: ["attackPercentage"],
+        cup: ["iceBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Eula: {
     weights: {
@@ -500,6 +514,20 @@ export const characters = {
     },
     ace: 206,
     badge: tf.EulaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["paleFlame2", "bloodstainedChivalry2"],
+        sand: ["attackPercentage"],
+        cup: ["physicalBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: ["paleFlame4"],
+        sand: ["attackPercentage"],
+        cup: ["physicalBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Ganyu: {
     weights: {
@@ -512,6 +540,20 @@ export const characters = {
     },
     ace: 215,
     badge: tf.GanyuDefault.badge,
+    artifacts: [
+      {
+        setNames: ["blizzardStrayer4"],
+        sand: ["attackPercentage"],
+        cup: ["iceBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+      {
+        setNames: ["wandererTroupe4"],
+        sand: ["attackPercentage", "elementalMastery"],
+        cup: ["iceBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   KamisatoAyaka: {
     weights: {
@@ -524,6 +566,14 @@ export const characters = {
     },
     ace: 206,
     badge: tf.KamisatoAyakaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["blizzardStrayer4"],
+        sand: ["attackPercentage"],
+        cup: ["iceBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Qiqi: {
     weights: {
@@ -536,13 +586,14 @@ export const characters = {
     },
     ace: 196,
     badge: tf.QiqiDefault.badge,
-    pos: {
-      flower: ["oceanHuedClam"],
-      feather: ["oceanHuedClam"],
-      sand: ["attackPercentage"],
-      cup: ["attackPercentage"],
-      head: ["cureEffect"],
-    },
+    artifacts: [
+      {
+        setNames: ["oceanHuedClam4"],
+        sand: ["attackPercentage"],
+        cup: ["attackPercentage"],
+        head: ["cureEffect"],
+      },
+    ],
   },
   Shenhe: {
     weights: {
@@ -554,6 +605,19 @@ export const characters = {
     },
     ace: 170,
     badge: tf.ShenheDefault.badge,
+    artifacts: [
+      {
+        setNames: [
+          "gladiatorFinale2",
+          "EchoesOfAnOffering2",
+          "shimenawaReminiscence2",
+          "VermillionHereafter2",
+        ],
+        sand: ["attackPercentage"],
+        cup: ["attackPercentage"],
+        head: ["attackPercentage"],
+      },
+    ],
   },
   Chongyun: {
     weights: {
@@ -567,6 +631,14 @@ export const characters = {
     },
     ace: 226,
     badge: tf.ChongyunDefault.badge,
+    artifacts: [
+      {
+        setNames: ["blizzardStrayer2", "noblesseOblige2"],
+        sand: ["attackPercentage"],
+        cup: ["iceBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Diona: {
     weights: {
@@ -580,6 +652,20 @@ export const characters = {
     },
     ace: 183,
     badge: tf.DionaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["maidenBeloved2", "tenacityOfTheMillelith2"],
+        sand: ["lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["lifePercentage"],
+      },
+      {
+        setNames: ["noblesseOblige4"],
+        sand: ["recharge"],
+        cup: ["lifePercentage"],
+        head: ["lifePercentage"],
+      },
+    ],
   },
   Kaeya: {
     weights: {
@@ -591,6 +677,14 @@ export const characters = {
     },
     ace: 180,
     badge: tf.KaeyaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["emblemOfSeveredFate4"],
+        sand: ["attackPercentage", "recharge"],
+        cup: ["iceBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Layla: {
     weights: {
@@ -603,6 +697,14 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 207,
+    artifacts: [
+      {
+        setNames: ["tenacityOfTheMillelith4"],
+        sand: ["lifePercentage"],
+        cup: ["lifePercentage"],
+        head: ["lifePercentage"],
+      },
+    ],
   },
   Rosaria: {
     weights: {
@@ -615,6 +717,14 @@ export const characters = {
     },
     ace: 191,
     badge: tf.RosariaDefault.badge,
+    artifacts: [
+      {
+        setNames: ["noblesseOblige4"],
+        sand: ["attackPercentage"],
+        cup: ["iceBonus"],
+        head: ["critical", "criticalDamage"],
+      },
+    ],
   },
   Jean: {
     weights: {
