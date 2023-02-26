@@ -274,9 +274,13 @@ export const characters = {
     },
     ace: 215,
     badge: tf.DilucDefault.badge,
-    sand: ["attackPercentage", "elementalMastery"],
-    cup: ["fireBonus"],
-    head: ["critical", "criticalDamage"],
+    pos: {
+      flower: ["crimsonWitch"],
+      feather: ["crimsonWitch"],
+      sand: ["attackPercentage", "elementalMastery"],
+      cup: ["fireBonus"],
+      head: ["critical", "criticalDamage"],
+    },
   },
   HuTao: {
     weights: {
@@ -453,9 +457,13 @@ export const characters = {
     },
     ace: 196,
     badge: tf.QiqiDefault.badge,
-    sand: ["attackPercentage"],
-    cup: ["attackPercentage"],
-    head: ["cureEffect"],
+    pos: {
+      flower: ["oceanHuedClam"],
+      feather: ["oceanHuedClam"],
+      sand: ["attackPercentage"],
+      cup: ["attackPercentage"],
+      head: ["cureEffect"],
+    },
   },
   Shenhe: {
     weights: {
@@ -1021,12 +1029,27 @@ export function calScore(art) {
   );
   console.log(normalTags);
 
-  for (const [characterName, { weights: w, badge }] of Object.entries(
+  for (const [characterName, { weights: w, badge, pos }] of Object.entries(
     characters
   )) {
     let score = 0;
 
-
+    // 只计算需要套装的花跟羽毛
+    if (
+      ["flower", "feather"].includes(art.position) &&
+      pos?.[art.position] &&
+      !pos[art.position].includes(art.setName)
+    ) {
+      continue;
+    }
+    // 只计算主属性正确的 沙漏、杯子、头
+    if (
+      ["sand", "cup", "head"].includes(art.position) &&
+      pos?.[art.position] &&
+      !pos[art.position].includes(art.mainTag.name)
+    ) {
+      continue;
+    }
     // 双暴头修正分数
     if (
       art.position === "head" &&

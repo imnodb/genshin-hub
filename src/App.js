@@ -129,7 +129,7 @@ function App() {
         </Row>
       </Modal>
       {list.map(({ txt, arts }) => (
-        <div key={txt} style={{ 'text-align': 'center' }}>
+        <div key={txt} style={{ textAlign: 'center' }}>
           <Divider />
           <Row gutter={0}>
             <Col span={4}>
