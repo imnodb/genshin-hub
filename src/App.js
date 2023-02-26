@@ -12,9 +12,16 @@ import {
   Select,
   Tag,
 } from "antd";
-import { mainStatMap, positionToLocale, artifactTags, getScore } from "./utils";
+import {
+  mainStatMap,
+  positionToLocale,
+  artifactTags,
+  getScore,
+  characters,
+} from "./utils";
 import artifactIcons from "./gen_artifact_icon";
 import artifact from "./gen_artifact";
+import genCharacter from "./gen_character";
 import mona from "./mona.json";
 import "./App.css";
 
@@ -76,12 +83,17 @@ const positionOptions = Object.keys(mainStatMap).map((name) => ({
   label: positionToLocale(name),
   value: name,
 }));
+const characterOptions = Object.keys(characters).map((name) => ({
+  label: genCharacter[name]?.chs,
+  value: name,
+}));
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [ModalData, setModalData] = useState({});
   const [selectedValue, setSelectedValue] = useState([]);
   const [positionValue, setPositionValue] = useState([]);
+  const [characterValue, setCharacterValue] = useState([]);
 
   const showModal = (art) => {
     console.log(art);
@@ -107,6 +119,9 @@ function App() {
   };
   const positionHandleChange = (value) => {
     setPositionValue(value);
+  };
+  const characterHandleChange = (value) => {
+    setCharacterValue(value);
   };
   return (
     <div className="App">
@@ -168,7 +183,6 @@ function App() {
         defaultValue={[]}
         onChange={handleChange}
         options={options}
-        dropdownRender={(menu) => <>{menu}</>}
         tagRender={({ label, value, closable, onClose }) => {
           const onPreventMouseDown = (event) => {
             event.preventDefault();
@@ -196,6 +210,15 @@ function App() {
         onChange={positionHandleChange}
         options={positionOptions}
       />
+      <Select
+        mode="multiple"
+        allowClear
+        style={{ width: "100%" }}
+        placeholder="Please select"
+        defaultValue={[]}
+        onChange={characterHandleChange}
+        options={characterOptions}
+      />
       {list.map(({ txt, arts }) => (
         <div key={txt} style={{ textAlign: "center" }}>
           <Divider />
@@ -208,11 +231,16 @@ function App() {
                 {arts
                   .filter(
                     (art) =>
+                      (selectedValue.length
+                        ? selectedValue.includes(art.setName)
+                        : true) &&
                       (positionValue.length
                         ? positionValue.includes(art.position)
                         : true) &&
-                      (selectedValue.length
-                        ? selectedValue.includes(art.setName)
+                      (characterValue.length
+                        ? art.scores?.find(({ characterName }) =>
+                            characterValue.includes(characterName)
+                          )
                         : true)
                   )
                   .sort((a, b) => b.scores?.[0].score - a.scores?.[0].score)
