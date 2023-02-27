@@ -223,10 +223,10 @@ function App() {
         <div key={txt} style={{ textAlign: "center" }}>
           <Divider />
           <Row gutter={0}>
-            <Col span={4}>
+            <Col span={2}>
               {txt}({arts.length})
             </Col>
-            <Col span={20}>
+            <Col span={22}>
               <Row gutter={0}>
                 {arts
                   .filter(
@@ -249,11 +249,11 @@ function App() {
                       flex
                       key={art.id}
                       onClick={() => showModal(art)}
-                      offset={1}
+                      style={{ marginTop: "5px", marginLeft: "20px" }}
                     >
                       <Badge
                         color={art.level === 20 ? "#faad14" : "red"}
-                        count={"+" + art.level}
+                        count={`+${art.level}`}
                       >
                         <Image
                           style={{
@@ -267,14 +267,46 @@ function App() {
                           width={80}
                           src={art.icon}
                         />
-                        <Avatar
-                          className="character-badge"
-                          src={
-                            art.scores?.[0].badge ||
-                            `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${art.scores?.[0].characterName}.png`
-                          }
-                        />
-                        <div>{art.scores?.[0].score}分</div>
+                        <div className="character-badge">
+                          <Avatar
+                            className="character-badge-a"
+                            src={
+                              art.scores?.[0].badge ||
+                              `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${art.scores?.[0].characterName}.png`
+                            }
+                          />
+                        </div>
+
+                        {characterValue.length ? (
+                          <Row className="bottom-character">
+                            {art.scores
+                              ?.filter(({ characterName }) =>
+                                characterValue.includes(characterName)
+                              )
+                              .map(({ characterName, badge, score }) => {
+                                return (
+                                  <Col
+                                    key={art.id + "selected" + characterName}
+                                    style={{ textAlign: "center" }}
+                                  >
+                                    <Avatar
+                                      className="bottom-character-a"
+                                      src={
+                                        badge ||
+                                        `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${characterName}.png`
+                                      }
+                                    />
+                                    <br />
+                                    {score}
+                                  </Col>
+                                );
+                              })}
+                          </Row>
+                        ) : (
+                          <div className="character-badge-txt">
+                            {art.scores?.[0].score}分
+                          </div>
+                        )}
                       </Badge>
                     </Col>
                   ))}
