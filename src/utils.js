@@ -1898,19 +1898,21 @@ export function getScore(art) {
         values.reduce((p, v) => p + v) / values.length,
       ])
     );
-
+    // 需要强化的次数
     const tagCount = Math.ceil((20 - art.level) / 4);
     // console.log(tagCount);
+    // 原本存在的属性
+    const existingTags = [
+      art.mainTag.name,
+      ...normalTags.map(({ name }) => name),
+    ];
     for (let index = 0; index < tagCount; index++) {
-      // console.log(`强化第${index + 1}次`);
+      console.log(`强化第${index + 1}次`);
       if (normalTags.length === 3) {
         // console.log("补一条属性", art.mainTag.name);
         // console.log(AverageEff);
-        const existingTags = [
-          art.mainTag.name,
-          ...normalTags.map(({ name }) => name),
-        ];
         // console.log(existingTags);
+        // 强化可能新增的属性
         const wishTags = Object.entries(AverageEff).filter(
           ([eff]) => !existingTags.includes(eff)
         );
@@ -1931,8 +1933,17 @@ export function getScore(art) {
         });
       } else {
         for (const tag of normalTags) {
+          if (normalTags.length > 4) {
+            if (existingTags.includes(tag.name)) {
+              tag.value += AverageEff[tag.name] / 4;
+            } else {
+              // 补齐的部分词条单独计算概率
+              tag.value += AverageEff[tag.name] / 4 / (normalTags.length - 3);
+            }
+          } else {
+            tag.value += AverageEff[tag.name] / normalTags.length;
+          }
           // console.log(tag, "tag");
-          tag.value += AverageEff[tag.name] / 4;
         }
       }
     }
