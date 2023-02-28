@@ -127,6 +127,7 @@ function App() {
           )
         : art.maxScore;
       // console.log(score);
+      art.score = score;
       if (score >= 48) {
         list[0].arts.push(art);
       } else if (score >= 36) {
@@ -263,7 +264,7 @@ function App() {
                           )
                         : true)
                   )
-                  .sort((a, b) => b.scores?.[0].score - a.scores?.[0].score)
+                  .sort((a, b) => b.score - a.score)
                   .map((art) => (
                     <Col
                       flex
