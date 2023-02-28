@@ -28,26 +28,8 @@ import "./App.css";
 console.log({ mona });
 console.log(artifact);
 
-const list = [
-  {
-    txt: "极品",
-    arts: [],
-  },
-  {
-    txt: "顶尖",
-    arts: [],
-  },
-  {
-    txt: "一般",
-    arts: [],
-  },
-  {
-    txt: "鸡肋",
-    arts: [],
-  },
-];
-
 console.log(Object.entries(mona));
+const allArts = [];
 for (const [pos, arts] of Object.entries(mona)) {
   if (pos === "version") {
     continue;
@@ -57,21 +39,13 @@ for (const [pos, arts] of Object.entries(mona)) {
     art.id = uuidv4();
     art.icon = artifactIcons[art.setName]?.[art.position]?.url;
     art.scores = getScore(art);
-    const maxScore = getScore(art)?.[0]?.score;
-    if (maxScore >= 48) {
-      list[0].arts.push(art);
-    } else if (maxScore >= 36) {
-      list[1].arts.push(art);
-    } else if (maxScore >= 21) {
-      list[2].arts.push(art);
-    } else {
-      list[3].arts.push(art);
-    }
+    art.maxScore = getScore(art)?.[0]?.score;
+    allArts.push(art);
     // break;
   }
   // break;
 }
-console.log("list----\n", list);
+console.log("allArts----\n", allArts);
 
 console.log(artifactIcons);
 
@@ -94,6 +68,7 @@ function App() {
   const [selectedValue, setSelectedValue] = useState([]);
   const [positionValue, setPositionValue] = useState([]);
   const [characterValue, setCharacterValue] = useState([]);
+  const [RatingList, setRatingList] = useState([]);
 
   const showModal = (art) => {
     console.log(art);
@@ -122,7 +97,52 @@ function App() {
   };
   const characterHandleChange = (value) => {
     setCharacterValue(value);
+    changeRatingList(value);
   };
+  const changeRatingList = (names=[]) => {
+    const list = [
+      {
+        txt: "极品",
+        arts: [],
+      },
+      {
+        txt: "顶尖",
+        arts: [],
+      },
+      {
+        txt: "一般",
+        arts: [],
+      },
+      {
+        txt: "鸡肋",
+        arts: [],
+      },
+    ];
+    for (const art of allArts) {
+      const score = names.length
+        ? Math.max(
+            ...(art.scores
+              ?.filter(({ characterName }) => names.includes(characterName))
+              .map(({ score }) => score)??[])
+          )
+        : art.maxScore;
+      // console.log(score);
+      if (score >= 48) {
+        list[0].arts.push(art);
+      } else if (score >= 36) {
+        list[1].arts.push(art);
+      } else if (score >= 21) {
+        list[2].arts.push(art);
+      } else {
+        list[3].arts.push(art);
+      }
+    }
+    setRatingList(list);
+  };
+  if (!RatingList.length) {
+    changeRatingList();
+  }
+  console.log("RatingList", RatingList);
   return (
     <div className="App">
       <Modal
@@ -174,7 +194,7 @@ function App() {
           })}
         </Row>
       </Modal>
-      圣遗物总数： {list.reduce((p, { arts }) => p + arts.length, 0)}
+      圣遗物总数： {RatingList.reduce((p, { arts }) => p + arts.length, 0)}
       <Select
         mode="multiple"
         allowClear
@@ -219,7 +239,7 @@ function App() {
         onChange={characterHandleChange}
         options={characterOptions}
       />
-      {list.map(({ txt, arts }) => (
+      {RatingList.map(({ txt, arts }) => (
         <div key={txt} style={{ textAlign: "center" }}>
           <Divider />
           <Row gutter={0}>
