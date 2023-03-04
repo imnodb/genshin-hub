@@ -13,10 +13,11 @@ import {
   Tag,
   Upload,
   FloatButton,
-  InputNumber,
   Button,
   Tour,
   Cascader,
+  Popover,
+  Space,
 } from "antd";
 import { FileAddOutlined } from "@ant-design/icons";
 import {
@@ -25,12 +26,14 @@ import {
   artifactTags,
   getScore,
   characters,
+  artifactEff,
 } from "./utils";
 import artifactIcons from "./gen_artifact_icon";
 import artifact from "./gen_artifact";
 import genCharacter from "./gen_character";
 // import mona from "./mona.json";
 import "./App.css";
+import { uniqBy } from "lodash";
 
 // console.log({ mona });
 console.log(artifact);
@@ -57,6 +60,14 @@ const characterOptions = Object.keys(characters).map((name) => ({
   label: genCharacter[name]?.chs,
   value: name,
 }));
+
+const Fixed = (artifact, v) => {
+  // console.log(artifact);
+  if (artifact?.percentage) {
+    return (v * 100).toFixed?.(1) + "%";
+  }
+  return v;
+};
 
 function App() {
   const ref1 = useRef(null);
@@ -113,10 +124,59 @@ function App() {
     };
     return false;
   };
+  // 快捷强化按钮组
+  function SplitRise(props) {
+    const { ModalData, tag } = props;
+    const { name, value } = props.tag;
+
+    let list = [
+      ...artifactEff[5][name].map((v) => ({
+        v,
+        i: 1,
+      })),
+    ];
+    const count = Math.ceil((20 - props.level) / 4) - 1;
+    for (let index = 0; index < count; index++) {
+      const arr = [...list];
+      for (const { v, i } of list) {
+        console.log(v, i);
+        if (i > index) {
+          for (const av of artifactEff[5][name]) {
+            console.log(v, av);
+            arr.push({
+              v: v + av,
+              i: i + 1,
+            });
+            if (name === "lifePercentage") {
+              console.log(`强化第${i + index + 1}次，是${(v + av) * 100}`);
+            }
+          }
+        }
+      }
+      list = uniqBy(arr, "v");
+      console.log(props.tag);
+    }
+    console.log(list);
+    return list.map(({ v, i }) => (
+      <Button
+        key={"rise" + ModalData.id + name + v}
+        onClick={() => {
+          ModalData.level = ModalData.level + 4 * i;
+          tag.value = value + v;
+          ModalData.scores = getScore(ModalData);
+          setModalData({
+            ...ModalData,
+          });
+        }}
+      >
+        {Fixed(artifactTags[name], value + v)}
+      </Button>
+    ));
+  }
 
   const showModal = (art) => {
     console.log(art);
-    setModalData(art);
+    setModalData(JSON.parse(JSON.stringify(art)));
     setIsModalOpen(true);
   };
   const handleOk = () => {
@@ -126,13 +186,7 @@ function App() {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-  const Fixed = (artifact, v) => {
-    // console.log(artifact);
-    if (artifact?.percentage) {
-      return (v * 100).toFixed?.(1) + "%";
-    }
-    return v;
-  };
+
   const handleChange = (value) => {
     setSelectedValue(value);
     changeRatingList({ setV: value });
@@ -160,7 +214,8 @@ function App() {
         (setV.length && !setV.includes(art.setName)) ||
         (pos.length &&
           !pos.find(
-            ([p, t]) => p === art.position && (t ? t === art.mainTag.name : true)
+            ([p, t]) =>
+              p === art.position && (t ? t === art.mainTag.name : true)
           )) ||
         (names.length &&
           !art.scores?.find(({ characterName }) =>
@@ -239,43 +294,45 @@ function App() {
           )}
         </p>
         <Rate disabled value={ModalData.star} />
-        <p>+{ModalData.level}</p>
-        <InputNumber
-          step="4"
-          key={ModalData.id + "InputNumberlevel"}
-          defaultValue={ModalData.level}
-          onChange={(v) => {
-            ModalData.level = v;
-          }}
-        />
+        <div>
+          <Space wrap>
+            <div>+{ModalData.level}</div>
+            {ModalData.star === 5 && ModalData.level < 20 ? (
+              <Popover
+                content={ModalData.normalTags?.map((tag) => {
+                  const { name, value } = tag;
+                  return (
+                    <div key={ModalData.id + name}>
+                      {artifactTags[name]?.chs + "+"}
+                      {Fixed(artifactTags[name], value)}
+                      <SplitRise
+                        ModalData={ModalData}
+                        level={ModalData.level}
+                        tag={tag}
+                      />
+                    </div>
+                  );
+                })}
+                title="强化"
+                trigger="click"
+              >
+                <Button type="primary">强化</Button>
+              </Popover>
+            ) : (
+              <></>
+            )}
+          </Space>
+        </div>
+
         {ModalData.normalTags?.map((tag) => {
           const { name, value } = tag;
           return (
             <div key={ModalData.id + name}>
               {artifactTags[name]?.chs + "+"}
               {Fixed(artifactTags[name], value)}
-              <InputNumber
-                step="0.01"
-                defaultValue={value}
-                onChange={(v) => {
-                  tag.value = v;
-                }}
-              />
             </div>
           );
         })}
-        {
-          <Button
-            onClick={() => {
-              console.log(ModalData.normalTags);
-              ModalData.scores = getScore(ModalData);
-              console.log(ModalData.scores);
-              setModalData({ ...ModalData });
-            }}
-          >
-            重新计算
-          </Button>
-        }
         <p>{artifact[ModalData.setName]?.chs}</p>
         <p>2件套：{artifact[ModalData.setName]?.effect2}</p>
         <p>4件套：{artifact[ModalData.setName]?.effect4}</p>
