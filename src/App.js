@@ -16,6 +16,7 @@ import {
   InputNumber,
   Button,
   Tour,
+  Cascader,
 } from "antd";
 import { FileAddOutlined } from "@ant-design/icons";
 import {
@@ -47,6 +48,10 @@ const options = Object.entries(artifactIcons).map(([name, { art }]) => ({
 const positionOptions = Object.keys(mainStatMap).map((name) => ({
   label: positionToLocale(name),
   value: name,
+  children: mainStatMap[name].map((n) => ({
+    label: artifactTags[n].chs,
+    value: n,
+  })),
 }));
 const characterOptions = Object.keys(characters).map((name) => ({
   label: genCharacter[name]?.chs,
@@ -133,6 +138,7 @@ function App() {
     changeRatingList({ setV: value });
   };
   const positionHandleChange = (value) => {
+    console.log("positionHandleChange", value);
     setPositionValue(value);
     changeRatingList({ pos: value });
   };
@@ -152,7 +158,10 @@ function App() {
     for (const art of allArts) {
       if (
         (setV.length && !setV.includes(art.setName)) ||
-        (pos.length && !pos.includes(art.position)) ||
+        (pos.length &&
+          !pos.find(
+            ([p, t]) => p === art.position && (t ? t === art.mainTag.name : true)
+          )) ||
         (names.length &&
           !art.scores?.find(({ characterName }) =>
             names.includes(characterName)
@@ -317,14 +326,14 @@ function App() {
           );
         }}
       />
-      <Select
-        mode="multiple"
-        allowClear
+      <Cascader
         style={{ width: "100%" }}
+        allowClear
         placeholder="Please select"
-        defaultValue={[]}
-        onChange={positionHandleChange}
         options={positionOptions}
+        onChange={positionHandleChange}
+        multiple
+        expandTrigger="hover"
       />
       <Select
         mode="multiple"
