@@ -11,7 +11,10 @@ import {
   Badge,
   Select,
   Tag,
+  Upload,
+  FloatButton,
 } from "antd";
+import { FileAddOutlined } from "@ant-design/icons";
 import {
   mainStatMap,
   positionToLocale,
@@ -22,30 +25,20 @@ import {
 import artifactIcons from "./gen_artifact_icon";
 import artifact from "./gen_artifact";
 import genCharacter from "./gen_character";
-import mona from "./mona.json";
+// import mona from "./mona.json";
 import "./App.css";
 
-console.log({ mona });
+// console.log({ mona });
 console.log(artifact);
 
-console.log(Object.entries(mona));
-const allArts = [];
-for (const [pos, arts] of Object.entries(mona)) {
-  if (pos === "version") {
-    continue;
-  }
-  console.log([pos, arts]);
-  for (const art of arts) {
-    art.id = uuidv4();
-    art.icon = artifactIcons[art.setName]?.[art.position]?.url;
-    art.scores = getScore(art);
-    art.maxScore = getScore(art)?.[0]?.score;
-    allArts.push(art);
-    // break;
-  }
-  // break;
+// console.log(Object.entries(mona));
+let allArts = [];
+try {
+  var val = localStorage.getItem("allArts"); //获取存储的元素
+  allArts = JSON.parse(val); //解析出json对象
+} catch (error) {
+  console.error(error);
 }
-console.log("allArts----\n", allArts);
 
 console.log(artifactIcons);
 
@@ -69,6 +62,41 @@ function App() {
   const [positionValue, setPositionValue] = useState([]);
   const [characterValue, setCharacterValue] = useState([]);
   const [RatingList, setRatingList] = useState([]);
+
+  const beforeUpload = (file) => {
+    console.log(file);
+    const fileReader = new FileReader();
+    fileReader.readAsText(file);
+    fileReader.onload = function (e) {
+      try {
+        const mona = JSON.parse(fileReader.result);
+        console.log(mona);
+        console.log(Object.entries(mona));
+        const allArts = [];
+        for (const [pos, arts] of Object.entries(mona)) {
+          if (pos === "version") {
+            continue;
+          }
+          console.log([pos, arts]);
+          for (const art of arts) {
+            art.id = uuidv4();
+            art.icon = artifactIcons[art.setName]?.[art.position]?.url;
+            art.scores = getScore(art);
+            art.maxScore = getScore(art)?.[0]?.score;
+            allArts.push(art);
+            // break;
+          }
+          // break;
+        }
+        localStorage.setItem("allArts", JSON.stringify(allArts));
+        console.log("allArts----\n", allArts);
+        window.location.reload();
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    return false;
+  };
 
   const showModal = (art) => {
     console.log(art);
@@ -165,6 +193,12 @@ function App() {
   console.log("RatingList", RatingList);
   return (
     <div className="App">
+      <Upload accept=".json" beforeUpload={beforeUpload}>
+        <FloatButton
+          icon={<FileAddOutlined />}
+          onClick={() => console.log("click")}
+        />
+      </Upload>
       <Modal
         width="80vw"
         style={{ top: "50px" }}
