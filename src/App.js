@@ -91,54 +91,73 @@ function App() {
   };
   const handleChange = (value) => {
     setSelectedValue(value);
+    changeRatingList({ setV: value });
   };
   const positionHandleChange = (value) => {
     setPositionValue(value);
+    changeRatingList({ pos: value });
   };
   const characterHandleChange = (value) => {
     setCharacterValue(value);
-    changeRatingList(value);
+    changeRatingList({ names: value });
   };
-  const changeRatingList = (names=[]) => {
-    const list = [
-      {
-        txt: "极品",
-        arts: [],
-      },
-      {
-        txt: "顶尖",
-        arts: [],
-      },
-      {
-        txt: "一般",
-        arts: [],
-      },
-      {
-        txt: "鸡肋",
-        arts: [],
-      },
-    ];
+  const changeRatingList = (options = {}) => {
+    const names = options.names ?? characterValue;
+    const pos = options.pos ?? positionValue;
+    const setV = options.setV ?? selectedValue;
+
+    const arts1 = [];
+    const arts2 = [];
+    const arts3 = [];
+    const arts4 = [];
     for (const art of allArts) {
-      const score = names.length
+      if (
+        (setV.length && !setV.includes(art.setName)) ||
+        (pos.length && !pos.includes(art.position)) ||
+        (names.length &&
+          !art.scores?.find(({ characterName }) =>
+            names.includes(characterName)
+          ))
+      ) {
+        continue;
+      }
+      const score = names?.length
         ? Math.max(
             ...(art.scores
               ?.filter(({ characterName }) => names.includes(characterName))
-              .map(({ score }) => score)??[])
+              .map(({ score }) => score) ?? [])
           )
         : art.maxScore;
       // console.log(score);
       art.score = score;
       if (score >= 48) {
-        list[0].arts.push(art);
+        arts1.push(art);
       } else if (score >= 36) {
-        list[1].arts.push(art);
+        arts2.push(art);
       } else if (score >= 21) {
-        list[2].arts.push(art);
+        arts3.push(art);
       } else {
-        list[3].arts.push(art);
+        arts4.push(art);
       }
     }
-    setRatingList(list);
+    setRatingList([
+      {
+        txt: "极品",
+        arts: arts1.sort((a, b) => b.score - a.score),
+      },
+      {
+        txt: "顶尖",
+        arts: arts2.sort((a, b) => b.score - a.score),
+      },
+      {
+        txt: "一般",
+        arts: arts3.sort((a, b) => b.score - a.score),
+      },
+      {
+        txt: "鸡肋",
+        arts: arts4.sort((a, b) => b.score - a.score),
+      },
+    ]);
   };
   if (!RatingList.length) {
     changeRatingList();
@@ -249,88 +268,72 @@ function App() {
             </Col>
             <Col span={22}>
               <Row gutter={0}>
-                {arts
-                  .filter(
-                    (art) =>
-                      (selectedValue.length
-                        ? selectedValue.includes(art.setName)
-                        : true) &&
-                      (positionValue.length
-                        ? positionValue.includes(art.position)
-                        : true) &&
-                      (characterValue.length
-                        ? art.scores?.find(({ characterName }) =>
-                            characterValue.includes(characterName)
-                          )
-                        : true)
-                  )
-                  .sort((a, b) => b.score - a.score)
-                  .map((art) => (
-                    <Col
-                      flex
-                      key={art.id}
-                      onClick={() => showModal(art)}
-                      style={{ marginTop: "5px", marginLeft: "20px" }}
+                {arts.map((art) => (
+                  <Col
+                    flex
+                    key={art.id}
+                    onClick={() => showModal(art)}
+                    style={{ marginTop: "5px", marginLeft: "20px" }}
+                  >
+                    <Badge
+                      color={art.level === 20 ? "#faad14" : "red"}
+                      count={`+${art.level}`}
                     >
-                      <Badge
-                        color={art.level === 20 ? "#faad14" : "red"}
-                        count={`+${art.level}`}
-                      >
-                        <Image
-                          style={{
-                            background:
-                              art.star === 5
-                                ? "rgb(211, 159, 81)"
-                                : "rgb(177, 135, 195)",
-                          }}
-                          className="art-img"
-                          preview={false}
-                          width={80}
-                          src={art.icon}
+                      <Image
+                        style={{
+                          background:
+                            art.star === 5
+                              ? "rgb(211, 159, 81)"
+                              : "rgb(177, 135, 195)",
+                        }}
+                        className="art-img"
+                        preview={false}
+                        width={80}
+                        src={art.icon}
+                      />
+                      <div className="character-badge">
+                        <Avatar
+                          className="character-badge-a"
+                          src={
+                            art.scores?.[0].badge ||
+                            `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${art.scores?.[0].characterName}.png`
+                          }
                         />
-                        <div className="character-badge">
-                          <Avatar
-                            className="character-badge-a"
-                            src={
-                              art.scores?.[0].badge ||
-                              `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${art.scores?.[0].characterName}.png`
-                            }
-                          />
-                        </div>
+                      </div>
 
-                        {characterValue.length ? (
-                          <Row className="bottom-character">
-                            {art.scores
-                              ?.filter(({ characterName }) =>
-                                characterValue.includes(characterName)
-                              )
-                              .map(({ characterName, badge, score }) => {
-                                return (
-                                  <Col
-                                    key={art.id + "selected" + characterName}
-                                    style={{ textAlign: "center" }}
-                                  >
-                                    <Avatar
-                                      className="bottom-character-a"
-                                      src={
-                                        badge ||
-                                        `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${characterName}.png`
-                                      }
-                                    />
-                                    <br />
-                                    {score}
-                                  </Col>
-                                );
-                              })}
-                          </Row>
-                        ) : (
-                          <div className="character-badge-txt">
-                            {art.scores?.[0].score}分
-                          </div>
-                        )}
-                      </Badge>
-                    </Col>
-                  ))}
+                      {characterValue.length ? (
+                        <Row className="bottom-character">
+                          {art.scores
+                            ?.filter(({ characterName }) =>
+                              characterValue.includes(characterName)
+                            )
+                            .map(({ characterName, badge, score }) => {
+                              return (
+                                <Col
+                                  key={art.id + "selected" + characterName}
+                                  style={{ textAlign: "center" }}
+                                >
+                                  <Avatar
+                                    className="bottom-character-a"
+                                    src={
+                                      badge ||
+                                      `https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${characterName}.png`
+                                    }
+                                  />
+                                  <br />
+                                  {score}
+                                </Col>
+                              );
+                            })}
+                        </Row>
+                      ) : (
+                        <div className="character-badge-txt">
+                          {art.scores?.[0].score}分
+                        </div>
+                      )}
+                    </Badge>
+                  </Col>
+                ))}
               </Row>
             </Col>
           </Row>
