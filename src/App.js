@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
   Col,
@@ -13,6 +13,9 @@ import {
   Tag,
   Upload,
   FloatButton,
+  InputNumber,
+  Button,
+  Tour,
 } from "antd";
 import { FileAddOutlined } from "@ant-design/icons";
 import {
@@ -51,6 +54,8 @@ const characterOptions = Object.keys(characters).map((name) => ({
 }));
 
 function App() {
+  const ref1 = useRef(null);
+  const [open, setOpen] = useState(!localStorage.getItem("steps"));
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [ModalData, setModalData] = useState({});
   const [selectedValue, setSelectedValue] = useState([]);
@@ -58,6 +63,17 @@ function App() {
   const [characterValue, setCharacterValue] = useState([]);
   const [RatingList, setRatingList] = useState([]);
 
+  const steps = [
+    {
+      title: "Upload File",
+      description: "点击右下角按钮上传圣遗物数据！",
+      target: () => ref1.current,
+    },
+  ];
+  const onCloseSteps = () => {
+    setOpen(false);
+    localStorage.setItem("steps", "1");
+  };
   const beforeUpload = (file) => {
     console.log(file);
     const fileReader = new FileReader();
@@ -190,10 +206,12 @@ function App() {
     <div className="App">
       <Upload accept=".json" beforeUpload={beforeUpload}>
         <FloatButton
+          ref={ref1}
           icon={<FileAddOutlined />}
           onClick={() => console.log("click")}
         />
       </Upload>
+      <Tour open={open} onClose={onCloseSteps} steps={steps} />
       <Modal
         width="80vw"
         style={{ top: "50px" }}
@@ -213,13 +231,42 @@ function App() {
         </p>
         <Rate disabled value={ModalData.star} />
         <p>+{ModalData.level}</p>
-        {ModalData.normalTags?.map(({ name, value }) => {
+        <InputNumber
+          step="4"
+          key={ModalData.id + "InputNumberlevel"}
+          defaultValue={ModalData.level}
+          onChange={(v) => {
+            ModalData.level = v;
+          }}
+        />
+        {ModalData.normalTags?.map((tag) => {
+          const { name, value } = tag;
           return (
-            <p key={ModalData.id + name}>
-              {artifactTags[name]?.chs + "+" + Fixed(artifactTags[name], value)}
-            </p>
+            <div key={ModalData.id + name}>
+              {artifactTags[name]?.chs + "+"}
+              {Fixed(artifactTags[name], value)}
+              <InputNumber
+                step="0.01"
+                defaultValue={value}
+                onChange={(v) => {
+                  tag.value = v;
+                }}
+              />
+            </div>
           );
         })}
+        {
+          <Button
+            onClick={() => {
+              console.log(ModalData.normalTags);
+              ModalData.scores = getScore(ModalData);
+              console.log(ModalData.scores);
+              setModalData({ ...ModalData });
+            }}
+          >
+            重新计算
+          </Button>
+        }
         <p>{artifact[ModalData.setName]?.chs}</p>
         <p>2件套：{artifact[ModalData.setName]?.effect2}</p>
         <p>4件套：{artifact[ModalData.setName]?.effect4}</p>
