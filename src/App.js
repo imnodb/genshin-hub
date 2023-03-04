@@ -129,7 +129,7 @@ function App() {
           )
         : art.maxScore;
       // console.log(score);
-      art.score = score;
+      art.score = score ?? 0;
       if (score >= 48) {
         arts1.push(art);
       } else if (score >= 36) {
