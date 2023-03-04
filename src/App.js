@@ -32,13 +32,8 @@ import "./App.css";
 console.log(artifact);
 
 // console.log(Object.entries(mona));
-let allArts = [];
-try {
-  var val = localStorage.getItem("allArts"); //获取存储的元素
-  allArts = JSON.parse(val); //解析出json对象
-} catch (error) {
-  console.error(error);
-}
+const val = localStorage.getItem("allArts"); //获取存储的元素
+const allArts = val ? JSON.parse(val) : []; //解析出json对象
 
 console.log(artifactIcons);
 
