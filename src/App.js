@@ -19,7 +19,7 @@ import {
   Popover,
   Space,
 } from "antd";
-import { FileAddOutlined } from "@ant-design/icons";
+import { FileAddOutlined, ExclamationCircleOutlined } from "@ant-design/icons";
 import {
   mainStatMap,
   positionToLocale,
@@ -162,6 +162,7 @@ function App() {
         key={"rise" + ModalData.id + name + v}
         onClick={() => {
           ModalData.level = ModalData.level + 4 * i;
+          ModalData.level = ModalData.level > 20 ? 20 : ModalData.level;
           tag.value = value + v;
           ModalData.scores = getScore(ModalData);
           setModalData({
@@ -220,7 +221,28 @@ function App() {
   };
 
   const handleCancel = () => {
-    setIsModalOpen(false);
+    const { confirm } = Modal;
+    const art = allArts.find(({ id }) => id === ModalData.id);
+    if (ModalData.level !== art.level) {
+      console.log("关闭详情弹窗", ModalData);
+      confirm({
+        icon: <ExclamationCircleOutlined />,
+        content: <>圣遗物已经强化，是否要更新数据！</>,
+        onOk() {
+          console.log("OK");
+          Object.assign(art, ModalData);
+          changeRatingList();
+          localStorage.setItem("allArts", JSON.stringify(allArts));
+          setIsModalOpen(false);
+        },
+        onCancel() {
+          console.log("Cancel");
+          setIsModalOpen(false);
+        },
+      });
+    } else {
+      setIsModalOpen(false);
+    }
   };
 
   const handleChange = (value) => {
