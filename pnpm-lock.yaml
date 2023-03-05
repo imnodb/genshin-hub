@@ -6,6 +6,7 @@ specifiers:
   '@testing-library/react': ^13.4.0
   '@testing-library/user-event': ^14.4.3
   antd: ^5.2.2
+  lodash: ^4.17.21
   react: ^18.2.0
   react-dom: ^18.2.0
   react-scripts: 5.0.1
@@ -18,6 +19,7 @@ dependencies:
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 14.4.3
   antd: registry.npmmirror.com/antd/5.2.2_biqbaboplfbrettd7655fr4n2y
+  lodash: registry.npmmirror.com/lodash/4.17.21
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scripts: 5.0.1_react@18.2.0
@@ -2216,7 +2218,7 @@ packages:
       chalk: 3.0.0
       css.escape: 1.5.1
       dom-accessibility-api: 0.5.14
-      lodash: 4.17.21
+      lodash: registry.npmmirror.com/lodash/4.17.21
       redent: 3.0.0
     dev: false
 
@@ -4481,7 +4483,7 @@ packages:
       eslint: ^8.1.0
     dependencies:
       eslint: 8.27.0
-      lodash: 4.17.21
+      lodash: registry.npmmirror.com/lodash/4.17.21
       string-natural-compare: 3.0.1
     dev: false
 
@@ -5332,7 +5334,7 @@ packages:
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
-      lodash: 4.17.21
+      lodash: registry.npmmirror.com/lodash/4.17.21
       pretty-error: 4.0.0
       tapable: 2.2.1
       webpack: 5.75.0
@@ -6660,10 +6662,6 @@ packages:
 
   /lodash.uniq/4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
-    dev: false
-
-  /lodash/4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: false
 
   /loose-envify/1.4.0:
@@ -8019,7 +8017,7 @@ packages:
   /pretty-error/4.0.0:
     resolution: {integrity: sha512-AoJ5YMAcXKYxKhuJGdcvse+Voc6v1RgnsR3nWcYU7q4t6z0Q6T86sv5Zq8VIRbOWWFpvdGE83LtdSMNd+6Y0xw==}
     dependencies:
-      lodash: 4.17.21
+      lodash: registry.npmmirror.com/lodash/4.17.21
       renderkid: 3.0.0
     dev: false
 
@@ -8438,7 +8436,7 @@ packages:
       css-select: 4.3.0
       dom-converter: 0.2.0
       htmlparser2: 6.1.0
-      lodash: 4.17.21
+      lodash: registry.npmmirror.com/lodash/4.17.21
       strip-ansi: 6.0.1
     dev: false
 
@@ -9720,7 +9718,7 @@ packages:
     resolution: {integrity: sha512-gAojqb/m9Q8a5IV96E3fHJM70AzCkgt4uXYX2O7EmuyOnLrViCQlsEBmF9UQIu3/aeAIp2U17rtbpZWNntQqdg==}
     engines: {node: '>=10'}
     dependencies:
-      lodash: 4.17.21
+      lodash: registry.npmmirror.com/lodash/4.17.21
       tr46: 2.1.0
       webidl-conversions: 6.1.0
     dev: false
@@ -9806,7 +9804,7 @@ packages:
       fast-json-stable-stringify: 2.1.0
       fs-extra: 9.1.0
       glob: 7.2.3
-      lodash: 4.17.21
+      lodash: registry.npmmirror.com/lodash/4.17.21
       pretty-bytes: 5.6.0
       rollup: 2.79.1
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
@@ -10355,6 +10353,12 @@ packages:
     version: 0.2.0
     dependencies:
       string-convert: registry.npmmirror.com/string-convert/0.2.1
+    dev: false
+
+  registry.npmmirror.com/lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz}
+    name: lodash
+    version: 4.17.21
     dev: false
 
   registry.npmmirror.com/qrcode.react/3.1.0_react@18.2.0:
@@ -11053,6 +11057,7 @@ packages:
     name: source-map
     version: 0.6.1
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dev: false
     optional: true
 
