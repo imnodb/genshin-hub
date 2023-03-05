@@ -173,6 +173,42 @@ function App() {
       </Button>
     ));
   }
+  // 快捷强化按钮组
+  function WillTags(props) {
+    const { ModalData } = props;
+    const { mainTag, normalTags } = ModalData;
+    // console.log(ModalData);
+    // 原本存在的属性
+    const existingTags = [mainTag.name, ...normalTags.map(({ name }) => name)];
+    const list = Object.keys(artifactEff[5]).filter(
+      (t) => !existingTags.includes(t)
+    );
+    // console.log(existingTags);
+    // console.log(list);
+    return list.map((name) => (
+      <div key={"WillTags" + ModalData.id + name}>
+        {artifactTags[name]?.chs + "+"}
+        {artifactEff[5][name].map((value) => (
+          <Button
+            key={"WillTags" + ModalData.id + name + value}
+            onClick={() => {
+              ModalData.level = ModalData.level + 4;
+              normalTags.push({
+                name,
+                value,
+              });
+              ModalData.scores = getScore(ModalData);
+              setModalData({
+                ...ModalData,
+              });
+            }}
+          >
+            {Fixed(artifactTags[name], value)}
+          </Button>
+        ))}
+      </div>
+    ));
+  }
 
   const showModal = (art) => {
     console.log(art);
@@ -299,20 +335,26 @@ function App() {
             <div>+{ModalData.level}</div>
             {ModalData.star === 5 && ModalData.level < 20 ? (
               <Popover
-                content={ModalData.normalTags?.map((tag) => {
-                  const { name, value } = tag;
-                  return (
-                    <div key={ModalData.id + name}>
-                      {artifactTags[name]?.chs + "+"}
-                      {Fixed(artifactTags[name], value)}
-                      <SplitRise
-                        ModalData={ModalData}
-                        level={ModalData.level}
-                        tag={tag}
-                      />
-                    </div>
-                  );
-                })}
+                content={
+                  ModalData.normalTags.length < 4 ? (
+                    <WillTags ModalData={ModalData} />
+                  ) : (
+                    ModalData.normalTags?.map((tag) => {
+                      const { name, value } = tag;
+                      return (
+                        <div key={ModalData.id + name}>
+                          {artifactTags[name]?.chs + "+"}
+                          {Fixed(artifactTags[name], value)}
+                          <SplitRise
+                            ModalData={ModalData}
+                            level={ModalData.level}
+                            tag={tag}
+                          />
+                        </div>
+                      );
+                    })
+                  )
+                }
                 title="强化"
                 trigger="click"
               >
