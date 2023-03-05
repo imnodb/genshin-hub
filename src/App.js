@@ -109,7 +109,6 @@ function App() {
             art.id = uuidv4();
             art.icon = artifactIcons[art.setName]?.[art.position]?.url;
             art.scores = getScore(art);
-            art.maxScore = getScore(art)?.[0]?.score;
             allArts.push(art);
             // break;
           }
@@ -288,7 +287,7 @@ function App() {
               ?.filter(({ characterName }) => names.includes(characterName))
               .map(({ score }) => score) ?? [])
           )
-        : art.maxScore;
+        : art.scores?.[0]?.score;
       // console.log(score);
       art.score = score ?? 0;
       if (score >= 48) {
