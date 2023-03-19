@@ -1805,7 +1805,7 @@ export function calScore(art) {
       if (!w.critical) {
         continue;
       } else {
-        score += 10 * w.critical;
+        score += 10;
       }
     }
     // 杯子

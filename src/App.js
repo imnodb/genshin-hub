@@ -18,6 +18,7 @@ import {
   Cascader,
   Popover,
   Space,
+  message,
 } from "antd";
 import { FileAddOutlined, ExclamationCircleOutlined } from "@ant-design/icons";
 import {
@@ -78,6 +79,7 @@ function App() {
   const [positionValue, setPositionValue] = useState([]);
   const [characterValue, setCharacterValue] = useState([]);
   const [RatingList, setRatingList] = useState([]);
+  const [messageApi, contextHolder] = message.useMessage();
 
   const steps = [
     {
@@ -109,6 +111,14 @@ function App() {
             art.id = uuidv4();
             art.icon = artifactIcons[art.setName]?.[art.position]?.url;
             art.scores = getScore(art);
+            if (art.max_score !== art.scores?.[0]?.score) {
+              console.log("圣遗物最大分数不一致\n", art);
+              messageApi.open({
+                type: "error",
+                content: "圣遗物最大分数不一致",
+              });
+              return;
+            }
             allArts.push(art);
             // break;
           }
@@ -325,6 +335,7 @@ function App() {
   console.log("RatingList", RatingList);
   return (
     <div className="App">
+      {contextHolder}
       <Upload accept=".json" beforeUpload={beforeUpload}>
         <FloatButton
           ref={ref1}
