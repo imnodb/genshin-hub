@@ -481,7 +481,7 @@ export const characters = {
     badge: tf.AmberDefault.badge,
     artifacts: [
       {
-        setNames: ["EchoesOfAnOffering4"],
+        setNames: ["noblesseOblige4", "wandererTroupe4"],
         sand: ["attackPercentage"],
         cup: ["fireBonus"],
         head: ["critical", "criticalDamage"],
@@ -1318,7 +1318,7 @@ export const characters = {
       {
         setNames: ["emblemOfSeveredFate4"],
         sand: ["attackPercentage"],
-        cup: ["waterBonus"],
+        cup: ["attackPercentage", "waterBonus"],
         head: ["critical", "criticalDamage"],
       },
       {
