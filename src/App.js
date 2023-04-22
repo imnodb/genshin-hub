@@ -117,7 +117,7 @@ function App() {
                 type: "error",
                 content: "圣遗物最大分数不一致",
               });
-              return;
+              // return;
             }
             allArts.push(art);
             // break;
