@@ -1,6 +1,8 @@
-import tf from "./gen_tf";
+import genCharacter from "./gen_character";
+import ZhCn from "./zh-cn.json";
 
-console.log(tf);
+const genCharacterValues = Object.values(genCharacter).map((c) => ({ ...c, chs: ZhCn[c.nameLocale] }))
+
 export function positionToLocale(name) {
   // eslint-disable-next-line default-case
   switch (name) {
@@ -396,7 +398,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
-    badge: tf.DilucDefault.badge,
+
     artifacts: [
       {
         setNames: ["crimsonWitch4"],
@@ -418,7 +420,7 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 226,
-    badge: tf.HuTaoDefault.badge,
+
     artifacts: [
       {
         setNames: ["crimsonWitch4", "shimenawaReminiscence4"],
@@ -438,7 +440,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
-    badge: tf.KleeDefault.badge,
+
     artifacts: [
       {
         setNames: ["crimsonWitch4"],
@@ -458,7 +460,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
-    badge: tf.YoimiyaDefault.badge,
+
     artifacts: [
       {
         setNames: ["EchoesOfAnOffering4", "shimenawaReminiscence4"],
@@ -478,7 +480,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 195,
-    badge: tf.AmberDefault.badge,
+
     artifacts: [
       {
         setNames: ["noblesseOblige4", "wandererTroupe4"],
@@ -501,7 +503,7 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 160,
-    badge: tf.BennettDefault.badge,
+
     artifacts: [
       {
         setNames: ["noblesseOblige4"],
@@ -528,7 +530,7 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 193,
-    badge: tf.ThomaDefault.badge,
+
     artifacts: [
       {
         setNames: ["emblemOfSeveredFate2", "tenacityOfTheMillelith2"],
@@ -549,7 +551,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 226,
-    badge: tf.XianglingDefault.badge,
+
     artifacts: [
       {
         setNames: ["emblemOfSeveredFate4"],
@@ -571,7 +573,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 206,
-    badge: tf.XinyanDefault.badge,
+
     artifacts: [
       {
         setNames: ["paleFlame2", "bloodstainedChivalry2"],
@@ -591,7 +593,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 195,
-    badge: tf.YanfeiDefault.badge,
+
     artifacts: [
       {
         setNames: ["wandererTroupe4"],
@@ -610,7 +612,7 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 180,
-    badge: tf.AloyDefault.badge,
+
     artifacts: [
       {
         setNames: [
@@ -636,7 +638,7 @@ export const characters = {
       recharge: 0.3,
     },
     ace: 206,
-    badge: tf.EulaDefault.badge,
+
     artifacts: [
       {
         setNames: ["paleFlame2", "bloodstainedChivalry2"],
@@ -662,7 +664,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
-    badge: tf.GanyuDefault.badge,
+
     artifacts: [
       {
         setNames: ["blizzardStrayer4"],
@@ -688,7 +690,7 @@ export const characters = {
       recharge: 0.3,
     },
     ace: 206,
-    badge: tf.KamisatoAyakaDefault.badge,
+
     artifacts: [
       {
         setNames: ["blizzardStrayer4"],
@@ -708,7 +710,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 196,
-    badge: tf.QiqiDefault.badge,
+
     artifacts: [
       {
         setNames: ["oceanHuedClam4"],
@@ -727,7 +729,7 @@ export const characters = {
       recharge: 1,
     },
     ace: 170,
-    badge: tf.ShenheDefault.badge,
+
     artifacts: [
       {
         setNames: [
@@ -753,7 +755,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 226,
-    badge: tf.ChongyunDefault.badge,
+
     artifacts: [
       {
         setNames: ["blizzardStrayer2", "noblesseOblige2"],
@@ -774,7 +776,7 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 183,
-    badge: tf.DionaDefault.badge,
+
     artifacts: [
       {
         setNames: ["maidenBeloved2", "tenacityOfTheMillelith2"],
@@ -799,7 +801,7 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 180,
-    badge: tf.KaeyaDefault.badge,
+
     artifacts: [
       {
         setNames: ["emblemOfSeveredFate4"],
@@ -839,7 +841,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 191,
-    badge: tf.RosariaDefault.badge,
+
     artifacts: [
       {
         setNames: ["noblesseOblige4"],
@@ -859,7 +861,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 191,
-    badge: tf.JeanDefault.badge,
+
     artifacts: [
       {
         setNames: ["viridescentVenerer4"],
@@ -879,7 +881,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 180,
-    badge: tf.KaedeharaKazuhaDefault.badge,
+
     artifacts: [
       {
         setNames: ["viridescentVenerer4"],
@@ -1001,7 +1003,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 195,
-    badge: tf.ShikanoinHeizouDefault.badge,
+
     artifacts: [
       {
         setNames: ["viridescentVenerer4"],
@@ -1084,7 +1086,7 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 215,
-    badge: tf.RaidenShogunDefault.badge,
+
     artifacts: [
       {
         setNames: ["emblemOfSeveredFate4"],
@@ -1104,7 +1106,7 @@ export const characters = {
       elementalMastery: 0.75,
     },
     ace: 215,
-    badge: tf.YaeMikoDefault.badge,
+
     artifacts: [
       {
         setNames: ["GildedDreams4"],
@@ -1202,7 +1204,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 191,
-    badge: tf.KujouSaraDefault.badge,
+
     artifacts: [
       {
         setNames: ["emblemOfSeveredFate4"],
@@ -1223,7 +1225,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 206,
-    badge: tf.KukiShinobuDefault.badge,
+
     artifacts: [
       {
         setNames: ["GildedDreams4"],
@@ -1293,7 +1295,7 @@ export const characters = {
       lifePercentage: 0.5,
     },
     ace: 210,
-    badge: tf.KamisatoAyatoDefault.badge,
+
     artifacts: [
       {
         setNames: ["EchoesOfAnOffering4", "heartOfDepth4"],
@@ -1359,7 +1361,7 @@ export const characters = {
       elementalMastery: 0.55,
     },
     ace: 177,
-    badge: tf.SangonomiyaKokomiDefault.badge,
+
     artifacts: [
       {
         setNames: ["tenacityOfTheMillelith4"],
@@ -1411,7 +1413,7 @@ export const characters = {
       recharge: 0.55,
     },
     ace: 212,
-    badge: tf.YelanDefault.badge,
+
     artifacts: [
       {
         setNames: ["emblemOfSeveredFate4"],
@@ -1519,7 +1521,7 @@ export const characters = {
       recharge: 0.3,
     },
     ace: 221,
-    badge: tf.AratakiIttoDefault.badge,
+
     artifacts: [
       {
         setNames: ["huskOfOpulentDreams4"],
@@ -1613,7 +1615,7 @@ export const characters = {
       attackPercentage: 0.5,
     },
     ace: 206,
-    badge: tf.NoelleDefault.badge,
+
     artifacts: [
       {
         setNames: ["huskOfOpulentDreams4"],
@@ -1651,7 +1653,7 @@ export const characters = {
       attackPercentage: 0.75,
     },
     ace: 210,
-    badge: tf.AlhaithamDefault.badge,
+
     artifacts: [
       {
         setNames: ["GildedDreams4"],
@@ -1870,17 +1872,17 @@ export function calScore(art) {
           break;
       }
     }
-    scores.push({ characterName, badge, score: Math.floor(score) });
+    scores.push({ characterName: ZhCn[genCharacter[characterName]?.nameLocale], badge: genCharacter[characterName]?.avatar, score: Math.floor(score) });
   }
   return scores.length
     ? scores.sort((a, b) => b.score - a.score)
     : [
-        {
-          characterName: "",
-          badge: "https://www.miyoushe.com/mainPage/ys-logo-v2.png",
-          score: 0,
-        },
-      ];
+      {
+        characterName: "",
+        badge: "https://www.miyoushe.com/mainPage/ys-logo-v2.png",
+        score: 0,
+      },
+    ];
 }
 
 export function getScore(art) {
@@ -1955,4 +1957,17 @@ export function getScore(art) {
     );
   }
   return calScore(art);
+}
+
+export function importScore(art) {
+
+  return art.scores.length
+    ? art.scores.map(([characterName, score]) => ({ characterName, badge: genCharacterValues.find(({ chs, avatar }) => chs === characterName)?.avatar ?? "https://www.miyoushe.com/mainPage/ys-logo-v2.png", score })).sort((a, b) => b.score - a.score)
+    : [
+      {
+        characterName: "",
+        badge: "https://www.miyoushe.com/mainPage/ys-logo-v2.png",
+        score: 0,
+      },
+    ];
 }

@@ -1,2713 +1,4384 @@
-const AetherAnemo_card = "";
-// const AetherAnemo_avatar ='';
-const AetherAnemo_splash = "";
+// generated file, do not edit
 
-const Albedo_card = "";
-// const Albedo_avatar ='';
-const Albedo_splash = "";
+// const AetherAnemo_card = ""
+// const AetherAnemo_avatar = ""
+const AetherAnemo_splash = ""
 
-const Aloy_card = "";
-// const Aloy_avatar ='';
-const Aloy_splash = "";
+// const Albedo_card = ""
+// const Albedo_avatar = ""
+const Albedo_splash = ""
 
-const Amber_card = "";
-// const Amber_avatar ='';
-const Amber_splash = "";
+// const Alhaitham_card = ""
+// const Alhaitham_avatar = ""
+const Alhaitham_splash = ""
 
-const AratakiItto_card = "";
-// const AratakiItto_avatar ='';
-const AratakiItto_splash = "";
+// const Aloy_card = ""
+// const Aloy_avatar = ""
+const Aloy_splash = ""
 
-const Barbara_card = "";
-// const Barbara_avatar ='';
-const Barbara_splash = "";
+// const Amber_card = ""
+// const Amber_avatar = ""
+const Amber_splash = ""
 
-const Beidou_card = "";
-// const Beidou_avatar ='';
-const Beidou_splash = "";
+// const AratakiItto_card = ""
+// const AratakiItto_avatar = ""
+const AratakiItto_splash = ""
 
-const Bennett_card = "";
-// const Bennett_avatar ='';
-const Bennett_splash = "";
+// const Baizhu_card = ""
+// const Baizhu_avatar = ""
+const Baizhu_splash = ""
 
-const Chongyun_card = "";
-// const Chongyun_avatar ='';
-const Chongyun_splash = "";
+// const Barbara_card = ""
+// const Barbara_avatar = ""
+const Barbara_splash = ""
 
-const Diluc_card = "";
-// const Diluc_avatar ='';
-const Diluc_splash = "";
+// const Beidou_card = ""
+// const Beidou_avatar = ""
+const Beidou_splash = ""
 
-const Diona_card = "";
-// const Diona_avatar ='';
-const Diona_splash = "";
+// const Bennett_card = ""
+// const Bennett_avatar = ""
+const Bennett_splash = ""
 
-const Eula_card = "";
-// const Eula_avatar ='';
-const Eula_splash = "";
+// const Candace_card = ""
+// const Candace_avatar = ""
+const Candace_splash = ""
 
-const Fischl_card = "";
-// const Fischl_avatar ='';
-const Fischl_splash = "";
+// const Chongyun_card = ""
+// const Chongyun_avatar = ""
+const Chongyun_splash = ""
 
-const Ganyu_card = "";
-// const Ganyu_avatar ='';
-const Ganyu_splash = "";
+// const Collei_card = ""
+// const Collei_avatar = ""
+const Collei_splash = ""
 
-const Gorou_card = "";
-// const Gorou_avatar ='';
-const Gorou_splash = "";
+// const Cyno_card = ""
+// const Cyno_avatar = ""
+const Cyno_splash = ""
 
-const HuTao_card = "";
-// const HuTao_avatar ='';
-const HuTao_splash = "";
+// const Dehya_card = ""
+// const Dehya_avatar = ""
+const Dehya_splash = ""
 
-const Jean_card = "";
-// const Jean_avatar ='';
-const Jean_splash = "";
+// const Diluc_card = ""
+// const Diluc_avatar = ""
+const Diluc_splash = ""
 
-const KaedeharaKazuha_card = "";
-// const KaedeharaKazuha_avatar ='';
-const KaedeharaKazuha_splash = "";
+// const Diona_card = ""
+// const Diona_avatar = ""
+const Diona_splash = ""
 
-const Kaeya_card = "";
-// const Kaeya_avatar ='';
-const Kaeya_splash = "";
+// const Dori_card = ""
+// const Dori_avatar = ""
+const Dori_splash = ""
 
-const KamisatoAyaka_card = "";
-// const KamisatoAyaka_avatar ='';
-const KamisatoAyaka_splash = "";
+// const Eula_card = ""
+// const Eula_avatar = ""
+const Eula_splash = ""
 
-const KamisatoAyato_card = "";
-// const KamisatoAyato_avatar ='';
-const KamisatoAyato_splash = "";
+// const Faruzan_card = ""
+// const Faruzan_avatar = ""
+const Faruzan_splash = ""
 
-const Keqing_card = "";
-// const Keqing_avatar ='';
-const Keqing_splash = "";
+// const Fischl_card = ""
+// const Fischl_avatar = ""
+const Fischl_splash = ""
 
-const Klee_card = "";
-// const Klee_avatar ='';
-const Klee_splash = "";
+// const Ganyu_card = ""
+// const Ganyu_avatar = ""
+const Ganyu_splash = ""
 
-const KujouSara_card = "";
-// const KujouSara_avatar ='';
-const KujouSara_splash = "";
+// const Gorou_card = ""
+// const Gorou_avatar = ""
+const Gorou_splash = ""
 
-const Lisa_card = "";
-// const Lisa_avatar ='';
-const Lisa_splash = "";
+// const HuTao_card = ""
+// const HuTao_avatar = ""
+const HuTao_splash = ""
 
-const Mona_card = "";
-// const Mona_avatar ='';
-const Mona_splash = "";
+// const Jean_card = ""
+// const Jean_avatar = ""
+const Jean_splash = ""
 
-const Ningguang_card = "";
-// const Ningguang_avatar ='';
-const Ningguang_splash = "";
+// const KaedeharaKazuha_card = ""
+// const KaedeharaKazuha_avatar = ""
+const KaedeharaKazuha_splash = ""
 
-const Noelle_card = "";
-// const Noelle_avatar ='';
-const Noelle_splash = "";
+// const Kaeya_card = ""
+// const Kaeya_avatar = ""
+const Kaeya_splash = ""
 
-const Qiqi_card = "";
-// const Qiqi_avatar ='';
-const Qiqi_splash = "";
+// const KamisatoAyaka_card = ""
+// const KamisatoAyaka_avatar = ""
+const KamisatoAyaka_splash = ""
 
-const RaidenShogun_card = "";
-// const RaidenShogun_avatar ='';
-const RaidenShogun_splash = "";
+// const KamisatoAyato_card = ""
+// const KamisatoAyato_avatar = ""
+const KamisatoAyato_splash = ""
 
-const Razor_card = "";
-// const Razor_avatar ='';
-const Razor_splash = "";
+// const Kaveh_card = ""
+// const Kaveh_avatar = ""
+const Kaveh_splash = ""
 
-const Rosaria_card = "";
-// const Rosaria_avatar ='';
-const Rosaria_splash = "";
+// const Keqing_card = ""
+// const Keqing_avatar = ""
+const Keqing_splash = ""
 
-const SangonomiyaKokomi_card = "";
-// const SangonomiyaKokomi_avatar ='';
-const SangonomiyaKokomi_splash = "";
+// const Klee_card = ""
+// const Klee_avatar = ""
+const Klee_splash = ""
 
-const Sayu_card = "";
-// const Sayu_avatar ='';
-const Sayu_splash = "";
+// const KujouSara_card = ""
+// const KujouSara_avatar = ""
+const KujouSara_splash = ""
 
-const Shenhe_card = "";
-// const Shenhe_avatar ='';
-const Shenhe_splash = "";
+// const KukiShinobu_card = ""
+// const KukiShinobu_avatar = ""
+const KukiShinobu_splash = ""
 
-const Sucrose_card = "";
-// const Sucrose_avatar ='';
-const Sucrose_splash = "";
+// const Layla_card = ""
+// const Layla_avatar = ""
+const Layla_splash = ""
 
-const Tartaglia_card = "";
-// const Tartaglia_avatar ='';
-const Tartaglia_splash = "";
+// const Lisa_card = ""
+// const Lisa_avatar = ""
+const Lisa_splash = ""
 
-const Thoma_card = "";
-// const Thoma_avatar ='';
-const Thoma_splash = "";
+// const Mona_card = ""
+// const Mona_avatar = ""
+const Mona_splash = ""
 
-const Venti_card = "";
-// const Venti_avatar ='';
-const Venti_splash = "";
+// const Nahida_card = ""
+// const Nahida_avatar = ""
+const Nahida_splash = ""
 
-const Xiangling_card = "";
-// const Xiangling_avatar ='';
-const Xiangling_splash = "";
+// const Nilou_card = ""
+// const Nilou_avatar = ""
+const Nilou_splash = ""
 
-const Xiao_card = "";
-// const Xiao_avatar ='';
-const Xiao_splash = "";
+// const Ningguang_card = ""
+// const Ningguang_avatar = ""
+const Ningguang_splash = ""
 
-const Xingqiu_card = "";
-// const Xingqiu_avatar ='';
-const Xingqiu_splash = "";
+// const Noelle_card = ""
+// const Noelle_avatar = ""
+const Noelle_splash = ""
 
-const Xinyan_card = "";
-// const Xinyan_avatar ='';
-const Xinyan_splash = "";
+// const Mika_card = ""
+// const Mika_avatar = ""
+const Mika_splash = ""
 
-const YaeMiko_card = "";
-// const YaeMiko_avatar ='';
-const YaeMiko_splash = "";
+// const Qiqi_card = ""
+// const Qiqi_avatar = ""
+const Qiqi_splash = ""
 
-const Yanfei_card = "";
-// const Yanfei_avatar ='';
-const Yanfei_splash = "";
+// const RaidenShogun_card = ""
+// const RaidenShogun_avatar = ""
+const RaidenShogun_splash = ""
 
-const Yoimiya_card = "";
-// const Yoimiya_avatar ='';
-const Yoimiya_splash = "";
+// const Razor_card = ""
+// const Razor_avatar = ""
+const Razor_splash = ""
 
-const Yunjin_card = "";
-// const Yunjin_avatar ='';
-const Yunjin_splash = "";
+// const Rosaria_card = ""
+// const Rosaria_avatar = ""
+const Rosaria_splash = ""
 
-const Zhongli_card = "";
-// const Zhongli_avatar ='';
-const Zhongli_splash = "";
+// const SangonomiyaKokomi_card = ""
+// const SangonomiyaKokomi_avatar = ""
+const SangonomiyaKokomi_splash = ""
 
-const template =
-  "https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north";
+// const Sayu_card = ""
+// const Sayu_avatar = ""
+const Sayu_splash = ""
 
-const getName = (name) => template.replace("#", name);
+// const Shenhe_card = ""
+// const Shenhe_avatar = ""
+const Shenhe_splash = ""
+
+// const ShikanoinHeizou_card = ""
+// const ShikanoinHeizou_avatar = ""
+const ShikanoinHeizou_splash = ""
+
+// const Sucrose_card = ""
+// const Sucrose_avatar = ""
+const Sucrose_splash = ""
+
+// const Tartaglia_card = ""
+// const Tartaglia_avatar = ""
+const Tartaglia_splash = ""
+
+// const Thoma_card = ""
+// const Thoma_avatar = ""
+const Thoma_splash = ""
+
+// const Tighnari_card = ""
+// const Tighnari_avatar = ""
+const Tighnari_splash = ""
+
+// const Venti_card = ""
+// const Venti_avatar = ""
+const Venti_splash = ""
+
+// const Wanderer_card = ""
+// const Wanderer_avatar = ""
+const Wanderer_splash = ""
+
+// const Xiangling_card = ""
+// const Xiangling_avatar = ""
+const Xiangling_splash = ""
+
+// const Xiao_card = ""
+// const Xiao_avatar = ""
+const Xiao_splash = ""
+
+// const Xingqiu_card = ""
+// const Xingqiu_avatar = ""
+const Xingqiu_splash = ""
+
+// const Xinyan_card = ""
+// const Xinyan_avatar = ""
+const Xinyan_splash = ""
+
+// const YaeMiko_card = ""
+// const YaeMiko_avatar = ""
+const YaeMiko_splash = ""
+
+// const Yanfei_card = ""
+// const Yanfei_avatar = ""
+const Yanfei_splash = ""
+
+// const Yaoyao_card = ""
+// const Yaoyao_avatar = ""
+const Yaoyao_splash = ""
+
+// const Yelan_card = ""
+// const Yelan_avatar = ""
+const Yelan_splash = ""
+
+// const Yoimiya_card = ""
+// const Yoimiya_avatar = ""
+const Yoimiya_splash = ""
+
+// const Yunjin_card = ""
+// const Yunjin_avatar = ""
+const Yunjin_splash = ""
+
+// const Zhongli_card = ""
+// const Zhongli_avatar = ""
+const Zhongli_splash = ""
+
+const template = "https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
+
+const getName = name => template.replace("#", name)
 
 // eslint-disable-next-line
 export default {
+
   AetherAnemo: {
     name: "AetherAnemo",
-    chs: "空-风",
+    nameLocale: 1273,
     element: "Anemo",
     weapon: "Sword",
     star: 5,
-    card: AetherAnemo_card,
+    // card: AetherAnemo_card,
     // avatar: AetherAnemo_avatar,
     avatar: getName("PlayerBoy"),
     splash: AetherAnemo_splash,
-    skillName1: "普通攻击·异邦铁风",
-    skillName2: "风涡剑",
-    skillName3: "风息激荡",
+    skillName1: 795,
+    skillName2: 1672,
+    skillName3: 1671,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击伤害-1" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "重击伤害-2" },
+      { index: 5, text: 1555 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1558 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "初始切割伤害" },
 
-      { index: 11, chs: "最大切割伤害" },
+      { index: 10, text: 284 },
 
-      { index: 12, chs: "初始爆风伤害" },
+      { index: 11, text: 933 },
 
-      { index: 13, chs: "最大爆风伤害" },
+      { index: 12, text: 285 },
+
+      { index: 13, text: 940 },
+
     ],
     skillMap3: [
-      { index: 14, chs: "龙卷风伤害" },
 
-      { index: 15, chs: "附加火元素伤害" },
+      { index: 14, text: 1737 },
 
-      { index: 18, chs: "附加水元素伤害" },
+      { index: 15, text: 1624 },
 
-      { index: 17, chs: "附加雷元素伤害" },
+      { index: 18, text: 1623 },
 
-      { index: 16, chs: "附加冰元素伤害" },
+      { index: 17, text: 1625 },
+
+      { index: 16, text: 1622 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Albedo: {
     name: "Albedo",
-    chs: "阿贝多",
+    nameLocale: 1614,
     element: "Geo",
     weapon: "Sword",
     star: 5,
-    card: Albedo_card,
+    // card: Albedo_card,
     // avatar: Albedo_avatar,
     avatar: getName("Albedo"),
     splash: Albedo_splash,
-    skillName1: "普通攻击·西风剑术·白",
-    skillName2: "创生法·拟造阳华",
-    skillName3: "诞生式·大地之潮",
+    skillName1: 837,
+    skillName2: 283,
+    skillName3: 1461,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击伤害-1" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "重击伤害-2" },
+      { index: 5, text: 1553 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1557 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "技能伤害" },
 
-      { index: 11, chs: "刹那之花伤害" },
+      { index: 10, text: 623 },
+
+      { index: 11, text: 287 },
+
     ],
     skillMap3: [
-      { index: 12, chs: "爆发伤害" },
 
-      { index: 13, chs: "生灭之花" },
+      { index: 12, text: 1109 },
+
+      { index: 13, text: 1188 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Alhaitham: {
+    name: "Alhaitham",
+    nameLocale: 1337,
+    element: "Dendro",
+    weapon: "Sword",
+    star: 5,
+    // card: Alhaitham_card,
+    // avatar: Alhaitham_avatar,
+    avatar: getName("Alhatham"),
+    splash: Alhaitham_splash,
+    skillName1: 813,
+    skillName2: 235,
+    skillName3: 991,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 69 },
+
+      { index: 3, text: 70 },
+
+      { index: 4, text: 396 },
+
+      { index: 5, text: 131 },
+
+      { index: 6, text: 1553 },
+
+      { index: 7, text: 1557 },
+
+      { index: 8, text: 76 },
+
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 11, text: 1274 },
+
+      { index: 12, text: 2 },
+
+      { index: 13, text: 3 },
+
+      { index: 14, text: 4 },
+
+    ],
+    skillMap3: [
+
+      { index: 15, text: 323 },
+
+    ],
+    config: [
+
+      { "default": 0.0, "max": 4.0, "min": 0.0, "name": "c2_stack", "title": 381, "type": "float" },
+
+      { "default": 0.0, "max": 3.0, "min": 0.0, "name": "c4_stack", "title": 383, "type": "float" },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "c6_rate", "title": 385, "type": "float" },
+
+    ],
+    configSkill: [
+
+      { "default": true, "name": "under_e", "title": 1153, "type": "bool" },
+
+    ],
   },
 
   Aloy: {
     name: "Aloy",
-    chs: "埃洛伊",
+    nameLocale: 420,
     element: "Cryo",
     weapon: "Bow",
     star: 5,
-    card: Aloy_card,
+    // card: Aloy_card,
     // avatar: Aloy_avatar,
     avatar: getName("Aloy"),
     splash: Aloy_splash,
-    skillName1: "普通攻击·快速射击",
-    skillName2: "冰尘雪野",
-    skillName3: "曙光预言",
+    skillName1: 801,
+    skillName2: 249,
+    skillName3: 928,
     skillMap1: [
-      { index: 0, chs: "一段伤害-1" },
 
-      { index: 1, chs: "一段伤害-2" },
+      { index: 0, text: 49 },
 
-      { index: 2, chs: "二段伤害-1" },
+      { index: 1, text: 50 },
 
-      { index: 3, chs: "三段伤害-1" },
+      { index: 2, text: 114 },
 
-      { index: 4, chs: "四段伤害-1" },
+      { index: 3, text: 68 },
 
-      { index: 5, chs: "瞄准射击" },
+      { index: 4, text: 396 },
 
-      { index: 6, chs: "满蓄力瞄准射击" },
+      { index: 5, text: 1220 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1072 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "冰尘弹伤害" },
 
-      { index: 11, chs: "冷冻炸弹伤害" },
+      { index: 10, text: 248 },
+
+      { index: 11, text: 259 },
+
     ],
-    skillMap3: [{ index: 12, chs: "技能伤害" }],
-    config: [],
+    skillMap3: [
+
+      { index: 12, text: 623 },
+
+    ],
+    config: [
+
+    ],
     configSkill: [
-      {
-        default: 4,
-        max: 4,
-        min: 0,
-        name: "coil_count",
-        title: "线圈层数",
-        type: "int",
-      },
+
+      { "default": 4, "max": 4, "min": 0, "name": "coil_count", "title": 1294, "type": "int" },
+
     ],
   },
 
   Amber: {
     name: "Amber",
-    chs: "安柏",
+    nameLocale: 511,
     element: "Pyro",
     weapon: "Bow",
     star: 4,
-    card: Amber_card,
+    // card: Amber_card,
     // avatar: Amber_avatar,
     avatar: getName("Ambor"),
     splash: Amber_splash,
-    skillName1: "普通攻击·神射手",
-    skillName2: "爆弹玩偶",
-    skillName3: "箭雨",
+    skillName1: 826,
+    skillName2: 1111,
+    skillName3: 1280,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "瞄准射击" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "满蓄力瞄准射击" },
+      { index: 5, text: 1220 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1072 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
-    skillMap2: [{ index: 10, chs: "爆炸伤害" }],
+    skillMap2: [
+
+      { index: 10, text: 1112 },
+
+    ],
     skillMap3: [
-      { index: 11, chs: "箭雨单次伤害" },
 
-      { index: 12, chs: "箭雨总伤害" },
+      { index: 11, text: 1281 },
+
+      { index: 12, text: 1282 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   AratakiItto: {
     name: "AratakiItto",
-    chs: "荒泷一斗",
+    nameLocale: 1353,
     element: "Geo",
     weapon: "Claymore",
     star: 5,
-    card: AratakiItto_card,
+    // card: AratakiItto_card,
     // avatar: AratakiItto_avatar,
     avatar: getName("Itto"),
     splash: AratakiItto_splash,
-    skillName1: "普通攻击•喧哗屋传说",
-    skillName2: "魔杀绝技•赤牛发破！",
-    skillName3: "最恶鬼王•一斗轰临！！",
+    skillName1: 845,
+    skillName2: 1718,
+    skillName3: 945,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "荒泷逆袈裟连斩伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "荒泷逆袈裟终结伤害" },
+      { index: 4, text: 1359 },
 
-      { index: 6, chs: "左一文字斩伤害" },
+      { index: 5, text: 1358 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 556 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
-    skillMap2: [{ index: 10, chs: "技能伤害" }],
-    skillMap3: [],
-    config: [],
+    skillMap2: [
+
+      { index: 10, text: 623 },
+
+    ],
+    skillMap3: [
+
+    ],
+    config: [
+
+    ],
     configSkill: [
-      {
-        default: true,
-        name: "after_q",
-        title: "处于「怒目鬼王」",
-        type: "bool",
-      },
+
+      { "default": true, "name": "after_q", "title": 430, "type": "bool" },
+
+    ],
+  },
+
+  Baizhu: {
+    name: "Baizhu",
+    nameLocale: 1206,
+    element: "Dendro",
+    weapon: "Catalyst",
+    star: 5,
+    // card: Baizhu_card,
+    // avatar: Baizhu_avatar,
+    avatar: getName("Baizhuer"),
+    splash: Baizhu_splash,
+    skillName1: 841,
+    skillName2: 480,
+    skillName3: 598,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 69 },
+
+      { index: 3, text: 70 },
+
+      { index: 4, text: 396 },
+
+      { index: 5, text: 1552 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+      { index: 10, text: 1019 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 1086 },
+
+      { index: 11, text: 749 },
+
+    ],
+    config: [
+
+      { "default": false, "name": "hp_below_50", "title": 411, "type": "bool" },
+
+    ],
+    configSkill: [
+
     ],
   },
 
   Barbara: {
     name: "Barbara",
-    chs: "芭芭拉",
+    nameLocale: 1339,
     element: "Hydro",
     weapon: "Catalyst",
     star: 4,
-    card: Barbara_card,
+    // card: Barbara_card,
     // avatar: Barbara_avatar,
     avatar: getName("Barbara"),
     splash: Barbara_splash,
-    skillName1: "普通攻击·水之浅唱",
-    skillName2: "演唱，开始♪",
-    skillName3: "闪耀奇迹♪",
+    skillName1: 809,
+    skillName2: 1073,
+    skillName3: 1588,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "下坠期间伤害" },
+      { index: 4, text: 1552 },
 
-      { index: 6, chs: "低空坠地冲击伤害" },
+      { index: 5, text: 76 },
 
-      { index: 7, chs: "高空坠地冲击伤害" },
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 8, chs: "命中治疗量" },
 
-      { index: 10, chs: "持续治疗量" },
+      { index: 8, text: 377 },
 
-      { index: 9, chs: "水珠伤害" },
+      { index: 10, text: 654 },
+
+      { index: 9, text: 1005 },
+
     ],
-    skillMap3: [{ index: 11, chs: "治疗量" }],
-    config: [],
-    configSkill: [],
+    skillMap3: [
+
+      { index: 11, text: 1020 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Beidou: {
     name: "Beidou",
-    chs: "北斗",
+    nameLocale: 304,
     element: "Electro",
     weapon: "Claymore",
     star: 4,
-    card: Beidou_card,
+    // card: Beidou_card,
     // avatar: Beidou_avatar,
     avatar: getName("Beidou"),
     splash: Beidou_splash,
-    skillName1: "普通攻击·征涛",
-    skillName2: "捉浪",
-    skillName3: "斫雷",
+    skillName1: 798,
+    skillName2: 659,
+    skillName3: 707,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击循环伤害" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "重击终结伤害" },
+      { index: 5, text: 1562 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1565 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "基础伤害" },
 
-      { index: 11, chs: "一层伤害" },
+      { index: 10, text: 428 },
 
-      { index: 12, chs: "二层伤害" },
+      { index: 11, text: 45 },
+
+      { index: 12, text: 111 },
+
     ],
     skillMap3: [
-      { index: 13, chs: "技能伤害" },
 
-      { index: 14, chs: "闪电伤害" },
+      { index: 13, text: 623 },
+
+      { index: 14, text: 1587 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Bennett: {
     name: "Bennett",
-    chs: "班尼特",
+    nameLocale: 1143,
     element: "Pyro",
     weapon: "Sword",
     star: 4,
-    card: Bennett_card,
+    // card: Bennett_card,
     // avatar: Bennett_avatar,
     avatar: getName("Bennett"),
     splash: Bennett_splash,
-    skillName1: "普通攻击·好运剑",
-    skillName2: "热情过载",
-    skillName3: "美妙旅程",
+    skillName1: 792,
+    skillName2: 1101,
+    skillName3: 1317,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击伤害-1" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "重击伤害-2" },
+      { index: 5, text: 1553 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1557 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "点按伤害" },
 
-      { index: 11, chs: "一段蓄力伤害-1" },
+      { index: 10, text: 1089 },
 
-      { index: 12, chs: "一段蓄力伤害-2" },
+      { index: 11, text: 56 },
 
-      { index: 13, chs: "二段蓄力伤害-1" },
+      { index: 12, text: 57 },
 
-      { index: 14, chs: "二段蓄力伤害-2" },
+      { index: 13, text: 121 },
 
-      { index: 15, chs: "爆炸伤害" },
+      { index: 14, text: 122 },
+
+      { index: 15, text: 1113 },
+
     ],
     skillMap3: [
-      { index: 16, chs: "技能伤害" },
 
-      { index: 17, chs: "持续治疗" },
+      { index: 16, text: 623 },
+
+      { index: 17, text: 652 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Candace: {
+    name: "Candace",
+    nameLocale: 412,
+    element: "Hydro",
+    weapon: "Polearm",
+    star: 4,
+    // card: Candace_card,
+    // avatar: Candace_avatar,
+    avatar: getName("Candace"),
+    splash: Candace_splash,
+    skillName1: 811,
+    skillName2: 407,
+    skillName3: 405,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 69 },
+
+      { index: 3, text: 70 },
+
+      { index: 4, text: 396 },
+
+      { index: 5, text: 1552 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 427 },
+
+      { index: 10, text: 1393 },
+
+    ],
+    skillMap3: [
+
+      { index: 11, text: 623 },
+
+      { index: 12, text: 1004 },
+
+    ],
+    config: [
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "c2_rate", "title": 380, "type": "float" },
+
+    ],
+    configSkill: [
+
+      { "default": true, "name": "crown", "title": 1480, "type": "bool" },
+
+    ],
   },
 
   Chongyun: {
     name: "Chongyun",
-    chs: "重云",
+    nameLocale: 1543,
     element: "Cryo",
     weapon: "Claymore",
     star: 4,
-    card: Chongyun_card,
+    // card: Chongyun_card,
     // avatar: Chongyun_avatar,
     avatar: getName("Chongyun"),
     splash: Chongyun_splash,
-    skillName1: "普通攻击·灭邪四式",
-    skillName2: "灵刃·重华叠霜",
-    skillName3: "灵刃·云开星落",
+    skillName1: 816,
+    skillName2: 1085,
+    skillName3: 1084,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击循环伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击终结伤害" },
+      { index: 4, text: 1562 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1565 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
-    skillMap2: [{ index: 9, chs: "技能伤害" }],
-    skillMap3: [{ index: 10, chs: "技能伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 10, text: 623 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Collei: {
+    name: "Collei",
+    nameLocale: 973,
+    element: "Dendro",
+    weapon: "Bow",
+    star: 4,
+    // card: Collei_card,
+    // avatar: Collei_avatar,
+    avatar: getName("Collei"),
+    splash: Collei_splash,
+    skillName1: 824,
+    skillName2: 646,
+    skillName3: 1132,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1220 },
+
+      { index: 5, text: 1072 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 10, text: 1110 },
+
+      { index: 11, text: 1493 },
+
+    ],
+    config: [
+
+      { "default": false, "name": "background", "title": 432, "type": "bool" },
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Cyno: {
+    name: "Cyno",
+    nameLocale: 1478,
+    element: "Electro",
+    weapon: "Polearm",
+    star: 5,
+    // card: Cyno_card,
+    // avatar: Cyno_avatar,
+    avatar: getName("Cyno"),
+    splash: Cyno_splash,
+    skillName1: 783,
+    skillName2: 1271,
+    skillName3: 406,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 71 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1552 },
+
+      { index: 5, text: 76 },
+
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
+      { index: 11, text: 361 },
+
+      { index: 12, text: 364 },
+
+      { index: 13, text: 362 },
+
+      { index: 14, text: 368 },
+
+      { index: 15, text: 365 },
+
+      { index: 16, text: 370 },
+
+      { index: 17, text: 363 },
+
+      { index: 18, text: 366 },
+
+      { index: 19, text: 371 },
+
+    ],
+    skillMap2: [
+
+      { index: 8, text: 623 },
+
+      { index: 9, text: 367 },
+
+      { index: 10, text: 369 },
+
+    ],
+    skillMap3: [
+
+    ],
+    config: [
+
+      { "default": 4.0, "max": 5.0, "min": 0.0, "name": "c2_stack", "title": 378, "type": "float" },
+
+      { "default": true, "name": "after_q", "title": 360, "type": "bool" },
+
+    ],
+    configSkill: [
+
+      { "default": true, "name": "under_judication", "title": 1441, "type": "bool" },
+
+    ],
+  },
+
+  Dehya: {
+    name: "Dehya",
+    nameLocale: 1525,
+    element: "Pyro",
+    weapon: "Claymore",
+    star: 5,
+    // card: Dehya_card,
+    // avatar: Dehya_avatar,
+    avatar: getName("Dehya"),
+    splash: Dehya_splash,
+    skillName1: 804,
+    skillName2: 1107,
+    skillName3: 1088,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1562 },
+
+      { index: 5, text: 1565 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 261 },
+
+      { index: 10, text: 290 },
+
+      { index: 11, text: 1661 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 1096 },
+
+      { index: 13, text: 1102 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "c2_rate", "title": 110, "type": "float" },
+
+      { "default": 3.5, "max": 4.0, "min": 0.0, "name": "c6_stack", "title": 230, "type": "float" },
+
+    ],
   },
 
   Diluc: {
     name: "Diluc",
-    chs: "迪卢克",
+    nameLocale: 1519,
     element: "Pyro",
     weapon: "Claymore",
     star: 5,
-    card: Diluc_card,
+    // card: Diluc_card,
     // avatar: Diluc_avatar,
     avatar: getName("Diluc"),
     splash: Diluc_splash,
-    skillName1: "普通攻击·淬炼之剑",
-    skillName2: "逆焰之刃",
-    skillName3: "黎明",
+    skillName1: 812,
+    skillName2: 1532,
+    skillName3: 1728,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击循环伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击终结伤害" },
+      { index: 4, text: 1562 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1565 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 9, chs: "一段伤害" },
 
-      { index: 10, chs: "二段伤害" },
+      { index: 9, text: 48 },
 
-      { index: 11, chs: "三段伤害" },
+      { index: 10, text: 114 },
+
+      { index: 11, text: 68 },
+
     ],
     skillMap3: [
-      { index: 12, chs: "斩击伤害" },
 
-      { index: 13, chs: "持续伤害" },
+      { index: 12, text: 705 },
 
-      { index: 14, chs: "爆裂伤害" },
+      { index: 13, text: 650 },
+
+      { index: 14, text: 1114 },
+
     ],
-    config: [],
+    config: [
+
+    ],
     configSkill: [
-      { default: true, name: "pyro", title: "是否被大招附魔", type: "bool" },
+
+      { "default": true, "name": "pyro", "title": 770, "type": "bool" },
+
     ],
   },
 
   Diona: {
     name: "Diona",
-    chs: "迪奥娜",
+    nameLocale: 1521,
     element: "Cryo",
     weapon: "Bow",
     star: 4,
-    card: Diona_card,
+    // card: Diona_card,
     // avatar: Diona_avatar,
     avatar: getName("Diona"),
     splash: Diona_splash,
-    skillName1: "普通攻击·猎人射术",
-    skillName2: "猫爪冻冻",
-    skillName3: "最烈特调",
+    skillName1: 821,
+    skillName2: 1131,
+    skillName3: 946,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "瞄准射击" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "满蓄力瞄准射击" },
+      { index: 5, text: 1220 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1072 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
-    skillMap2: [{ index: 10, chs: "猫爪伤害" }],
+    skillMap2: [
+
+      { index: 10, text: 1130 },
+
+    ],
     skillMap3: [
-      { index: 11, chs: "技能伤害" },
 
-      { index: 12, chs: "领域持续伤害" },
+      { index: 11, text: 623 },
 
-      { index: 13, chs: "持续治疗量" },
+      { index: 12, text: 1663 },
+
+      { index: 13, text: 655 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Dori: {
+    name: "Dori",
+    nameLocale: 442,
+    element: "Electro",
+    weapon: "Claymore",
+    star: 4,
+    // card: Dori_card,
+    // avatar: Dori_avatar,
+    avatar: getName("Dori"),
+    splash: Dori_splash,
+    skillName1: 793,
+    skillName2: 1584,
+    skillName3: 327,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 115 },
+
+      { index: 2, text: 116 },
+
+      { index: 3, text: 68 },
+
+      { index: 4, text: 1562 },
+
+      { index: 5, text: 1565 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 713 },
+
+      { index: 10, text: 389 },
+
+    ],
+    skillMap3: [
+
+      { index: 11, text: 1517 },
+
+      { index: 12, text: 653 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+      { "default": false, "name": "c6", "title": 32, "type": "bool" },
+
+    ],
   },
 
   Eula: {
     name: "Eula",
-    chs: "优菈",
+    nameLocale: 155,
     element: "Cryo",
     weapon: "Claymore",
     star: 5,
-    card: Eula_card,
+    // card: Eula_card,
     // avatar: Eula_avatar,
     avatar: getName("Eula"),
     splash: Eula_splash,
-    skillName1: "普通攻击·西风剑术·宗室",
-    skillName2: "冰潮的涡旋",
-    skillName3: "凝浪之光剑",
+    skillName1: 836,
+    skillName2: 255,
+    skillName3: 269,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害-1" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "三段伤害-2" },
+      { index: 2, text: 69 },
 
-      { index: 4, chs: "四段伤害" },
+      { index: 3, text: 70 },
 
-      { index: 5, chs: "五段伤害-1" },
+      { index: 4, text: 396 },
 
-      { index: 6, chs: "五段伤害-2" },
+      { index: 5, text: 132 },
 
-      { index: 7, chs: "重击循环伤害" },
+      { index: 6, text: 133 },
 
-      { index: 8, chs: "重击终结伤害" },
+      { index: 7, text: 1562 },
 
-      { index: 9, chs: "下坠期间伤害" },
+      { index: 8, text: 1565 },
 
-      { index: 10, chs: "低空坠地冲击伤害" },
+      { index: 9, text: 76 },
 
-      { index: 11, chs: "高空坠地冲击伤害" },
+      { index: 10, text: 162 },
+
+      { index: 11, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 12, chs: "点按伤害" },
 
-      { index: 13, chs: "长按伤害" },
+      { index: 12, text: 1089 },
 
-      { index: 14, chs: "冰涡之剑伤害" },
+      { index: 13, text: 1585 },
 
-      { index: 15, chs: "残缺光降之剑" },
+      { index: 14, text: 254 },
+
+      { index: 15, text: 992 },
+
     ],
     skillMap3: [
-      { index: 16, chs: "技能伤害" },
 
-      { index: 17, chs: "光降之剑" },
+      { index: 16, text: 623 },
+
+      { index: 17, text: 221 },
+
     ],
-    config: [],
+    config: [
+
+    ],
     configSkill: [
-      {
-        default: 0,
-        max: 30,
-        min: 0,
-        name: "lightfall_stack",
-        title: "光降之剑能量层数",
-        type: "int",
-      },
+
+      { "default": 0, "max": 30, "min": 0, "name": "lightfall_stack", "title": 222, "type": "int" },
+
+    ],
+  },
+
+  Faruzan: {
+    name: "Faruzan",
+    nameLocale: 1140,
+    element: "Anemo",
+    weapon: "Bow",
+    star: 4,
+    // card: Faruzan_card,
+    // avatar: Faruzan_avatar,
+    avatar: getName("Faruzan"),
+    splash: Faruzan_splash,
+    skillName1: 840,
+    skillName2: 1660,
+    skillName3: 638,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1552 },
+
+      { index: 4, text: 1072 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+      { index: 10, text: 1670 },
+
+    ],
+    skillMap3: [
+
+      { index: 11, text: 623 },
+
+    ],
+    config: [
+
+      { "default": 1.0, "max": 1.0, "min": 0.0, "name": "q_ratio", "title": 37, "type": "float" },
+
+    ],
+    configSkill: [
+
+      { "default": 1.0, "max": 1.0, "min": 0.0, "name": "talent2_ratio", "title": 33, "type": "float" },
+
     ],
   },
 
   Fischl: {
     name: "Fischl",
-    chs: "菲谢尔",
+    nameLocale: 1385,
     element: "Electro",
     weapon: "Bow",
     star: 4,
-    card: Fischl_card,
+    // card: Fischl_card,
     // avatar: Fischl_avatar,
     avatar: getName("Fischl"),
     splash: Fischl_splash,
-    skillName1: "普通攻击·罪灭之矢",
-    skillName2: "夜巡影翼",
-    skillName3: "至夜幻现",
+    skillName1: 830,
+    skillName2: 451,
+    skillName3: 1336,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "瞄准射击" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "满蓄力瞄准射击" },
+      { index: 5, text: 1220 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1072 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "奥兹攻击伤害" },
 
-      { index: 11, chs: "召唤伤害" },
+      { index: 10, text: 489 },
+
+      { index: 11, text: 347 },
+
     ],
-    skillMap3: [{ index: 12, chs: "落雷伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap3: [
+
+      { index: 12, text: 1389 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Ganyu: {
     name: "Ganyu",
-    chs: "甘雨",
+    nameLocale: 1162,
     element: "Cryo",
     weapon: "Bow",
     star: 5,
-    card: Ganyu_card,
+    // card: Ganyu_card,
     // avatar: Ganyu_avatar,
     avatar: getName("Ganyu"),
     splash: Ganyu_splash,
-    skillName1: "普通攻击·流天射术",
-    skillName2: "山泽麟迹",
-    skillName3: "降众天华",
+    skillName1: 810,
+    skillName2: 549,
+    skillName3: 1627,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "六段伤害" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "瞄准射击" },
+      { index: 5, text: 232 },
 
-      { index: 7, chs: "一段蓄力瞄准射击" },
+      { index: 6, text: 1220 },
 
-      { index: 8, chs: "霜华矢命中伤害" },
+      { index: 7, text: 58 },
 
-      { index: 9, chs: "霜华矢·霜华绽发伤害" },
+      { index: 8, text: 1656 },
 
-      { index: 10, chs: "下坠期间伤害" },
+      { index: 9, text: 1655 },
 
-      { index: 11, chs: "低空坠地冲击伤害" },
+      { index: 10, text: 76 },
 
-      { index: 12, chs: "高空坠地冲击伤害" },
+      { index: 11, text: 162 },
+
+      { index: 12, text: 1709 },
+
     ],
-    skillMap2: [{ index: 13, chs: "技能伤害" }],
-    skillMap3: [{ index: 14, chs: "冰棱伤害" }],
+    skillMap2: [
+
+      { index: 13, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 14, text: 253 },
+
+    ],
     config: [
-      {
-        default: 0.0,
-        max: 1.0,
-        min: 0.0,
-        name: "talent2_rate",
-        title: "天赋「天地交泰」应用比例",
-        type: "float",
-      },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent2_rate", "title": 471, "type": "float" },
+
     ],
     configSkill: [
-      {
-        default: 0.0,
-        max: 1.0,
-        min: 0.0,
-        name: "talent1_rate",
-        title: "天赋「唯此一心」应用比例",
-        type: "float",
-      },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent1_rate", "title": 469, "type": "float" },
+
     ],
   },
 
   Gorou: {
     name: "Gorou",
-    chs: "五郎",
+    nameLocale: 136,
     element: "Geo",
     weapon: "Bow",
     star: 4,
-    card: Gorou_card,
+    // card: Gorou_card,
     // avatar: Gorou_avatar,
     avatar: getName("Gorou"),
     splash: Gorou_splash,
-    skillName1: "普通攻击•呲牙裂扇箭",
-    skillName2: "犬坂吠吠方圆阵",
-    skillName3: "兽牙逐突形胜战法",
+    skillName1: 844,
+    skillName2: 1117,
+    skillName3: 238,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "瞄准射击" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "满蓄力瞄准射击" },
+      { index: 4, text: 1220 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1072 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
-    skillMap2: [{ index: 9, chs: "技能伤害" }],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+    ],
     skillMap3: [
-      { index: 10, chs: "技能伤害" },
 
-      { index: 11, chs: "岩晶崩破伤害" },
+      { index: 10, text: 623 },
+
+      { index: 11, text: 552 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   HuTao: {
     name: "HuTao",
-    chs: "胡桃",
+    nameLocale: 1331,
     element: "Pyro",
     weapon: "Polearm",
     star: 5,
-    card: HuTao_card,
+    // card: HuTao_card,
     // avatar: HuTao_avatar,
     avatar: getName("Hutao"),
     splash: HuTao_splash,
-    skillName1: "普通攻击·往生秘传枪法",
-    skillName2: "蝶引来生",
-    skillName3: "安神秘法",
+    skillName1: 797,
+    skillName2: 1399,
+    skillName3: 513,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害-1" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "五段伤害-2" },
+      { index: 4, text: 132 },
 
-      { index: 6, chs: "六段伤害" },
+      { index: 5, text: 133 },
 
-      { index: 7, chs: "重击伤害" },
+      { index: 6, text: 232 },
 
-      { index: 8, chs: "下坠期间伤害" },
+      { index: 7, text: 1552 },
 
-      { index: 9, chs: "低空坠地冲击伤害" },
+      { index: 8, text: 76 },
 
-      { index: 10, chs: "高空坠地冲击伤害" },
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
     ],
-    skillMap2: [{ index: 11, chs: "血梅香伤害" }],
-    skillMap3: [
-      { index: 12, chs: "技能伤害" },
+    skillMap2: [
 
-      { index: 13, chs: "低血量时技能伤害" },
+      { index: 11, text: 1402 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 623 },
+
+      { index: 13, text: 163 },
+
     ],
     config: [
-      { default: true, name: "le_50", title: "生命值低于50%", type: "bool" },
+
+      { "default": true, "name": "le_50", "title": 1174, "type": "bool" },
+
     ],
     configSkill: [
-      { default: true, name: "after_e", title: "彼岸蝶舞", type: "bool" },
+
+      { "default": true, "name": "after_e", "title": 586, "type": "bool" },
+
     ],
   },
 
   Jean: {
     name: "Jean",
-    chs: "琴",
+    nameLocale: 1155,
     element: "Anemo",
     weapon: "Sword",
     star: 5,
-    card: Jean_card,
+    // card: Jean_card,
     // avatar: Jean_avatar,
     avatar: getName("Qin"),
     splash: Jean_splash,
-    skillName1: "普通攻击·西风剑术",
-    skillName2: "风压剑",
-    skillName3: "蒲公英之风",
+    skillName1: 834,
+    skillName2: 1669,
+    skillName3: 1391,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击伤害" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1552 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
-    skillMap2: [{ index: 9, chs: "技能伤害" }],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+    ],
     skillMap3: [
-      { index: 10, chs: "爆发伤害" },
 
-      { index: 11, chs: "出入领域伤害" },
+      { index: 10, text: 1109 },
 
-      { index: 12, chs: "领域发动治疗量" },
+      { index: 11, text: 274 },
 
-      { index: 13, chs: "持续治疗" },
+      { index: 12, text: 1662 },
+
+      { index: 13, text: 651 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   KaedeharaKazuha: {
     name: "KaedeharaKazuha",
-    chs: "枫原万叶",
+    nameLocale: 961,
     element: "Anemo",
     weapon: "Sword",
     star: 5,
-    card: KaedeharaKazuha_card,
+    // card: KaedeharaKazuha_card,
     // avatar: KaedeharaKazuha_avatar,
     avatar: getName("Kazuha"),
     splash: KaedeharaKazuha_splash,
-    skillName1: "普通攻击·我流剑术",
-    skillName2: "千早振",
-    skillName3: "万叶之一刀",
+    skillName1: 802,
+    skillName2: 317,
+    skillName3: 63,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害-1" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "三段伤害-2" },
+      { index: 2, text: 69 },
 
-      { index: 4, chs: "四段伤害" },
+      { index: 3, text: 70 },
 
-      { index: 5, chs: "五段伤害/3" },
+      { index: 4, text: 396 },
 
-      { index: 6, chs: "重击伤害-1" },
+      { index: 5, text: 134 },
 
-      { index: 6, chs: "重击伤害-2" },
+      { index: 6, text: 1554 },
 
-      { index: 8, chs: "下坠期间伤害" },
+      { index: 6, text: 1556 },
 
-      { index: 9, chs: "低空坠地冲击伤害" },
+      { index: 8, text: 76 },
 
-      { index: 10, chs: "高空坠地冲击伤害" },
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 11, chs: "乱岚拨止：下坠期间伤害" },
 
-      { index: 12, chs: "乱岚拨止：低空坠地冲击伤害" },
+      { index: 11, text: 103 },
 
-      { index: 13, chs: "乱岚拨止：高空坠地冲击伤害" },
+      { index: 12, text: 104 },
 
-      { index: 14, chs: "乱岚拨止：火元素转化伤害" },
+      { index: 13, text: 109 },
 
-      { index: 15, chs: "乱岚拨止：水元素转化伤害" },
+      { index: 14, text: 107 },
 
-      { index: 16, chs: "乱岚拨止：冰元素转化伤害" },
+      { index: 15, text: 106 },
 
-      { index: 17, chs: "乱岚拨止：雷元素转化伤害" },
+      { index: 16, text: 105 },
 
-      { index: 18, chs: "点按技能伤害" },
+      { index: 17, text: 108 },
 
-      { index: 19, chs: "长按技能伤害" },
+      { index: 18, text: 1091 },
+
+      { index: 19, text: 1586 },
+
     ],
     skillMap3: [
-      { index: 20, chs: "斩击伤害" },
 
-      { index: 21, chs: "持续伤害" },
+      { index: 20, text: 705 },
 
-      { index: 22, chs: "附加火元素伤害" },
+      { index: 21, text: 650 },
 
-      { index: 23, chs: "附加水元素伤害" },
+      { index: 22, text: 1624 },
 
-      { index: 24, chs: "附加冰元素伤害" },
+      { index: 23, text: 1623 },
 
-      { index: 25, chs: "附加雷元素伤害" },
+      { index: 24, text: 1622 },
+
+      { index: 25, text: 1625 },
+
     ],
-    config: [],
+    config: [
+
+    ],
     configSkill: [
-      {
-        default: false,
-        name: "after_e_or_q",
-        title: "六命：血赤叶红",
-        type: "bool",
-      },
+
+      { "default": false, "name": "after_e_or_q", "title": 231, "type": "bool" },
+
     ],
   },
 
   Kaeya: {
     name: "Kaeya",
-    chs: "凯亚",
+    nameLocale: 272,
     element: "Cryo",
     weapon: "Sword",
     star: 4,
-    card: Kaeya_card,
+    // card: Kaeya_card,
     // avatar: Kaeya_avatar,
     avatar: getName("Kaeya"),
     splash: Kaeya_splash,
-    skillName1: "普通攻击·仪典剑术",
-    skillName2: "霜袭",
-    skillName3: "凛冽轮舞",
+    skillName1: 787,
+    skillName2: 1658,
+    skillName3: 264,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击伤害-1" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "重击伤害-2" },
+      { index: 5, text: 1553 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1557 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
-    skillMap2: [{ index: 10, chs: "技能伤害" }],
-    skillMap3: [{ index: 11, chs: "技能伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap2: [
+
+      { index: 10, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 11, text: 623 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   KamisatoAyaka: {
     name: "KamisatoAyaka",
-    chs: "神里绫华",
+    nameLocale: 1253,
     element: "Cryo",
     weapon: "Sword",
     star: 5,
-    card: KamisatoAyaka_card,
+    // card: KamisatoAyaka_card,
     // avatar: KamisatoAyaka_avatar,
     avatar: getName("Ayaka"),
     splash: KamisatoAyaka_splash,
-    skillName1: "普通攻击·神里流·倾",
-    skillName2: "神里流·冰华",
-    skillName3: "神里流·霜灭",
+    skillName1: 827,
+    skillName2: 1243,
+    skillName3: 1246,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害/3" },
+      { index: 2, text: 68 },
 
-      { index: 5, chs: "五段伤害" },
+      { index: 3, text: 401 },
 
-      { index: 6, chs: "重击伤害/3" },
+      { index: 5, text: 131 },
 
-      { index: 8, chs: "下坠期间伤害" },
+      { index: 6, text: 1559 },
 
-      { index: 9, chs: "低空坠地冲击伤害" },
+      { index: 8, text: 76 },
 
-      { index: 10, chs: "高空坠地冲击伤害" },
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
     ],
-    skillMap2: [{ index: 11, chs: "技能伤害" }],
-    skillMap3: [
-      { index: 12, chs: "切割伤害" },
+    skillMap2: [
 
-      { index: 13, chs: "绽放伤害" },
+      { index: 11, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 281 },
+
+      { index: 13, text: 1306 },
+
     ],
     config: [
-      {
-        default: 0.0,
-        max: 1.0,
-        min: 0.0,
-        name: "talent1_rate",
-        title: "天赋「天罪国罪镇词」应用比例",
-        type: "float",
-      },
 
-      {
-        default: 0.0,
-        max: 1.0,
-        min: 0.0,
-        name: "talent2_rate",
-        title: "天赋「寒天宣命祝词」应用比例",
-        type: "float",
-      },
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent1_rate", "title": 472, "type": "float" },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent2_rate", "title": 473, "type": "float" },
+
     ],
     configSkill: [
-      { default: true, name: "after_dash", title: "神里流·霰步", type: "bool" },
 
-      { default: false, name: "use_c6", title: "六命效果", type: "bool" },
+      { "default": true, "name": "after_dash", "title": 1247, "type": "bool" },
+
+      { "default": false, "name": "use_c6", "title": 228, "type": "bool" },
+
     ],
   },
 
   KamisatoAyato: {
     name: "KamisatoAyato",
-    chs: "神里绫人",
+    nameLocale: 1248,
     element: "Hydro",
     weapon: "Sword",
     star: 5,
-    card: KamisatoAyato_card,
+    // card: KamisatoAyato_card,
     // avatar: KamisatoAyato_avatar,
     avatar: getName("Ayato"),
     splash: KamisatoAyato_splash,
-    skillName1: "普通攻击·神里流·转",
-    skillName2: "神里流·镜花",
-    skillName3: "神里流·水囿",
+    skillName1: 828,
+    skillName2: 1245,
+    skillName3: 1244,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "一段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "一段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "一段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "一段伤害" },
+      { index: 3, text: 395 },
 
-      { index: 5, chs: "重击伤害" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1552 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 9, chs: "一段瞬水剑伤害" },
 
-      { index: 10, chs: "二段瞬水剑伤害" },
+      { index: 9, text: 54 },
 
-      { index: 11, chs: "三段瞬水剑伤害" },
+      { index: 10, text: 119 },
 
-      { index: 12, chs: "水影伤害" },
+      { index: 11, text: 75 },
+
+      { index: 12, text: 1002 },
+
     ],
-    skillMap3: [{ index: 13, chs: "水花剑伤害" }],
-    config: [],
-    configSkill: [
-      {
-        default: 4,
-        max: 5,
-        min: 0,
-        name: "e_stack",
-        title: "「浪闪」层数",
-        type: "int",
-      },
+    skillMap3: [
 
-      { default: true, name: "in_q", title: "处于「水囿」", type: "bool" },
+      { index: 13, text: 1006 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+      { "default": 4, "max": 5, "min": 0, "name": "e_stack", "title": 30, "type": "int" },
+
+      { "default": true, "name": "in_q", "title": 431, "type": "bool" },
+
+    ],
+  },
+
+  Kaveh: {
+    name: "Kaveh",
+    nameLocale: 324,
+    element: "Dendro",
+    weapon: "Claymore",
+    star: 4,
+    // card: Kaveh_card,
+    // avatar: Kaveh_avatar,
+    avatar: getName("Kaveh"),
+    splash: Kaveh_splash,
+    skillName1: 808,
+    skillName2: 1204,
+    skillName3: 1290,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1562 },
+
+      { index: 5, text: 1565 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 10, text: 623 },
+
+    ],
+    config: [
+
+      { "default": 0.0, "max": 4.0, "min": 0.0, "name": "talent2_stack", "title": 474, "type": "float" },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "c2_rate", "title": 382, "type": "float" },
+
+    ],
+    configSkill: [
+
+      { "default": false, "name": "after_q", "title": 38, "type": "bool" },
+
     ],
   },
 
   Keqing: {
     name: "Keqing",
-    chs: "刻晴",
+    nameLocale: 288,
     element: "Electro",
     weapon: "Sword",
     star: 5,
-    card: Keqing_card,
+    // card: Keqing_card,
     // avatar: Keqing_avatar,
     avatar: getName("Keqing"),
     splash: Keqing_splash,
-    skillName1: "普通攻击·云来剑法",
-    skillName2: "星斗归位",
-    skillName3: "天街巡游",
+    skillName1: 785,
+    skillName2: 758,
+    skillName3: 466,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害-1" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "四段伤害-2" },
+      { index: 3, text: 397 },
 
-      { index: 5, chs: "五段伤害" },
+      { index: 4, text: 398 },
 
-      { index: 6, chs: "重击伤害-1" },
+      { index: 5, text: 131 },
 
-      { index: 7, chs: "重击伤害-2" },
+      { index: 6, text: 1553 },
 
-      { index: 8, chs: "下坠期间伤害" },
+      { index: 7, text: 1557 },
 
-      { index: 9, chs: "低空坠地冲击伤害" },
+      { index: 8, text: 76 },
 
-      { index: 10, chs: "高空坠地冲击伤害" },
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 11, chs: "雷楔伤害" },
 
-      { index: 12, chs: "斩击伤害" },
+      { index: 11, text: 1638 },
 
-      { index: 13, chs: "雷暴连斩伤害/2" },
+      { index: 12, text: 705 },
+
+      { index: 13, text: 1637 },
+
     ],
     skillMap3: [
-      { index: 15, chs: "技能伤害" },
 
-      { index: 16, chs: "连斩伤害/8" },
+      { index: 15, text: 623 },
 
-      { index: 18, chs: "最后一击伤害" },
+      { index: 16, text: 1518 },
+
+      { index: 18, text: 930 },
+
     ],
     config: [
-      {
-        default: 0.0,
-        max: 1.0,
-        min: 0.0,
-        name: "talent2_rate",
-        title: "天赋「玉衡之贵」应用比例",
-        type: "float",
-      },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent2_rate", "title": 475, "type": "float" },
+
     ],
     configSkill: [
-      { default: true, name: "after_e", title: "E附魔", type: "bool" },
+
+      { "default": true, "name": "after_e", "title": 11, "type": "bool" },
+
     ],
   },
 
   Klee: {
     name: "Klee",
-    chs: "可莉",
+    nameLocale: 348,
     element: "Pyro",
     weapon: "Catalyst",
     star: 5,
-    card: Klee_card,
+    // card: Klee_card,
     // avatar: Klee_avatar,
     avatar: getName("Klee"),
     splash: Klee_splash,
-    skillName1: "普通攻击·砰砰",
-    skillName2: "蹦蹦炸弹",
-    skillName3: "轰轰火花",
+    skillName1: 823,
+    skillName2: 1495,
+    skillName3: 1500,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "重击伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击伤害（带天赋）" },
+      { index: 3, text: 1552 },
 
-      { index: 5, chs: "下坠期间伤害" },
+      { index: 4, text: 1560 },
 
-      { index: 6, chs: "低空坠地冲击伤害" },
+      { index: 5, text: 76 },
 
-      { index: 7, chs: "高空坠地冲击伤害" },
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 8, chs: "蹦蹦炸弹伤害" },
 
-      { index: 9, chs: "诡雷伤害" },
+      { index: 8, text: 1496 },
+
+      { index: 9, text: 1462 },
+
     ],
-    skillMap3: [{ index: 10, chs: "轰轰火花伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap3: [
+
+      { index: 10, text: 1501 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   KujouSara: {
     name: "KujouSara",
-    chs: "九条裟罗",
+    nameLocale: 97,
     element: "Electro",
     weapon: "Bow",
     star: 4,
-    card: KujouSara_card,
+    // card: KujouSara_card,
     // avatar: KujouSara_avatar,
     avatar: getName("Sara"),
     splash: KujouSara_splash,
-    skillName1: "普通攻击•天狗传弓术",
-    skillName2: "鸦羽天狗霆雷召咒",
-    skillName3: "煌煌千道镇式",
+    skillName1: 846,
+    skillName2: 1720,
+    skillName3: 1106,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "瞄准射击" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "满蓄力瞄准射击" },
+      { index: 5, text: 1220 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1072 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
-    skillMap2: [{ index: 10, chs: "天狗咒雷•伏伤害" }],
+    skillMap2: [
+
+      { index: 10, text: 457 },
+
+    ],
     skillMap3: [
-      { index: 11, chs: "天狗咒雷•金刚坏伤害" },
 
-      { index: 12, chs: "天狗咒雷•雷砾伤害" },
+      { index: 11, text: 458 },
+
+      { index: 12, text: 459 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  KukiShinobu: {
+    name: "KukiShinobu",
+    nameLocale: 92,
+    element: "Electro",
+    weapon: "Sword",
+    star: 4,
+    // card: KukiShinobu_card,
+    // avatar: KukiShinobu_avatar,
+    avatar: getName("Shinobu"),
+    splash: KukiShinobu_splash,
+    skillName1: 800,
+    skillName2: 1492,
+    skillName3: 587,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1553 },
+
+      { index: 5, text: 1557 },
+
+      { index: 6, text: 1552 },
+
+      { index: 7, text: 76 },
+
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 10, text: 623 },
+
+      { index: 11, text: 1491 },
+
+      { index: 12, text: 1490 },
+
+    ],
+    skillMap3: [
+
+      { index: 13, text: 322 },
+
+      { index: 14, text: 591 },
+
+      { index: 15, text: 592 },
+
+    ],
+    config: [
+
+      { "default": true, "name": "hp_le_50", "title": 1173, "type": "bool" },
+
+      { "default": false, "name": "use_c6", "title": 359, "type": "bool" },
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Layla: {
+    name: "Layla",
+    nameLocale: 1367,
+    element: "Cryo",
+    weapon: "Sword",
+    star: 4,
+    // card: Layla_card,
+    // avatar: Layla_avatar,
+    avatar: getName("Layla"),
+    splash: Layla_splash,
+    skillName1: 819,
+    skillName2: 419,
+    skillName3: 759,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 1553 },
+
+      { index: 4, text: 1557 },
+
+      { index: 5, text: 76 },
+
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 8, text: 623 },
+
+      { index: 9, text: 1694 },
+
+    ],
+    skillMap3: [
+
+      { index: 10, text: 756 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Lisa: {
     name: "Lisa",
-    chs: "丽莎",
+    nameLocale: 88,
     element: "Electro",
     weapon: "Catalyst",
     star: 4,
-    card: Lisa_card,
+    // card: Lisa_card,
     // avatar: Lisa_avatar,
     avatar: getName("Lisa"),
     splash: Lisa_splash,
-    skillName1: "普通攻击·指尖雷暴",
-    skillName2: "苍雷",
-    skillName3: "蔷薇的雷光",
+    skillName1: 805,
+    skillName2: 1349,
+    skillName3: 1395,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "下坠期间伤害" },
+      { index: 4, text: 1552 },
 
-      { index: 6, chs: "低空坠地冲击伤害" },
+      { index: 5, text: 76 },
 
-      { index: 7, chs: "高空坠地冲击伤害" },
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 8, chs: "点按伤害" },
 
-      { index: 9, chs: "无引雷长按伤害" },
+      { index: 8, text: 1089 },
 
-      { index: 10, chs: "一层引雷长按伤害" },
+      { index: 9, text: 747 },
 
-      { index: 11, chs: "二层引雷长按伤害" },
+      { index: 10, text: 46 },
 
-      { index: 12, chs: "三层引雷长按伤害" },
+      { index: 11, text: 112 },
+
+      { index: 12, text: 66 },
+
     ],
-    skillMap3: [{ index: 13, chs: "雷光放电伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap3: [
+
+      { index: 13, text: 1636 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Mona: {
     name: "Mona",
-    chs: "莫娜",
+    nameLocale: 1361,
     element: "Hydro",
     weapon: "Catalyst",
     star: 5,
-    card: Mona_card,
+    // card: Mona_card,
     // avatar: Mona_avatar,
     avatar: getName("Mona"),
     splash: Mona_splash,
-    skillName1: "普通攻击·因果点破",
-    skillName2: "水中幻愿",
-    skillName3: "星命定轨",
+    skillName1: 791,
+    skillName2: 997,
+    skillName3: 757,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "下坠期间伤害" },
+      { index: 4, text: 1552 },
 
-      { index: 6, chs: "低空坠地冲击伤害" },
+      { index: 5, text: 76 },
 
-      { index: 7, chs: "高空坠地冲击伤害" },
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 8, chs: "持续伤害" },
 
-      { index: 9, chs: "爆裂伤害" },
+      { index: 8, text: 650 },
+
+      { index: 9, text: 1114 },
+
     ],
-    skillMap3: [{ index: 10, chs: "泡影破裂伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap3: [
+
+      { index: 10, text: 1023 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Nahida: {
+    name: "Nahida",
+    nameLocale: 1291,
+    element: "Dendro",
+    weapon: "Catalyst",
+    star: 5,
+    // card: Nahida_card,
+    // avatar: Nahida_avatar,
+    avatar: getName("Nahida"),
+    splash: Nahida_splash,
+    skillName1: 833,
+    skillName2: 608,
+    skillName3: 588,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1552 },
+
+      { index: 5, text: 76 },
+
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 8, text: 1089 },
+
+      { index: 9, text: 1585 },
+
+      { index: 10, text: 1081 },
+
+    ],
+    skillMap3: [
+
+    ],
+    config: [
+
+      { "default": 4, "max": 4, "min": 0, "name": "c4_e_count", "title": 1739, "type": "int" },
+
+    ],
+    configSkill: [
+
+      { "default": true, "name": "q_bonus", "title": 15, "type": "bool" },
+
+      { "default": 2, "max": 2, "min": 1, "name": "q_bonus_count", "title": 14, "type": "int" },
+
+    ],
+  },
+
+  Nilou: {
+    name: "Nilou",
+    nameLocale: 492,
+    element: "Hydro",
+    weapon: "Sword",
+    star: 5,
+    // card: Nilou_card,
+    // avatar: Nilou_avatar,
+    avatar: getName("Nilou"),
+    splash: Nilou_splash,
+    skillName1: 796,
+    skillName2: 62,
+    skillName3: 1040,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 1553 },
+
+      { index: 4, text: 1557 },
+
+      { index: 5, text: 76 },
+
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 8, text: 623 },
+
+      { index: 9, text: 291 },
+
+      { index: 10, text: 742 },
+
+      { index: 11, text: 292 },
+
+      { index: 12, text: 743 },
+
+      { index: 13, text: 1003 },
+
+      { index: 14, text: 1007 },
+
+    ],
+    skillMap3: [
+
+      { index: 15, text: 623 },
+
+      { index: 16, text: 1008 },
+
+    ],
+    config: [
+
+      { "default": 1.0, "max": 1.0, "min": 0.0, "name": "golden_rate", "title": 41, "type": "float" },
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Ningguang: {
     name: "Ningguang",
-    chs: "凝光",
+    nameLocale: 265,
     element: "Geo",
     weapon: "Catalyst",
     star: 4,
-    card: Ningguang_card,
+    // card: Ningguang_card,
     // avatar: Ningguang_avatar,
     avatar: getName("Ningguang"),
     splash: Ningguang_splash,
-    skillName1: "普通攻击·千金掷",
-    skillName2: "璇玑屏",
-    skillName3: "天权崩玉",
+    skillName1: 788,
+    skillName2: 1161,
+    skillName3: 455,
     skillMap1: [
-      { index: 0, chs: "普通攻击伤害" },
 
-      { index: 1, chs: "重击伤害" },
+      { index: 0, text: 860 },
 
-      { index: 2, chs: "星璇伤害" },
+      { index: 1, text: 1552 },
 
-      { index: 3, chs: "下坠期间伤害" },
+      { index: 2, text: 760 },
 
-      { index: 4, chs: "低空坠地冲击伤害" },
+      { index: 3, text: 76 },
 
-      { index: 5, chs: "高空坠地冲击伤害" },
+      { index: 4, text: 162 },
+
+      { index: 5, text: 1709 },
+
     ],
-    skillMap2: [{ index: 6, chs: "技能伤害" }],
-    skillMap3: [{ index: 7, chs: "每颗宝石伤害" }],
+    skillMap2: [
+
+      { index: 6, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 7, text: 995 },
+
+    ],
     config: [
-      {
-        default: 0.0,
-        max: 1.0,
-        min: 0.0,
-        name: "talent2_rate",
-        title: "天赋「储之千日，用之一刻」应用比例",
-        type: "float",
-      },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent2_rate", "title": 468, "type": "float" },
+
     ],
-    configSkill: [],
+    configSkill: [
+
+    ],
   },
 
   Noelle: {
     name: "Noelle",
-    chs: "诺艾尔",
+    nameLocale: 1464,
     element: "Geo",
     weapon: "Claymore",
     star: 4,
-    card: Noelle_card,
+    // card: Noelle_card,
     // avatar: Noelle_avatar,
     avatar: getName("Noel"),
     splash: Noelle_splash,
-    skillName1: "普通攻击·西风剑术·女仆",
-    skillName2: "护心铠",
-    skillName3: "大扫除",
+    skillName1: 835,
+    skillName2: 639,
+    skillName3: 453,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击循环伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击终结伤害" },
+      { index: 4, text: 1562 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1565 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 9, chs: "技能伤害" },
 
-      { index: 10, chs: "治疗量" },
+      { index: 9, text: 623 },
+
+      { index: 10, text: 1019 },
+
     ],
     skillMap3: [
-      { index: 11, chs: "爆发伤害" },
 
-      { index: 12, chs: "技能伤害" },
+      { index: 11, text: 1109 },
+
+      { index: 12, text: 623 },
+
     ],
-    config: [],
+    config: [
+
+    ],
     configSkill: [
-      { default: true, name: "after_q", title: "Q技能之后", type: "bool" },
+
+      { "default": true, "name": "after_q", "title": 13, "type": "bool" },
+
+    ],
+  },
+
+  Mika: {
+    name: "Mika",
+    nameLocale: 1283,
+    element: "Cryo",
+    weapon: "Polearm",
+    star: 4,
+    // card: Mika_card,
+    // avatar: Mika_avatar,
+    avatar: getName("Mika"),
+    splash: Mika_splash,
+    skillName1: 838,
+    skillName2: 762,
+    skillName3: 1347,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 400 },
+
+      { index: 4, text: 131 },
+
+      { index: 5, text: 1552 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 1657 },
+
+      { index: 10, text: 250 },
+
+      { index: 11, text: 251 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 734 },
+
+      { index: 13, text: 1722 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
     ],
   },
 
   Qiqi: {
     name: "Qiqi",
-    chs: "七七",
+    nameLocale: 60,
     element: "Cryo",
     weapon: "Sword",
     star: 5,
-    card: Qiqi_card,
+    // card: Qiqi_card,
     // avatar: Qiqi_avatar,
     avatar: getName("Qiqi"),
     splash: Qiqi_splash,
-    skillName1: "普通攻击·云来古剑法",
-    skillName2: "仙法·寒病鬼差",
-    skillName3: "仙法·救苦度厄",
+    skillName1: 786,
+    skillName2: 148,
+    skillName3: 149,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害-1" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "三段伤害-2" },
+      { index: 2, text: 69 },
 
-      { index: 4, chs: "四段伤害-1" },
+      { index: 3, text: 70 },
 
-      { index: 5, chs: "四段伤害-2" },
+      { index: 4, text: 397 },
 
-      { index: 6, chs: "五段伤害" },
+      { index: 5, text: 398 },
 
-      { index: 7, chs: "重击伤害-1" },
+      { index: 6, text: 131 },
 
-      { index: 8, chs: "重击伤害-2" },
+      { index: 7, text: 1553 },
 
-      { index: 9, chs: "下坠期间伤害" },
+      { index: 8, text: 1557 },
 
-      { index: 10, chs: "低空坠地冲击伤害" },
+      { index: 9, text: 76 },
 
-      { index: 11, chs: "高空坠地冲击伤害" },
+      { index: 10, text: 162 },
+
+      { index: 11, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 12, chs: "技能伤害" },
 
-      { index: 15, chs: "寒病鬼差伤害" },
+      { index: 12, text: 623 },
 
-      { index: 13, chs: "命中治疗量" },
+      { index: 15, text: 529 },
 
-      { index: 14, chs: "持续治疗量" },
+      { index: 13, text: 376 },
+
+      { index: 14, text: 654 },
+
     ],
     skillMap3: [
-      { index: 16, chs: "技能伤害" },
 
-      { index: 17, chs: "治疗量" },
+      { index: 16, text: 623 },
+
+      { index: 17, text: 1019 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   RaidenShogun: {
     name: "RaidenShogun",
-    chs: "雷电将军",
+    nameLocale: 1645,
     element: "Electro",
     weapon: "Polearm",
     star: 5,
-    card: RaidenShogun_card,
+    // card: RaidenShogun_card,
     // avatar: RaidenShogun_avatar,
     avatar: getName("Shougun"),
     splash: RaidenShogun_splash,
-    skillName1: "普通攻击•源流",
-    skillName2: "神变•恶曜开眼",
-    skillName3: "奥义•梦想真说",
+    skillName1: 848,
+    skillName2: 1240,
+    skillName3: 488,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害-1" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "四段伤害-2" },
+      { index: 3, text: 397 },
 
-      { index: 5, chs: "五段伤害" },
+      { index: 4, text: 398 },
 
-      { index: 6, chs: "重击伤害" },
+      { index: 5, text: 131 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1552 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "技能伤害" },
 
-      { index: 11, chs: "协同攻击伤害" },
+      { index: 10, text: 623 },
+
+      { index: 11, text: 321 },
+
     ],
     skillMap3: [
-      { index: 12, chs: "梦想一刀基础伤害" },
 
-      { index: 13, chs: "一段伤害" },
+      { index: 12, text: 980 },
 
-      { index: 14, chs: "二段伤害" },
+      { index: 13, text: 48 },
 
-      { index: 15, chs: "三段伤害" },
+      { index: 14, text: 114 },
 
-      { index: 16, chs: "四段伤害-1" },
+      { index: 15, text: 68 },
 
-      { index: 17, chs: "四段伤害-2" },
+      { index: 16, text: 397 },
 
-      { index: 18, chs: "五段伤害" },
+      { index: 17, text: 398 },
 
-      { index: 19, chs: "重击伤害-1" },
+      { index: 18, text: 131 },
 
-      { index: 20, chs: "重击伤害-2" },
+      { index: 19, text: 1553 },
 
-      { index: 21, chs: "下坠期间伤害" },
+      { index: 20, text: 1557 },
 
-      { index: 22, chs: "低空坠地冲击伤害" },
+      { index: 21, text: 76 },
 
-      { index: 23, chs: "高空坠地冲击伤害" },
+      { index: 22, text: 162 },
+
+      { index: 23, text: 1709 },
+
     ],
-    config: [],
-    configSkill: [
-      {
-        default: true,
-        name: "under_e",
-        title: "处于雷罚恶曜之眼",
-        type: "bool",
-      },
+    config: [
 
-      {
-        default: 60,
-        max: 60,
-        min: 0,
-        name: "resolve_stack",
-        title: "诸愿百眼之愿力层数",
-        type: "int",
-      },
+    ],
+    configSkill: [
+
+      { "default": true, "name": "under_e", "title": 436, "type": "bool" },
+
+      { "default": 60, "max": 60, "min": 0, "name": "resolve_stack", "title": 1463, "type": "int" },
+
     ],
   },
 
   Razor: {
     name: "Razor",
-    chs: "雷泽",
+    nameLocale: 1639,
     element: "Electro",
     weapon: "Claymore",
     star: 4,
-    card: Razor_card,
+    // card: Razor_card,
     // avatar: Razor_avatar,
     avatar: getName("Razor"),
     splash: Razor_splash,
-    skillName1: "普通攻击·钢脊",
-    skillName2: "利爪与苍雷",
-    skillName3: "雷牙",
+    skillName1: 842,
+    skillName2: 286,
+    skillName3: 1644,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击循环伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击终结伤害" },
+      { index: 4, text: 1562 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1565 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 9, chs: "点按技能伤害" },
 
-      { index: 10, chs: "长按技能伤害" },
+      { index: 9, text: 1093 },
+
+      { index: 10, text: 1586 },
+
     ],
     skillMap3: [
-      { index: 11, chs: "爆发伤害" },
 
-      { index: 12, chs: "狼魂-一段伤害" },
+      { index: 11, text: 1109 },
 
-      { index: 13, chs: "狼魂-二段伤害" },
+      { index: 12, text: 1123 },
 
-      { index: 14, chs: "狼魂-三段伤害" },
+      { index: 13, text: 1125 },
 
-      { index: 15, chs: "狼魂-四段伤害" },
+      { index: 14, text: 1124 },
+
+      { index: 15, text: 1126 },
+
     ],
     config: [
-      {
-        default: 0.0,
-        max: 3.0,
-        min: 0.0,
-        name: "e_stack",
-        title: "雷之印层数",
-        type: "float",
-      },
 
-      {
-        default: 0.0,
-        max: 1.0,
-        min: 0.0,
-        name: "talent2_ratio",
-        title: "天赋「饥饿」应用比例",
-        type: "float",
-      },
+      { "default": 0.0, "max": 3.0, "min": 0.0, "name": "e_stack", "title": 1631, "type": "float" },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent2_ratio", "title": 479, "type": "float" },
+
     ],
-    configSkill: [],
+    configSkill: [
+
+    ],
   },
 
   Rosaria: {
     name: "Rosaria",
-    chs: "罗莎莉亚",
+    nameLocale: 1309,
     element: "Cryo",
     weapon: "Polearm",
     star: 4,
-    card: Rosaria_card,
+    // card: Rosaria_card,
     // avatar: Rosaria_avatar,
     avatar: getName("Rosaria"),
     splash: Rosaria_splash,
-    skillName1: "普通攻击·教会枪术",
-    skillName2: "噬罪的告解",
-    skillName3: "终命的圣礼",
+    skillName1: 806,
+    skillName2: 394,
+    skillName3: 1295,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害/2" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 71 },
 
-      { index: 4, chs: "五段伤害-1" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "五段伤害-2" },
+      { index: 4, text: 132 },
 
-      { index: 6, chs: "重击伤害" },
+      { index: 5, text: 133 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1552 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "技能伤害-1" },
 
-      { index: 11, chs: "技能伤害-2" },
+      { index: 10, text: 625 },
+
+      { index: 11, text: 627 },
+
     ],
     skillMap3: [
-      { index: 12, chs: "技能伤害-1" },
 
-      { index: 13, chs: "技能伤害-2" },
+      { index: 12, text: 625 },
 
-      { index: 14, chs: "冰枪持续伤害" },
+      { index: 13, text: 627 },
+
+      { index: 14, text: 252 },
+
     ],
-    config: [],
+    config: [
+
+      { "default": true, "name": "e_from_behind", "title": 574, "type": "bool" },
+
+    ],
     configSkill: [
-      {
-        default: true,
-        name: "e_from_behind",
-        title: "应用天赋「聆听忏悔的幽影」效果",
-        type: "bool",
-      },
+
     ],
   },
 
   SangonomiyaKokomi: {
     name: "SangonomiyaKokomi",
-    chs: "珊瑚宫心海",
+    nameLocale: 1138,
     element: "Hydro",
     weapon: "Catalyst",
     star: 5,
-    card: SangonomiyaKokomi_card,
+    // card: SangonomiyaKokomi_card,
     // avatar: SangonomiyaKokomi_avatar,
     avatar: getName("Kokomi"),
     splash: SangonomiyaKokomi_splash,
-    skillName1: "普通攻击•水有常形",
-    skillName2: "海月之誓",
-    skillName3: "海人化羽",
+    skillName1: 847,
+    skillName2: 1042,
+    skillName3: 1041,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "重击伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "下坠期间伤害" },
+      { index: 3, text: 1552 },
 
-      { index: 5, chs: "低空坠地冲击伤害" },
+      { index: 4, text: 76 },
 
-      { index: 6, chs: "高空坠地冲击伤害" },
+      { index: 5, text: 162 },
+
+      { index: 6, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 8, chs: "波纹伤害" },
 
-      { index: 7, chs: "治疗量" },
+      { index: 8, text: 1025 },
+
+      { index: 7, text: 1020 },
+
     ],
     skillMap3: [
-      { index: 9, chs: "技能伤害" },
 
-      { index: 10, chs: "命中治疗量" },
+      { index: 9, text: 623 },
+
+      { index: 10, text: 377 },
+
     ],
-    config: [],
+    config: [
+
+    ],
     configSkill: [
-      {
-        default: true,
-        name: "after_q",
-        title: "「仪来羽衣」状态",
-        type: "bool",
-      },
+
+      { "default": true, "name": "after_q", "title": 19, "type": "bool" },
+
     ],
   },
 
   Sayu: {
     name: "Sayu",
-    chs: "早柚",
+    nameLocale: 751,
     element: "Anemo",
     weapon: "Claymore",
     star: 4,
-    card: Sayu_card,
+    // card: Sayu_card,
     // avatar: Sayu_avatar,
     avatar: getName("Sayu"),
     splash: Sayu_splash,
-    skillName1: "普通攻击·忍刀·终末番",
-    skillName2: "呜呼流·风隐急进",
-    skillName3: "呜呼流·影貉缭乱",
+    skillName1: 799,
+    skillName2: 373,
+    skillName3: 372,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害-1" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "三段伤害-2" },
+      { index: 2, text: 69 },
 
-      { index: 4, chs: "四段伤害" },
+      { index: 3, text: 70 },
 
-      { index: 5, chs: "重击循环伤害" },
+      { index: 4, text: 396 },
 
-      { index: 6, chs: "重击终结伤害" },
+      { index: 5, text: 1562 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1565 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "风风轮伤害" },
 
-      { index: 11, chs: "风风轮舞踢点按伤害" },
+      { index: 10, text: 1677 },
 
-      { index: 12, chs: "风风轮舞踢长按伤害" },
+      { index: 11, text: 1678 },
 
-      { index: 13, chs: "风风轮附带火元素伤害" },
+      { index: 12, text: 1679 },
 
-      { index: 16, chs: "风风轮附带水元素伤害" },
+      { index: 13, text: 1686 },
 
-      { index: 15, chs: "风风轮附带冰元素伤害" },
+      { index: 16, text: 1685 },
 
-      { index: 14, chs: "风风轮附带雷元素伤害" },
+      { index: 15, text: 1684 },
 
-      { index: 17, chs: "风风轮舞踢长按附带火元素伤害" },
+      { index: 14, text: 1687 },
 
-      { index: 20, chs: "风风轮舞踢长按附带水元素伤害" },
+      { index: 17, text: 1682 },
 
-      { index: 19, chs: "风风轮舞踢长按附带冰元素伤害" },
+      { index: 20, text: 1681 },
 
-      { index: 18, chs: "风风轮舞踢长按附带雷元素伤害" },
+      { index: 19, text: 1680 },
+
+      { index: 18, text: 1683 },
+
     ],
     skillMap3: [
-      { index: 21, chs: "技能发动伤害" },
 
-      { index: 22, chs: "技能发动治疗量" },
+      { index: 21, text: 634 },
 
-      { index: 23, chs: "不倒貉貉伤害" },
+      { index: 22, text: 635 },
 
-      { index: 24, chs: "不倒貉貉治疗量" },
+      { index: 23, text: 77 },
+
+      { index: 24, text: 78 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Shenhe: {
     name: "Shenhe",
-    chs: "申鹤",
+    nameLocale: 1191,
     element: "Cryo",
     weapon: "Polearm",
     star: 5,
-    card: Shenhe_card,
+    // card: Shenhe_card,
     // avatar: Shenhe_avatar,
     avatar: getName("Shenhe"),
     splash: Shenhe_splash,
-    skillName1: "普通攻击•踏辰摄斗",
-    skillName2: "仰灵威召将役咒",
-    skillName3: "神女遣灵真诀",
+    skillName1: 849,
+    skillName2: 152,
+    skillName3: 1241,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害-1" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "四段伤害-2" },
+      { index: 3, text: 397 },
 
-      { index: 5, chs: "五段伤害" },
+      { index: 4, text: 398 },
 
-      { index: 6, chs: "重击伤害" },
+      { index: 5, text: 131 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1552 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "点按技能伤害" },
 
-      { index: 11, chs: "长按技能伤害" },
+      { index: 10, text: 1092 },
+
+      { index: 11, text: 1586 },
+
     ],
     skillMap3: [
-      { index: 12, chs: "技能伤害" },
 
-      { index: 13, chs: "持续伤害" },
+      { index: 12, text: 623 },
+
+      { index: 13, text: 650 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  ShikanoinHeizou: {
+    name: "ShikanoinHeizou",
+    nameLocale: 1723,
+    element: "Anemo",
+    weapon: "Catalyst",
+    star: 4,
+    // card: ShikanoinHeizou_card,
+    // avatar: ShikanoinHeizou_avatar,
+    avatar: getName("Heizo"),
+    splash: ShikanoinHeizou_splash,
+    skillName1: 784,
+    skillName2: 303,
+    skillName3: 1330,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 397 },
+
+      { index: 4, text: 398 },
+
+      { index: 5, text: 399 },
+
+      { index: 6, text: 396 },
+
+      { index: 7, text: 131 },
+
+      { index: 8, text: 1552 },
+
+      { index: 9, text: 76 },
+
+      { index: 10, text: 162 },
+
+      { index: 11, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 12, text: 624 },
+
+      { index: 13, text: 626 },
+
+      { index: 14, text: 628 },
+
+      { index: 15, text: 629 },
+
+      { index: 16, text: 630 },
+
+    ],
+    skillMap3: [
+
+      { index: 17, text: 79 },
+
+      { index: 18, text: 1328 },
+
+      { index: 20, text: 1326 },
+
+      { index: 21, text: 1329 },
+
+      { index: 19, text: 1327 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Sucrose: {
     name: "Sucrose",
-    chs: "砂糖",
+    nameLocale: 1221,
     element: "Anemo",
     weapon: "Catalyst",
     star: 4,
-    card: Sucrose_card,
+    // card: Sucrose_card,
     // avatar: Sucrose_avatar,
     avatar: getName("Sucrose"),
     splash: Sucrose_splash,
-    skillName1: "普通攻击·简式风灵作成",
-    skillName2: "风灵作成·陆叁零捌",
-    skillName3: "禁·风灵作成·柒伍同构贰型",
+    skillName1: 829,
+    skillName2: 1673,
+    skillName3: 1269,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "下坠期间伤害" },
+      { index: 4, text: 1552 },
 
-      { index: 6, chs: "低空坠地冲击伤害" },
+      { index: 5, text: 76 },
 
-      { index: 7, chs: "高空坠地冲击伤害" },
+      { index: 6, text: 162 },
+
+      { index: 7, text: 1709 },
+
     ],
-    skillMap2: [{ index: 8, chs: "技能伤害" }],
+    skillMap2: [
+
+      { index: 8, text: 623 },
+
+    ],
     skillMap3: [
-      { index: 9, chs: "持续伤害" },
 
-      { index: 10, chs: "附加火元素伤害" },
+      { index: 9, text: 650 },
 
-      { index: 11, chs: "附加水元素伤害" },
+      { index: 10, text: 1624 },
 
-      { index: 13, chs: "附加冰元素伤害" },
+      { index: 11, text: 1623 },
 
-      { index: 12, chs: "附加雷元素伤害" },
+      { index: 13, text: 1622 },
+
+      { index: 12, text: 1625 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Tartaglia: {
     name: "Tartaglia",
-    chs: "达达利亚",
+    nameLocale: 1513,
     element: "Hydro",
     weapon: "Bow",
     star: 5,
-    card: Tartaglia_card,
+    // card: Tartaglia_card,
     // avatar: Tartaglia_avatar,
     avatar: getName("Tartaglia"),
     splash: Tartaglia_splash,
-    skillName1: "普通攻击·断雨",
-    skillName2: "魔王武装·狂澜",
-    skillName3: "极恶技·尽灭闪",
+    skillName1: 807,
+    skillName2: 1719,
+    skillName3: 960,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "六段伤害" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "瞄准射击" },
+      { index: 5, text: 232 },
 
-      { index: 7, chs: "满蓄力瞄准射击" },
+      { index: 6, text: 1220 },
 
-      { index: 8, chs: "断流·闪伤害" },
+      { index: 7, text: 1072 },
 
-      { index: 9, chs: "断流·破伤害" },
+      { index: 8, text: 711 },
 
-      { index: 10, chs: "下坠期间伤害" },
+      { index: 9, text: 710 },
 
-      { index: 11, chs: "低空坠地冲击伤害" },
+      { index: 10, text: 76 },
 
-      { index: 12, chs: "高空坠地冲击伤害" },
+      { index: 11, text: 162 },
+
+      { index: 12, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 13, chs: "状态爆发伤害" },
 
-      { index: 14, chs: "一段伤害" },
+      { index: 13, text: 1119 },
 
-      { index: 15, chs: "二段伤害" },
+      { index: 14, text: 48 },
 
-      { index: 16, chs: "三段伤害" },
+      { index: 15, text: 114 },
 
-      { index: 17, chs: "四段伤害" },
+      { index: 16, text: 68 },
 
-      { index: 18, chs: "五段伤害" },
+      { index: 17, text: 396 },
 
-      { index: 19, chs: "六段伤害-1" },
+      { index: 18, text: 131 },
 
-      { index: 20, chs: "六段伤害-2" },
+      { index: 19, text: 233 },
 
-      { index: 21, chs: "重击伤害-1" },
+      { index: 20, text: 234 },
 
-      { index: 22, chs: "重击伤害-2" },
+      { index: 21, text: 1553 },
 
-      { index: 23, chs: "断流·斩伤害" },
+      { index: 22, text: 1557 },
+
+      { index: 23, text: 708 },
+
     ],
     skillMap3: [
-      { index: 24, chs: "技能伤害·近战" },
 
-      { index: 25, chs: "技能伤害·远程" },
+      { index: 24, text: 632 },
 
-      { index: 26, chs: "断流·爆伤害" },
+      { index: 25, text: 633 },
+
+      { index: 26, text: 709 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Thoma: {
     name: "Thoma",
-    chs: "托马",
+    nameLocale: 610,
     element: "Pyro",
     weapon: "Polearm",
     star: 4,
-    card: Thoma_card,
+    // card: Thoma_card,
     // avatar: Thoma_avatar,
     avatar: getName("Tohma"),
     splash: Thoma_splash,
-    skillName1: "普通攻击·迅破枪势",
-    skillName2: "烈烧佑命之侍护",
-    skillName3: "真红炽火之大铠",
+    skillName1: 839,
+    skillName2: 1097,
+    skillName3: 1219,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害/2" },
+      { index: 1, text: 114 },
 
-      { index: 4, chs: "四段伤害" },
+      { index: 2, text: 71 },
 
-      { index: 5, chs: "重击伤害" },
+      { index: 4, text: 396 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1552 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
-    skillMap2: [{ index: 9, chs: "技能伤害" }],
+    skillMap2: [
+
+      { index: 9, text: 623 },
+
+    ],
     skillMap3: [
-      { index: 10, chs: "技能伤害" },
 
-      { index: 11, chs: "炽火崩破伤害" },
+      { index: 10, text: 623 },
+
+      { index: 11, text: 1094 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Tighnari: {
+    name: "Tighnari",
+    nameLocale: 661,
+    element: "Dendro",
+    weapon: "Bow",
+    star: 5,
+    // card: Tighnari_card,
+    // avatar: Tighnari_avatar,
+    avatar: getName("Tighnari"),
+    splash: Tighnari_splash,
+    skillName1: 831,
+    skillName2: 1455,
+    skillName3: 1539,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 396 },
+
+      { index: 4, text: 1220 },
+
+      { index: 5, text: 59 },
+
+      { index: 6, text: 1342 },
+
+      { index: 7, text: 1397 },
+
+      { index: 8, text: 76 },
+
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 11, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 1308 },
+
+      { index: 13, text: 984 },
+
+    ],
+    config: [
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "talent1_ratio", "title": 476, "type": "float" },
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "c2_ratio", "title": 379, "type": "float" },
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Venti: {
     name: "Venti",
-    chs: "温迪",
+    nameLocale: 1057,
     element: "Anemo",
     weapon: "Bow",
     star: 5,
-    card: Venti_card,
+    // card: Venti_card,
     // avatar: Venti_avatar,
     avatar: getName("Venti"),
     splash: Venti_splash,
-    skillName1: "普通攻击·神代射术",
-    skillName2: "高天之歌",
-    skillName3: "风神之诗",
+    skillName1: 825,
+    skillName2: 1708,
+    skillName3: 1674,
     skillMap1: [
-      { index: 0, chs: "一段伤害-1" },
 
-      { index: 1, chs: "一段伤害-2" },
+      { index: 0, text: 49 },
 
-      { index: 3, chs: "二段伤害" },
+      { index: 1, text: 50 },
 
-      { index: 4, chs: "三段伤害" },
+      { index: 3, text: 114 },
 
-      { index: 5, chs: "四段伤害-1" },
+      { index: 4, text: 68 },
 
-      { index: 6, chs: "四段伤害-2" },
+      { index: 5, text: 397 },
 
-      { index: 8, chs: "五段伤害" },
+      { index: 6, text: 398 },
 
-      { index: 9, chs: "六段伤害" },
+      { index: 8, text: 131 },
 
-      { index: 10, chs: "瞄准射击" },
+      { index: 9, text: 232 },
 
-      { index: 11, chs: "满蓄力瞄准射击" },
+      { index: 10, text: 1220 },
 
-      { index: 12, chs: "下坠期间伤害" },
+      { index: 11, text: 1072 },
 
-      { index: 13, chs: "低空坠地冲击伤害" },
+      { index: 12, text: 76 },
 
-      { index: 14, chs: "高空坠地冲击伤害" },
+      { index: 13, text: 162 },
+
+      { index: 14, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 15, chs: "点按伤害" },
 
-      { index: 16, chs: "长按伤害" },
+      { index: 15, text: 1089 },
+
+      { index: 16, text: 1585 },
+
     ],
     skillMap3: [
-      { index: 17, chs: "持续伤害" },
 
-      { index: 18, chs: "附加火元素伤害" },
+      { index: 17, text: 650 },
 
-      { index: 20, chs: "附加水元素伤害" },
+      { index: 18, text: 1624 },
 
-      { index: 21, chs: "附加冰元素伤害" },
+      { index: 20, text: 1623 },
 
-      { index: 19, chs: "附加雷元素伤害" },
+      { index: 21, text: 1622 },
+
+      { index: 19, text: 1625 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Wanderer: {
+    name: "Wanderer",
+    nameLocale: 1037,
+    element: "Anemo",
+    weapon: "Catalyst",
+    star: 5,
+    // card: Wanderer_card,
+    // avatar: Wanderer_avatar,
+    avatar: getName("Wanderer"),
+    splash: Wanderer_splash,
+    skillName1: 832,
+    skillName2: 1318,
+    skillName3: 1120,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 72 },
+
+      { index: 3, text: 52 },
+
+      { index: 4, text: 117 },
+
+      { index: 5, text: 73 },
+
+      { index: 6, text: 1552 },
+
+      { index: 7, text: 26 },
+
+      { index: 8, text: 76 },
+
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 11, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 631 },
+
+    ],
+    config: [
+
+      { "default": false, "name": "e_pyro", "title": 25, "type": "bool" },
+
+      { "default": false, "name": "e_cryo", "title": 23, "type": "bool" },
+
+    ],
+    configSkill: [
+
+      { "default": true, "name": "e_enabled", "title": 429, "type": "bool" },
+
+      { "default": false, "name": "e_hydro", "title": 24, "type": "bool" },
+
+      { "default": 50.0, "max": 120.0, "min": 0.0, "name": "sdpoints", "title": 1278, "type": "float" },
+
+    ],
   },
 
   Xiangling: {
     name: "Xiangling",
-    chs: "香菱",
+    nameLocale: 1699,
     element: "Pyro",
     weapon: "Polearm",
     star: 4,
-    card: Xiangling_card,
+    // card: Xiangling_card,
     // avatar: Xiangling_avatar,
     avatar: getName("Xiangling"),
     splash: Xiangling_splash,
-    skillName1: "普通攻击·白案功夫",
-    skillName2: "锅巴出击",
-    skillName3: "旋火轮",
+    skillName1: 822,
+    skillName2: 1583,
+    skillName3: 740,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害-1" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "三段伤害-2" },
+      { index: 2, text: 69 },
 
-      { index: 5, chs: "四段伤害/4" },
+      { index: 3, text: 70 },
 
-      { index: 7, chs: "五段伤害" },
+      { index: 5, text: 402 },
 
-      { index: 8, chs: "重击伤害" },
+      { index: 7, text: 131 },
 
-      { index: 9, chs: "下坠期间伤害" },
+      { index: 8, text: 1552 },
 
-      { index: 10, chs: "低空坠地冲击伤害" },
+      { index: 9, text: 76 },
 
-      { index: 11, chs: "高空坠地冲击伤害" },
+      { index: 10, text: 162 },
+
+      { index: 11, text: 1709 },
+
     ],
-    skillMap2: [{ index: 12, chs: "喷火伤害" }],
+    skillMap2: [
+
+      { index: 12, text: 391 },
+
+    ],
     skillMap3: [
-      { index: 13, chs: "一段挥舞伤害" },
 
-      { index: 14, chs: "二段挥舞伤害" },
+      { index: 13, text: 53 },
 
-      { index: 15, chs: "三段挥舞伤害" },
+      { index: 14, text: 118 },
 
-      { index: 16, chs: "旋火轮伤害" },
+      { index: 15, text: 74 },
+
+      { index: 16, text: 741 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Xiao: {
     name: "Xiao",
-    chs: "魈",
+    nameLocale: 1711,
     element: "Anemo",
     weapon: "Polearm",
     star: 5,
-    card: Xiao_card,
+    // card: Xiao_card,
     // avatar: Xiao_avatar,
     avatar: getName("Xiao"),
     splash: Xiao_splash,
-    skillName1: "普通攻击·卷积微尘",
-    skillName2: "风轮两立",
-    skillName3: "靖妖傩舞",
+    skillName1: 789,
+    skillName2: 1676,
+    skillName3: 1659,
     skillMap1: [
-      { index: 0, chs: "一段伤害-1" },
 
-      { index: 1, chs: "一段伤害-2" },
+      { index: 0, text: 49 },
 
-      { index: 3, chs: "二段伤害" },
+      { index: 1, text: 50 },
 
-      { index: 4, chs: "三段伤害" },
+      { index: 3, text: 114 },
 
-      { index: 5, chs: "四段伤害-2" },
+      { index: 4, text: 68 },
 
-      { index: 6, chs: "四段伤害-1" },
+      { index: 5, text: 397 },
 
-      { index: 8, chs: "五段伤害" },
+      { index: 6, text: 398 },
 
-      { index: 9, chs: "六段伤害" },
+      { index: 8, text: 131 },
 
-      { index: 10, chs: "重击伤害" },
+      { index: 9, text: 232 },
 
-      { index: 11, chs: "下坠期间伤害" },
+      { index: 10, text: 1552 },
 
-      { index: 12, chs: "低空坠地冲击伤害" },
+      { index: 11, text: 76 },
 
-      { index: 13, chs: "高空坠地冲击伤害" },
+      { index: 12, text: 162 },
+
+      { index: 13, text: 1709 },
+
     ],
-    skillMap2: [{ index: 14, chs: "技能伤害" }],
-    skillMap3: [],
-    config: [],
+    skillMap2: [
+
+      { index: 14, text: 623 },
+
+    ],
+    skillMap3: [
+
+    ],
+    config: [
+
+    ],
     configSkill: [
-      { default: true, name: "after_q", title: "靖妖傩舞", type: "bool" },
 
-      {
-        default: 4.0,
-        max: 4.0,
-        min: 0.0,
-        name: "talent1_stack",
-        title: "天赋「降魔·平妖大圣」应用层数",
-        type: "float",
-      },
+      { "default": true, "name": "after_q", "title": 1659, "type": "bool" },
 
-      {
-        default: 0.0,
-        max: 3.0,
-        min: 0.0,
-        name: "talent2_stack",
-        title: "天赋「坏劫·国土碾尘」应用层数",
-        type: "float",
-      },
+      { "default": 4.0, "max": 4.0, "min": 0.0, "name": "talent1_stack", "title": 478, "type": "float" },
+
+      { "default": 0.0, "max": 3.0, "min": 0.0, "name": "talent2_stack", "title": 470, "type": "float" },
+
     ],
   },
 
   Xingqiu: {
     name: "Xingqiu",
-    chs: "行秋",
+    nameLocale: 1403,
     element: "Hydro",
     weapon: "Sword",
     star: 4,
-    card: Xingqiu_card,
+    // card: Xingqiu_card,
     // avatar: Xingqiu_avatar,
     avatar: getName("Xingqiu"),
     splash: Xingqiu_splash,
-    skillName1: "普通攻击·古华剑法",
-    skillName2: "古华剑·画雨笼山",
-    skillName3: "古华剑·裁雨留虹",
+    skillName1: 790,
+    skillName2: 345,
+    skillName3: 346,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害-1" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "三段伤害-2" },
+      { index: 2, text: 69 },
 
-      { index: 5, chs: "四段伤害" },
+      { index: 3, text: 70 },
 
-      { index: 6, chs: "五段伤害-1" },
+      { index: 5, text: 396 },
 
-      { index: 7, chs: "五段伤害-2" },
+      { index: 6, text: 132 },
 
-      { index: 9, chs: "重击伤害-1" },
+      { index: 7, text: 133 },
 
-      { index: 10, chs: "重击伤害-2" },
+      { index: 9, text: 1553 },
 
-      { index: 12, chs: "下坠期间伤害" },
+      { index: 10, text: 1557 },
 
-      { index: 13, chs: "低空坠地冲击伤害" },
+      { index: 12, text: 76 },
 
-      { index: 14, chs: "高空坠地冲击伤害" },
+      { index: 13, text: 162 },
+
+      { index: 14, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 15, chs: "技能伤害-1" },
 
-      { index: 16, chs: "技能伤害-2" },
+      { index: 15, text: 625 },
+
+      { index: 16, text: 627 },
+
     ],
-    skillMap3: [{ index: 17, chs: "剑雨伤害" }],
-    config: [],
+    skillMap3: [
+
+      { index: 17, text: 293 },
+
+    ],
+    config: [
+
+    ],
     configSkill: [
-      { default: false, name: "c4", title: "应用4命效果", type: "bool" },
+
+      { "default": false, "name": "c4", "title": 573, "type": "bool" },
+
     ],
   },
 
   Xinyan: {
     name: "Xinyan",
-    chs: "辛焱",
+    nameLocale: 1504,
     element: "Pyro",
     weapon: "Claymore",
     star: 4,
-    card: Xinyan_card,
+    // card: Xinyan_card,
     // avatar: Xinyan_avatar,
     avatar: getName("Xinyan"),
     splash: Xinyan_splash,
-    skillName1: "普通攻击·炎舞",
-    skillName2: "热情拂扫",
-    skillName3: "叛逆刮弦",
+    skillName1: 817,
+    skillName2: 1100,
+    skillName3: 342,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击循环伤害" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "重击终结伤害" },
+      { index: 4, text: 1562 },
 
-      { index: 6, chs: "下坠期间伤害" },
+      { index: 5, text: 1565 },
 
-      { index: 7, chs: "低空坠地冲击伤害" },
+      { index: 6, text: 76 },
 
-      { index: 8, chs: "高空坠地冲击伤害" },
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 9, chs: "挥舞伤害" },
 
-      { index: 10, chs: "持续伤害" },
+      { index: 9, text: 658 },
+
+      { index: 10, text: 650 },
+
     ],
     skillMap3: [
-      { index: 11, chs: "技能伤害" },
 
-      { index: 12, chs: "火元素持续伤害" },
+      { index: 11, text: 623 },
+
+      { index: 12, text: 1078 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "shield_rate", "title": 34, "type": "float" },
+
+    ],
   },
 
   YaeMiko: {
     name: "YaeMiko",
-    chs: "八重神子",
+    nameLocale: 223,
     element: "Electro",
     weapon: "Catalyst",
     star: 5,
-    card: YaeMiko_card,
+    // card: YaeMiko_card,
     // avatar: YaeMiko_avatar,
     avatar: getName("Yae"),
     splash: YaeMiko_splash,
-    skillName1: "普通攻击·狐灵食罪式",
-    skillName2: "野干役咒·杀生樱",
-    skillName3: "大密法·天狐显真",
+    skillName1: 820,
+    skillName2: 1568,
+    skillName3: 452,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "重击伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "下坠期间伤害" },
+      { index: 3, text: 1552 },
 
-      { index: 5, chs: "低空坠地冲击伤害" },
+      { index: 4, text: 76 },
 
-      { index: 6, chs: "高空坠地冲击伤害" },
+      { index: 5, text: 162 },
+
+      { index: 6, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 7, chs: "杀生樱伤害·壹阶" },
 
-      { index: 8, chs: "杀生樱伤害·贰阶" },
+      { index: 7, text: 954 },
 
-      { index: 9, chs: "杀生樱伤害·叁阶" },
+      { index: 8, text: 956 },
 
-      { index: 10, chs: "杀生樱伤害·肆阶" },
+      { index: 9, text: 953 },
+
+      { index: 10, text: 955 },
+
     ],
     skillMap3: [
-      { index: 11, chs: "技能伤害" },
 
-      { index: 12, chs: "天狐霆雷伤害" },
+      { index: 11, text: 623 },
+
+      { index: 12, text: 456 },
+
     ],
-    config: [],
-    configSkill: [],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Yanfei: {
     name: "Yanfei",
-    chs: "烟绯",
+    nameLocale: 1098,
     element: "Pyro",
     weapon: "Catalyst",
     star: 4,
-    card: Yanfei_card,
+    // card: Yanfei_card,
     // avatar: Yanfei_avatar,
     avatar: getName("Feiyan"),
     splash: Yanfei_splash,
-    skillName1: "普通攻击·火漆制印",
-    skillName2: "丹书立约",
-    skillName3: "凭此结契",
+    skillName1: 815,
+    skillName2: 86,
+    skillName3: 271,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "重击-无印伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "重击-1层伤害" },
+      { index: 3, text: 1551 },
 
-      { index: 5, chs: "重击-2层伤害" },
+      { index: 4, text: 1547 },
 
-      { index: 6, chs: "重击-3层伤害" },
+      { index: 5, text: 1548 },
 
-      { index: 7, chs: "重击-4层伤害" },
+      { index: 6, text: 1549 },
 
-      { index: 8, chs: "天赋2额外伤害" },
+      { index: 7, text: 1550 },
 
-      { index: 9, chs: "下坠期间伤害" },
+      { index: 8, text: 467 },
 
-      { index: 10, chs: "低空坠地冲击伤害" },
+      { index: 9, text: 76 },
 
-      { index: 11, chs: "高空坠地冲击伤害" },
+      { index: 10, text: 162 },
+
+      { index: 11, text: 1709 },
+
     ],
-    skillMap2: [{ index: 12, chs: "技能伤害" }],
-    skillMap3: [{ index: 13, chs: "技能伤害" }],
-    config: [],
+    skillMap2: [
+
+      { index: 12, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 13, text: 623 },
+
+    ],
+    config: [
+
+    ],
     configSkill: [
-      { default: true, name: "after_q", title: "灼灼", type: "bool" },
+
+      { "default": true, "name": "after_q", "title": 1087, "type": "bool" },
+
+    ],
+  },
+
+  Yaoyao: {
+    name: "Yaoyao",
+    nameLocale: 1160,
+    element: "Dendro",
+    weapon: "Polearm",
+    star: 4,
+    // card: Yaoyao_card,
+    // avatar: Yaoyao_avatar,
+    avatar: getName("Yaoyao"),
+    splash: Yaoyao_splash,
+    skillName1: 843,
+    skillName2: 123,
+    skillName3: 1134,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 69 },
+
+      { index: 3, text: 70 },
+
+      { index: 4, text: 396 },
+
+      { index: 5, text: 1552 },
+
+      { index: 6, text: 76 },
+
+      { index: 7, text: 162 },
+
+      { index: 8, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 9, text: 1210 },
+
+      { index: 10, text: 1211 },
+
+    ],
+    skillMap3: [
+
+      { index: 11, text: 623 },
+
+      { index: 12, text: 976 },
+
+      { index: 13, text: 977 },
+
+    ],
+    config: [
+
+      { "default": 0.0, "max": 1.0, "min": 0.0, "name": "c4_rate", "title": 384, "type": "float" },
+
+    ],
+    configSkill: [
+
+    ],
+  },
+
+  Yelan: {
+    name: "Yelan",
+    nameLocale: 445,
+    element: "Hydro",
+    weapon: "Bow",
+    star: 5,
+    // card: Yelan_card,
+    // avatar: Yelan_avatar,
+    avatar: getName("Yelan"),
+    splash: Yelan_splash,
+    skillName1: 814,
+    skillName2: 1387,
+    skillName3: 1049,
+    skillMap1: [
+
+      { index: 0, text: 48 },
+
+      { index: 1, text: 114 },
+
+      { index: 2, text: 68 },
+
+      { index: 3, text: 400 },
+
+      { index: 4, text: 1220 },
+
+      { index: 5, text: 1072 },
+
+      { index: 6, text: 1231 },
+
+      { index: 8, text: 76 },
+
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
+    ],
+    skillMap2: [
+
+      { index: 11, text: 623 },
+
+    ],
+    skillMap3: [
+
+      { index: 12, text: 623 },
+
+      { index: 13, text: 1133 },
+
+    ],
+    config: [
+
+      { "default": 4, "max": 4, "min": 1, "name": "team_element_count", "title": 1590, "type": "int" },
+
+    ],
+    configSkill: [
+
     ],
   },
 
   Yoimiya: {
     name: "Yoimiya",
-    chs: "宵宫",
+    nameLocale: 525,
     element: "Pyro",
     weapon: "Bow",
     star: 5,
-    card: Yoimiya_card,
+    // card: Yoimiya_card,
     // avatar: Yoimiya_avatar,
     avatar: getName("Yoimiya"),
     splash: Yoimiya_splash,
-    skillName1: "普通攻击·烟火打扬",
-    skillName2: "焰硝庭火舞",
-    skillName3: "琉金云间草",
+    skillName1: 818,
+    skillName2: 1104,
+    skillName3: 1151,
     skillMap1: [
-      { index: 0, chs: "一段伤害/2" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 51 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害/2" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害" },
+      { index: 3, text: 400 },
 
-      { index: 5, chs: "瞄准射击" },
+      { index: 4, text: 131 },
 
-      { index: 6, chs: "满蓄力瞄准射击" },
+      { index: 5, text: 1220 },
 
-      { index: 7, chs: "焰硝矢伤害" },
+      { index: 6, text: 1072 },
 
-      { index: 8, chs: "下坠期间伤害" },
+      { index: 7, text: 1105 },
 
-      { index: 9, chs: "低空坠地冲击伤害" },
+      { index: 8, text: 76 },
 
-      { index: 10, chs: "高空坠地冲击伤害" },
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
     ],
-    skillMap2: [],
-    skillMap3: [
-      { index: 11, chs: "技能伤害" },
+    skillMap2: [
 
-      { index: 12, chs: "琉金火光爆炸伤害" },
+    ],
+    skillMap3: [
+
+      { index: 11, text: 623 },
+
+      { index: 12, text: 1152 },
+
     ],
     config: [
-      {
-        default: 8.0,
-        max: 10.0,
-        min: 0.0,
-        name: "talent1_level",
-        title: "天赋「袖火百景图」应用层数",
-        type: "float",
-      },
+
+      { "default": 8.0, "max": 10.0, "min": 0.0, "name": "talent1_level", "title": 477, "type": "float" },
+
     ],
     configSkill: [
-      { default: true, name: "after_e", title: "庭火焰硝", type: "bool" },
+
+      { "default": true, "name": "after_e", "title": 578, "type": "bool" },
+
     ],
   },
 
   Yunjin: {
     name: "Yunjin",
-    chs: "云堇",
+    nameLocale: 124,
     element: "Geo",
     weapon: "Polearm",
     star: 4,
-    card: Yunjin_card,
+    // card: Yunjin_card,
     // avatar: Yunjin_avatar,
     avatar: getName("Yunjin"),
     splash: Yunjin_splash,
-    skillName1: "普通攻击·拂云出手",
-    skillName2: "旋云开相",
-    skillName3: "破嶂见旌仪",
+    skillName1: 803,
+    skillName2: 739,
+    skillName3: 1232,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害-1" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "三段伤害-2" },
+      { index: 2, text: 69 },
 
-      { index: 4, chs: "四段伤害-1" },
+      { index: 3, text: 70 },
 
-      { index: 5, chs: "四段伤害-2" },
+      { index: 4, text: 397 },
 
-      { index: 6, chs: "五段伤害" },
+      { index: 5, text: 398 },
 
-      { index: 7, chs: "重击伤害" },
+      { index: 6, text: 131 },
 
-      { index: 8, chs: "下坠期间伤害" },
+      { index: 7, text: 1552 },
 
-      { index: 9, chs: "低空坠地冲击伤害" },
+      { index: 8, text: 76 },
 
-      { index: 10, chs: "高空坠地冲击伤害" },
+      { index: 9, text: 162 },
+
+      { index: 10, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 11, chs: "点按伤害" },
 
-      { index: 12, chs: "一段蓄力伤害" },
+      { index: 11, text: 1090 },
 
-      { index: 13, chs: "二段蓄力伤害" },
+      { index: 12, text: 55 },
+
+      { index: 13, text: 120 },
+
     ],
-    skillMap3: [{ index: 14, chs: "技能伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap3: [
+
+      { index: 14, text: 623 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
 
   Zhongli: {
     name: "Zhongli",
-    chs: "钟离",
+    nameLocale: 1573,
     element: "Geo",
     weapon: "Polearm",
     star: 5,
-    card: Zhongli_card,
+    // card: Zhongli_card,
     // avatar: Zhongli_avatar,
     avatar: getName("Zhongli"),
     splash: Zhongli_splash,
-    skillName1: "普通攻击·岩雨",
-    skillName2: "地心",
-    skillName3: "天星",
+    skillName1: 794,
+    skillName2: 410,
+    skillName3: 454,
     skillMap1: [
-      { index: 0, chs: "一段伤害" },
 
-      { index: 1, chs: "二段伤害" },
+      { index: 0, text: 48 },
 
-      { index: 2, chs: "三段伤害" },
+      { index: 1, text: 114 },
 
-      { index: 3, chs: "四段伤害" },
+      { index: 2, text: 68 },
 
-      { index: 4, chs: "五段伤害/4" },
+      { index: 3, text: 396 },
 
-      { index: 5, chs: "六段伤害" },
+      { index: 4, text: 135 },
 
-      { index: 6, chs: "重击伤害" },
+      { index: 5, text: 232 },
 
-      { index: 7, chs: "下坠期间伤害" },
+      { index: 6, text: 1552 },
 
-      { index: 8, chs: "低空坠地冲击伤害" },
+      { index: 7, text: 76 },
 
-      { index: 9, chs: "高空坠地冲击伤害" },
+      { index: 8, text: 162 },
+
+      { index: 9, text: 1709 },
+
     ],
     skillMap2: [
-      { index: 10, chs: "岩脊伤害" },
 
-      { index: 11, chs: "共鸣伤害" },
+      { index: 10, text: 553 },
 
-      { index: 12, chs: "长按伤害" },
+      { index: 11, text: 236 },
+
+      { index: 12, text: 1585 },
+
     ],
-    skillMap3: [{ index: 13, chs: "技能伤害" }],
-    config: [],
-    configSkill: [],
+    skillMap3: [
+
+      { index: 13, text: 623 },
+
+    ],
+    config: [
+
+    ],
+    configSkill: [
+
+    ],
   },
-};
+
+}

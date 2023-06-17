@@ -26,6 +26,7 @@ import {
   positionToLocale,
   artifactTags,
   getScore,
+  importScore,
   characters,
   artifactEff,
 } from "./utils";
@@ -35,6 +36,7 @@ import genCharacter from "./gen_character";
 // import mona from "./mona.json";
 import "./App.css";
 import { uniqBy } from "lodash";
+import ZhCn from "./zh-cn.json";
 
 // console.log({ mona });
 console.log(artifact);
@@ -57,9 +59,9 @@ const positionOptions = Object.keys(mainStatMap).map((name) => ({
     value: n,
   })),
 }));
-const characterOptions = Object.keys(characters).map((name) => ({
-  label: genCharacter[name]?.chs,
-  value: name,
+const characterOptions = Object.keys(genCharacter).map((name) => ({
+  label: ZhCn[genCharacter[name]?.nameLocale],
+  value: ZhCn[genCharacter[name]?.nameLocale],
 }));
 
 const Fixed = (artifact, v) => {
@@ -110,15 +112,7 @@ function App() {
           for (const art of arts) {
             art.id = uuidv4();
             art.icon = artifactIcons[art.setName]?.[art.position]?.url;
-            art.scores = getScore(art);
-            if (art.max_score !== art.scores?.[0]?.score) {
-              console.log("圣遗物最大分数不一致\n", art);
-              messageApi.open({
-                type: "error",
-                content: "圣遗物最大分数不一致",
-              });
-              // return;
-            }
+            art.scores = importScore(art);
             allArts.push(art);
             // break;
           }
