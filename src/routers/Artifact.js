@@ -87,6 +87,10 @@ function Artifact() {
           if (pos === "version") {
             continue;
           }
+          if (pos === "characters") {
+            localStorage.setItem("characters", JSON.stringify(arts));
+            continue;
+          }
           console.log([pos, arts]);
           for (const art of arts) {
             art.id = uuidv4();
