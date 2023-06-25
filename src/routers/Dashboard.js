@@ -200,6 +200,8 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
         }
         // pushArtCol(tmpCol);
       }
+    }
+    if (artCol.length < 1) {
       pushArtCol(tmpCol);
     }
   }
