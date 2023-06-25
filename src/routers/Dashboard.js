@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState, createContext, useContext } from "react";
-import { groupBy, includes } from "lodash";
+import React, { useState, createContext, useContext } from "react";
+import { groupBy } from "lodash";
 import { Tabs, Image, Badge, Row, Col } from 'antd';
 import genCharacter from "../gen_character";
 import ZhCn from "../zh-cn.json";
@@ -8,12 +8,9 @@ import ArtifactModal from "../components/ArtifactModal";
 
 const cloneCharacters = [];
 
+const genCharacterObj = {}
 for (const character of Object.values(genCharacter)) {
-  cloneCharacters.push({
-    ...character,
-    nameLocale: ZhCn[character.nameLocale],
-    arts: []
-  });
+  genCharacterObj[ZhCn[character.nameLocale]] = character;
 }
 
 const val = localStorage.getItem("allArts"); //获取存储的元素
@@ -22,6 +19,15 @@ const allArts = val ? JSON.parse(val) : []; //解析出json对象
 charactersSuit = charactersSuit ? Object.fromEntries(JSON.parse(charactersSuit)) : {}; //解析出json对象
 // console.log(allArts);
 console.log(charactersSuit);
+
+for (const nameLocale of Object.keys(charactersSuit)) {
+  console.log(nameLocale);
+  cloneCharacters.push({
+    ...genCharacterObj[nameLocale],
+    nameLocale,
+    arts: []
+  });
+}
 
 for (const art of allArts) {
   // console.log(art.scores);
@@ -102,102 +108,119 @@ function has2_1(tmpCol, setNames) {
   return (Object.values(obj).filter(a => a > 1).length > 0) && Object.values(obj).filter(a => a > 0).length > 1
 }
 
+const artCount = {};
+const artColObj = {};
+cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
+  console.log(nameLocale);
+  console.log(charactersSuit[nameLocale]);
+  console.log(arts);
+  console.log(arts.filter(a => artCount[a.id]));
 
-const items = Object.keys(cGroup).map((key) => {
-  const characters = cGroup[key].map(({ name, nameLocale, avatar, arts }) => {
-    console.log(nameLocale);
-    console.log(charactersSuit[nameLocale]);
-
-    const artsGroup = groupBy(arts.sort((a, b) => -a.score + b.score), 'position');
-    console.log(artsGroup);
-    const setNames = charactersSuit[nameLocale];
-    const artCol = [];
-    function pushArtCol(col) {
-      if (!col.length) {
-        return;
-      }
-      const hash = col.map(({ id }) => id).reduce((pre, curr) => pre + curr);
-      // 如果当前套装已经添加过了，放弃
-      if (artCol.find(({ hash: h }) => h === hash)) {
-        return;
-      }
-      // 将筛选出来的套装纳入列表
-      artCol.push({
-        ...Object.fromEntries(col.map(art => [art.position, art])),
-        score: col.map(({ score }) => score).reduce((pre, curr) => pre + curr),
-        hash,
-      });
+  const artsGroup = groupBy(arts.filter(a => !artCount[a.id]).sort((a, b) => -a.score + b.score), 'position');
+  console.log(artsGroup);
+  const setNames = charactersSuit[nameLocale];
+  let artCol = [];
+  function pushArtCol(col) {
+    if (!col.length) {
+      return;
     }
+    const hash = col.map(({ id }) => id).reduce((pre, curr) => pre + curr);
+    // 如果当前套装已经添加过了，放弃
+    if (artCol.find(({ hash: h }) => h === hash)) {
+      return;
+    }
+    // 将筛选出来的套装纳入列表
+    artCol.push({
+      ...Object.fromEntries(col.map(art => [art.position, art])),
+      score: col.map(({ score }) => score).reduce((pre, curr) => pre + curr),
+      hash,
+    });
+  }
 
-    if (setNames?.length === 1) {
-      // 只有一种套装说明是四件套
-      const setName = setNames?.[0];
-      const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setName?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
-      console.log(setName);
-      console.log(tmpCol);
+  if (setNames?.length === 1) {
+    // 只有一种套装说明是四件套
+    const setName = setNames?.[0];
+    const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setName?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
+    console.log(setName);
+    console.log(tmpCol);
+    tmpCol.forEach((art, i) => {
+      console.log(art);
+      const col = [...tmpCol];
+      col[i] = { ...artsGroup[art?.position]?.[0] }; // 将当前部位换成分数最高的圣遗物
+      col[i].color = 'red';
+      let count = 0;
+      // 统计当前组合的套装数量
+      for (const { setName: tmpName } of col) {
+        if (setName?.startsWith(tmpName)) {
+          count++
+        }
+      }
+      // 如果套装不足四件套，放弃
+      if (count < 4) {
+        return;
+      }
+      console.log(count);
+      pushArtCol(col);
+    });
+  } else {
+    // 2+2组合
+    const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setNames?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
+    console.log(tmpCol);
+    if (has2_2(tmpCol, setNames)) {
+      pushArtCol(tmpCol);
+      // 符合2+2 说明有一件装备有可能更换成更好的，还会满足
       tmpCol.forEach((art, i) => {
-        console.log(art);
         const col = [...tmpCol];
-        col[i] = { ...artsGroup[art?.position]?.[0] }; // 将当前部位换成分数最高的圣遗物
+        col[i] = { ...artsGroup[art?.position]?.[0] };
         col[i].color = 'red';
-        let count = 0;
-        // 统计当前组合的套装数量
-        for (const { setName: tmpName } of col) {
-          if (setName?.startsWith(tmpName)) {
-            count++
-          }
+        if (has2_2(col, setNames)) {
+          pushArtCol(col);
         }
-        // 如果套装不足四件套，放弃
-        if (count < 4) {
-          return;
-        }
-        console.log(count);
-        pushArtCol(col);
       });
-      console.log(artCol);
     } else {
-      // 2+2组合
-      const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setNames?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
-      console.log(tmpCol);
-      if (has2_2(tmpCol, setNames)) {
-        pushArtCol(tmpCol);
-        // 符合2+2 说明有一件装备有可能更换成更好的，还会满足
-        tmpCol.forEach((art, i) => {
-          const col = [...tmpCol];
-          col[i] = { ...artsGroup[art?.position]?.[0] };
-          col[i].color = 'red';
-          if (has2_2(col, setNames)) {
-            pushArtCol(col);
-          }
-        });
-      } else {
-        // 最好的套装都不符合2+2，需要找到最优解
-        const obj = setNamesCount(tmpCol, setNames);
-        if (has2_1(tmpCol, setNames)) {
-          const seto1s = Object.entries(obj).filter(([a, b]) => b === 1).map(([a]) => a); // 找到缺1件的套装
-          console.log('缺少', seto1s);
-          for (const setNameo1 of seto1s) {
-            tmpCol.forEach((art, i) => {
-              if (art.setName !== setNameo1) {
-                const colart = artsGroup[art?.position].find(a => a.setName === setNameo1);
-                if (colart) {
-                  const col = [...tmpCol];
-                  col[i] = { ...colart };
-                  col[i].color = 'red';
-                  if (has2_2(col, setNames)) {
-                    pushArtCol(col);
-                  }
+      // 最好的套装都不符合2+2，需要找到最优解
+      const obj = setNamesCount(tmpCol, setNames);
+      if (has2_1(tmpCol, setNames)) {
+        const seto1s = Object.entries(obj).filter(([a, b]) => b === 1).map(([a]) => a); // 找到缺1件的套装
+        console.log('缺少', seto1s);
+        for (const setNameo1 of seto1s) {
+          tmpCol.forEach((art, i) => {
+            if (art.setName !== setNameo1) {
+              const colart = artsGroup[art?.position].find(a => a.setName === setNameo1);
+              if (colart) {
+                const col = [...tmpCol];
+                col[i] = { ...colart };
+                col[i].color = 'red';
+                if (has2_2(col, setNames)) {
+                  pushArtCol(col);
                 }
               }
-            });
-          }
-          // pushArtCol(tmpCol);
+            }
+          });
         }
-        pushArtCol(tmpCol);
+        // pushArtCol(tmpCol);
       }
-      console.log(artCol);
+      pushArtCol(tmpCol);
     }
+  }
 
+  console.log(artCol);
+  // 当前角色的套装按照分数排序
+  artCol = artCol.sort((a, b) => b.score - a.score);
+  if (artCol.length) {
+    // 从组中删除最好的一套圣遗物防止下一个角色使用
+    for (const art of Object.values(artCol[0])) {
+      artCount[art.id] = (artCount[art.id] ?? 0) + 1
+    }
+    console.log(artCount);
+  }
+  artColObj[nameLocale] = artCol;
+})
+
+const items = Object.keys(cGroup).map((key) => {
+
+  const characters = cGroup[key].map(({ name, nameLocale, avatar }) => {
+    const artCol = artColObj[nameLocale];
     return {
       key: name,
       label:
@@ -207,7 +230,7 @@ const items = Object.keys(cGroup).map((key) => {
           src={avatar}
         />),
       children:
-        artCol.sort((a, b) => -a.score + b.score).map((arts, i) => (
+        artCol.map((arts, i) => (
           <Row key={'artCol' + i}>
             <Col span={4}><Art source={arts.flower}></Art></Col>
             <Col span={4}><Art source={arts.feather}></Art></Col>
