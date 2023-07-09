@@ -13,9 +13,9 @@ for (const character of Object.values(genCharacter)) {
   genCharacterObj[ZhCn[character.nameLocale]] = character;
 }
 
-const val = localStorage.getItem("allArts"); //获取存储的元素
 let charactersSuit = localStorage.getItem("characters"); //获取存储的元素
-const allArts = val ? JSON.parse(val) : []; //解析出json对象
+const allArts = window.allArts ?? []; //解析出json对象
+
 charactersSuit = charactersSuit ? Object.fromEntries(JSON.parse(charactersSuit)) : {}; //解析出json对象
 // console.log(allArts);
 console.log(charactersSuit);

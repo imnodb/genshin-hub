@@ -1,3 +1,4 @@
+import localforage from "localforage";
 import React, { useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -30,8 +31,7 @@ import ArtifactModal from "../components/ArtifactModal";
 // console.log({ mona });
 
 // console.log(Object.entries(mona));
-const val = localStorage.getItem("allArts"); //获取存储的元素
-const allArts = val ? JSON.parse(val) : []; //解析出json对象
+const allArts = window.allArts ?? []; //解析出json对象
 
 console.log(artifactIcons);
 
@@ -77,7 +77,7 @@ function Artifact() {
     console.log(file);
     const fileReader = new FileReader();
     fileReader.readAsText(file);
-    fileReader.onload = function (e) {
+    fileReader.onload = async function (e) {
       try {
         const mona = JSON.parse(fileReader.result);
         console.log(mona);
@@ -101,7 +101,7 @@ function Artifact() {
           }
           // break;
         }
-        localStorage.setItem("allArts", JSON.stringify(allArts));
+        await localforage.setItem("allArts", allArts);
         console.log("allArts----\n", allArts);
         window.location.reload();
       } catch (error) {
