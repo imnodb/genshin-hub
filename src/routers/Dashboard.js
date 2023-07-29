@@ -65,10 +65,7 @@ function Art({ name, source }) {
       >
         <Image
           style={{
-            background:
-              !color
-                ? "rgb(211, 159, 81)"
-                : "rgb(177, 135, 195)",
+            background: "rgb(211, 159, 81)",
           }}
           className="art-img"
           preview={false}
