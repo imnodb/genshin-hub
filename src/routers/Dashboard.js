@@ -134,7 +134,44 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
     });
   }
 
-  if (setNames?.length === 1) {
+  if (nameLocale === '枫原万叶') {
+    // 只有一种套装说明是四件套
+    const setName = setNames?.[0];
+    const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setName?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
+    console.log(setName);
+    console.log(tmpCol);
+    tmpCol.forEach((art, i) => {
+      console.log(art);
+      const col = [...tmpCol];
+      if (['flower', 'feather'].includes(art?.position)) {
+        for (const oneallart of allArts.filter(a => !artCount[a.id])) {
+          if (oneallart.position === art?.position) {
+            const { value: oldelementalMastery } = col[i].normalTags.find(({ name }) => name === 'elementalMastery') ?? { value: 0 };
+            const { value: newelementalMastery } = oneallart.normalTags.find(({ name }) => name === 'elementalMastery') ?? { value: 0 };
+            col[i].score = oldelementalMastery;
+            if (oldelementalMastery < newelementalMastery) {
+              col[i] = { ...oneallart, score: newelementalMastery }; // 将当前部位换成分数最高的圣遗物
+              col[i].color = 'red';
+              console.log(col[i]);
+            }
+          }
+        }
+      }
+      let count = 0;
+      // 统计当前组合的套装数量
+      for (const { setName: tmpName } of col) {
+        if (setName?.startsWith(tmpName)) {
+          count++
+        }
+      }
+      // 如果套装不足四件套，放弃
+      if (count < 4) {
+        return;
+      }
+      console.log(count);
+      pushArtCol(col);
+    });
+  } else if (setNames?.length === 1) {
     // 只有一种套装说明是四件套
     const setName = setNames?.[0];
     const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setName?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
