@@ -1909,7 +1909,7 @@ export function getScore(art) {
       ...normalTags.map(({ name }) => name),
     ];
     for (let index = 0; index < tagCount; index++) {
-      console.log(`强化第${index + 1}次`);
+    // console.log(`强化第${index + 1}次`);
       if (normalTags.length === 3) {
         // console.log("补一条属性", art.mainTag.name);
         // console.log(AverageEff);

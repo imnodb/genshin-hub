@@ -1,9 +1,11 @@
 import React, { useState, createContext, useContext } from "react";
 import { groupBy } from "lodash";
-import { Tabs, Image, Badge, Row, Col } from 'antd';
+import { Tabs, Image, Badge, Row, Col, FloatButton, Avatar, Space } from 'antd';
+import { ShareAltOutlined } from "@ant-design/icons";
 import genCharacter from "../gen_character";
 import ZhCn from "../zh-cn.json";
 import ArtifactModal from "../components/ArtifactModal";
+import artifactIcons from "../gen_artifact";
 
 
 const cloneCharacters = [];
@@ -17,11 +19,51 @@ let charactersSuit = localStorage.getItem("characters"); //获取存储的元素
 const allArts = window.allArts ?? []; //解析出json对象
 
 charactersSuit = charactersSuit ? Object.fromEntries(JSON.parse(charactersSuit)) : {}; //解析出json对象
-// console.log(allArts);
+console.log(allArts);
 console.log(charactersSuit);
 
+for (const [character, setNames] of Object.entries(charactersSuit)) {
+  // console.log(character, setNames);
+
+  const arts = allArts.map(art => (
+    art._filter = Object.fromEntries(art.scores.map(score => [score.characterName, score.score]))
+  ) && art).filter(art => art._filter[character]);
+
+  // 所以可选套装
+  for (const setName of setNames) {
+    // .filter(({ scores }) => scores.find(({ characterName }) => characterName === character));
+    // 保留两个评分最高的圣遗物
+    for (const position of ['flower', 'feather', 'sand', 'cup', 'head']) {
+      const [art1 = {}, art2 = {}] = arts.filter(art => art.setName === setName && !art.save && art.position === position).sort((art1, art2) => art2._filter[character] - art1._filter[character])
+      // console.log(art1, art2);
+      art1.save = true;
+      if (setNames.length < 2) {
+        art2.save = true;
+      }
+      if (!art1.position) {
+        console.error(character, position, setName, ZhCn[artifactIcons[setName]?.nameLocale]);
+      }
+    }
+  }
+  // 保留一个非套装分最高的圣遗物
+  for (const position of ['sand', 'cup', 'head']) {
+    const [art1 = {}, art2 = {}] = arts.filter(art => !art.save && art.position === position).sort((art1, art2) => art2._filter[character] - art1._filter[character])
+    // console.log(art1, art2);
+    art1.save = true;
+    if (!art1.position) {
+      console.error(character, position);
+    }
+  }
+  // for (const art of arts) {
+  //   if (art.position==='flower') {
+
+  //   }
+  // }
+}
+
+
 for (const nameLocale of Object.keys(charactersSuit)) {
-  console.log(nameLocale);
+  // console.log(nameLocale);
   cloneCharacters.push({
     ...genCharacterObj[nameLocale],
     nameLocale,
@@ -42,7 +84,7 @@ for (const art of allArts) {
   }
 }
 const cGroup = groupBy(cloneCharacters, "element");
-console.log(cGroup);
+// console.log(cGroup);
 
 const artContext = createContext(null)
 
@@ -51,9 +93,9 @@ function Art({ name, source }) {
   if (!source) {
     return <></>
   }
-  const { id, level, star, icon, setName, score, color } = source;
+  const { id, level, star, icon, setName, score, equip, save } = source;
   const onClick = () => {
-    console.log('onClick\n');
+    // console.log('onClick\n');
     setArt(source)
   }
   return (
@@ -65,13 +107,19 @@ function Art({ name, source }) {
       >
         <Image
           style={{
-            background: "rgb(211, 159, 81)",
+            background: save ? "rgb(211, 159, 81)" : '',
           }}
           className="art-img"
           preview={false}
           width={80}
           src={icon}
         />
+        <div className="character-badge character-badge-b">
+          <Avatar
+            className="character-badge-a"
+            src={genCharacterObj[equip]?.avatar}
+          />
+        </div>
         <div className="character-badge-txt">
           {score}分
         </div>
@@ -108,13 +156,13 @@ function has2_1(tmpCol, setNames) {
 const artCount = {};
 const artColObj = {};
 cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
-  console.log(nameLocale);
-  console.log(charactersSuit[nameLocale]);
-  console.log(arts);
-  console.log(arts.filter(a => artCount[a.id]));
+  // console.log(nameLocale);
+  // console.log(charactersSuit[nameLocale]);
+  // console.log(arts);
+  // console.log(arts.filter(a => artCount[a.id]));
 
   const artsGroup = groupBy(arts.filter(a => !artCount[a.id]).sort((a, b) => -a.score + b.score), 'position');
-  console.log(artsGroup);
+  // console.log(artsGroup);
   const setNames = charactersSuit[nameLocale];
   let artCol = [];
   function pushArtCol(col) {
@@ -132,16 +180,19 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       score: col.map(({ score }) => score).reduce((pre, curr) => pre + curr),
       hash,
     });
+    for (const art of col) {
+      art.save = true;
+    }
   }
 
   if (nameLocale === '枫原万叶') {
     // 只有一种套装说明是四件套
     const setName = setNames?.[0];
     const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setName?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
-    console.log(setName);
-    console.log(tmpCol);
+    // console.log(setName);
+    // console.log(tmpCol);
     tmpCol.forEach((art, i) => {
-      console.log(art);
+      // console.log(art);
       const col = [...tmpCol];
       if (['flower', 'feather'].includes(art?.position)) {
         for (const oneallart of allArts.filter(a => !artCount[a.id])) {
@@ -152,7 +203,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
             if (oldelementalMastery < newelementalMastery) {
               col[i] = { ...oneallart, score: newelementalMastery }; // 将当前部位换成分数最高的圣遗物
               col[i].color = 'red';
-              console.log(col[i]);
+              // console.log(col[i]);
             }
           }
         }
@@ -168,17 +219,17 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       if (count < 4) {
         return;
       }
-      console.log(count);
+      // console.log(count);
       pushArtCol(col);
     });
   } else if (setNames?.length === 1) {
     // 只有一种套装说明是四件套
     const setName = setNames?.[0];
     const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setName?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
-    console.log(setName);
-    console.log(tmpCol);
+    // console.log(setName);
+    // console.log(tmpCol);
     tmpCol.forEach((art, i) => {
-      console.log(art);
+      // console.log(art);
       const col = [...tmpCol];
       col[i] = { ...artsGroup[art?.position]?.[0] }; // 将当前部位换成分数最高的圣遗物
       col[i].color = 'red';
@@ -193,13 +244,13 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       if (count < 4) {
         return;
       }
-      console.log(count);
+      // console.log(count);
       pushArtCol(col);
     });
   } else {
     // 2+2组合
     const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setNames?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
-    console.log(tmpCol);
+    // console.log(tmpCol);
     if (has2_2(tmpCol, setNames)) {
       pushArtCol(tmpCol);
       // 符合2+2 说明有一件装备有可能更换成更好的，还会满足
@@ -216,7 +267,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       const obj = setNamesCount(tmpCol, setNames);
       if (has2_1(tmpCol, setNames)) {
         const seto1s = Object.entries(obj).filter(([a, b]) => b === 1).map(([a]) => a); // 找到缺1件的套装
-        console.log('缺少', seto1s);
+        // console.log('缺少', seto1s);
         for (const setNameo1 of seto1s) {
           tmpCol.forEach((art, i) => {
             if (art.setName !== setNameo1) {
@@ -240,7 +291,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
     }
   }
 
-  console.log(artCol);
+  // console.log(artCol);
   // 当前角色的套装按照分数排序
   artCol = artCol.sort((a, b) => b.score - a.score);
   if (artCol.length) {
@@ -248,7 +299,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
     for (const art of Object.values(artCol[0])) {
       artCount[art.id] = (artCount[art.id] ?? 0) + 1
     }
-    console.log(artCount);
+    // console.log(artCount);
   }
   artColObj[nameLocale] = artCol;
 })
@@ -267,7 +318,9 @@ const items = Object.keys(cGroup).map((key) => {
         />),
       children:
         artCol.map((arts, i) => (
-          <Row key={'artCol' + i}>
+          <Row
+            style={{ marginBottom: '20px' }}
+            key={'artCol' + i}>
             <Col span={4}><Art source={arts.flower}></Art></Col>
             <Col span={4}><Art source={arts.feather}></Art></Col>
             <Col span={4}><Art source={arts.sand}></Art></Col>
@@ -288,9 +341,18 @@ const items = Object.keys(cGroup).map((key) => {
 
 function Dashboard() {
   const [art, setArt] = useState(null);
-
+  const exportJSON = () => {
+    console.log('click')
+    const content = JSON.stringify(allArts.map(({ token, save = false }) => ({ token, save })))
+    var a = document.createElement("a");
+    var file = new Blob([content], { type: 'application/json' });
+    a.href = URL.createObjectURL(file);
+    a.download = 'lock.json';
+    a.click();
+  }
   return (
-    <div>
+    <div style={{ paddingLeft: '20px' }}>
+      <FloatButton onClick={exportJSON} icon={<ShareAltOutlined />} />
       <artContext.Provider value={setArt}>
         <ArtifactModal art={art} setArt={setArt}></ArtifactModal>
         <Tabs defaultActiveKey="1" items={items} />

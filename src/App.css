@@ -3,13 +3,21 @@
 .art-img {
   border-bottom-right-radius: 30%;
 }
+.lock-badge {
+  position: absolute;
+  top: 4px;
+  left: 2px;
+}
 .character-badge {
   position: absolute;
   top: -10px;
-  left: -5px;
+  right: -5px;
 }
 .character-badge-a {
   background: #fff;
+}
+.character-badge-b {
+  left: -5px;
 }
 .character-badge-txt {
   background: #fff;

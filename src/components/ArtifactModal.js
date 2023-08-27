@@ -62,24 +62,24 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
     for (let index = 0; index < count; index++) {
       const arr = [...list];
       for (const { v, i } of list) {
-        console.log(v, i);
+      // console.log(v, i);
         if (i > index) {
           for (const av of artifactEff[5][name]) {
-            console.log(v, av);
+          // console.log(v, av);
             arr.push({
               v: v + av,
               i: i + 1,
             });
             if (name === "lifePercentage") {
-              console.log(`强化第${i + index + 1}次，是${(v + av) * 100}`);
+            // console.log(`强化第${i + index + 1}次，是${(v + av) * 100}`);
             }
           }
         }
       }
       list = uniqBy(arr, "v");
-      console.log(props.tag);
+    // console.log(props.tag);
     }
-    console.log(list);
+  // console.log(list);
     return list.map(({ v, i }) => (
       <Button
         key={"rise" + ModalData.id + name + v}
@@ -135,8 +135,8 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
   }
 
   useEffect(() => {
-    console.log('useEffect\n');
-    console.log(art);
+  console.log('useEffect\n');
+  console.log(art);
     if (art) {
       setModalData(JSON.parse(JSON.stringify(art)));
       setIsModalOpen(true);
@@ -151,19 +151,19 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
     const { confirm } = Modal;
     const art = allArts.find(({ id }) => id === ModalData.id);
     if (ModalData.level !== art.level) {
-      console.log("关闭详情弹窗", ModalData);
+    // console.log("关闭详情弹窗", ModalData);
       confirm({
         icon: <ExclamationCircleOutlined />,
         content: <>圣遗物已经强化，是否要更新数据！</>,
         onOk() {
-          console.log("OK");
+        // console.log("OK");
           Object.assign(art, ModalData);
           changeRatingList();
           localStorage.setItem("allArts", JSON.stringify(allArts));
           setIsModalOpen(false);
         },
         onCancel() {
-          console.log("Cancel");
+        // console.log("Cancel");
           setIsModalOpen(false);
         },
       });
