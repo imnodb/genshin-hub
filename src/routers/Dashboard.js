@@ -33,7 +33,7 @@ for (const [character, setNames] of Object.entries(charactersSuit)) {
   for (const setName of setNames) {
     // .filter(({ scores }) => scores.find(({ characterName }) => characterName === character));
     // 保留两个评分最高的圣遗物
-    for (const position of ['flower', 'feather', 'sand', 'cup', 'head']) {
+    for (const position of ['flower', 'feather']) {
       const [art1 = {}, art2 = {}] = arts.filter(art => art.setName === setName && !art.save && art.position === position).sort((art1, art2) => art2._filter[character] - art1._filter[character])
       // console.log(art1, art2);
       art1.save = true;
@@ -43,6 +43,27 @@ for (const [character, setNames] of Object.entries(charactersSuit)) {
       if (!art1.position) {
         console.error(character, position, setName, ZhCn[artifactIcons[setName]?.nameLocale]);
       }
+    }
+    // 保留两个评分最高的圣遗物
+    for (const position of ['sand', 'cup', 'head']) {
+      console.log(setName, position);
+      const artGroup = groupBy(
+        arts.filter(art => art.setName === setName && !art.save && art.position === position),
+        ({ mainTag }) => mainTag.name
+      );
+      console.log(artGroup);
+      for (const artGroupSub of Object.values(artGroup)) {
+        const [art1 = {}, art2 = {}] = artGroupSub.sort((art1, art2) => art2._filter[character] - art1._filter[character])
+        console.log(art1, art2);
+        art1.save = true;
+        if (setNames.length < 2 && Object.keys(artGroup).length < 2) {
+          art2.save = true;
+        }
+      }
+      if (!Object.keys(artGroup).length) {
+        console.error(character, position, setName, ZhCn[artifactIcons[setName]?.nameLocale]);
+      }
+
     }
   }
   // 保留一个非套装分最高的圣遗物
@@ -54,11 +75,11 @@ for (const [character, setNames] of Object.entries(charactersSuit)) {
       console.error(character, position);
     }
   }
-  // for (const art of arts) {
-  //   if (art.position==='flower') {
-
-  //   }
-  // }
+  for (const art of arts) {
+    if (art.score < 30) {
+      art.save = false;
+    }
+  }
 }
 
 
