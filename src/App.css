@@ -29,3 +29,12 @@
 .bottom-character-a {
   background: #fff;
 }
+
+
+.character-tabs-tab {
+  margin: 0 16px !important;
+}
+.character-tabs-nav-list {
+  width: 1380px;
+  flex-wrap: wrap !important;
+}

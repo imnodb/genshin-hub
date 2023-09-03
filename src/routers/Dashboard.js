@@ -104,7 +104,7 @@ for (const art of allArts) {
     }
   }
 }
-const cGroup = groupBy(cloneCharacters, "element");
+const cGroup = { 'All': cloneCharacters, ...groupBy(cloneCharacters, "element") };
 // console.log(cGroup);
 
 const artContext = createContext(null)
@@ -356,7 +356,7 @@ const items = Object.keys(cGroup).map((key) => {
   return {
     key,
     label: key,
-    children: <Tabs defaultActiveKey="1" items={characters} />,
+    children: <Tabs prefixCls="character-tabs" defaultActiveKey="1" items={characters} />,
   }
 });
 
@@ -376,7 +376,10 @@ function Dashboard() {
       <FloatButton onClick={exportJSON} icon={<ShareAltOutlined />} />
       <artContext.Provider value={setArt}>
         <ArtifactModal art={art} setArt={setArt}></ArtifactModal>
-        <Tabs defaultActiveKey="1" items={items} />
+        <Tabs defaultActiveKey="1"
+          size="large"
+          type="card"
+          items={items} />
       </artContext.Provider>
     </div>
   );
