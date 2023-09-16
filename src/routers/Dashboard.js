@@ -318,25 +318,36 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
   if (artCol.length) {
     // 从组中删除最好的一套圣遗物防止下一个角色使用
     for (const art of Object.values(artCol[0])) {
+      if (typeof art === 'object') {
+        if (art.level < 20 || nameLocale !== art.equip) {
+          const character = cloneCharacters.find(c => c.nameLocale === nameLocale) ?? {}
+          character.equip = true
+        }
+      }
       artCount[art.id] = (artCount[art.id] ?? 0) + 1
     }
     // console.log(artCount);
+  } else {
+    const character = cloneCharacters.find(c => c.nameLocale === nameLocale) ?? {}
+    character.equip = true
   }
   artColObj[nameLocale] = artCol;
 })
 
 const items = Object.keys(cGroup).map((key) => {
 
-  const characters = cGroup[key].map(({ name, nameLocale, avatar }) => {
+  const characters = cGroup[key].map(({ name, nameLocale, avatar, equip }) => {
     const artCol = artColObj[nameLocale];
     return {
       key: name,
       label:
-        (< Image
-          preview={false}
-          width={50}
-          src={avatar}
-        />),
+        (<Badge dot={equip}>
+          < Avatar
+            shape="square"
+            size={60}
+            src={avatar}
+          />
+        </Badge>),
       children:
         artCol.map((arts, i) => (
           <Row
