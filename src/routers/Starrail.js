@@ -220,7 +220,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
   const { artifacts } = charactersSuit[nameLocale];
 
   let artCol = [];
-  function pushArtCol(col) {
+  function pushArtCol(col, artCol) {
     if (!col.length) {
       return;
     }
@@ -240,10 +240,11 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
     }
   }
   for (const artifact of artifacts) {
+    let tmpArtCol = [];
     const { setNames, head, hands, body, feet, planarSphere, linkRope } =
       artifact;
     // 只有两种套装说明是内外圈唯一组合
-    const tmpCol = Object.values(artsGroup)
+    let tmpCol = Object.values(artsGroup)
       .map((a) =>
         a.find?.(
           (b) =>
@@ -255,13 +256,13 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
     if (setNames?.length === 2) {
       console.log("setNames", setNames);
       console.log("tmpCol", tmpCol);
-      pushArtCol(tmpCol);
+      pushArtCol(tmpCol, tmpArtCol);
     } else {
       // 2+2+2组合
       console.log("tmpCol", tmpCol);
       if (has2_2_2(tmpCol, setNames)) {
         console.log("has2_2_2", tmpCol);
-        pushArtCol(tmpCol);
+        pushArtCol(tmpCol, tmpArtCol);
         // 符合2+2+2 说明满足
       } else {
         // 最好的套装都不符合2+2+2，需要找到最优解
@@ -283,7 +284,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
                   col[i] = { ...colart };
                   col[i].color = "red";
                   if (has2_2_2(col, setNames)) {
-                    pushArtCol(col);
+                    pushArtCol(col, tmpArtCol);
                   }
                 }
               }
@@ -316,7 +317,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
                     col2[g].color = "red";
                     console.log("col2", col2);
                     if (has2_2_2(col2, setNames)) {
-                      pushArtCol(col2);
+                      pushArtCol(col2, tmpArtCol);
                     }
                   }
                 });
@@ -325,10 +326,12 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
           }
         }
       }
-      if (artCol.length < 1) {
-        pushArtCol(tmpCol);
+      if (tmpArtCol.length < 1) {
+        pushArtCol(tmpCol, tmpArtCol);
       }
     }
+    console.log("tmpArtCol\n", tmpArtCol);
+    artCol.push(...tmpArtCol.sort((a, b) => b.score - a.score));
   }
 
   console.log("artCol\n", artCol);

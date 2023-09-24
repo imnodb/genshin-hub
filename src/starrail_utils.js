@@ -707,6 +707,44 @@ export const characters = {
       },
     ],
   },
+  "开拓者·火": {
+    weights: {
+      "hp": 0.25,
+      "hp_": 0.25,
+      "atk": 0,
+      "atk_": 0,
+      "def": 1,
+      "def_": 1,
+      "spd": 0.75,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 1,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
+    artifacts: [
+      {
+        setNames: ["KnightofPurityPalace", "GuardofWutheringSnow", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["def_"],
+        feet: ["spd"],
+        planarSphere: ["def_"],
+        linkRope: ["def_"],
+      },
+      {
+        setNames: ["KnightofPurityPalace", "GuardofWutheringSnow", "BelobogoftheArchitects"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff"],
+        feet: ["spd"],
+        planarSphere: ["def_"],
+        linkRope: ["def_"],
+      },
+    ],
+  },
 };
 
 export function calScore(art) {
