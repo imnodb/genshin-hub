@@ -277,7 +277,8 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
             tmpCol.forEach((art, i) => {
               if (art.setName !== setNameo1) {
                 const colart = artsGroup[art?.position].find(
-                  (a) => a.setName === setNameo1
+                  (a) => a.setName === setNameo1 &&
+                    artifact[a.position][0] === a.mainTag.name
                 );
                 if (colart) {
                   const col = [...tmpCol];
@@ -300,7 +301,8 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
           for (const setNameo2 of seto2s) {
             tmpCol.forEach((art1, i) => {
               const colart = artsGroup[art1?.position].find(
-                (a) => a.setName === setNameo2
+                (a) => a.setName === setNameo2 &&
+                  artifact[a.position][0] === a.mainTag.name
               );
               if (colart) {
                 const col1 = [...tmpCol];
@@ -309,7 +311,8 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
                 console.log("col1", col1);
                 col1.forEach((art2, g) => {
                   const colart = artsGroup[art2?.position].find(
-                    (a) => a.setName === setNameo2
+                    (a) => a.setName === setNameo2 &&
+                      artifact[a.position][0] === a.mainTag.name
                   );
                   if (colart) {
                     const col2 = [...col1];
