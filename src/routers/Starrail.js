@@ -201,9 +201,7 @@ function has2_2_1(tmpCol, setNames) {
 // 满足2+2+0套
 function has2_2_0(tmpCol, setNames) {
   const obj = setNamesCount(tmpCol, setNames);
-  return (
-    Object.values(obj).filter((a) => a > 1).length > 1
-  );
+  return Object.values(obj).filter((a) => a > 1).length > 1;
 }
 
 const artCount = {};
@@ -241,20 +239,25 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       art.save = true;
     }
   }
-  for (const { setNames, head, hands, body, feet } of artifacts) {
+  for (const artifact of artifacts) {
+    const { setNames, head, hands, body, feet, planarSphere, linkRope } =
+      artifact;
     // 只有两种套装说明是内外圈唯一组合
+    const tmpCol = Object.values(artsGroup)
+      .map((a) =>
+        a.find?.(
+          (b) =>
+            setNames?.includes(b.setName) &&
+            artifact[b.position][0] === b.mainTag.name
+        )
+      )
+      .filter((a) => a); // 挑出当前套装最好的部位
     if (setNames?.length === 2) {
-      const tmpCol = Object.values(artsGroup)
-        .map((a) => a.find?.((b) => setNames?.includes(b.setName)))
-        .filter((a) => a); // 挑出当前套装最好的部位
       console.log("setNames", setNames);
       console.log("tmpCol", tmpCol);
       pushArtCol(tmpCol);
     } else {
       // 2+2+2组合
-      const tmpCol = Object.values(artsGroup).map(
-        (a) => a.find?.((b) => setNames?.includes(b.setName)) ?? a[0]
-      ); // 挑出当前套装最好的部位
       console.log("tmpCol", tmpCol);
       if (has2_2_2(tmpCol, setNames)) {
         console.log("has2_2_2", tmpCol);
@@ -290,9 +293,9 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
         } else if (has2_2_0(tmpCol, setNames)) {
           console.log("has2_2_0", tmpCol, obj);
           console.log(setNames);
-          const seto2s = setNames.filter(a => !Object.keys(obj).includes(a))
+          const seto2s = setNames.filter((a) => !Object.keys(obj).includes(a));
           // 找到缺2件的套装
-          console.log('缺少', seto2s);
+          console.log("缺少", seto2s);
           for (const setNameo2 of seto2s) {
             tmpCol.forEach((art1, i) => {
               const colart = artsGroup[art1?.position].find(

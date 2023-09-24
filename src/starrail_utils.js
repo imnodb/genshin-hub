@@ -317,6 +317,17 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/407cd5269240e7ec73d8544cff23c9f3_7426246078000311751.png",
     },
   },
+  "PanGalacticCommercialEnterprise": {
+    nameLocale: '泛银河商业公司',
+    planarSphere: {
+      text: '公司的巨构总部',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/9b153e5eb9122992f358c2d933629878_6592530249071403503.png",
+    },
+    linkRope: {
+      text: '公司的贸易航道',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/a7994f7bff5ededc4e513b66bc655b70_496556679066015838.png",
+    },
+  },
 };
 export const subStats = [
   "hp",
@@ -492,6 +503,35 @@ export const characters = {
         feet: ["spd"],
         planarSphere: ["hp_"],
         linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "银狼": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 1,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 239,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/d8dc3ca987dd2b9911893718bb610375_7218912827536937727.png',
+    artifacts: [
+      {
+        setNames: ["GeniusofBrilliantStars", "PanGalacticCommercialEnterprise"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd"],
+        planarSphere: ["quantumDmg"],
+        linkRope: ["enerRegen", "atk_"],
       },
     ],
   },
