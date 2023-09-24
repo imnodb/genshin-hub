@@ -198,6 +198,13 @@ function has2_2_1(tmpCol, setNames) {
     Object.values(obj).filter((a) => a > 0).length > 2
   );
 }
+// 满足2+2+0套
+function has2_2_0(tmpCol, setNames) {
+  const obj = setNamesCount(tmpCol, setNames);
+  return (
+    Object.values(obj).filter((a) => a > 1).length > 1
+  );
+}
 
 const artCount = {};
 const artColObj = {};
@@ -250,12 +257,14 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       ); // 挑出当前套装最好的部位
       console.log("tmpCol", tmpCol);
       if (has2_2_2(tmpCol, setNames)) {
+        console.log("has2_2_2", tmpCol);
         pushArtCol(tmpCol);
         // 符合2+2+2 说明满足
       } else {
         // 最好的套装都不符合2+2+2，需要找到最优解
         const obj = setNamesCount(tmpCol, setNames);
         if (has2_2_1(tmpCol, setNames)) {
+          console.log("has2_2_1", tmpCol);
           const seto1s = Object.entries(obj)
             .filter(([a, b]) => b === 1)
             .map(([a]) => a); // 找到缺1件的套装
@@ -278,8 +287,39 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
             });
           }
           // pushArtCol(tmpCol);
-        } else {
-          
+        } else if (has2_2_0(tmpCol, setNames)) {
+          console.log("has2_2_0", tmpCol, obj);
+          console.log(setNames);
+          const seto2s = setNames.filter(a => !Object.keys(obj).includes(a))
+          // 找到缺2件的套装
+          console.log('缺少', seto2s);
+          for (const setNameo2 of seto2s) {
+            tmpCol.forEach((art1, i) => {
+              const colart = artsGroup[art1?.position].find(
+                (a) => a.setName === setNameo2
+              );
+              if (colart) {
+                const col1 = [...tmpCol];
+                col1[i] = { ...colart };
+                col1[i].color = "red";
+                console.log("col1", col1);
+                col1.forEach((art2, g) => {
+                  const colart = artsGroup[art2?.position].find(
+                    (a) => a.setName === setNameo2
+                  );
+                  if (colart) {
+                    const col2 = [...col1];
+                    col2[g] = { ...colart };
+                    col2[g].color = "red";
+                    console.log("col2", col2);
+                    if (has2_2_2(col2, setNames)) {
+                      pushArtCol(col2);
+                    }
+                  }
+                });
+              }
+            });
+          }
         }
       }
       if (artCol.length < 1) {

@@ -243,6 +243,25 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/c9a3ccc62bb84257ef6f269d45ed2841_6086081394345194799.png",
     },
   },
+  "PasserbyofWanderingCloud": {
+    nameLocale: '云无留迹的过客',
+    head: {
+      text: '过客的逢春木簪',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/3d95aa036af8eb639fbdbb672e4340c7_4059323445916151987.png",
+    },
+    hands: {
+      text: '过客的游龙臂鞲',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/3a83f6ee081076cb2ad3b9381d37c598_1560405117955572776.png",
+    },
+    body: {
+      text: '过客的残绣风衣',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/43d54456dcec404285221c6baa6a889c_4266562248261367330.png",
+    },
+    feet: {
+      text: '过客的蹀血游履',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/6d1e02ad5e92e27ab454ecddaec47a16_1935595535032382025.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -274,6 +293,28 @@ export const artifactIcons = {
     linkRope: {
       text: '萨尔索图的晨昏界线',
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/5d5a0014e6da1371a4c013a771bc5617_5461272683252669791.png",
+    },
+  },
+  "BrokenKeel": {
+    nameLocale: '折断的龙骨',
+    planarSphere: {
+      text: '伊须磨洲的残船鲸落',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/afeb5486a10b86ae06be97d397d4e840_287880299346553354.png",
+    },
+    linkRope: {
+      text: '伊须磨洲的坼裂缆索',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/ecb905d5313a2d20a57cd93da75dd0a6_2977861339214131503.png",
+    },
+  },
+  "FleetoftheAgeless": {
+    nameLocale: '不老者的仙舟',
+    planarSphere: {
+      text: '罗浮仙舟的天外楼船',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/7ff3f64fee9c41700666eae65c682693_855537188673048360.png",
+    },
+    linkRope: {
+      text: '罗浮仙舟的建木枝蔓',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/407cd5269240e7ec73d8544cff23c9f3_7426246078000311751.png",
     },
   },
 };
@@ -395,6 +436,62 @@ export const characters = {
         feet: ["atk_"],
         planarSphere: ["physicalDmg"],
         linkRope: ["atk_", "enerRegen"],
+      },
+    ],
+  },
+  "符玄": {
+    weights: {
+      "hp": 1,
+      "hp_": 1,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0.75,
+      "def_": 0.75,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/19/279865110/bed9e6ced420be2318de111dd96681ca_1167960718750842288.png',
+    artifacts: [
+      {
+        setNames: ["GuardofWutheringSnow", "PasserbyofWanderingCloud", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["GuardofWutheringSnow", "PasserbyofWanderingCloud", "FleetoftheAgeless"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["GuardofWutheringSnow", "LongevousDisciple", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["GuardofWutheringSnow", "LongevousDisciple", "FleetoftheAgeless"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
       },
     ],
   },
