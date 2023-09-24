@@ -333,7 +333,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
 
   console.log("artCol\n", artCol);
   // 当前角色的套装按照分数排序
-  artCol = artCol.sort((a, b) => b.score - a.score);
+  // artCol = artCol.sort((a, b) => b.score - a.score);
   if (artCol.length) {
     // 从组中删除最好的一套圣遗物防止下一个角色使用
     for (const art of Object.values(artCol[0])) {
