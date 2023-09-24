@@ -224,6 +224,25 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/6233622c52202bbeea46bee59044eb0c_4826254037059564030.png",
     },
   },
+  "GuardofWutheringSnow": {
+    nameLocale: '戍卫风雪的铁卫',
+    head: {
+      text: '铁卫的铸铁面盔',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/a13e3165e90f5e6fe466040a4d6181da_3732618150981867022.png",
+    },
+    hands: {
+      text: '铁卫的银鳞手甲',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/52879f61e037aaffd1e115fb8eb1c07a_6416284694980007542.png",
+    },
+    body: {
+      text: '铁卫的旧制军服',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/23f4b6e965199a646572bc430f378a86_4077959702314813919.png",
+    },
+    feet: {
+      text: '铁卫的白银护胫',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/c9a3ccc62bb84257ef6f269d45ed2841_6086081394345194799.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
