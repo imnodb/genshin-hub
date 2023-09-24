@@ -300,6 +300,44 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/171c1725f8e3951644e827c7bc64cb6f_3830795346637261690.png",
     },
   },
+  "MusketeerofWildWheat": {
+    nameLocale: '野穗伴行的快枪手',
+    head: {
+      text: '快枪手的野穗毡帽',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/7bc0d6a56c3e9d58b516aa64a4f624f6_8206311395433538807.png",
+    },
+    hands: {
+      text: '快枪手的粗革手套',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/d2a251c5ffe143020454bba47940f816_1341078412369722735.png",
+    },
+    body: {
+      text: '快枪手的猎风披肩',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/7bf067517a24e255dee209a4d29601a4_3883804698956585717.png",
+    },
+    feet: {
+      text: '快枪手的铆钉马靴',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/e9cc6cba6e0d7c84b1eccfe7db60078c_681572791213463757.png",
+    },
+  },
+  "WastelanderofBanditryDesert": {
+    nameLocale: '盗匪荒漠的废土客',
+    head: {
+      text: '废土客的呼吸面罩',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/6d57dbdaa56b6fd3a4e94d998830eee2_6789420110530030701.png",
+    },
+    hands: {
+      text: '废土客的荒漠终端',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/979ba978c5155282991b4cf9f72c8777_7765676439990656729.png",
+    },
+    body: {
+      text: '废土客的修士长袍',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/d29842586a04cc33944ea3f2b4c7f33d_6484194082638851872.png",
+    },
+    feet: {
+      text: '废土客的动力腿甲',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/9e47b879b5976aff7e6349d9c5d12b5d_5841183124243082750.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -742,6 +780,46 @@ export const characters = {
         feet: ["spd"],
         planarSphere: ["def_"],
         linkRope: ["def_"],
+      },
+    ],
+  },
+
+
+  "丹恒•饮月": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 221,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/30/279865110/e28c7a9c6b5dae03685b4d96c56989a9_1953398234327686580.png',
+    artifacts: [
+      {
+        setNames: ["MusketeerofWildWheat", "RutilantArena"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["atk_"],
+      },
+      {
+        setNames: ["WastelanderofBanditryDesert", "RutilantArena"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["atk_"],
       },
     ],
   },
