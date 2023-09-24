@@ -262,6 +262,25 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/6d1e02ad5e92e27ab454ecddaec47a16_1935595535032382025.png",
     },
   },
+  "MessengerTraversingHackerspace": {
+    nameLocale: '骇域漫游的信使',
+    head: {
+      text: '信使的全息目镜',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/3e06ff303d7aa95138d5ffcd43eef762_4132004696392377865.png",
+    },
+    hands: {
+      text: '信使的百变义手',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/b87f42ed0f3a5c394b3ec3fe8a84054e_9090777105834580927.png",
+    },
+    body: {
+      text: '信使的密信挎包',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/6bfe18d170d3f07de96587fbd8d38b22_4573773776738111280.png",
+    },
+    feet: {
+      text: '信使的酷跑板鞋',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/d9df10922533cde12c2b21d845593261_2974169765687024344.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -578,6 +597,44 @@ export const characters = {
         body: ["heal"],
         feet: ["spd"],
         planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "布洛妮娅": {
+    weights: {
+      "hp": 0.75,
+      "hp_": 0.75,
+      "atk": 0.5,
+      "atk_": 0.5,
+      "def": 0.5,
+      "def_": 0.5,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0.5,
+      "break": 0,
+    },
+    ace: 221,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/8089f0029f12e86400ca7ced4fdebb9e_7297414997519957265.png',
+    artifacts: [
+      {
+        setNames: ["MessengerTraversingHackerspace", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["spd"],
+        planarSphere: ["hp_", "windDmg", "def_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["MessengerTraversingHackerspace", "FleetoftheAgeless"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["spd"],
+        planarSphere: ["hp_", "windDmg", "def_"],
         linkRope: ["enerRegen"],
       },
     ],
