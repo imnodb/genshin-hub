@@ -535,6 +535,53 @@ export const characters = {
       },
     ],
   },
+  "白露": {
+    weights: {
+      "hp": 1,
+      "hp_": 1,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0.5,
+      "def_": 0.5,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 200,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/72c982ccd25802a32d0b89bf03d70d20_1097752465552406625.png',
+    artifacts: [
+      {
+        setNames: ["PasserbyofWanderingCloud", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["PasserbyofWanderingCloud", "FleetoftheAgeless"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["PasserbyofWanderingCloud", "LongevousDisciple", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
 };
 
 export function calScore(art) {
