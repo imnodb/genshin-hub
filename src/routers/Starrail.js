@@ -202,16 +202,15 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
   }
   const tmpCol = []
   for (const { setNames, head, hands, body, feet, } of artifacts) {
-    if (setNames?.length === 1) {
-      // 只有一种套装说明是四件套
-      const setName = setNames?.[0];
-      tmpCol.push(...Object.values(artsGroup).map((a) => a.find?.(b => setName?.includes(b.setName))).filter(a => a))// 挑出当前套装最好的部位
-      console.log("setName", setName);
+    // 只有两种套装说明是内外圈唯一组合
+    if (setNames?.length === 2) {
+      tmpCol.push(...Object.values(artsGroup).map((a) => a.find?.(b => setNames?.includes(b.setName))).filter(a => a)) // 挑出当前套装最好的部位
+      console.log("setNames", setNames);
       console.log("tmpCol", tmpCol);
     } else {
       // 2+2组合
       const tmpCol = Object.values(artsGroup).map((a) => a.find?.(b => setNames?.includes(b.setName)) ?? a[0]); // 挑出当前套装最好的部位
-      // console.log(tmpCol);
+      console.log(tmpCol);
       if (has2_2(tmpCol, setNames)) {
         pushArtCol(tmpCol);
         // 符合2+2 说明有一件装备有可能更换成更好的，还会满足

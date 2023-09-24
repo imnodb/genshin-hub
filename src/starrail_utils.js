@@ -312,14 +312,11 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/19/279865110/af90c6a64b2be8f65187bdd432819f2f_498164526560653278.png',
     artifacts: [
       {
-        setNames: ["GeniusofBrilliantStars"],
+        setNames: ["GeniusofBrilliantStars", "RutilantArena"],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
         feet: ["atk_"],
-      },
-      {
-        setNames: ["RutilantArena"],
         planarSphere: ["quantumDmg"],
         linkRope: ["atk_"],
       },
@@ -344,14 +341,11 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/279865110/080fa5ed1cb5d3d40dfcf1dc10549ca2_6303402650588045559.png',
     artifacts: [
       {
-        setNames: ["BandofSizzlingThunder"],
+        setNames: ["BandofSizzlingThunder", "SpaceSealingStation"],
         head: ["hp"],
         hands: ["atk"],
         body: ["atk_"],
         feet: ["spd"],
-      },
-      {
-        setNames: ["SpaceSealingStation"],
         planarSphere: ["lightningDmg"],
         linkRope: ["atk_", "enerRegen"],
       },
@@ -376,14 +370,29 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
     artifacts: [
       {
-        setNames: ["ChampionofStreetwiseBoxing", "LongevousDisciple", "GuardofWutheringSnow"],
+        setNames: ["ChampionofStreetwiseBoxing", "InertSalsotto"],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
         feet: ["atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_", "enerRegen"],
       },
       {
-        setNames: ["InertSalsotto"],
+        setNames: ["LongevousDisciple", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+      {
+        setNames: ["ChampionofStreetwiseBoxing", "GuardofWutheringSnow", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
         planarSphere: ["physicalDmg"],
         linkRope: ["atk_", "enerRegen"],
       },
