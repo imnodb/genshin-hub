@@ -167,6 +167,25 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/06/30/1805320/fa01fc76bab567da35f3b7deffe0cc78_8494142529458914935.png",
     },
   },
+  "BandofSizzlingThunder": {
+    nameLocale: '激奏雷电的乐队',
+    head: {
+      text: '乐队的偏光墨镜',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/6e20183a67eb927b3c23b9308a9da91b_7812984376646176330.png",
+    },
+    hands: {
+      text: '乐队的巡演手绳',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/12410f854b9eddb75ec38f7f3e16d5fd_7711211065263794649.png",
+    },
+    body: {
+      text: '乐队的钉刺皮衣',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/c9724c332dfebb04f16dce15b02a85a4_9003859473022510185.png",
+    },
+    feet: {
+      text: '乐队的铆钉短靴',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/64e5915b92e9a6e35e724b68b6eae004_539148985831296684.png",
+    },
+  },
   "RutilantArena": {
     planarSphere: {
       text: '泰科铵的镭射球场',
@@ -175,6 +194,16 @@ export const artifactIcons = {
     linkRope: {
       text: '泰科铵的弧光赛道',
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/47650b0480c9ca973608adb318167a5d_6220153310523905992.png",
+    },
+  },
+  "SpaceSealingStation": {
+    planarSphere: {
+      text: '「黑塔」的空间站点',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/80aae6c09efeb5779516fb7b6bd77733_5301553828507482825.png",
+    },
+    linkRope: {
+      text: '「黑塔」的漫历轨迹',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/adf08daa7c2832f2656e422343884e7a_2895538925902926887.png",
     },
   },
 };
@@ -222,6 +251,38 @@ export const characters = {
       {
         setNames: ["RutilantArena"],
         planarSphere: ["quantumDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+    ],
+  },
+  "卡芙卡": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 1,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0.5,
+      "critDMG": 0,
+      "eff": 0.75,
+      "effRes": 0,
+      "break": 0.5,
+    },
+    ace: 226,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/279865110/080fa5ed1cb5d3d40dfcf1dc10549ca2_6303402650588045559.png',
+    artifacts: [
+      {
+        setNames: ["BandofSizzlingThunder"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd"],
+      },
+      {
+        setNames: ["SpaceSealingStation"],
+        planarSphere: ["lightningDmg"],
         linkRope: ["atk_"],
       },
     ],

@@ -297,13 +297,13 @@ const items = Object.keys(cGroup).map((key) => {
           <Row
             style={{ marginBottom: '20px' }}
             key={'artCol' + i}>
-            <Col span={4}><Art source={arts.head}></Art></Col>
-            <Col span={4}><Art source={arts.hands}></Art></Col>
-            <Col span={4}><Art source={arts.body}></Art></Col>
-            <Col span={4}><Art source={arts.feet}></Art></Col>
-            <Col span={4}><Art source={arts.planarSphere}></Art></Col>
-            <Col span={4}><Art source={arts.linkRope}></Art></Col>
-            <Col span={4}>{arts.score}</Col>
+            <Col span={3}><Art source={arts.head}></Art></Col>
+            <Col span={3}><Art source={arts.hands}></Art></Col>
+            <Col span={3}><Art source={arts.body}></Art></Col>
+            <Col span={3}><Art source={arts.feet}></Art></Col>
+            <Col span={3}><Art source={arts.planarSphere}></Art></Col>
+            <Col span={3}><Art source={arts.linkRope}></Art></Col>
+            <Col span={3}>{arts.score}</Col>
           </Row>
         ))
       ,
