@@ -186,7 +186,46 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/64e5915b92e9a6e35e724b68b6eae004_539148985831296684.png",
     },
   },
+  "ChampionofStreetwiseBoxing": {
+    nameLocale: '街头出身的拳王',
+    head: {
+      text: '拳王的冠军护头',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/9f44db61cf624c73ab4f3682c5bee592_1808502902416218882.png",
+    },
+    hands: {
+      text: '拳王的重炮拳套',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/67b25fc9f25b106006f15a7ea06f40e9_7418656370712408780.png",
+    },
+    body: {
+      text: '拳王的贴身护胸',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/cd9815b8c2fa8a77445a77fdad02dce0_1228034803015687226.png",
+    },
+    feet: {
+      text: '拳王的弧步战靴',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/5e2116a2fb1baff365b74900fd6e1101_4431259695801478805.png",
+    },
+  },
+  "LongevousDisciple": {
+    nameLocale: '宝命长存的莳者',
+    head: {
+      text: '莳者的复明义眼',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/fb8dfb3e7fa8e62817f348dbee58be16_5337577755356282471.png",
+    },
+    hands: {
+      text: '莳者的机巧木手',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/6c4380994d47ab36ca22778f016b7853_4419114290717065647.png",
+    },
+    body: {
+      text: '莳者的承露羽衣',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/3888c6f10e832399378e9a9fbfc22c6c_3081701743416012482.png",
+    },
+    feet: {
+      text: '莳者的天人丝履',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/6233622c52202bbeea46bee59044eb0c_4826254037059564030.png",
+    },
+  },
   "RutilantArena": {
+    nameLocale: '繁星竞技场',
     planarSphere: {
       text: '泰科铵的镭射球场',
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/4f248791b87b643733fceac410fd49a4_771678252497121589.png",
@@ -197,6 +236,7 @@ export const artifactIcons = {
     },
   },
   "SpaceSealingStation": {
+    nameLocale: '太空封印站',
     planarSphere: {
       text: '「黑塔」的空间站点',
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/80aae6c09efeb5779516fb7b6bd77733_5301553828507482825.png",
@@ -204,6 +244,17 @@ export const artifactIcons = {
     linkRope: {
       text: '「黑塔」的漫历轨迹',
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/adf08daa7c2832f2656e422343884e7a_2895538925902926887.png",
+    },
+  },
+  "InertSalsotto": {
+    nameLocale: '停转的萨尔索图',
+    planarSphere: {
+      text: '萨尔索图的移动城市',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/24b08fae098716e2e22159c501ab7b31_273868093771541485.png",
+    },
+    linkRope: {
+      text: '萨尔索图的晨昏界线',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/5d5a0014e6da1371a4c013a771bc5617_5461272683252669791.png",
     },
   },
 };
@@ -251,7 +302,7 @@ export const characters = {
       {
         setNames: ["RutilantArena"],
         planarSphere: ["quantumDmg"],
-        linkRope: ["atk_", "enerRegen"],
+        linkRope: ["atk_"],
       },
     ],
   },
@@ -283,7 +334,39 @@ export const characters = {
       {
         setNames: ["SpaceSealingStation"],
         planarSphere: ["lightningDmg"],
-        linkRope: ["atk_"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+    ],
+  },
+  "克拉拉": {
+    weights: {
+      "hp": 0.45,
+      "hp_": 0.45,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0.35,
+      "def_": 0.35,
+      "spd": 0,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
+    artifacts: [
+      {
+        setNames: ["ChampionofStreetwiseBoxing", "LongevousDisciple", "GuardofWutheringSnow"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+      },
+      {
+        setNames: ["InertSalsotto"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_", "enerRegen"],
       },
     ],
   },
