@@ -1,6 +1,7 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Artifact from "./routers/Artifact";
 import Dashboard from "./routers/Dashboard";
+import Starrail from "./routers/Starrail";
 import "./App.css";
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="Artifact" element={<Artifact />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="Starrail" element={<Starrail />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
@@ -42,6 +44,9 @@ function Layout() {
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/Starrail">Starrail</Link>
           </li>
           <li>
             <Link to="/nothing-here">Nothing Here</Link>

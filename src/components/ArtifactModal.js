@@ -36,7 +36,7 @@ const Fixed = (artifact, v) => {
 };
 
 
-function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
+function ArtifactModal({ art, setArt, changeRatingList = () => { } }) {
   const [isModalOpen, setIsModalOpenA] = useState(false);
   const [ModalData, setModalData] = useState({});
   function setIsModalOpen(v) {
@@ -62,24 +62,24 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
     for (let index = 0; index < count; index++) {
       const arr = [...list];
       for (const { v, i } of list) {
-      // console.log(v, i);
+        // console.log(v, i);
         if (i > index) {
           for (const av of artifactEff[5][name]) {
-          // console.log(v, av);
+            // console.log(v, av);
             arr.push({
               v: v + av,
               i: i + 1,
             });
             if (name === "lifePercentage") {
-            // console.log(`强化第${i + index + 1}次，是${(v + av) * 100}`);
+              // console.log(`强化第${i + index + 1}次，是${(v + av) * 100}`);
             }
           }
         }
       }
       list = uniqBy(arr, "v");
-    // console.log(props.tag);
+      // console.log(props.tag);
     }
-  // console.log(list);
+    // console.log(list);
     return list.map(({ v, i }) => (
       <Button
         key={"rise" + ModalData.id + name + v}
@@ -135,8 +135,8 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
   }
 
   useEffect(() => {
-  console.log('useEffect\n');
-  console.log(art);
+    console.log('useEffect\n');
+    console.log(art);
     if (art) {
       setModalData(JSON.parse(JSON.stringify(art)));
       setIsModalOpen(true);
@@ -150,20 +150,20 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
   const handleCancel = () => {
     const { confirm } = Modal;
     const art = allArts.find(({ id }) => id === ModalData.id);
-    if (ModalData.level !== art.level) {
-    // console.log("关闭详情弹窗", ModalData);
+    if (art && ModalData.level !== art.level) {
+      // console.log("关闭详情弹窗", ModalData);
       confirm({
         icon: <ExclamationCircleOutlined />,
         content: <>圣遗物已经强化，是否要更新数据！</>,
         onOk() {
-        // console.log("OK");
+          // console.log("OK");
           Object.assign(art, ModalData);
           changeRatingList();
           localStorage.setItem("allArts", JSON.stringify(allArts));
           setIsModalOpen(false);
         },
         onCancel() {
-        // console.log("Cancel");
+          // console.log("Cancel");
           setIsModalOpen(false);
         },
       });
@@ -183,12 +183,12 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
         onOk={handleOk}
         onCancel={handleCancel}
       >
-        <p>{ZhCn[artifactIcons[ModalData.setName]?.[ModalData.position]?.text]}</p>
-        <p>{positionToLocale(ModalData.position)}</p>
-        <p>{artifactTags[ModalData.mainTag?.name]?.chs}</p>
+        <p>{ModalData.setNamePositionText ?? ZhCn[artifactIcons[ModalData.setName]?.[ModalData.position]?.text]}</p>
+        <p>{ModalData.positionLocale ?? positionToLocale(ModalData.position)}</p>
+        <p>{ModalData.mainTagName ?? artifactTags[ModalData.mainTag?.name]?.chs}</p>
         <p>
           {Fixed(
-            artifactTags[ModalData.mainTag?.name],
+            ModalData.mainTagPercentage ? { percentage: true } : artifactTags[ModalData.mainTag?.name],
             ModalData.mainTag?.value
           )}
         </p>
@@ -230,15 +230,15 @@ function ArtifactModal({ art, setArt, changeRatingList=()=>{} }) {
         </div>
 
         {ModalData.normalTags?.map((tag) => {
-          const { name, value } = tag;
+          const { name, chs, percentage, value } = tag;
           return (
             <div key={ModalData.id + name}>
-              {artifactTags[name]?.chs + "+"}
-              {Fixed(artifactTags[name], value)}
+              {(chs ?? artifactTags[name]?.chs) + " +"}
+              {Fixed(percentage ? { percentage } : artifactTags[name], value)}
             </div>
           );
         })}
-        <p>{ZhCn[artifactIcons[ModalData.setName]?.nameLocale]}</p>
+        <p>{ModalData.setNameText ?? ZhCn[artifactIcons[ModalData.setName]?.nameLocale]}</p>
         <p>2件套：{ZhCn[artifactIcons[ModalData.setName]?.effect2]}</p>
         <p>4件套：{ZhCn[artifactIcons[ModalData.setName]?.effect4]}</p>
         <Row>
