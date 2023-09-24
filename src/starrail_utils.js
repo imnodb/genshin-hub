@@ -281,6 +281,25 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/d9df10922533cde12c2b21d845593261_2974169765687024344.png",
     },
   },
+  "KnightofPurityPalace": {
+    nameLocale: '净庭教宗的圣骑士',
+    head: {
+      text: '圣骑的宽恕盔面',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/1435346403050cd63414374d2ae05d15_3559985053371607433.png",
+    },
+    hands: {
+      text: '圣骑的沉默誓环',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/c1f6312231aed3a3abe753de6a396b1e_1725195323607662379.png",
+    },
+    body: {
+      text: '圣骑的肃穆胸甲',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/b60a5e87b33db16ad73587d4bcb3261c_1415495625871934185.png",
+    },
+    feet: {
+      text: '圣骑的秩序铁靴',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/171c1725f8e3951644e827c7bc64cb6f_3830795346637261690.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -345,6 +364,17 @@ export const artifactIcons = {
     linkRope: {
       text: '公司的贸易航道',
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/a7994f7bff5ededc4e513b66bc655b70_496556679066015838.png",
+    },
+  },
+  "BelobogoftheArchitects": {
+    nameLocale: '筑城者的贝洛伯格',
+    planarSphere: {
+      text: '贝洛伯格的存护堡垒',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/6072b6c673e22ca89c14d434b068132a_3688486154369612881.png",
+    },
+    linkRope: {
+      text: '贝洛伯格的铁卫防线',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/30ed5e1b39d5accc8217c3b30cd7531f_5927791626047628057.png",
     },
   },
 };
@@ -635,6 +665,44 @@ export const characters = {
         body: ["critDMG"],
         feet: ["spd"],
         planarSphere: ["hp_", "windDmg", "def_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "杰帕德": {
+    weights: {
+      "hp": 0.5,
+      "hp_": 0.5,
+      "atk": 0,
+      "atk_": 0,
+      "def": 1,
+      "def_": 1,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0.75,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/3dc355b1245cf97e9705e7590bdacab1_5898666393410361915.png',
+    artifacts: [
+      {
+        setNames: ["KnightofPurityPalace", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["def_"],
+        feet: ["spd"],
+        planarSphere: ["def_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["KnightofPurityPalace", "BelobogoftheArchitects"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff"],
+        feet: ["spd"],
+        planarSphere: ["def_"],
         linkRope: ["enerRegen"],
       },
     ],
