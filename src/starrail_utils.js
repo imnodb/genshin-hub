@@ -973,6 +973,35 @@ export const characters = {
       },
     ],
   },
+  "驭空": {
+    weights: {
+      "hp": 0.75,
+      "hp_": 0.75,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0.5,
+      "def_": 0.5,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0.75,
+    },
+    ace: 213,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/62d7f255c2155a8d41e5cc800e81d1a5_4141136353024209559.png',
+    artifacts: [
+      {
+        setNames: ["GuardofWutheringSnow", "MusketeerofWildWheat", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG", "hp_", "def_"],
+        feet: ["spd"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
