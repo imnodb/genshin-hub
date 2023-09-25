@@ -338,6 +338,25 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/9e47b879b5976aff7e6349d9c5d12b5d_5841183124243082750.png",
     },
   },
+  "FiresmithofLavaForging": {
+    nameLocale: '熔岩锻铸的火匠',
+    head: {
+      text: '火匠的黑曜目镜',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/4ba9bade3415ea87e952fcd25744a805_1022346910634968357.png",
+    },
+    hands: {
+      text: '火匠的御火戒指',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/e1ae2884088926c165baff22fb7ef2dd_4630175235598892803.png",
+    },
+    body: {
+      text: '火匠的阻燃围裙',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/5ccdc7d1dffa9798f08ec254fc1a2fa9_32607186096420006.png",
+    },
+    feet: {
+      text: '火匠的合金义肢',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/e2f7d70ac4c1a8498155ffb8e2c08b4d_2542835972677711368.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -942,6 +961,35 @@ export const characters = {
         body: ["critRate", "critDMG"],
         feet: ["spd", "atk_"],
         planarSphere: ["lightningDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
+  "姬子": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0.25,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
+    artifacts: [
+      {
+        setNames: ["FiresmithofLavaForging", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_","spd"],
+        planarSphere: ["fireDmg"],
         linkRope: ["atk_"],
       },
     ],
