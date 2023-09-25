@@ -395,6 +395,25 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/4f8266432c5113c5145b258fef9066b5_1336371065689299094.png",
     },
   },
+  "ThiefofShootingMeteor": {
+    nameLocale: '流星追迹的怪盗',
+    head: {
+      text: '怪盗的千人假面',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/06/103492603/c20433dcd8f8265de6c312aecac47fdd_5108322449207293427.png",
+    },
+    hands: {
+      text: '怪盗的绘纹手套',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/06/103492603/a9bff7e8b40918554d463de86356bf79_3030209534940728208.png",
+    },
+    body: {
+      text: '怪盗的纤钢爪钩',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/03/1805320/709516e886a15f6e85e79e97d83e4c11_4834466515450393893.png",
+    },
+    feet: {
+      text: '怪盗的流星快靴',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/03/1805320/93e084eb801832265aa19887fe12287d_5134740238993241025.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -481,6 +500,17 @@ export const artifactIcons = {
     linkRope: {
       text: '翁瓦克的环岛海岸',
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/3a9da5b731c681a9a7f5551fbd0ebc4b_4077959702314813919.png",
+    },
+  },
+  "TaliaKingdomofBanditry": {
+    nameLocale: '盗贼公国塔利亚',
+    planarSphere: {
+      text: '塔利亚的钉壳小镇',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/e74e95ca6171e778f2914af751c5147b_6980227128217921039.png",
+    },
+    linkRope: {
+      text: '塔利亚的裸皮电线',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/f207f7c77dffdf2705bba3f34d5b4d89_6075014999174892370.png",
     },
   },
 };
@@ -1288,6 +1318,44 @@ export const characters = {
         feet: ["spd"],
         planarSphere: ["fireDmg"],
         linkRope: ["enerRegen", "atk_"],
+      },
+    ],
+  },
+  "素裳": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0.5,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/103492603/23f97ecd55a368cb6bd4ac7700f45d7b_3101662331893397894.png',
+    artifacts: [
+      {
+        setNames: ["ThiefofShootingMeteor", "TaliaKingdomofBanditry"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd"],
+        planarSphere: ["physicalDmg", "atk_"],
+        linkRope: ["break"],
+      },
+      {
+        setNames: ["ChampionofStreetwiseBoxing", "TaliaKingdomofBanditry"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd"],
+        planarSphere: ["physicalDmg", "atk_"],
+        linkRope: ["break"],
       },
     ],
   },
