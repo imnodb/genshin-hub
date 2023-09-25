@@ -1359,6 +1359,35 @@ export const characters = {
       },
     ],
   },
+  "青雀": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/3af69ec3d9da0d831f5e47c2671f4956_2170721804501444875.png',
+    artifacts: [
+      {
+        setNames: ["GeniusofBrilliantStars", "RutilantArena"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd"],
+        planarSphere: ["quantumDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
