@@ -860,7 +860,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/07/19/279865110/bcc6daa8c64e1327f7d9c93027937747_7676852819117293387.png',
     artifacts: [
       {
-        setNames: ["LongevousDisciple", "InertSalsotto"],
+        setNames: ["LongevousDisciple", "RutilantArena"],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG", "critRate"],
@@ -869,7 +869,7 @@ export const characters = {
         linkRope: ["hp_", "enerRegen"],
       },
       {
-        setNames: ["LongevousDisciple", "RutilantArena"],
+        setNames: ["LongevousDisciple", "InertSalsotto"],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG", "critRate"],
