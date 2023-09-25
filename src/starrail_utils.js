@@ -1175,6 +1175,35 @@ export const characters = {
       },
     ],
   },
+  "阿兰": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/26/103492603/aa7685675c64a32e8f9d7a9f07571620_7580995524190517691.png',
+    artifacts: [
+      {
+        setNames: ["BandofSizzlingThunder", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd"],
+        planarSphere: ["lightningDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
