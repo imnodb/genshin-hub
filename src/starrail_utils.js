@@ -1262,6 +1262,35 @@ export const characters = {
       },
     ],
   },
+  "虎克": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/27/103492603/fd041544e7f54bcaf0527d378d2abd92_6836185614774662354.png',
+    artifacts: [
+      {
+        setNames: ["FiresmithofLavaForging", "RutilantArena"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd"],
+        planarSphere: ["fireDmg"],
+        linkRope: ["enerRegen", "atk_"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
