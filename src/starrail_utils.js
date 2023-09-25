@@ -879,6 +879,44 @@ export const characters = {
       },
     ],
   },
+  "罗刹": {
+    weights: {
+      "hp": 0.75,
+      "hp_": 0.75,
+      "atk": 1,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/07/19/279865110/5837035941eda348b8314cf2611277e0_5275580057395163858.png',
+    artifacts: [
+      {
+        setNames: ["PasserbyofWanderingCloud", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["atk_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["PasserbyofWanderingCloud", "FleetoftheAgeless"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["atk_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
 };
 
 export function calScore(art) {
