@@ -376,6 +376,25 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/21dfe29fa2e9dcc03bd4e66b6ba638fd_2042332146064186430.png",
     },
   },
+  "EagleofTwilightLine": {
+    nameLocale: '晨昏交界的翔鹰',
+    head: {
+      text: '翔鹰的长喙头盔',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/06/103492603/4cc7f517b7ce70bfff3673a3fe15c6c3_7014147153428565708.png",
+    },
+    hands: {
+      text: '翔鹰的鹰击指环',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/06/103492603/484c0ea43b38d1b292b99d04698bc4ab_3778753567970313966.png",
+    },
+    body: {
+      text: '翔鹰的翼装束带',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/6371b88fcb6e809333db12db9b539cf1_653779049834595118.png",
+    },
+    feet: {
+      text: '翔鹰的绒羽绑带',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/4f8266432c5113c5145b258fef9066b5_1336371065689299094.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -1095,6 +1114,35 @@ export const characters = {
         feet: ["spd", "hp_"],
         planarSphere: ["hp_"],
         linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "丹恒": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/11/103492603/6c924158527197dbadc323ecfbede95d_2213127508670668756.png',
+    artifacts: [
+      {
+        setNames: ["EagleofTwilightLine", "MusketeerofWildWheat", "RutilantArena"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG", "critRate"],
+        feet: ["atk_", "spd"],
+        planarSphere: ["windDmg"],
+        linkRope: ["atk_"],
       },
     ],
   },
