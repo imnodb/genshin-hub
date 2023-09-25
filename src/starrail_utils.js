@@ -841,6 +841,44 @@ export const characters = {
       },
     ],
   },
+  "刃": {
+    weights: {
+      "hp": 0.75,
+      "hp_": 0.75,
+      "atk": 0.25,
+      "atk_": 0.25,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/07/19/279865110/bcc6daa8c64e1327f7d9c93027937747_7676852819117293387.png',
+    artifacts: [
+      {
+        setNames: ["LongevousDisciple", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG", "critRate"],
+        feet: ["hp_", "spd"],
+        planarSphere: ["windDmg"],
+        linkRope: ["hp_", "enerRegen"],
+      },
+      {
+        setNames: ["LongevousDisciple", "RutilantArena"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG", "critRate"],
+        feet: ["hp_", "spd"],
+        planarSphere: ["windDmg"],
+        linkRope: ["hp_", "enerRegen"],
+      },
+    ],
+  },
 };
 
 export function calScore(art) {
