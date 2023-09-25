@@ -1667,8 +1667,8 @@ export function calScore(art) {
     Object.fromEntries(subStats.map((name) => [name, BigNumber(0)])),
     Object.fromEntries(art.normalTags.map(({ name, value }) => [name, BigNumber(value)]))
   );
-  console.log("scores");
-  console.log(normalTags);
+  // console.log("scores");
+  // console.log(normalTags);
 
   for (const [
     characterName,
@@ -1678,7 +1678,7 @@ export function calScore(art) {
     const artifact = artifacts.find((a) =>
       a.setNames.includes(art.setName) && a[art.position]?.includes(art.mainTag.name)
     )
-    console.log(characterName, weights, badge, artifacts, artifact);
+    // console.log(characterName, weights, badge, artifacts, artifact);
     // 只计算需要套装
     if (!artifact) {
       continue;
@@ -1690,7 +1690,7 @@ export function calScore(art) {
       score = BigNumber.minimum(15.83, BigNumber(5.83).multipliedBy(weights[art.mainTag.name] ?? 1))
     }
     for (const name of subStats) {
-      console.log("subStats", name, normalTags[name].toNumber());
+      // console.log("subStats", name, normalTags[name].toNumber());
       switch (name) {
         case "critRate":
           score = BigNumber(normalTags[name]).multipliedBy(100).multipliedBy(2).multipliedBy(weights[name]).plus(score);
@@ -1731,7 +1731,7 @@ export function calScore(art) {
         default:
           break;
       }
-      console.log("分数", score.toNumber());
+      // console.log("分数", score.toNumber());
     }
     scores.push({ characterName, badge, score: Number(score.toFixed(1, 0)) });
   }
@@ -1762,43 +1762,47 @@ export function importScore(art) {
         BigNumber(values.reduce((p, v) => p + v)).div(values.length),
       ])
     );
-    console.log("每个副属性强化一次的预期值");
-    Object.entries(AverageEff).map(([a, b]) => console.log(a, b.toNumber()))
+    // console.log("每个副属性强化一次的预期值");
+    Object.entries(AverageEff).map(([a, b]) => {
+      // console.log(a, b.toNumber())
+    })
     // 需要强化的次数
     const tagCount = Math.ceil((15 - art.level) / 3);
-    console.log('需要强化的次数', tagCount);
+    // console.log('需要强化的次数', tagCount);
     // 原本存在的属性
     const existingTags = [
       art.mainTag.name,
       ...normalTags.map(({ name }) => name),
     ];
     for (let index = 0; index < tagCount; index++) {
-      console.log(`强化第${index + 1}次`);
+      // console.log(`强化第${index + 1}次`);
       if (normalTags.length === 3) {
-        console.log("补一条属性，主属性：", art.mainTag.name);
-        console.log("排除属性", existingTags);
+        // console.log("补一条属性，主属性：", art.mainTag.name);
+        // console.log("排除属性", existingTags);
         // 强化可能新增的属性
         const wishTags = Object.entries(AverageEff).filter(
           ([eff]) => !existingTags.includes(eff)
         );
-        console.log("强化可能新增的属性", wishTags.map(([eff]) => eff));
+        // console.log("强化可能新增的属性", wishTags.map(([eff]) => eff));
         const tagWeight = tagWeights.other;
         const weightCount = wishTags.reduce(
           (p, [eff]) => p + tagWeight[eff],
           0
         );
-        console.log("新词条总权重和", weightCount);
+        // console.log("新词条总权重和", weightCount);
 
         wishTags.forEach(([eff, v]) => {
-          console.log([eff, v]);
-          console.log(tagWeight[eff]);
+          // console.log([eff, v]);
+          // console.log(tagWeight[eff]);
           normalTags.push({
             name: eff,
             value: BigNumber((v * tagWeight[eff])).div(weightCount),
           });
         });
-        console.log("补充全词条后的副属性");
-        normalTags.map(a => console.log(a.name, a.value.toNumber()))
+        // console.log("补充全词条后的副属性");
+        normalTags.map(a => {
+          // console.log(a.name, a.value.toNumber())
+        })
       } else {
         for (const tag of normalTags) {
           if (normalTags.length > 4) {
@@ -1813,8 +1817,10 @@ export function importScore(art) {
           }
           // console.log(tag, "tag");
         }
-        console.log("强化完成后的副属性");
-        normalTags.map(a => console.log(a.name, a.value.toNumber()))
+        // console.log("强化完成后的副属性");
+        normalTags.map(a => {
+          // console.log(a.name, a.value.toNumber())
+        })
       }
     }
     // console.log(normalTags, "normalTags");

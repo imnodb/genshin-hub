@@ -45,48 +45,54 @@ for (const [character, { artifacts }] of Object.entries(charactersSuit)) {
         )) && art
     )
     .filter((art) => art._filter[character]);
-  console.log(arts);
-  for (const { setNames, head, hands, body, feet } of artifacts) {
-    console.log(character, setNames);
-    // 所以可选套装
-    for (const setName of setNames) {
-      // .filter(({ scores }) => scores.find(({ characterName }) => characterName === character));
-      // 保留两个评分最高的圣遗物
-      for (const position of [
-        "head",
-        "hands",
-        "body",
-        "feet",
-        "planarSphere",
-        "linkRope",
-      ]) {
-        const artGroup = groupBy(
-          arts.filter(
-            (art) =>
-              art.setName === setName && !art.save && art.position === position
-          ),
-          ({ mainTag }) => mainTag.name
+  // console.log(arts);
+  const setNames = new Set();
+  for (const { setNames: t } of artifacts) {
+    for (const s of t) {
+      setNames.add(s)
+    }
+  }
+  // console.log(character, setNames);
+  // 所以可选套装
+  for (const setName of setNames) {
+    // .filter(({ scores }) => scores.find(({ characterName }) => characterName === character));
+    // 保留两个评分最高的圣遗物
+    for (const position of [
+      "head",
+      "hands",
+      "body",
+      "feet",
+      "planarSphere",
+      "linkRope",
+    ]) {
+      const artGroup = groupBy(
+        arts.filter(
+          (art) =>
+            art.setName === setName && !art.save && art.position === position
+        ),
+        ({ mainTag }) => mainTag.name
+      );
+      // console.log(artGroup);
+      for (const artGroupSub of Object.values(artGroup)) {
+        const [art1 = {}, art2 = {}] = artGroupSub.sort(
+          (art1, art2) => art2._filter[character] - art1._filter[character]
         );
-        console.log(artGroup);
-        for (const artGroupSub of Object.values(artGroup)) {
-          const [art1 = {}, art2 = {}] = artGroupSub.sort(
-            (art1, art2) => art2._filter[character] - art1._filter[character]
-          );
-          console.log(art1, art2);
-          art1.save = true;
-          art2.save = true;
-          if (setNames.length < 2 && Object.keys(artGroup).length < 2) {
-            art2.save = true;
-          }
-        }
-        if (!Object.keys(artGroup).length) {
-          console.error(
-            character,
-            position,
-            setName,
-            ZhCn[artifactIcons[setName]?.nameLocale]
-          );
-        }
+        // console.log(character, setName, position, art1, art2);
+        art1.save = true;
+        art1.saveKEY = character;
+        art2.save = true;
+        art2.saveKEY = character;
+        // if (setNames.length < 2 && Object.keys(artGroup).length < 2) {
+        //   art2.save = true;
+        // }
+      }
+      if (!Object.keys(artGroup).length) {
+        console.error(
+          character,
+          position,
+          setName,
+          ZhCn[artifactIcons[setName]?.nameLocale]
+        );
       }
     }
   }
@@ -122,12 +128,12 @@ for (const art of allArts) {
   }
 }
 const cGroup = { All: cloneCharacters, ...groupBy(cloneCharacters, "element") };
-console.log("cGroup\n", cGroup);
+// console.log("cGroup\n", cGroup);
 
 const artContext = createContext(null);
 
 function Art({ name, source }) {
-  console.log(name, source);
+  // console.log(name, source);
   const setArt = useContext(artContext);
   if (!source) {
     return <></>;
@@ -207,16 +213,16 @@ function has2_2_0(tmpCol, setNames) {
 const artCount = {};
 const artColObj = {};
 cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
-  console.log(nameLocale);
-  console.log(charactersSuit[nameLocale]);
-  console.log(arts);
-  console.log(arts.filter((a) => artCount[a.id]));
+  // console.log(nameLocale);
+  // console.log(charactersSuit[nameLocale]);
+  // console.log(arts);
+  // console.log(arts.filter((a) => artCount[a.id]));
 
   const artsGroup = groupBy(
     arts.filter((a) => !artCount[a.id]).sort((a, b) => -a.score + b.score),
     "position"
   );
-  console.log("artsGroup\n", artsGroup);
+  // console.log("artsGroup\n", artsGroup);
   const { artifacts } = charactersSuit[nameLocale];
 
   let artCol = [];
@@ -236,7 +242,10 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       hash,
     });
     for (const art of col) {
-      art.save = true;
+      if (!art.save) {
+        art.save = true;
+        art.saveKEY = nameLocale;
+      }
     }
   }
   for (const artifact of artifacts) {
@@ -254,21 +263,21 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       )
       .filter((a) => a); // 挑出当前套装最好的部位
     if (setNames?.length === 2) {
-      console.log("setNames", setNames);
-      console.log("tmpCol", tmpCol);
+      // console.log("setNames", setNames);
+      // console.log("tmpCol", tmpCol);
       pushArtCol(tmpCol, tmpArtCol);
     } else {
       // 2+2+2组合
-      console.log("tmpCol", tmpCol);
+      // console.log("tmpCol", tmpCol);
       if (has2_2_2(tmpCol, setNames)) {
-        console.log("has2_2_2", tmpCol);
+        // console.log("has2_2_2", tmpCol);
         pushArtCol(tmpCol, tmpArtCol);
         // 符合2+2+2 说明满足
       } else {
         // 最好的套装都不符合2+2+2，需要找到最优解
         const obj = setNamesCount(tmpCol, setNames);
         if (has2_2_1(tmpCol, setNames)) {
-          console.log("has2_2_1", tmpCol);
+          // console.log("has2_2_1", tmpCol);
           const seto1s = Object.entries(obj)
             .filter(([a, b]) => b === 1)
             .map(([a]) => a); // 找到缺1件的套装
@@ -293,11 +302,11 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
           }
           // pushArtCol(tmpCol);
         } else if (has2_2_0(tmpCol, setNames)) {
-          console.log("has2_2_0", tmpCol, obj);
-          console.log(setNames);
+          // console.log("has2_2_0", tmpCol, obj);
+          // console.log(setNames);
           const seto2s = setNames.filter((a) => !Object.keys(obj).includes(a));
           // 找到缺2件的套装
-          console.log("缺少", seto2s);
+          // console.log("缺少", seto2s);
           for (const setNameo2 of seto2s) {
             tmpCol.forEach((art1, i) => {
               const colart = artsGroup[art1?.position].find(
@@ -308,7 +317,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
                 const col1 = [...tmpCol];
                 col1[i] = { ...colart };
                 col1[i].color = "red";
-                console.log("col1", col1);
+                // console.log("col1", col1);
                 col1.forEach((art2, g) => {
                   const colart = artsGroup[art2?.position].find(
                     (a) => a.setName === setNameo2 &&
@@ -318,7 +327,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
                     const col2 = [...col1];
                     col2[g] = { ...colart };
                     col2[g].color = "red";
-                    console.log("col2", col2);
+                    // console.log("col2", col2);
                     if (has2_2_2(col2, setNames)) {
                       pushArtCol(col2, tmpArtCol);
                     }
@@ -333,11 +342,11 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
         pushArtCol(tmpCol, tmpArtCol);
       }
     }
-    console.log("tmpArtCol\n", tmpArtCol);
+    // console.log("tmpArtCol\n", tmpArtCol);
     artCol.push(...tmpArtCol.sort((a, b) => b.score - a.score));
   }
 
-  console.log("artCol\n", artCol);
+  // console.log("artCol\n", artCol);
   // 当前角色的套装按照分数排序
   // artCol = artCol.sort((a, b) => b.score - a.score);
   if (artCol.length) {
@@ -352,7 +361,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       }
       artCount[art.id] = (artCount[art.id] ?? 0) + 1;
     }
-    console.log("artCount\n", artCount);
+    // console.log("artCount\n", artCount);
   } else {
     const character =
       cloneCharacters.find((c) => c.nameLocale === nameLocale) ?? {};
@@ -364,9 +373,34 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
 const items = Object.keys(cGroup).map((key) => {
   const characters = cGroup[key].map(
     ({ name, nameLocale, badge: avatar, equip }) => {
+
+      if (key === 'undefined') {
+        const { arts } = cloneCharacters.find(
+          (a) => nameLocale === a.nameLocale
+        );
+        // console.log(arts);
+        return {
+          key: key + nameLocale,
+          label: (
+            <Badge dot={equip}>
+              <Avatar shape="square" size={60} src={avatar} />
+            </Badge>
+          ),
+          children: (<Row style={{ marginBottom: "20px" }}>
+            {
+              arts.filter(art => art.saveKEY === nameLocale).map((art, i) => (
+                <Col span={3} key={key + nameLocale + i}>
+                  <Art source={art}></Art>
+                </Col>
+              ))
+            }
+          </Row>),
+        };
+      }
+
       const artCol = artColObj[nameLocale];
-      console.log(name, nameLocale, avatar, equip);
-      console.log(artCol);
+      // console.log(name, nameLocale, avatar, equip);
+      // console.log(artCol);
       return {
         key: nameLocale,
         label: (
@@ -416,7 +450,7 @@ const items = Object.keys(cGroup).map((key) => {
 function Starrail() {
   const [art, setArt] = useState(null);
   const beforeUpload = (file) => {
-    console.log(file);
+    // console.log(file);
     const fileReader = new FileReader();
     fileReader.readAsText(file);
     fileReader.onload = async function (e) {
@@ -455,7 +489,7 @@ function Starrail() {
           }
           // break;
         }
-        console.log("StarrailArts----\n", StarrailArts);
+        // console.log("StarrailArts----\n", StarrailArts);
         await localforage.setItem("StarrailArts", StarrailArts);
         window.location.reload();
       } catch (error) {
@@ -465,7 +499,7 @@ function Starrail() {
     return false;
   };
   const exportJSON = () => {
-    console.log("click");
+    // console.log("click");
     const content = JSON.stringify(
       allArts.map(({ token, save = false }) => ({ token, save }))
     );

@@ -135,8 +135,8 @@ function ArtifactModal({ art, setArt, changeRatingList = () => { } }) {
   }
 
   useEffect(() => {
-    console.log('useEffect\n');
-    console.log(art);
+    // console.log('useEffect\n');
+    // console.log(art);
     if (art) {
       setModalData(JSON.parse(JSON.stringify(art)));
       setIsModalOpen(true);

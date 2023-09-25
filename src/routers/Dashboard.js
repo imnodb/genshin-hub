@@ -46,15 +46,15 @@ for (const [character, setNames] of Object.entries(charactersSuit)) {
     }
     // 保留两个评分最高的圣遗物
     for (const position of ['sand', 'cup', 'head']) {
-      console.log(setName, position);
+      // console.log(setName, position);
       const artGroup = groupBy(
         arts.filter(art => art.setName === setName && !art.save && art.position === position),
         ({ mainTag }) => mainTag.name
       );
-      console.log(artGroup);
+      // console.log(artGroup);
       for (const artGroupSub of Object.values(artGroup)) {
         const [art1 = {}, art2 = {}] = artGroupSub.sort((art1, art2) => art2._filter[character] - art1._filter[character])
-        console.log(art1, art2);
+        // console.log(art1, art2);
         art1.save = true;
         if (setNames.length < 2 && Object.keys(artGroup).length < 2) {
           art2.save = true;
@@ -374,7 +374,7 @@ const items = Object.keys(cGroup).map((key) => {
 function Dashboard() {
   const [art, setArt] = useState(null);
   const exportJSON = () => {
-    console.log('click')
+    // console.log('click')
     const content = JSON.stringify(allArts.map(({ token, save = false }) => ({ token, save })))
     var a = document.createElement("a");
     var file = new Blob([content], { type: 'application/json' });
