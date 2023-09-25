@@ -1040,6 +1040,35 @@ export const characters = {
       },
     ],
   },
+  "三月七": {
+    weights: {
+      "hp": 0.5,
+      "hp_": 0.5,
+      "atk": 0,
+      "atk_": 0,
+      "def": 1,
+      "def_": 1,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0.75,
+      "effRes": 0.5,
+      "break": 0,
+    },
+    ace: 205,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/15/279865110/6bf24ed629998858de5b4fed09965de3_3979099743619354896.png',
+    artifacts: [
+      {
+        setNames: ["KnightofPurityPalace", "BelobogoftheArchitects"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff"],
+        feet: ["spd", "def_"],
+        planarSphere: ["def_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
