@@ -357,6 +357,25 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/e2f7d70ac4c1a8498155ffb8e2c08b4d_2542835972677711368.png",
     },
   },
+  "HunterofGlacialForest": {
+    nameLocale: '密林卧雪的猎人',
+    head: {
+      text: '雪猎的荒神兜帽',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/f1067a0f03d1804341fd52f4fb5fb079_402210488126322410.png",
+    },
+    hands: {
+      text: '雪猎的巨蜥手套',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/ad05d5103664020b202eba0fccb5bf03_2504052509035666264.png",
+    },
+    body: {
+      text: '雪猎的冰龙披风',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/3182e6a46f0a101a8e9939e1ea56764b_4800254435207153006.png",
+    },
+    feet: {
+      text: '雪猎的鹿皮软靴',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/21dfe29fa2e9dcc03bd4e66b6ba638fd_2042332146064186430.png",
+    },
+  },
   "RutilantArena": {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -1020,6 +1039,44 @@ export const characters = {
         feet: ["spd"],
         planarSphere: ["imaginaryDmg"],
         linkRope: ["enerRegen", "break", "atk_"],
+      },
+    ],
+  },
+  "彦卿": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/4da092a2e4af764147ed3c29cd5fa29e_5447218417173761567.png',
+    artifacts: [
+      {
+        setNames: ["HunterofGlacialForest", "SpaceSealingStation"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG", "critRate"],
+        feet: ["atk_"],
+        planarSphere: ["iceDmg"],
+        linkRope: ["atk_"],
+      },
+      {
+        setNames: ["MusketeerofWildWheat", "SpaceSealingStation"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG", "critRate"],
+        feet: ["atk_"],
+        planarSphere: ["iceDmg"],
+        linkRope: ["atk_"],
       },
     ],
   },
