@@ -1204,6 +1204,35 @@ export const characters = {
       },
     ],
   },
+  "桑博": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 1,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 0.5,
+      "critDMG": 0.5,
+      "eff": 1,
+      "effRes": 0,
+      "break": 0.75,
+    },
+    ace: 235,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/18/279865110/121c5e7cb07cff076286d167409bf871_4640303606954865037.png',
+    artifacts: [
+      {
+        setNames: ["EagleofTwilightLine", "SpaceSealingStation"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["windDmg"],
+        linkRope: ["enerRegen", "atk_"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
