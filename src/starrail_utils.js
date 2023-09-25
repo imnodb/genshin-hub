@@ -917,6 +917,35 @@ export const characters = {
       },
     ],
   },
+  "景元": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/279865110/1490cd426a79f05a0dd9411caf30eb7f_8321807150411360046.png',
+    artifacts: [
+      {
+        setNames: ["BandofSizzlingThunder", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["lightningDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
 };
 
 export function calScore(art) {
