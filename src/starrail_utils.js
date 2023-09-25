@@ -1002,6 +1002,44 @@ export const characters = {
       },
     ],
   },
+  "佩拉": {
+    weights: {
+      "hp": 0.75,
+      "hp_": 0.75,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0.75,
+      "critDMG": 0.75,
+      "eff": 1,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 235,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/103492603/d162b03a7ed20f3065e5ca2c6500696d_3744072972295510756.png',
+    artifacts: [
+      {
+        setNames: ["HunterofGlacialForest", "BelobogoftheArchitects"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff", "critRate", "critDMG"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["iceDmg", "hp_", "def_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: ["HunterofGlacialForest", "PanGalacticCommercialEnterprise"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG", "eff"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["iceDmg", "hp_", "def_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
