@@ -1194,7 +1194,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/26/103492603/aa7685675c64a32e8f9d7a9f07571620_7580995524190517691.png',
     artifacts: [
       {
-        setNames: ["BandofSizzlingThunder", "InertSalsotto"],
+        setNames: ["BandofSizzlingThunder", "SpaceSealingStation"],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
