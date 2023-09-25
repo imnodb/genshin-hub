@@ -520,6 +520,8 @@ function Starrail() {
 
       <artContext.Provider value={setArt}>
         <ArtifactModal art={art} setArt={setArt}></ArtifactModal>
+        <h1>总数：{allArts.length}</h1>
+        <h2>需要分解数量：{allArts.filter(a => !a.save).length}</h2>
         <Tabs defaultActiveKey="1" size="large" type="card" items={items} />
       </artContext.Provider>
     </div>
