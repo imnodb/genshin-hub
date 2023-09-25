@@ -1146,6 +1146,35 @@ export const characters = {
       },
     ],
   },
+  "黑塔": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/27/103492603/a0a7bd8bffb29d907dd3f166fbe2c6f3_5213924545260783425.png',
+    artifacts: [
+      {
+        setNames: ["HunterofGlacialForest", "InertSalsotto"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_", "spd"],
+        planarSphere: ["iceDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
