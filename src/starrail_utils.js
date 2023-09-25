@@ -1069,6 +1069,35 @@ export const characters = {
       },
     ],
   },
+  "娜塔莎": {
+    weights: {
+      "hp": 1,
+      "hp_": 1,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0.5,
+      "def_": 0.5,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 200,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/14/279865110/3b7fdbd358c420b64a78a21fd365ce5c_6714482476795263627.png',
+    artifacts: [
+      {
+        setNames: ["PasserbyofWanderingCloud", "BrokenKeel"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd", "hp_"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
