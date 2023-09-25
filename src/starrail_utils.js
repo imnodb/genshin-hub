@@ -1388,6 +1388,35 @@ export const characters = {
       },
     ],
   },
+  "卢卡": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 1,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0.5,
+      "critDMG": 0,
+      "eff": 0.75,
+      "effRes": 0,
+      "break": 0.5,
+    },
+    ace: 226,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/16/279865110/1d949908393fac8c7e6569a78bdea2c5_4980010935910440090.png',
+    artifacts: [
+      {
+        setNames: ["ChampionofStreetwiseBoxing", "SpaceSealingStation"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd"],
+        planarSphere: ["physicalDmg",],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
