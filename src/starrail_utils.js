@@ -1233,6 +1233,35 @@ export const characters = {
       },
     ],
   },
+  "希露瓦": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/8311a9bb723409bc8cc85e2cda6db213_1893651197391730889.png',
+    artifacts: [
+      {
+        setNames: ["BandofSizzlingThunder", "SpaceSealingStation"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd"],
+        planarSphere: ["lightningDmg", "atk_"],
+        linkRope: ["atk_", "break"],
+      },
+    ],
+  },
 
 
   "丹恒•饮月": {
