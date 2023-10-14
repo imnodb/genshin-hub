@@ -1419,6 +1419,35 @@ export const characters = {
   },
 
 
+  "镜流": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 0.85,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 218,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/10/10/279865110/409aaa2be978f26aba04c710ead6235e_4496049587887127675.png',
+    artifacts: [
+      {
+        setNames: ["HunterofGlacialForest", "RutilantArena"],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["atk_", "spd"],
+        planarSphere: ["iceDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+    ],
+  },
   "丹恒•饮月": {
     weights: {
       "hp": 0,
