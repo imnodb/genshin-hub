@@ -339,7 +339,7 @@ const items = Object.keys(cGroup).map((key) => {
   const characters = cGroup[key].map(({ name, nameLocale, avatar, equip }) => {
     const artCol = artColObj[nameLocale];
     return {
-      key: name,
+      key: key + name,
       label:
         (<Badge dot={equip}>
           < Avatar
@@ -352,7 +352,7 @@ const items = Object.keys(cGroup).map((key) => {
         artCol.map((arts, i) => (
           <Row
             style={{ marginBottom: '20px' }}
-            key={'artCol' + i}>
+            key={key + name +'artCol' + i}>
             <Col span={4}><Art source={arts.flower}></Art></Col>
             <Col span={4}><Art source={arts.feather}></Art></Col>
             <Col span={4}><Art source={arts.sand}></Art></Col>
