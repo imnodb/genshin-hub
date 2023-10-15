@@ -37,8 +37,10 @@ for (const [character, setNames] of Object.entries(charactersSuit)) {
       const [art1 = {}, art2 = {}] = arts.filter(art => art.setName === setName && !art.save && art.position === position).sort((art1, art2) => art2._filter[character] - art1._filter[character])
       // console.log(art1, art2);
       art1.save = true;
+      art1.saveKEY = character;
       if (setNames.length < 2) {
         art2.save = true;
+        art2.saveKEY = character;
       }
       if (!art1.position) {
         console.error(character, position, setName, ZhCn[artifactIcons[setName]?.nameLocale]);
@@ -56,8 +58,10 @@ for (const [character, setNames] of Object.entries(charactersSuit)) {
         const [art1 = {}, art2 = {}] = artGroupSub.sort((art1, art2) => art2._filter[character] - art1._filter[character])
         // console.log(art1, art2);
         art1.save = true;
+        art1.saveKEY = character;
         if (setNames.length < 2 && Object.keys(artGroup).length < 2) {
           art2.save = true;
+          art2.saveKEY = character;
         }
       }
       if (!Object.keys(artGroup).length) {
@@ -71,6 +75,7 @@ for (const [character, setNames] of Object.entries(charactersSuit)) {
     const [art1 = {}, art2 = {}] = arts.filter(art => !art.save && art.position === position).sort((art1, art2) => art2._filter[character] - art1._filter[character])
     // console.log(art1, art2);
     art1.save = true;
+    art1.saveKEY = character;
     if (!art1.position) {
       console.error(character, position);
     }
@@ -104,7 +109,7 @@ for (const art of allArts) {
     }
   }
 }
-const cGroup = { 'All': cloneCharacters, ...groupBy(cloneCharacters, "element") };
+const cGroup = { 'All': cloneCharacters, ...groupBy(cloneCharacters, "element"), '保留': cloneCharacters, };
 // console.log(cGroup);
 
 const artContext = createContext(null)
@@ -202,7 +207,10 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       hash,
     });
     for (const art of col) {
-      art.save = true;
+      if (!art.save) {
+        art.save = true;
+        art.saveKEY = nameLocale;
+      }
     }
   }
 
@@ -337,6 +345,35 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
 const items = Object.keys(cGroup).map((key) => {
 
   const characters = cGroup[key].map(({ name, nameLocale, avatar, equip }) => {
+
+
+    if (key === '保留') {
+      const { arts } = cloneCharacters.find(
+        (a) => nameLocale === a.nameLocale
+      );
+      // console.log(arts);
+      return {
+        key: key + nameLocale,
+        label: (
+          <Badge dot={equip}>
+            <Avatar shape="square" size={60} src={avatar} />
+          </Badge>
+        ),
+        children: (<Row style={{ marginBottom: "20px" }}>
+          {
+            arts.filter(art => art.saveKEY === nameLocale).map((art, i) => (
+              <Col span={3} key={key + nameLocale + i}>
+                <Art source={art}></Art>
+              </Col>
+            ))
+          }
+        </Row>),
+      };
+    }
+
+
+
+
     const artCol = artColObj[nameLocale];
     return {
       key: key + name,
@@ -352,7 +389,7 @@ const items = Object.keys(cGroup).map((key) => {
         artCol.map((arts, i) => (
           <Row
             style={{ marginBottom: '20px' }}
-            key={key + name +'artCol' + i}>
+            key={key + name + 'artCol' + i}>
             <Col span={4}><Art source={arts.flower}></Art></Col>
             <Col span={4}><Art source={arts.feather}></Art></Col>
             <Col span={4}><Art source={arts.sand}></Art></Col>
