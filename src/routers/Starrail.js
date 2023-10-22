@@ -163,12 +163,12 @@ function Art({ name, source }) {
         <div
           className="character-badge character-badge-b"
           style={{
-            display: genCharacterObj[equip]?.avatar ? "" : "none",
+            display: charactersSuit[equip] ? "" : "none",
           }}
         >
           <Avatar
             className="character-badge-a"
-            src={genCharacterObj[equip]?.avatar}
+            src={charactersSuit[equip]?.badge}
           />
         </div>
         <div className="character-badge-txt">{score}分</div>
