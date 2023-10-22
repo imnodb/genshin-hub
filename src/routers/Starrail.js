@@ -353,7 +353,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
     // 从组中删除最好的一套圣遗物防止下一个角色使用
     for (const art of Object.values(artCol[0])) {
       if (typeof art === "object") {
-        if (art.level < 20 || nameLocale !== art.equip) {
+        if (art.level < 15 || nameLocale !== art.equip) {
           const character =
             cloneCharacters.find((c) => c.nameLocale === nameLocale) ?? {};
           character.equip = true;
