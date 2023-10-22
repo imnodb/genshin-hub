@@ -1748,13 +1748,13 @@ export function calScore(art) {
         case "effRes":
           score = BigNumber(normalTags[name]).multipliedBy(100).multipliedBy(1.49).multipliedBy(weights[name]).plus(score);
           break;
-        case "hp":
+        case "def":
           score = BigNumber(normalTags[name]).multipliedBy(0.3 * 0.5).multipliedBy(weights[name]).plus(score);
           break;
         case "atk":
           score = BigNumber(normalTags[name]).multipliedBy(0.3 * 0.5).multipliedBy(weights[name]).plus(score);
           break;
-        case "def":
+        case "hp":
           score = BigNumber(normalTags[name]).multipliedBy(0.153 * 0.5).multipliedBy(weights[name]).plus(score);
           break;
         default:
