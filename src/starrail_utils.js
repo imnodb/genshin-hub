@@ -643,7 +643,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/19/279865110/af90c6a64b2be8f65187bdd432819f2f_498164526560653278.png',
     artifacts: [
       {
-        setNames: [GeniusofBrilliantStars, SpaceSealingStation],
+        setNames: [GeniusofBrilliantStars, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -652,7 +652,7 @@ export const characters = {
         linkRope: ["atk_"],
       },
       {
-        setNames: [GeniusofBrilliantStars, RutilantArena],
+        setNames: [GeniusofBrilliantStars, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
