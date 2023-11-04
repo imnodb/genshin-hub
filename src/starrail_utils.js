@@ -147,8 +147,101 @@ export const artifactTags = {
     "chs": "虚数属性伤害提高"
   }
 };
+/**
+ * 繁星璀璨的天才
+ */
+const GeniusofBrilliantStars = 'GeniusofBrilliantStars';
+/**
+ * 激奏雷电的乐队
+ */
+const BandofSizzlingThunder = 'BandofSizzlingThunder';
+/**
+ * 街头出身的拳王
+ */
+const ChampionofStreetwiseBoxing = 'ChampionofStreetwiseBoxing';
+/**
+ * 宝命长存的莳者
+ */
+const LongevousDisciple = 'LongevousDisciple';
+/**
+ * 戍卫风雪的铁卫
+ */
+const GuardofWutheringSnow = 'GuardofWutheringSnow';
+/**
+ * 云无留迹的过客
+ */
+const PasserbyofWanderingCloud = 'PasserbyofWanderingCloud';
+/**
+ * 骇域漫游的信使
+ */
+const MessengerTraversingHackerspace = 'MessengerTraversingHackerspace';
+/**
+ * 净庭教宗的圣骑士
+ */
+const KnightofPurityPalace = 'KnightofPurityPalace';
+/**
+ * 野穗伴行的快枪手
+ */
+const MusketeerofWildWheat = 'MusketeerofWildWheat';
+/**
+ * 盗匪荒漠的废土客
+ */
+const WastelanderofBanditryDesert = 'WastelanderofBanditryDesert';
+/**
+ * 熔岩锻铸的火匠
+ */
+const FiresmithofLavaForging = 'FiresmithofLavaForging';
+/**
+ * 密林卧雪的猎人
+ */
+const HunterofGlacialForest = 'HunterofGlacialForest';
+/**
+ * 晨昏交界的翔鹰
+ */
+const EagleofTwilightLine = 'EagleofTwilightLine';
+/**
+ * 流星追迹的怪盗
+ */
+const ThiefofShootingMeteor = 'ThiefofShootingMeteor';
+/**
+ * 繁星竞技场
+ */
+const RutilantArena = 'RutilantArena';
+/**
+ * 太空封印站
+ */
+const SpaceSealingStation = 'SpaceSealingStation';
+/**
+ * 停转的萨尔索图
+ */
+const InertSalsotto = 'InertSalsotto';
+/**
+ * 折断的龙骨
+ */
+const BrokenKeel = 'BrokenKeel';
+/**
+ * 不老者的仙舟
+ */
+const FleetoftheAgeless = 'FleetoftheAgeless';
+/**
+ * 泛银河商业公司
+ */
+const PanGalacticCommercialEnterprise = 'PanGalacticCommercialEnterprise';
+/**
+ * 筑城者的贝洛伯格
+ */
+const BelobogoftheArchitects = 'BelobogoftheArchitects';
+/**
+ * 生命的瓮瓦克
+ */
+const SprightlyVonwacq = 'SprightlyVonwacq';
+/**
+ * 盗贼公国塔利亚
+ */
+const TaliaKingdomofBanditry = 'TaliaKingdomofBanditry';
+
 export const artifactIcons = {
-  "GeniusofBrilliantStars": {
+  GeniusofBrilliantStars: {
     nameLocale: '繁星璀璨的天才',
     head: {
       text: '天才的超距遥感',
@@ -167,7 +260,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/06/30/1805320/fa01fc76bab567da35f3b7deffe0cc78_8494142529458914935.png",
     },
   },
-  "BandofSizzlingThunder": {
+  BandofSizzlingThunder: {
     nameLocale: '激奏雷电的乐队',
     head: {
       text: '乐队的偏光墨镜',
@@ -186,7 +279,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/64e5915b92e9a6e35e724b68b6eae004_539148985831296684.png",
     },
   },
-  "ChampionofStreetwiseBoxing": {
+  ChampionofStreetwiseBoxing: {
     nameLocale: '街头出身的拳王',
     head: {
       text: '拳王的冠军护头',
@@ -205,7 +298,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/5e2116a2fb1baff365b74900fd6e1101_4431259695801478805.png",
     },
   },
-  "LongevousDisciple": {
+  LongevousDisciple: {
     nameLocale: '宝命长存的莳者',
     head: {
       text: '莳者的复明义眼',
@@ -224,7 +317,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/6233622c52202bbeea46bee59044eb0c_4826254037059564030.png",
     },
   },
-  "GuardofWutheringSnow": {
+  GuardofWutheringSnow: {
     nameLocale: '戍卫风雪的铁卫',
     head: {
       text: '铁卫的铸铁面盔',
@@ -243,7 +336,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/c9a3ccc62bb84257ef6f269d45ed2841_6086081394345194799.png",
     },
   },
-  "PasserbyofWanderingCloud": {
+  PasserbyofWanderingCloud: {
     nameLocale: '云无留迹的过客',
     head: {
       text: '过客的逢春木簪',
@@ -262,7 +355,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/6d1e02ad5e92e27ab454ecddaec47a16_1935595535032382025.png",
     },
   },
-  "MessengerTraversingHackerspace": {
+  MessengerTraversingHackerspace: {
     nameLocale: '骇域漫游的信使',
     head: {
       text: '信使的全息目镜',
@@ -281,7 +374,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/d9df10922533cde12c2b21d845593261_2974169765687024344.png",
     },
   },
-  "KnightofPurityPalace": {
+  KnightofPurityPalace: {
     nameLocale: '净庭教宗的圣骑士',
     head: {
       text: '圣骑的宽恕盔面',
@@ -300,7 +393,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/171c1725f8e3951644e827c7bc64cb6f_3830795346637261690.png",
     },
   },
-  "MusketeerofWildWheat": {
+  MusketeerofWildWheat: {
     nameLocale: '野穗伴行的快枪手',
     head: {
       text: '快枪手的野穗毡帽',
@@ -319,7 +412,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/e9cc6cba6e0d7c84b1eccfe7db60078c_681572791213463757.png",
     },
   },
-  "WastelanderofBanditryDesert": {
+  WastelanderofBanditryDesert: {
     nameLocale: '盗匪荒漠的废土客',
     head: {
       text: '废土客的呼吸面罩',
@@ -338,7 +431,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/9e47b879b5976aff7e6349d9c5d12b5d_5841183124243082750.png",
     },
   },
-  "FiresmithofLavaForging": {
+  FiresmithofLavaForging: {
     nameLocale: '熔岩锻铸的火匠',
     head: {
       text: '火匠的黑曜目镜',
@@ -357,7 +450,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/e2f7d70ac4c1a8498155ffb8e2c08b4d_2542835972677711368.png",
     },
   },
-  "HunterofGlacialForest": {
+  HunterofGlacialForest: {
     nameLocale: '密林卧雪的猎人',
     head: {
       text: '雪猎的荒神兜帽',
@@ -376,7 +469,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/21dfe29fa2e9dcc03bd4e66b6ba638fd_2042332146064186430.png",
     },
   },
-  "EagleofTwilightLine": {
+  EagleofTwilightLine: {
     nameLocale: '晨昏交界的翔鹰',
     head: {
       text: '翔鹰的长喙头盔',
@@ -395,7 +488,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/14/1805320/4f8266432c5113c5145b258fef9066b5_1336371065689299094.png",
     },
   },
-  "ThiefofShootingMeteor": {
+  ThiefofShootingMeteor: {
     nameLocale: '流星追迹的怪盗',
     head: {
       text: '怪盗的千人假面',
@@ -414,7 +507,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/03/1805320/93e084eb801832265aa19887fe12287d_5134740238993241025.png",
     },
   },
-  "RutilantArena": {
+  RutilantArena: {
     nameLocale: '繁星竞技场',
     planarSphere: {
       text: '泰科铵的镭射球场',
@@ -425,7 +518,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/47650b0480c9ca973608adb318167a5d_6220153310523905992.png",
     },
   },
-  "SpaceSealingStation": {
+  SpaceSealingStation: {
     nameLocale: '太空封印站',
     planarSphere: {
       text: '「黑塔」的空间站点',
@@ -436,7 +529,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/adf08daa7c2832f2656e422343884e7a_2895538925902926887.png",
     },
   },
-  "InertSalsotto": {
+  InertSalsotto: {
     nameLocale: '停转的萨尔索图',
     planarSphere: {
       text: '萨尔索图的移动城市',
@@ -447,7 +540,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/5d5a0014e6da1371a4c013a771bc5617_5461272683252669791.png",
     },
   },
-  "BrokenKeel": {
+  BrokenKeel: {
     nameLocale: '折断的龙骨',
     planarSphere: {
       text: '伊须磨洲的残船鲸落',
@@ -458,7 +551,7 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/17/75216984/ecb905d5313a2d20a57cd93da75dd0a6_2977861339214131503.png",
     },
   },
-  "FleetoftheAgeless": {
+  FleetoftheAgeless: {
     nameLocale: '不老者的仙舟',
     planarSphere: {
       text: '罗浮仙舟的天外楼船',
@@ -469,7 +562,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/407cd5269240e7ec73d8544cff23c9f3_7426246078000311751.png",
     },
   },
-  "PanGalacticCommercialEnterprise": {
+  PanGalacticCommercialEnterprise: {
     nameLocale: '泛银河商业公司',
     planarSphere: {
       text: '公司的巨构总部',
@@ -480,7 +573,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/a7994f7bff5ededc4e513b66bc655b70_496556679066015838.png",
     },
   },
-  "BelobogoftheArchitects": {
+  BelobogoftheArchitects: {
     nameLocale: '筑城者的贝洛伯格',
     planarSphere: {
       text: '贝洛伯格的存护堡垒',
@@ -491,7 +584,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/30ed5e1b39d5accc8217c3b30cd7531f_5927791626047628057.png",
     },
   },
-  "SprightlyVonwacq": {
+  SprightlyVonwacq: {
     nameLocale: '生命的瓮瓦克',
     planarSphere: {
       text: '翁瓦克的诞生之岛',
@@ -502,7 +595,7 @@ export const artifactIcons = {
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/3a9da5b731c681a9a7f5551fbd0ebc4b_4077959702314813919.png",
     },
   },
-  "TaliaKingdomofBanditry": {
+  TaliaKingdomofBanditry: {
     nameLocale: '盗贼公国塔利亚',
     planarSphere: {
       text: '塔利亚的钉壳小镇',
@@ -530,6 +623,7 @@ export const subStats = [
 ];
 export const positions = ["flower", "feather", "sand", "cup", "head"];
 export const characters = {
+
   "希儿": {
     weights: {
       "hp": 0,
@@ -549,7 +643,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/19/279865110/af90c6a64b2be8f65187bdd432819f2f_498164526560653278.png',
     artifacts: [
       {
-        setNames: ["GeniusofBrilliantStars", "RutilantArena"],
+        setNames: [GeniusofBrilliantStars, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -558,89 +652,13 @@ export const characters = {
         linkRope: ["atk_"],
       },
       {
-        setNames: ["GeniusofBrilliantStars", "RutilantArena"],
+        setNames: [GeniusofBrilliantStars, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
         feet: ["atk_"],
         planarSphere: ["quantumDmg"],
         linkRope: ["atk_"],
-      },
-    ],
-  },
-  "卡芙卡": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 1,
-      "atk_": 1,
-      "def": 0,
-      "def_": 0,
-      "spd": 1,
-      "critRate": 0.5,
-      "critDMG": 0,
-      "eff": 0.75,
-      "effRes": 0,
-      "break": 0.5,
-    },
-    ace: 226,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/279865110/080fa5ed1cb5d3d40dfcf1dc10549ca2_6303402650588045559.png',
-    artifacts: [
-      {
-        setNames: ["BandofSizzlingThunder", "SpaceSealingStation"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["atk_"],
-        feet: ["spd"],
-        planarSphere: ["lightningDmg"],
-        linkRope: ["atk_", "enerRegen"],
-      },
-    ],
-  },
-  "克拉拉": {
-    weights: {
-      "hp": 0.45,
-      "hp_": 0.45,
-      "atk": 0.75,
-      "atk_": 0.75,
-      "def": 0.35,
-      "def_": 0.35,
-      "spd": 0,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 225,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
-    artifacts: [
-      {
-        setNames: ["ChampionofStreetwiseBoxing", "InertSalsotto"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_"],
-        planarSphere: ["physicalDmg"],
-        linkRope: ["atk_", "enerRegen"],
-      },
-      {
-        setNames: ["LongevousDisciple", "InertSalsotto"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_"],
-        planarSphere: ["physicalDmg"],
-        linkRope: ["atk_", "enerRegen"],
-      },
-      {
-        setNames: ["ChampionofStreetwiseBoxing", "GuardofWutheringSnow", "InertSalsotto"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_"],
-        planarSphere: ["physicalDmg"],
-        linkRope: ["atk_", "enerRegen"],
       },
     ],
   },
@@ -663,7 +681,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/19/279865110/bed9e6ced420be2318de111dd96681ca_1167960718750842288.png',
     artifacts: [
       {
-        setNames: ["GuardofWutheringSnow", "PasserbyofWanderingCloud", "BrokenKeel"],
+        setNames: [GuardofWutheringSnow, PasserbyofWanderingCloud, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["hp_"],
@@ -672,7 +690,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["GuardofWutheringSnow", "PasserbyofWanderingCloud", "FleetoftheAgeless"],
+        setNames: [GuardofWutheringSnow, PasserbyofWanderingCloud, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
         body: ["hp_"],
@@ -681,7 +699,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["GuardofWutheringSnow", "LongevousDisciple", "BrokenKeel"],
+        setNames: [GuardofWutheringSnow, LongevousDisciple, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["hp_"],
@@ -690,7 +708,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["GuardofWutheringSnow", "LongevousDisciple", "FleetoftheAgeless"],
+        setNames: [GuardofWutheringSnow, LongevousDisciple, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
         body: ["hp_"],
@@ -719,7 +737,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/d8dc3ca987dd2b9911893718bb610375_7218912827536937727.png',
     artifacts: [
       {
-        setNames: ["GeniusofBrilliantStars", "PanGalacticCommercialEnterprise"],
+        setNames: [GeniusofBrilliantStars, PanGalacticCommercialEnterprise],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -728,60 +746,13 @@ export const characters = {
         linkRope: ["enerRegen", "atk_"],
       },
       {
-        setNames: ["GeniusofBrilliantStars", "PanGalacticCommercialEnterprise"],
+        setNames: [GeniusofBrilliantStars, PanGalacticCommercialEnterprise],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
         feet: ["spd"],
         planarSphere: ["quantumDmg"],
         linkRope: ["enerRegen", "atk_"],
-      },
-    ],
-  },
-  "白露": {
-    weights: {
-      "hp": 1,
-      "hp_": 1,
-      "atk": 0,
-      "atk_": 0,
-      "def": 0.5,
-      "def_": 0.5,
-      "spd": 1,
-      "critRate": 0,
-      "critDMG": 0,
-      "eff": 0,
-      "effRes": 0.75,
-      "break": 0,
-    },
-    ace: 200,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/72c982ccd25802a32d0b89bf03d70d20_1097752465552406625.png',
-    artifacts: [
-      {
-        setNames: ["PasserbyofWanderingCloud", "BrokenKeel"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["heal"],
-        feet: ["spd"],
-        planarSphere: ["hp_"],
-        linkRope: ["enerRegen"],
-      },
-      {
-        setNames: ["PasserbyofWanderingCloud", "FleetoftheAgeless"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["heal"],
-        feet: ["spd"],
-        planarSphere: ["hp_"],
-        linkRope: ["enerRegen"],
-      },
-      {
-        setNames: ["PasserbyofWanderingCloud", "LongevousDisciple", "BrokenKeel"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["heal"],
-        feet: ["spd"],
-        planarSphere: ["hp_"],
-        linkRope: ["enerRegen"],
       },
     ],
   },
@@ -804,7 +775,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/8089f0029f12e86400ca7ced4fdebb9e_7297414997519957265.png',
     artifacts: [
       {
-        setNames: ["MessengerTraversingHackerspace", "BrokenKeel"],
+        setNames: [MessengerTraversingHackerspace, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
@@ -813,7 +784,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["MessengerTraversingHackerspace", "FleetoftheAgeless"],
+        setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
@@ -842,7 +813,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/bee085e76205433017a0940ddf545c73_4641737290465188147.png',
     artifacts: [
       {
-        setNames: ["MusketeerofWildWheat", "GuardofWutheringSnow", "SprightlyVonwacq"],
+        setNames: [MusketeerofWildWheat, GuardofWutheringSnow, SprightlyVonwacq],
         head: ["hp"],
         hands: ["atk"],
         body: ["hp_", "def_"],
@@ -851,7 +822,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["MusketeerofWildWheat", "GuardofWutheringSnow", "SprightlyVonwacq"],
+        setNames: [MusketeerofWildWheat, GuardofWutheringSnow, SprightlyVonwacq],
         head: ["hp"],
         hands: ["atk"],
         body: ["atk_"],
@@ -861,6 +832,131 @@ export const characters = {
       },
     ],
   },
+
+  "卡芙卡": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 1,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0.5,
+      "critDMG": 0,
+      "eff": 0.75,
+      "effRes": 0,
+      "break": 0.5,
+    },
+    ace: 226,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/279865110/080fa5ed1cb5d3d40dfcf1dc10549ca2_6303402650588045559.png',
+    artifacts: [
+      {
+        setNames: [BandofSizzlingThunder, SpaceSealingStation],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd"],
+        planarSphere: ["lightningDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+    ],
+  },
+  "克拉拉": {
+    weights: {
+      "hp": 0.45,
+      "hp_": 0.45,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0.35,
+      "def_": 0.35,
+      "spd": 0,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
+    artifacts: [
+      {
+        setNames: [ChampionofStreetwiseBoxing, InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+      {
+        setNames: [LongevousDisciple, InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+      {
+        setNames: [ChampionofStreetwiseBoxing, GuardofWutheringSnow, InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+    ],
+  },
+  "白露": {
+    weights: {
+      "hp": 1,
+      "hp_": 1,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0.5,
+      "def_": 0.5,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 200,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/72c982ccd25802a32d0b89bf03d70d20_1097752465552406625.png',
+    artifacts: [
+      {
+        setNames: [PasserbyofWanderingCloud, BrokenKeel],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: [PasserbyofWanderingCloud, FleetoftheAgeless],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: [PasserbyofWanderingCloud, LongevousDisciple, BrokenKeel],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
+
   "艾丝妲": {
     weights: {
       "hp": 0.75,
@@ -880,7 +976,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/15/279865110/99165147e7d8e170d3f90d14e466a2b6_4714820707184942320.png',
     artifacts: [
       {
-        setNames: ["MessengerTraversingHackerspace", "SprightlyVonwacq"],
+        setNames: [MessengerTraversingHackerspace, SprightlyVonwacq],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG", "hp_", "def_"],
@@ -889,7 +985,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["MessengerTraversingHackerspace", "FleetoftheAgeless"],
+        setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG", "hp_", "def_"],
@@ -918,7 +1014,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/62d7f255c2155a8d41e5cc800e81d1a5_4141136353024209559.png',
     artifacts: [
       {
-        setNames: ["GuardofWutheringSnow", "MusketeerofWildWheat", "InertSalsotto"],
+        setNames: [GuardofWutheringSnow, MusketeerofWildWheat, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG", "hp_", "def_"],
@@ -947,7 +1043,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/103492603/d162b03a7ed20f3065e5ca2c6500696d_3744072972295510756.png',
     artifacts: [
       {
-        setNames: ["HunterofGlacialForest", "BelobogoftheArchitects"],
+        setNames: [HunterofGlacialForest, BelobogoftheArchitects],
         head: ["hp"],
         hands: ["atk"],
         body: ["eff", "critRate", "critDMG"],
@@ -956,7 +1052,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["HunterofGlacialForest", "PanGalacticCommercialEnterprise"],
+        setNames: [HunterofGlacialForest, PanGalacticCommercialEnterprise],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG", "eff"],
@@ -985,7 +1081,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/20/279865110/5388ff281e641735dbbf31e4659e7203_2101653691754902501.png',
     artifacts: [
       {
-        setNames: ["PasserbyofWanderingCloud", "BrokenKeel"],
+        setNames: [PasserbyofWanderingCloud, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["heal"],
@@ -994,7 +1090,7 @@ export const characters = {
         linkRope: ["enerRegen", "hp_"],
       },
       {
-        setNames: ["PasserbyofWanderingCloud", "FleetoftheAgeless"],
+        setNames: [PasserbyofWanderingCloud, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
         body: ["heal"],
@@ -1003,7 +1099,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["MessengerTraversingHackerspace", "BrokenKeel"],
+        setNames: [MessengerTraversingHackerspace, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["heal"],
@@ -1032,7 +1128,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/3dc355b1245cf97e9705e7590bdacab1_5898666393410361915.png',
     artifacts: [
       {
-        setNames: ["KnightofPurityPalace", "BrokenKeel"],
+        setNames: [KnightofPurityPalace, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["def_"],
@@ -1041,7 +1137,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: ["KnightofPurityPalace", "BelobogoftheArchitects"],
+        setNames: [KnightofPurityPalace, BelobogoftheArchitects],
         head: ["hp"],
         hands: ["atk"],
         body: ["eff"],
@@ -1070,7 +1166,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
     artifacts: [
       {
-        setNames: ["KnightofPurityPalace", "GuardofWutheringSnow", "BrokenKeel"],
+        setNames: [KnightofPurityPalace, GuardofWutheringSnow, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["def_"],
@@ -1079,7 +1175,7 @@ export const characters = {
         linkRope: ["def_"],
       },
       {
-        setNames: ["KnightofPurityPalace", "GuardofWutheringSnow", "BelobogoftheArchitects"],
+        setNames: [KnightofPurityPalace, GuardofWutheringSnow, BelobogoftheArchitects],
         head: ["hp"],
         hands: ["atk"],
         body: ["eff"],
@@ -1108,7 +1204,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/15/279865110/6bf24ed629998858de5b4fed09965de3_3979099743619354896.png',
     artifacts: [
       {
-        setNames: ["KnightofPurityPalace", "BelobogoftheArchitects"],
+        setNames: [KnightofPurityPalace, BelobogoftheArchitects],
         head: ["hp"],
         hands: ["atk"],
         body: ["eff"],
@@ -1137,7 +1233,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/14/279865110/3b7fdbd358c420b64a78a21fd365ce5c_6714482476795263627.png',
     artifacts: [
       {
-        setNames: ["PasserbyofWanderingCloud", "BrokenKeel"],
+        setNames: [PasserbyofWanderingCloud, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["heal"],
@@ -1166,7 +1262,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/11/103492603/6c924158527197dbadc323ecfbede95d_2213127508670668756.png',
     artifacts: [
       {
-        setNames: ["EagleofTwilightLine", "MusketeerofWildWheat", "RutilantArena"],
+        setNames: [EagleofTwilightLine, MusketeerofWildWheat, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG", "critRate"],
@@ -1195,7 +1291,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/27/103492603/a0a7bd8bffb29d907dd3f166fbe2c6f3_5213924545260783425.png',
     artifacts: [
       {
-        setNames: ["HunterofGlacialForest", "InertSalsotto"],
+        setNames: [HunterofGlacialForest, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
@@ -1224,7 +1320,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/26/103492603/aa7685675c64a32e8f9d7a9f07571620_7580995524190517691.png',
     artifacts: [
       {
-        setNames: ["BandofSizzlingThunder", "SpaceSealingStation"],
+        setNames: [BandofSizzlingThunder, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
@@ -1253,7 +1349,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/18/279865110/121c5e7cb07cff076286d167409bf871_4640303606954865037.png',
     artifacts: [
       {
-        setNames: ["EagleofTwilightLine", "SpaceSealingStation"],
+        setNames: [EagleofTwilightLine, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["atk_"],
@@ -1282,7 +1378,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/8311a9bb723409bc8cc85e2cda6db213_1893651197391730889.png',
     artifacts: [
       {
-        setNames: ["BandofSizzlingThunder", "SpaceSealingStation"],
+        setNames: [BandofSizzlingThunder, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -1311,7 +1407,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/27/103492603/fd041544e7f54bcaf0527d378d2abd92_6836185614774662354.png',
     artifacts: [
       {
-        setNames: ["FiresmithofLavaForging", "RutilantArena"],
+        setNames: [FiresmithofLavaForging, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -1340,7 +1436,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/103492603/23f97ecd55a368cb6bd4ac7700f45d7b_3101662331893397894.png',
     artifacts: [
       {
-        setNames: ["ThiefofShootingMeteor", "TaliaKingdomofBanditry"],
+        setNames: [ThiefofShootingMeteor, TaliaKingdomofBanditry],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
@@ -1349,7 +1445,7 @@ export const characters = {
         linkRope: ["break"],
       },
       {
-        setNames: ["ChampionofStreetwiseBoxing", "TaliaKingdomofBanditry"],
+        setNames: [ChampionofStreetwiseBoxing, TaliaKingdomofBanditry],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
@@ -1378,7 +1474,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/3af69ec3d9da0d831f5e47c2671f4956_2170721804501444875.png',
     artifacts: [
       {
-        setNames: ["GeniusofBrilliantStars", "RutilantArena"],
+        setNames: [GeniusofBrilliantStars, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -1407,7 +1503,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/16/279865110/1d949908393fac8c7e6569a78bdea2c5_4980010935910440090.png',
     artifacts: [
       {
-        setNames: ["ChampionofStreetwiseBoxing", "SpaceSealingStation"],
+        setNames: [ChampionofStreetwiseBoxing, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["atk_"],
@@ -1419,6 +1515,35 @@ export const characters = {
   },
 
 
+  "罗刹": {
+    weights: {
+      "hp": 0.75,
+      "hp_": 0.75,
+      "atk": 1,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/07/19/279865110/5837035941eda348b8314cf2611277e0_5275580057395163858.png',
+    artifacts: [
+      {
+        setNames: [PasserbyofWanderingCloud, MusketeerofWildWheat, BrokenKeel],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["atk_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
   "镜流": {
     weights: {
       "hp": 0,
@@ -1438,51 +1563,13 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/10/10/279865110/409aaa2be978f26aba04c710ead6235e_4496049587887127675.png',
     artifacts: [
       {
-        setNames: ["HunterofGlacialForest", "RutilantArena"],
+        setNames: [GeniusofBrilliantStars, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
-        feet: ["atk_", "spd"],
+        feet: ["spd", "atk_"],
         planarSphere: ["iceDmg"],
         linkRope: ["atk_", "enerRegen"],
-      },
-    ],
-  },
-  "丹恒•饮月": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 0.5,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 221,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/30/279865110/e28c7a9c6b5dae03685b4d96c56989a9_1953398234327686580.png',
-    artifacts: [
-      {
-        setNames: ["MusketeerofWildWheat", "RutilantArena"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_"],
-        planarSphere: ["imaginaryDmg"],
-        linkRope: ["atk_"],
-      },
-      {
-        setNames: ["WastelanderofBanditryDesert", "RutilantArena"],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_"],
-        planarSphere: ["imaginaryDmg"],
-        linkRope: ["atk_"],
       },
     ],
   },
@@ -1505,7 +1592,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/07/19/279865110/bcc6daa8c64e1327f7d9c93027937747_7676852819117293387.png',
     artifacts: [
       {
-        setNames: ["LongevousDisciple", "RutilantArena"],
+        setNames: [LongevousDisciple, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG", "critRate"],
@@ -1514,7 +1601,7 @@ export const characters = {
         linkRope: ["hp_", "enerRegen"],
       },
       {
-        setNames: ["LongevousDisciple", "InertSalsotto"],
+        setNames: [LongevousDisciple, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG", "critRate"],
@@ -1524,41 +1611,41 @@ export const characters = {
       },
     ],
   },
-  "罗刹": {
+  "丹恒•饮月": {
     weights: {
-      "hp": 0.75,
-      "hp_": 0.75,
-      "atk": 1,
-      "atk_": 1,
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
       "def": 0,
       "def_": 0,
-      "spd": 1,
-      "critRate": 0,
-      "critDMG": 0,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
       "eff": 0,
-      "effRes": 0.75,
+      "effRes": 0,
       "break": 0,
     },
-    ace: 209,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/07/19/279865110/5837035941eda348b8314cf2611277e0_5275580057395163858.png',
+    ace: 221,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/30/279865110/e28c7a9c6b5dae03685b4d96c56989a9_1953398234327686580.png',
     artifacts: [
       {
-        setNames: ["PasserbyofWanderingCloud", "BrokenKeel"],
+        setNames: [MusketeerofWildWheat, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
-        body: ["heal"],
-        feet: ["spd"],
-        planarSphere: ["atk_"],
-        linkRope: ["enerRegen"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["atk_"],
       },
       {
-        setNames: ["PasserbyofWanderingCloud", "FleetoftheAgeless"],
+        setNames: [WastelanderofBanditryDesert, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
-        body: ["heal"],
-        feet: ["spd"],
-        planarSphere: ["atk_"],
-        linkRope: ["enerRegen"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["atk_"],
       },
     ],
   },
@@ -1581,7 +1668,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/279865110/1490cd426a79f05a0dd9411caf30eb7f_8321807150411360046.png',
     artifacts: [
       {
-        setNames: ["BandofSizzlingThunder", "InertSalsotto"],
+        setNames: [BandofSizzlingThunder, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
@@ -1610,7 +1697,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
     artifacts: [
       {
-        setNames: ["FiresmithofLavaForging", "InertSalsotto"],
+        setNames: [FiresmithofLavaForging, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
@@ -1639,7 +1726,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/08/103492603/15eeac95fd249c249c67d5c30e27b0e0_4123173124092912491.png',
     artifacts: [
       {
-        setNames: ["WastelanderofBanditryDesert", "PanGalacticCommercialEnterprise"],
+        setNames: [WastelanderofBanditryDesert, PanGalacticCommercialEnterprise],
         head: ["hp"],
         hands: ["atk"],
         body: ["eff", "critRate", "critDMG"],
@@ -1668,7 +1755,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/4da092a2e4af764147ed3c29cd5fa29e_5447218417173761567.png',
     artifacts: [
       {
-        setNames: ["HunterofGlacialForest", "SpaceSealingStation"],
+        setNames: [HunterofGlacialForest, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG", "critRate"],
@@ -1677,7 +1764,7 @@ export const characters = {
         linkRope: ["atk_"],
       },
       {
-        setNames: ["MusketeerofWildWheat", "SpaceSealingStation"],
+        setNames: [MusketeerofWildWheat, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG", "critRate"],

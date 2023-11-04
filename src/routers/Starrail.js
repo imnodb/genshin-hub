@@ -12,6 +12,16 @@ import {
   Upload,
 } from "antd";
 import { ShareAltOutlined, FileAddOutlined } from "@ant-design/icons";
+import { DndContext, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
+import { restrictToVerticalAxis } from '@dnd-kit/modifiers';
+import {
+  SortableContext,
+  arrayMove,
+  useSortable,
+  verticalListSortingStrategy,
+} from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
+import { Table } from 'antd';
 import genCharacter from "../gen_character";
 import ZhCn from "../zh-cn.json";
 import ArtifactModal from "../components/ArtifactModal";
@@ -446,6 +456,114 @@ const items = Object.keys(cGroup).map((key) => {
     ),
   };
 });
+
+const columns = [
+  {
+    title: 'Name',
+    dataIndex: 'badge',
+    key: 'badge',
+    render: (text) => <Avatar shape="square" size="large" src={text} />,
+    width: 150,
+  },
+  {
+    title: 'Address',
+    dataIndex: 'artifacts',
+    key: 'artifacts',
+    render: (artifacts) => artifacts.map(({ setNames, body, feet, planarSphere, linkRope }) => (
+      <>
+        {
+          Object.entries({
+            'body': body, 'feet': feet, 'planarSphere': planarSphere, 'linkRope': linkRope
+          }).map(([pos, v]) => (<>
+            {
+              setNames.filter(a => artifactIcons[a][pos]).map(a => (
+                <Avatar shape="square" size="large" src={artifactIcons[a][pos]?.url} />
+              ))
+            }
+            {v.map(a => artifactTags[a]?.chs).join('、')}
+          </>))
+        }
+        <br />
+      </>
+    )),
+  },
+];
+
+
+const Row0 = (props) => {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
+    id: props['data-row-key'],
+  });
+
+  const style = {
+    ...props.style,
+    transform: CSS.Transform.toString(transform && { ...transform, scaleY: 1 }),
+    transition,
+    cursor: 'move',
+    ...(isDragging ? { position: 'relative', zIndex: 9999 } : {}),
+  };
+
+  return <tr {...props} ref={setNodeRef} style={style} {...attributes} {...listeners} />;
+};
+
+const App = () => {
+  const [dataSource, setDataSource] = useState(Object.entries(charactersSuit).map(([key, { badge, artifacts }]) => ({
+    key: key,
+    badge: badge,
+    artifacts: artifacts,
+  })));
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        // https://docs.dndkit.com/api-documentation/sensors/pointer#activation-constraints
+        distance: 1,
+      },
+    }),
+  );
+
+  const onDragEnd = ({ active, over }) => {
+    if (active.id !== over?.id) {
+      setDataSource((prev) => {
+        const activeIndex = prev.findIndex((i) => i.key === active.id);
+        const overIndex = prev.findIndex((i) => i.key === over?.id);
+        return arrayMove(prev, activeIndex, overIndex);
+      });
+    }
+  };
+
+  return (
+    <DndContext sensors={sensors} modifiers={[restrictToVerticalAxis]} onDragEnd={onDragEnd}>
+      <SortableContext
+        // rowKey array
+        items={dataSource.map((i) => i.key)}
+        strategy={verticalListSortingStrategy}
+      >
+        <Table
+          components={{
+            body: {
+              row: Row0,
+            },
+          }}
+          rowKey="key"
+          columns={columns}
+          dataSource={dataSource}
+        />
+      </SortableContext>
+    </DndContext>
+  );
+};
+
+// export default App;
+items.push({
+  key: 'setting',
+  label: 'setting',
+  children: (
+    <App>
+
+    </App>
+  ),
+})
 
 function Starrail() {
   const [art, setArt] = useState(null);
