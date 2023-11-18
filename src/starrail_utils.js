@@ -507,6 +507,44 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/07/03/1805320/93e084eb801832265aa19887fe12287d_5134740238993241025.png",
     },
   },
+  TheAshblazingGrandDuke: {
+    nameLocale: '毁烬焚骨的大公',
+    head: {
+      text: '大公的冥焰冠冕',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/2febb8b5467228cf7bcb11e36d2637d4_7760272898197088968.png",
+    },
+    hands: {
+      text: '大公的绒火指套',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/248e77c279c776340ab4a3592facaf66_7241953625355786446.png",
+    },
+    body: {
+      text: '大公的蒙恩长袍',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/9f1bc919fbadaa76bf3d36aa71b730fd_826775788273415848.png",
+    },
+    feet: {
+      text: '大公的绅雅礼靴',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/19bdda4af51535fb43886ec3b87bcc1d_8466076345607909749.png",
+    },
+  },
+  PrisonerinDeepConfinement: {
+    nameLocale: '幽锁深牢的系囚',
+    head: {
+      text: '系囚的合啮拘笼',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/bca74b18265ad0c8dc8ab454e57e81c0_7112896352356399269.png",
+    },
+    hands: {
+      text: '系囚的铅石梏铐',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/8e5e32e45425d33bcaffc8f145e07900_1710463697469382192.png",
+    },
+    body: {
+      text: '系囚的幽闭缚束',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/7ca2e92efbc31dd27844514c24b4ae57_1157159014182141769.png",
+    },
+    feet: {
+      text: '系囚的绝足锁桎',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/8ccebdfd04e3fcad9d00950ffab57c5e_1143394499201544315.png",
+    },
+  },
   RutilantArena: {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -604,6 +642,28 @@ export const artifactIcons = {
     linkRope: {
       text: '塔利亚的裸皮电线',
       url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/f207f7c77dffdf2705bba3f34d5b4d89_6075014999174892370.png",
+    },
+  },
+  PenaconyLandoftheDreams: {
+    nameLocale: '梦想之地匹诺康尼',
+    planarSphere: {
+      text: '匹诺康尼的堂皇酒店',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/37f2350338a4f047e0d452383eb593cb_4351469026433831180.png",
+    },
+    linkRope: {
+      text: '匹诺康尼的逐梦轨道',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/84b8e8b8a4f4078d5c701ab7020197f0_6494897314692514778.png",
+    },
+  },
+  FirmamentFronlineGlamoth: {
+    nameLocale: '苍穹战线格拉默',
+    planarSphere: {
+      text: '格拉默的铁骑兵团',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/f7b9d14d8105fdc7fc35b81a2a607410_8048270065561844348.png",
+    },
+    linkRope: {
+      text: '格拉默的寂静坟碑',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/67a83e88d7f40136ae2efe63b7207fa1_7057386524605170751.png",
     },
   },
 };
