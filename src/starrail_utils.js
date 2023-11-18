@@ -239,6 +239,22 @@ const SprightlyVonwacq = 'SprightlyVonwacq';
  * 盗贼公国塔利亚
  */
 const TaliaKingdomofBanditry = 'TaliaKingdomofBanditry';
+/**
+ * 毁烬焚骨的大公
+ */
+const TheAshblazingGrandDuke = 'TheAshblazingGrandDuke';
+/**
+ * 幽锁深牢的系囚
+ */
+const PrisonerinDeepConfinement = 'PrisonerinDeepConfinement';
+/**
+ * 梦想之地匹诺康尼
+ */
+const PenaconyLandoftheDreams = 'PenaconyLandoftheDreams';
+/**
+ * 苍穹战线格拉默
+ */
+const FirmamentFronlineGlamoth = 'FirmamentFronlineGlamoth';
 
 export const artifactIcons = {
   GeniusofBrilliantStars: {
@@ -703,6 +719,15 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/19/279865110/af90c6a64b2be8f65187bdd432819f2f_498164526560653278.png',
     artifacts: [
       {
+        setNames: [GeniusofBrilliantStars, FirmamentFronlineGlamoth],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["atk_"],
+        planarSphere: ["quantumDmg"],
+        linkRope: ["atk_"],
+      },
+      {
         setNames: [GeniusofBrilliantStars, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
@@ -742,6 +767,15 @@ export const characters = {
     artifacts: [
       {
         setNames: [GuardofWutheringSnow, PasserbyofWanderingCloud, BrokenKeel],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: [GuardofWutheringSnow, PasserbyofWanderingCloud, PenaconyLandoftheDreams],
         head: ["hp"],
         hands: ["atk"],
         body: ["hp_"],
@@ -797,6 +831,15 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/d8dc3ca987dd2b9911893718bb610375_7218912827536937727.png',
     artifacts: [
       {
+        setNames: [GeniusofBrilliantStars, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd"],
+        planarSphere: ["quantumDmg"],
+        linkRope: ["enerRegen", "atk_"],
+      },
+      {
         setNames: [GeniusofBrilliantStars, PanGalacticCommercialEnterprise],
         head: ["hp"],
         hands: ["atk"],
@@ -844,6 +887,15 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
+        setNames: [MessengerTraversingHackerspace, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["spd"],
+        planarSphere: ["hp_", "windDmg", "def_"],
+        linkRope: ["enerRegen"],
+      },
+      {
         setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
@@ -882,6 +934,15 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
+        setNames: [MusketeerofWildWheat, GuardofWutheringSnow, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_", "def_"],
+        feet: ["spd"],
+        planarSphere: ["atk_"],
+        linkRope: ["enerRegen"],
+      },
+      {
         setNames: [MusketeerofWildWheat, GuardofWutheringSnow, SprightlyVonwacq],
         head: ["hp"],
         hands: ["atk"],
@@ -912,6 +973,15 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/279865110/080fa5ed1cb5d3d40dfcf1dc10549ca2_6303402650588045559.png',
     artifacts: [
       {
+        setNames: [PrisonerinDeepConfinement, FirmamentFronlineGlamoth],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd"],
+        planarSphere: ["lightningDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+      {
         setNames: [BandofSizzlingThunder, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
@@ -940,6 +1010,15 @@ export const characters = {
     ace: 225,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
     artifacts: [
+      {
+        setNames: [ChampionofStreetwiseBoxing, TheAshblazingGrandDuke, InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_", "enerRegen"],
+      },
       {
         setNames: [ChampionofStreetwiseBoxing, InertSalsotto],
         head: ["hp"],
@@ -1036,6 +1115,15 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/15/279865110/99165147e7d8e170d3f90d14e466a2b6_4714820707184942320.png',
     artifacts: [
       {
+        setNames: [MessengerTraversingHackerspace, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG", "hp_", "def_"],
+        feet: ["spd"],
+        planarSphere: ["fireDmg", "hp_", "def_"],
+        linkRope: ["enerRegen"],
+      },
+      {
         setNames: [MessengerTraversingHackerspace, SprightlyVonwacq],
         head: ["hp"],
         hands: ["atk"],
@@ -1074,6 +1162,15 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/62d7f255c2155a8d41e5cc800e81d1a5_4141136353024209559.png',
     artifacts: [
       {
+        setNames: [GuardofWutheringSnow, MusketeerofWildWheat, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG", "hp_", "def_"],
+        feet: ["spd"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["enerRegen"],
+      },
+      {
         setNames: [GuardofWutheringSnow, MusketeerofWildWheat, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
@@ -1102,6 +1199,15 @@ export const characters = {
     ace: 235,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/103492603/d162b03a7ed20f3065e5ca2c6500696d_3744072972295510756.png',
     artifacts: [
+      {
+        setNames: [HunterofGlacialForest, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff", "critRate", "critDMG"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["iceDmg", "hp_", "def_"],
+        linkRope: ["enerRegen"],
+      },
       {
         setNames: [HunterofGlacialForest, BelobogoftheArchitects],
         head: ["hp"],
@@ -1140,6 +1246,15 @@ export const characters = {
     ace: 200,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/20/279865110/5388ff281e641735dbbf31e4659e7203_2101653691754902501.png',
     artifacts: [
+      {
+        setNames: [PasserbyofWanderingCloud, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd", "hp_"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen", "hp_"],
+      },
       {
         setNames: [PasserbyofWanderingCloud, BrokenKeel],
         head: ["hp"],
@@ -1409,6 +1524,15 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/18/279865110/121c5e7cb07cff076286d167409bf871_4640303606954865037.png',
     artifacts: [
       {
+        setNames: [PrisonerinDeepConfinement, SpaceSealingStation],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["windDmg"],
+        linkRope: ["enerRegen", "atk_"],
+      },
+      {
         setNames: [EagleofTwilightLine, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
@@ -1437,6 +1561,15 @@ export const characters = {
     ace: 230,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/8311a9bb723409bc8cc85e2cda6db213_1893651197391730889.png',
     artifacts: [
+      {
+        setNames: [PrisonerinDeepConfinement, SpaceSealingStation],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd"],
+        planarSphere: ["lightningDmg", "atk_"],
+        linkRope: ["atk_", "break"],
+      },
       {
         setNames: [BandofSizzlingThunder, SpaceSealingStation],
         head: ["hp"],
@@ -1562,6 +1695,15 @@ export const characters = {
     ace: 226,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/16/279865110/1d949908393fac8c7e6569a78bdea2c5_4980010935910440090.png',
     artifacts: [
+      {
+        setNames: [PrisonerinDeepConfinement, SpaceSealingStation],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd"],
+        planarSphere: ["physicalDmg",],
+        linkRope: ["atk_"],
+      },
       {
         setNames: [ChampionofStreetwiseBoxing, SpaceSealingStation],
         head: ["hp"],
