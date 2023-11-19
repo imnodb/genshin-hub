@@ -878,7 +878,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/279865110/8089f0029f12e86400ca7ced4fdebb9e_7297414997519957265.png',
     artifacts: [
       {
-        setNames: [MessengerTraversingHackerspace, BrokenKeel],
+        setNames: Object.entries(artifactIcons).filter(([key, { head }]) => head).map(([key]) => key).concat([BrokenKeel]),
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],

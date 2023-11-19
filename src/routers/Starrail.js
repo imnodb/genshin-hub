@@ -272,7 +272,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
         )
       )
       .filter((a) => a); // 挑出当前套装最好的部位
-    if (setNames?.length === 2) {
+    if (setNames?.length === 2 || setNames?.length > 6) {
       // console.log("setNames", setNames);
       // console.log("tmpCol", tmpCol);
       pushArtCol(tmpCol, tmpArtCol);
