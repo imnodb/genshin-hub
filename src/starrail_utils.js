@@ -1048,6 +1048,35 @@ export const characters = {
       },
     ],
   },
+  "藿藿": {
+    weights: {
+      "hp": 1,
+      "hp_": 1,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0.5,
+      "def_": 0.5,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 200,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/11/15/279865110/5acdbea523f79c00c91c9b2fcffc3f9a_692014336755010175.png',
+    artifacts: [
+      {
+        setNames: [PasserbyofWanderingCloud, BrokenKeel],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
   "白露": {
     weights: {
       "hp": 1,
@@ -1774,36 +1803,6 @@ export const characters = {
     ],
   },
 
-
-  "藿藿": {
-    weights: {
-      "hp": 1,
-      "hp_": 1,
-      "atk": 0,
-      "atk_": 0,
-      "def": 0.5,
-      "def_": 0.5,
-      "spd": 1,
-      "critRate": 0,
-      "critDMG": 0,
-      "eff": 0,
-      "effRes": 0.75,
-      "break": 0,
-    },
-    ace: 200,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/11/15/279865110/5acdbea523f79c00c91c9b2fcffc3f9a_692014336755010175.png',
-    artifacts: [
-      {
-        setNames: [PasserbyofWanderingCloud, BrokenKeel],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["heal"],
-        feet: ["spd", "hp_"],
-        planarSphere: ["hp_"],
-        linkRope: ["enerRegen"],
-      },
-    ],
-  },
   "托帕&账账": {
     weights: {
       "hp": 0,
