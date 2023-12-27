@@ -906,6 +906,35 @@ export const characters = {
       },
     ],
   },
+  "阮•梅": {
+    weights: {
+      "hp": 0.75,
+      "hp_": 0.75,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0.5,
+      "def_": 0.5,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0.5,
+      "break": 1,
+    },
+    ace: 205,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/12/26/279865110/d6d151a2f95993720a4e48dc95109f3d_4467148012483883534.png',
+    artifacts: [
+      {
+        setNames: [ThiefofShootingMeteor, FleetoftheAgeless],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_", "def_"],
+        feet: ["spd"],
+        planarSphere: ["hp_", "def_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
   "停云": {
     weights: {
       "hp": 0.75,
