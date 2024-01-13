@@ -1022,15 +1022,6 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
     artifacts: [
       {
-        setNames: [ChampionofStreetwiseBoxing, TheAshblazingGrandDuke, InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_"],
-        planarSphere: ["physicalDmg"],
-        linkRope: ["atk_", "enerRegen"],
-      },
-      {
         setNames: [ChampionofStreetwiseBoxing, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
