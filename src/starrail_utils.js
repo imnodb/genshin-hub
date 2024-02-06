@@ -965,6 +965,44 @@ export const characters = {
     ],
   },
 
+  "黑天鹅": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 1,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 1,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 207,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/02/04/279865110/c2ce0766363449b3a099fb02c54ea404_8297345528371363430.png',
+    artifacts: [
+      {
+        setNames: [PrisonerinDeepConfinement, PanGalacticCommercialEnterprise],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff", "atk_"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["windDmg", "atk_"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+      {
+        setNames: [PrisonerinDeepConfinement, FirmamentFronlineGlamoth],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff", "atk_"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["windDmg", "atk_"],
+        linkRope: ["atk_", "enerRegen"],
+      },
+    ],
+  },
   "卡芙卡": {
     weights: {
       "hp": 0,
