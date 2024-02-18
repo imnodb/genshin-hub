@@ -561,6 +561,44 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/8ccebdfd04e3fcad9d00950ffab57c5e_1143394499201544315.png",
     },
   },
+  "死水深潜的先驱": {
+    nameLocale: '死水深潜的先驱',
+    head: {
+      text: '先驱的绝热围壳',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/3e353f0d6d97a716e3147eb976de6391_3190293079741852150.png",
+    },
+    hands: {
+      text: '先驱的虚极罗盘',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/a2e991be5112e889bccb87b76a575f8d_7751035240564640679.png",
+    },
+    body: {
+      text: '先驱的密合铅衣',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/4217ff23ed0633e871033fcfca8b2b41_3640313395939107955.png",
+    },
+    feet: {
+      text: '先驱的泊星桩锚',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/1e50db55a4630b71160bba9137737aeb_7462247320709449731.png",
+    },
+  },
+  "机心戏梦的钟表匠": {
+    nameLocale: '机心戏梦的钟表匠',
+    head: {
+      text: '钟表匠的极目透镜',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/6247d433d0fa48b1428afc37520d5f99_3086570050864258531.png",
+    },
+    hands: {
+      text: '钟表匠的交运腕表',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/db409b0b0bc1df1b978c4cb0c4c5d2da_5450141217373213404.png",
+    },
+    body: {
+      text: '钟表匠的空幻礼服',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/665acf5e977ec5d26005f71f1677919b_5438125480101715514.png",
+    },
+    feet: {
+      text: '钟表匠的隐梦革履',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/9945e7fc943f743fb9a98d652fcb5a1a_7462965746122642434.png",
+    },
+  },
   RutilantArena: {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -860,10 +898,10 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/12/26/279865110/d6d151a2f95993720a4e48dc95109f3d_4467148012483883534.png',
     artifacts: [
       {
-        setNames: [ThiefofShootingMeteor, FleetoftheAgeless],
+        setNames: ["机心戏梦的钟表匠", FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
-        body: ["hp_", "def_"],
+        body: ["atk_", "hp_", "def_"],
         feet: ["spd"],
         planarSphere: ["hp_", "def_"],
         linkRope: ["enerRegen"],
@@ -988,7 +1026,7 @@ export const characters = {
         head: ["hp"],
         hands: ["atk"],
         body: ["eff", "atk_"],
-        feet: ["spd", "atk_"],
+        feet: ["atk_", "spd"],
         planarSphere: ["windDmg", "atk_"],
         linkRope: ["atk_", "enerRegen"],
       },
@@ -1190,6 +1228,35 @@ export const characters = {
         feet: ["spd"],
         planarSphere: ["hp_"],
         linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "真理": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 222,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/01/16/279865110/671174c0e64ff4ee3f786270cba80cfe_337518527838341931.png',
+    artifacts: [
+      {
+        setNames: ["死水深潜的先驱", InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["enerRegen", "atk_"],
       },
     ],
   },
