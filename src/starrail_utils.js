@@ -906,6 +906,15 @@ export const characters = {
         planarSphere: ["hp_", "def_"],
         linkRope: ["enerRegen"],
       },
+      {
+        setNames: [ThiefofShootingMeteor, FleetoftheAgeless],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_", "def_"],
+        feet: ["spd"],
+        planarSphere: ["hp_", "def_"],
+        linkRope: ["enerRegen"],
+      },
     ],
   },
   "布洛妮娅": {
