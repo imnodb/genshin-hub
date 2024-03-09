@@ -264,11 +264,11 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       artifact;
     // 只有两种套装说明是内外圈唯一组合
     let tmpCol = Object.values(artsGroup)
-      .map((a) =>
-        a.find?.(
-          (b) =>
-            setNames?.includes(b.setName) &&
-            artifact[b.position][0] === b.mainTag.name
+      .map((d) =>
+        d.find?.(
+          (a) =>
+            setNames?.includes(a.setName) &&
+            (artifact[a.position][0] === 'any' || artifact[a.position][0] === a.mainTag.name)
         )
       )
       .filter((a) => a); // 挑出当前套装最好的部位
@@ -297,7 +297,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
               if (art.setName !== setNameo1) {
                 const colart = artsGroup[art?.position].find(
                   (a) => a.setName === setNameo1 &&
-                    artifact[a.position][0] === a.mainTag.name
+                    (artifact[a.position][0] === 'any' || artifact[a.position][0] === a.mainTag.name)
                 );
                 if (colart) {
                   const col = [...tmpCol];
@@ -321,7 +321,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
             tmpCol.forEach((art1, i) => {
               const colart = artsGroup[art1?.position].find(
                 (a) => a.setName === setNameo2 &&
-                  artifact[a.position][0] === a.mainTag.name
+                  (artifact[a.position][0] === 'any' || artifact[a.position][0] === a.mainTag.name)
               );
               if (colart) {
                 const col1 = [...tmpCol];
@@ -331,7 +331,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
                 col1.forEach((art2, g) => {
                   const colart = artsGroup[art2?.position].find(
                     (a) => a.setName === setNameo2 &&
-                      artifact[a.position][0] === a.mainTag.name
+                      (artifact[a.position][0] === 'any' || artifact[a.position][0] === a.mainTag.name)
                   );
                   if (colart) {
                     const col2 = [...col1];
@@ -377,6 +377,7 @@ cloneCharacters.forEach(({ name, nameLocale, avatar, arts }) => {
       cloneCharacters.find((c) => c.nameLocale === nameLocale) ?? {};
     character.equip = true;
   }
+  // console.log(nameLocale, artCol);
   artColObj[nameLocale] = artCol;
 });
 

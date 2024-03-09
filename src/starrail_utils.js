@@ -763,7 +763,7 @@ export const characters = {
         body: ["critRate"],
         feet: ["atk_"],
         planarSphere: ["quantumDmg"],
-        linkRope: ["atk_", "enerRegen"],
+        linkRope: ["atk_"],
       },
       {
         setNames: [GeniusofBrilliantStars, FirmamentFronlineGlamoth],
@@ -772,7 +772,7 @@ export const characters = {
         body: ["critDMG"],
         feet: ["atk_"],
         planarSphere: ["quantumDmg"],
-        linkRope: ["atk_", "enerRegen"],
+        linkRope: ["atk_"],
       },
     ],
   },
@@ -795,11 +795,20 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/02/04/279865110/c2ce0766363449b3a099fb02c54ea404_8297345528371363430.png',
     artifacts: [
       {
-        setNames: [PrisonerinDeepConfinement, PanGalacticCommercialEnterprise],
+        setNames: [PrisonerinDeepConfinement, FirmamentFronlineGlamoth],
         head: ["hp"],
         hands: ["atk"],
         body: ["eff"],
-        feet: ["atk_"],
+        feet: ["spd"],
+        planarSphere: ["atk_"],
+        linkRope: ["atk_"],
+      },
+      {
+        setNames: [PrisonerinDeepConfinement, FirmamentFronlineGlamoth],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff"],
+        feet: ["spd"],
         planarSphere: ["windDmg"],
         linkRope: ["atk_"],
       },
@@ -808,7 +817,7 @@ export const characters = {
         head: ["hp"],
         hands: ["atk"],
         body: ["eff"],
-        feet: ["spd"],
+        feet: ["atk_"],
         planarSphere: ["windDmg"],
         linkRope: ["atk_"],
       },
@@ -827,7 +836,7 @@ export const characters = {
       "critDMG": 0,
       "eff": 0.75,
       "effRes": 0,
-      "break": 0.5,
+      "break": 0,
     },
     ace: 226,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/279865110/080fa5ed1cb5d3d40dfcf1dc10549ca2_6303402650588045559.png',
@@ -868,16 +877,7 @@ export const characters = {
         hands: ["atk"],
         body: ["critDMG"],
         feet: ["spd"],
-        planarSphere: ["hp_"],
-        linkRope: ["enerRegen"],
-      },
-      {
-        setNames: Object.entries(artifactIcons).filter(([key, { head }]) => head).map(([key]) => key).concat([PenaconyLandoftheDreams]),
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG"],
-        feet: ["spd"],
-        planarSphere: ["def_"],
+        planarSphere: ["any"],
         linkRope: ["enerRegen"],
       },
     ],
@@ -989,21 +989,21 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/12/26/279865110/d6d151a2f95993720a4e48dc95109f3d_4467148012483883534.png',
     artifacts: [
       {
-        setNames: ["机心戏梦的钟表匠", FleetoftheAgeless],
+        setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
-        body: ["def_"],
+        body: ["any"],
         feet: ["spd"],
-        planarSphere: ["hp_"],
+        planarSphere: ["any"],
         linkRope: ["enerRegen"],
       },
       {
         setNames: ["机心戏梦的钟表匠", FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
-        body: ["hp_"],
+        body: ["any"],
         feet: ["spd"],
-        planarSphere: ["def_"],
+        planarSphere: ["any"],
         linkRope: ["enerRegen"],
       },
     ],
@@ -1034,16 +1034,7 @@ export const characters = {
         hands: ["atk"],
         body: ["critDMG"],
         feet: ["spd"],
-        planarSphere: ["windDmg"],
-        linkRope: ["enerRegen"],
-      },
-      {
-        setNames: Object.entries(artifactIcons).filter(([key, { head }]) => head).map(([key]) => key).concat([BrokenKeel]),
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG"],
-        feet: ["spd"],
-        planarSphere: ["hp_", "def_"],
+        planarSphere: ["any"],
         linkRope: ["enerRegen"],
       },
     ],
@@ -1150,7 +1141,7 @@ export const characters = {
         body: ["critDMG"],
         feet: ["spd"],
         planarSphere: ["imaginaryDmg"],
-        linkRope: ["atk_"],
+        linkRope: ["enerRegen"],
       },
     ],
   },
@@ -1246,9 +1237,9 @@ export const characters = {
         setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
-        body: ["critRate"],
+        body: ["any"],
         feet: ["spd"],
-        planarSphere: ["fireDmg"],
+        planarSphere: ["any"],
         linkRope: ["enerRegen"],
       },
     ],
@@ -2078,9 +2069,9 @@ export function calScore(art) {
   ] of Object.entries(characters)) {
     let score = BigNumber(0);
     const artifact = artifacts.find((a) =>
-      a.setNames.includes(art.setName) && a[art.position]?.includes(art.mainTag.name)
+      a.setNames.includes(art.setName) && (a[art.position]?.includes('any') || a[art.position]?.includes(art.mainTag.name))
     )
-    // console.log(characterName, weights, badge, artifacts, artifact);
+    console.log(characterName, weights, badge, artifacts, artifact);
     // 只计算需要套装
     if (!artifact) {
       continue;
