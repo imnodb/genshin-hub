@@ -720,6 +720,28 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/67a83e88d7f40136ae2efe63b7207fa1_7057386524605170751.png",
     },
   },
+  "出云显世与高天神国": {
+    nameLocale: '出云显世与高天神国',
+    planarSphere: {
+      text: '出云的祸津众神',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/03/27/1805320/7d2b94134248e0ed66b68546eb62cc8b_86763911274956225.png",
+    },
+    linkRope: {
+      text: '出云的终始一刀',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/03/27/1805320/e78e16f9f3af2d888d4c14c82dfa751e_5742784001196409645.png",
+    },
+  },
+  "无主的荒星茨冈尼亚": {
+    nameLocale: '无主的荒星茨冈尼亚',
+    planarSphere: {
+      text: '茨冈尼亚的母神卧榻',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/03/27/75216984/bbdc7d622485977592447a2e54a5c09d_1017608675793428011.png",
+    },
+    linkRope: {
+      text: '茨冈尼亚的轮回纽结',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/03/27/75216984/4bfd6c54f27eb4ffb5f39893ead2dfa2_2249600725098321843.png",
+    },
+  },
 };
 export const subStats = [
   "hp",
@@ -738,7 +760,7 @@ export const subStats = [
 export const positions = ["flower", "feather", "sand", "cup", "head"];
 export const characters = {
 
-  "希儿": {
+  "黄泉": {
     weights: {
       "hp": 0,
       "hp_": 0,
@@ -746,7 +768,36 @@ export const characters = {
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
-      "spd": 1,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 235,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/03/27/279865110/7d7ee7d30e11d1e4636bff45612f067b_2491274131382552425.png',
+    artifacts: [
+      {
+        setNames: ['死水深潜的先驱', '出云显世与高天神国'],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["atk_"],
+        planarSphere: ["lightningDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
+  "希儿": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.5,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
       "critRate": 1,
       "critDMG": 1,
       "eff": 0,
@@ -780,14 +831,14 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 1,
-      "atk_": 1,
+      "atk": 0,
+      "atk_": 0.75,
       "def": 0,
       "def_": 0,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
-      "eff": 1,
+      "eff": 0.75,
       "effRes": 0,
       "break": 0,
     },
@@ -801,15 +852,6 @@ export const characters = {
         body: ["eff"],
         feet: ["spd"],
         planarSphere: ["atk_"],
-        linkRope: ["atk_"],
-      },
-      {
-        setNames: [PrisonerinDeepConfinement, FirmamentFronlineGlamoth],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["eff"],
-        feet: ["spd"],
-        planarSphere: ["windDmg"],
         linkRope: ["atk_"],
       },
       {
@@ -827,16 +869,16 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 1,
+      "atk": 0.5,
       "atk_": 1,
       "def": 0,
       "def_": 0,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
-      "eff": 0.75,
+      "eff": 0.5,
       "effRes": 0,
-      "break": 0,
+      "break": 0.1,
     },
     ace: 226,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/09/279865110/080fa5ed1cb5d3d40dfcf1dc10549ca2_6303402650588045559.png',
@@ -865,7 +907,7 @@ export const characters = {
       "critRate": 0,
       "critDMG": 1,
       "eff": 0,
-      "effRes": 0,
+      "effRes": 0.1,
       "break": 0,
     },
     ace: 221,
@@ -943,7 +985,7 @@ export const characters = {
   },
   "藿藿": {
     weights: {
-      "hp": 1,
+      "hp": 0.5,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -959,6 +1001,15 @@ export const characters = {
     ace: 200,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/11/15/279865110/5acdbea523f79c00c91c9b2fcffc3f9a_692014336755010175.png',
     artifacts: [
+      {
+        setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["enerRegen"],
+      },
       {
         setNames: [PasserbyofWanderingCloud, FleetoftheAgeless],
         head: ["hp"],
@@ -1073,7 +1124,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.5,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1088,19 +1139,10 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/27/103492603/a0a7bd8bffb29d907dd3f166fbe2c6f3_5213924545260783425.png',
     artifacts: [
       {
-        setNames: [TheAshblazingGrandDuke, InertSalsotto],
+        setNames: [TheAshblazingGrandDuke, '无主的荒星茨冈尼亚'],
         head: ["hp"],
         hands: ["atk"],
-        body: ["critRate"],
-        feet: ["atk_"],
-        planarSphere: ["iceDmg"],
-        linkRope: ["atk_"],
-      },
-      {
-        setNames: [TheAshblazingGrandDuke, InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG"],
+        body: ["critRate", "critDMG"],
         feet: ["atk_"],
         planarSphere: ["iceDmg"],
         linkRope: ["atk_"],
@@ -1186,7 +1228,7 @@ export const characters = {
 
   "白露": {
     weights: {
-      "hp": 1,
+      "hp": 0.5,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1388,16 +1430,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
     artifacts: [
       {
-        setNames: [KnightofPurityPalace, GuardofWutheringSnow, BrokenKeel],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["def_"],
-        feet: ["spd"],
-        planarSphere: ["def_"],
-        linkRope: ["def_"],
-      },
-      {
-        setNames: [KnightofPurityPalace, GuardofWutheringSnow, BelobogoftheArchitects],
+        setNames: [KnightofPurityPalace, BelobogoftheArchitects],
         head: ["hp"],
         hands: ["atk"],
         body: ["eff"],
@@ -2051,7 +2084,37 @@ export const characters = {
       },
     ],
   },
+  "暴击c·占位": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
+    artifacts: [
+      {
+        setNames: [RutilantArena, InertSalsotto, FirmamentFronlineGlamoth, "出云显世与高天神国", "无主的荒星茨冈尼亚", GeniusofBrilliantStars,],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk", "spd"],
+        planarSphere: ["physicalDmg", "fireDmg", "iceDmg", "lightningDmg", "windDmg", "quantumDmg", "imaginaryDmg"],
+        linkRope: ["atk"],
+      },
+    ],
+  },
 };
+
 
 export function calScore(art) {
   let scores = [];
