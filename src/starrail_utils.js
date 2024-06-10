@@ -1060,6 +1060,161 @@ export const characters = {
     ],
   },
 
+  "真理": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 222,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/01/16/279865110/671174c0e64ff4ee3f786270cba80cfe_337518527838341931.png',
+    artifacts: [
+      {
+        setNames: ["死水深潜的先驱", InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["atk_"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["atk_"],
+      },
+      {
+        setNames: ["死水深潜的先驱", InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["spd"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "托帕&账账": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.75,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/26/279865110/b8d8e58c627051885349e70ca673b574_5137622545283809219.png',
+    artifacts: [
+      {
+        setNames: [TheAshblazingGrandDuke, InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["fireDmg"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "砂金": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0,
+      "def_": 1,
+      "spd": 1,
+      "critRate": 0.75,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0.5,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/04/10/279865110/eb8b946fa92902c1a3b4e5dab743c684_8053880908050125508.png',
+    artifacts: [
+      {
+        setNames: ["死水深潜的先驱", InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["spd"],
+        planarSphere: ["def_"],
+        linkRope: ["def_"],
+      },
+    ],
+  },
+  "知更鸟": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 1,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/05/09/377220814/ac1fd0bcae1f7e4ca03a961326dc8bd5_8947133206918210825.png',
+    artifacts: [
+      {
+        setNames: [PrisonerinDeepConfinement, MusketeerofWildWheat, PenaconyLandoftheDreams],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["atk_"],
+        planarSphere: ["atk_"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "波提欧": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0.5,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0.5,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0,
+      "break": 1,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/05/23/159300832/7dc001670cf1aceb282355163e114278_8757075331241620384.png',
+    artifacts: [
+      {
+        setNames: [ThiefofShootingMeteor, TaliaKingdomofBanditry],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd"],
+        planarSphere: ["physicalDmg", "atk"],
+        linkRope: ["break"],
+      }
+    ],
+  },
+
 
   "布洛妮娅": {
     weights: {
@@ -1149,49 +1304,12 @@ export const characters = {
       },
     ],
   },
-  "真理": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 0.75,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 222,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/01/16/279865110/671174c0e64ff4ee3f786270cba80cfe_337518527838341931.png',
-    artifacts: [
-      {
-        setNames: ["死水深潜的先驱", InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate"],
-        feet: ["atk_"],
-        planarSphere: ["imaginaryDmg"],
-        linkRope: ["atk_"],
-      },
-      {
-        setNames: ["死水深潜的先驱", InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG"],
-        feet: ["spd"],
-        planarSphere: ["imaginaryDmg"],
-        linkRope: ["enerRegen"],
-      },
-    ],
-  },
+
   "克拉拉": {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1210,16 +1328,7 @@ export const characters = {
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
-        feet: ["atk_"],
-        planarSphere: ["physicalDmg"],
-        linkRope: ["atk_"],
-      },
-      {
-        setNames: [ChampionofStreetwiseBoxing, InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG"],
-        feet: ["atk_"],
+        feet: ["atk_", "spd"],
         planarSphere: ["physicalDmg"],
         linkRope: ["atk_"],
       },
@@ -1256,7 +1365,93 @@ export const characters = {
     ],
   },
 
-
+  "开拓者·同协": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0,
+      "break": 1,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
+    artifacts: [
+      {
+        setNames: ["机心戏梦的钟表匠", TaliaKingdomofBanditry],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["hp_"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["break"],
+      },
+    ],
+  },
+  "开拓者·火": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0.1,
+      "def_": 0.5,
+      "spd": 0.75,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 1,
+      "effRes": 0.75,
+      "break": 0,
+    },
+    ace: 209,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
+    artifacts: [
+      {
+        setNames: [KnightofPurityPalace, BelobogoftheArchitects],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff"],
+        feet: ["spd"],
+        planarSphere: ["def_"],
+        linkRope: ["def_"],
+      },
+    ],
+  },
+  "加拉赫": {
+    weights: {
+      "hp": 0,
+      "hp_": 0.5,
+      "atk": 0,
+      "atk_": 0,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0,
+      "break": 1,
+    },
+    ace: 200,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/04/19/285802042/981949eda7f29ac75147382d75a1e662_1257839960999853654.png',
+    artifacts: [
+      {
+        setNames: [ThiefofShootingMeteor, "机心戏梦的钟表匠", SprightlyVonwacq],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["heal"],
+        feet: ["spd"],
+        planarSphere: ["hp_"],
+        linkRope: ["break"],
+      },
+    ],
+  },
   "艾丝妲": {
     weights: {
       "hp": 0,
@@ -1408,35 +1603,6 @@ export const characters = {
         feet: ["spd"],
         planarSphere: ["def_"],
         linkRope: ["enerRegen"],
-      },
-    ],
-  },
-  "开拓者·火": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0,
-      "atk_": 0,
-      "def": 1,
-      "def_": 1,
-      "spd": 0.75,
-      "critRate": 0,
-      "critDMG": 0,
-      "eff": 1,
-      "effRes": 0.75,
-      "break": 0,
-    },
-    ace: 209,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
-    artifacts: [
-      {
-        setNames: [KnightofPurityPalace, BelobogoftheArchitects],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["eff"],
-        feet: ["spd"],
-        planarSphere: ["def_"],
-        linkRope: ["def_"],
       },
     ],
   },
@@ -1825,35 +1991,7 @@ export const characters = {
     ],
   },
 
-  "托帕&账账": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 0.75,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 230,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/26/279865110/b8d8e58c627051885349e70ca673b574_5137622545283809219.png',
-    artifacts: [
-      {
-        setNames: [TheAshblazingGrandDuke, InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["spd", "atk_"],
-        planarSphere: ["fireDmg"],
-        linkRope: ["atk_"],
-      },
-    ],
-  },
+
   "罗刹": {
     weights: {
       "hp": 0.75,
@@ -1873,7 +2011,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/07/19/279865110/5837035941eda348b8314cf2611277e0_5275580057395163858.png',
     artifacts: [
       {
-        setNames: [PasserbyofWanderingCloud, MusketeerofWildWheat, BrokenKeel],
+        setNames: [PasserbyofWanderingCloud, BrokenKeel],
         head: ["hp"],
         hands: ["atk"],
         body: ["heal"],
@@ -1906,9 +2044,9 @@ export const characters = {
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
-        feet: ["spd", "atk_"],
+        feet: ["atk_"],
         planarSphere: ["iceDmg"],
-        linkRope: ["atk_", "enerRegen"],
+        linkRope: ["atk_"],
       },
     ],
   },
@@ -2045,7 +2183,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
     artifacts: [
       {
-        setNames: [FiresmithofLavaForging, InertSalsotto],
+        setNames: [TheAshblazingGrandDuke, InertSalsotto],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
@@ -2114,6 +2252,14 @@ export const characters = {
     ],
   },
 };
+if (window.location.href?.includes('10036')) {
+  const dlist = ['砂金', '波提欧', '托帕&账账', '知更鸟']
+  for (const key of dlist) {
+    const v = characters[key]
+    delete characters[key]
+    characters[key] = v
+  }
+}
 
 
 export function calScore(art) {
