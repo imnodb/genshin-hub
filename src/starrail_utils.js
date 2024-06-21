@@ -820,6 +820,35 @@ export const subStats = [
 export const positions = ["flower", "feather", "sand", "cup", "head"];
 export const characters = {
 
+  "流萤": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.1,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 0,
+      "effRes": 0,
+      "break": 1,
+    },
+    ace: 235,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/06/19/279865110/e18854852962a13ef08510ffca26ab62_2619721289192810606.png',
+    artifacts: [
+      {
+        setNames: ['荡除蠹灾的铁骑', '劫火莲灯铸炼宫'],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["atk_"],
+        feet: ["spd"],
+        planarSphere: ["atk_"],
+        linkRope: ["break"],
+      },
+    ],
+  },
   "黄泉": {
     weights: {
       "hp": 0,
@@ -1485,7 +1514,7 @@ export const characters = {
   },
   "加拉赫": {
     weights: {
-      "hp": 0,
+      "hp": 0.1,
       "hp_": 0.5,
       "atk": 0,
       "atk_": 0,
@@ -1502,7 +1531,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/04/19/285802042/981949eda7f29ac75147382d75a1e662_1257839960999853654.png',
     artifacts: [
       {
-        setNames: [ThiefofShootingMeteor, "机心戏梦的钟表匠", SprightlyVonwacq],
+        setNames: ['荡除蠹灾的铁骑', '劫火莲灯铸炼宫'],
         head: ["hp"],
         hands: ["atk"],
         body: ["heal"],
