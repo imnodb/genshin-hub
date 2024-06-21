@@ -599,6 +599,44 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2024/02/04/75216984/9945e7fc943f743fb9a98d652fcb5a1a_7462965746122642434.png",
     },
   },
+  "风举云飞的勇烈": {
+    nameLocale: '风举云飞的勇烈',
+    head: {
+      text: '勇烈的玄枵面甲',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/f73290183175b222e974c4838449dba1_8223210751711165532.png",
+    },
+    hands: {
+      text: '勇烈的钩爪腕甲',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/3c9c21c090ede57f492bc6008481f1d7_1452875724661904947.png",
+    },
+    body: {
+      text: '勇烈的飞翎瓷甲',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/ca0d95f3a57ccd675ddd1de97ee9ca18_1312837270501754017.png",
+    },
+    feet: {
+      text: '勇烈的逐猎腿甲',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/ff3444dbf93ea4fd4d5da6f62c437c05_7059366185397953776.png",
+    },
+  },
+  "荡除蠹灾的铁骑": {
+    nameLocale: '荡除蠹灾的铁骑',
+    head: {
+      text: '铁骑的索敌战盔',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/ecc280c64471c8c5cea909e54fec5aa1_5395086591492664183.png",
+    },
+    hands: {
+      text: '铁骑的摧坚铁腕',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/5cf9b6e86d2e9b5e578770c82e13f26b_8659223996507329955.png",
+    },
+    body: {
+      text: '铁骑的银影装甲',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/5ac81e72bc3ffaa8c45d0ccecac4abb1_2783596329694249399.png",
+    },
+    feet: {
+      text: '铁骑的行空护胫',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/256807881b5c75a56d2a37813534cc59_4043378898977309297.png",
+    },
+  },
   RutilantArena: {
     nameLocale: '繁星竞技场',
     planarSphere: {
@@ -740,6 +778,28 @@ export const artifactIcons = {
     linkRope: {
       text: '茨冈尼亚的轮回纽结',
       url: "https://act-upload.mihoyo.com/sr-wiki/2024/03/27/75216984/4bfd6c54f27eb4ffb5f39893ead2dfa2_2249600725098321843.png",
+    },
+  },
+  "劫火莲灯铸炼宫": {
+    nameLocale: '劫火莲灯铸炼宫',
+    planarSphere: {
+      text: '铸炼宫的莲华灯芯',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/d04f0c22baa8434d56601646f3efa1a1_3227914143591225255.png",
+    },
+    linkRope: {
+      text: '铸炼宫的焰轮天绸',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/c90ae0847dcad686b30a85b89256ab23_3100762305450504743.png",
+    },
+  },
+  "奔狼的都蓝王朝": {
+    nameLocale: '奔狼的都蓝王朝',
+    planarSphere: {
+      text: '都蓝的穹窿金帐',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/275a7322cc57974a92a444242ff76441_472614140232015533.png",
+    },
+    linkRope: {
+      text: '都蓝的器兽缰辔',
+      url: "https://act-upload.mihoyo.com/sr-wiki/2024/06/19/75216984/6ee200151d16cee436afe0dd69a97210_3856233414913777890.png",
     },
   },
 };
