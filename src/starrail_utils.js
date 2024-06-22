@@ -1398,7 +1398,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1413,7 +1413,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
     artifacts: [
       {
-        setNames: [ChampionofStreetwiseBoxing, InertSalsotto],
+        setNames: [ChampionofStreetwiseBoxing, '奔狼的都蓝王朝'],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -1628,6 +1628,66 @@ export const characters = {
       },
     ],
   },
+
+  "姬子": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.05,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
+    artifacts: [
+      {
+        setNames: [TheAshblazingGrandDuke, '奔狼的都蓝王朝'],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["atk_", "spd"],
+        planarSphere: ["fireDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
+  "瓦尔特": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.75,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 1,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 244,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/08/103492603/15eeac95fd249c249c67d5c30e27b0e0_4123173124092912491.png',
+    artifacts: [
+      {
+        setNames: [WastelanderofBanditryDesert, PanGalacticCommercialEnterprise],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff", "critRate", "critDMG"],
+        feet: ["spd"],
+        planarSphere: ["imaginaryDmg"],
+        linkRope: ["enerRegen", "break", "atk_"],
+      },
+    ],
+  },
+
   "玲可": {
     weights: {
       "hp": 1,
@@ -2253,64 +2313,7 @@ export const characters = {
       },
     ],
   },
-  "姬子": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 0.5,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0.25,
-    },
-    ace: 225,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
-    artifacts: [
-      {
-        setNames: [TheAshblazingGrandDuke, InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_", "spd"],
-        planarSphere: ["fireDmg"],
-        linkRope: ["atk_"],
-      },
-    ],
-  },
-  "瓦尔特": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 1,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 1,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 244,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/08/103492603/15eeac95fd249c249c67d5c30e27b0e0_4123173124092912491.png',
-    artifacts: [
-      {
-        setNames: [WastelanderofBanditryDesert, PanGalacticCommercialEnterprise],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["eff", "critRate", "critDMG"],
-        feet: ["spd"],
-        planarSphere: ["imaginaryDmg"],
-        linkRope: ["enerRegen", "break", "atk_"],
-      },
-    ],
-  },
+
   "暴击c·占位": {
     weights: {
       "hp": 0,
