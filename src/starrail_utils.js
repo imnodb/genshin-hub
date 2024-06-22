@@ -1168,7 +1168,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/01/16/279865110/671174c0e64ff4ee3f786270cba80cfe_337518527838341931.png',
     artifacts: [
       {
-        setNames: ["死水深潜的先驱", InertSalsotto],
+        setNames: ["死水深潜的先驱", '奔狼的都蓝王朝'],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -1206,7 +1206,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/09/26/279865110/b8d8e58c627051885349e70ca673b574_5137622545283809219.png',
     artifacts: [
       {
-        setNames: [TheAshblazingGrandDuke, InertSalsotto],
+        setNames: [TheAshblazingGrandDuke, '奔狼的都蓝王朝'],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
@@ -1235,7 +1235,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/04/10/279865110/eb8b946fa92902c1a3b4e5dab743c684_8053880908050125508.png',
     artifacts: [
       {
-        setNames: ["死水深潜的先驱", InertSalsotto],
+        setNames: ["死水深潜的先驱", '奔狼的都蓝王朝'],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
