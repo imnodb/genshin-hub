@@ -2333,7 +2333,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
     artifacts: [
       {
-        setNames: [RutilantArena, InertSalsotto, FirmamentFronlineGlamoth, "出云显世与高天神国", "无主的荒星茨冈尼亚", GeniusofBrilliantStars,],
+        setNames: [RutilantArena, InertSalsotto, FirmamentFronlineGlamoth, "出云显世与高天神国", "无主的荒星茨冈尼亚", GeniusofBrilliantStars,'奔狼的都蓝王朝'],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
