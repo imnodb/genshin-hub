@@ -825,7 +825,7 @@ export const characters = {
       "hp": 0,
       "hp_": 0,
       "atk": 0.1,
-      "atk_": 0.75,
+      "atk_": 0.5,
       "def": 0,
       "def_": 0,
       "spd": 1,
