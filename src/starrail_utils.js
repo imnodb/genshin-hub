@@ -824,7 +824,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.1,
+      "atk": 0.01,
       "atk_": 0.5,
       "def": 0,
       "def_": 0,
