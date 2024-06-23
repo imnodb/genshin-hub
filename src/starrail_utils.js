@@ -1531,7 +1531,7 @@ export const characters = {
         hands: ["atk"],
         body: ["hp_", "def_"],
         feet: ["spd"],
-        planarSphere: ["hp_", "def_"],
+        planarSphere: ["any"],
         linkRope: ["break"],
       },
     ],
