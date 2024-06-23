@@ -34,6 +34,8 @@ import {
 } from "../starrail_utils";
 import { v4 as uuidv4 } from "uuid";
 
+const StarrailUID = localStorage.getItem("StarrailUID");
+
 const cloneCharacters = [];
 
 const genCharacterObj = {};
@@ -582,6 +584,10 @@ function Starrail() {
           if (pos === "version") {
             continue;
           }
+          if (pos === "uid") {
+            localStorage.setItem("StarrailUID", arts);
+            continue;
+          }
           if (pos === "characters") {
             localStorage.setItem("characters", JSON.stringify(arts));
             continue;
@@ -619,13 +625,15 @@ function Starrail() {
   };
   const exportJSON = () => {
     // console.log("click");
-    const content = JSON.stringify(
-      allArts.map(({ token, save = false }) => ({ token, save }))
+    const content = JSON.stringify({
+      uid: StarrailUID,
+      allArts: allArts.map(({ token, save = false }) => ({ token, save }))
+    }
     );
     var a = document.createElement("a");
     var file = new Blob([content], { type: "application/json" });
     a.href = URL.createObjectURL(file);
-    a.download = "lock.json";
+    a.download = StarrailUID + "-lock.json";
     a.click();
   };
   return (
@@ -639,6 +647,7 @@ function Starrail() {
 
       <artContext.Provider value={setArt}>
         <ArtifactModal art={art} setArt={setArt}></ArtifactModal>
+        <h2>StarrailUID：{StarrailUID}</h2>
         <h2>总数：{allArts.length}</h2>
         <h4>需要分解数量：{allArts.filter(a => a.level === 0 && !a.save).length}</h4>
         <h4>需要锁定数量：{allArts.filter(a => a.save).length}</h4>
