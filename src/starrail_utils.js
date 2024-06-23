@@ -2332,12 +2332,15 @@ export const characters = {
 };
 const StarrailUID = localStorage.getItem("StarrailUID");
 if (StarrailUID?.includes('10036')) {
-  const dlist = ['真理', '砂金', '波提欧', '托帕&账账', '知更鸟', '罗刹', "丹恒•饮月", "刃", "镜流"]
+  const dlist = ['真理', '砂金', '波提欧', '托帕&账账', '知更鸟', '罗刹', "丹恒•饮月", "刃", "镜流"];
+  const c = characters["暴击c·占位"];
+  delete characters["暴击c·占位"];
   for (const key of dlist) {
     const v = characters[key]
     delete characters[key]
     characters[key] = v
   }
+  characters["暴击c·占位"] = c;
 }
 
 
