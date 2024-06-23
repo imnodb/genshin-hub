@@ -255,6 +255,10 @@ const PenaconyLandoftheDreams = 'PenaconyLandoftheDreams';
  * 苍穹战线格拉默
  */
 const FirmamentFronlineGlamoth = 'FirmamentFronlineGlamoth';
+/**
+ * 星体差分机
+ */
+const CelestialDifferentiator = 'FirmamentFronlineGlamoth';
 
 export const artifactIcons = {
   GeniusofBrilliantStars: {
@@ -758,6 +762,17 @@ export const artifactIcons = {
       url: "https://act-upload.mihoyo.com/sr-wiki/2023/11/14/75216984/67a83e88d7f40136ae2efe63b7207fa1_7057386524605170751.png",
     },
   },
+  CelestialDifferentiator: {
+    nameLocale: '星体差分机',
+    planarSphere: {
+      text: '螺丝星的机械烈阳',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/14ed27885e96469351acab774c607b07_6103705675864148008.png",
+    },
+    linkRope: {
+      text: '螺丝星的环星孔带',
+      url: "https://uploadstatic.mihoyo.com/sr-wiki/2023/02/07/103492603/a1c020cbf4580868f7c41fae51c8e852_1283191234454870817.png",
+    },
+  },
   "出云显世与高天神国": {
     nameLocale: '出云显世与高天神国',
     planarSphere: {
@@ -853,7 +868,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.1,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -882,7 +897,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.1,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -929,7 +944,7 @@ export const characters = {
       "critDMG": 0,
       "eff": 0.75,
       "effRes": 0,
-      "break": 0,
+      "break": 0.01,
     },
     ace: 207,
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/02/04/279865110/c2ce0766363449b3a099fb02c54ea404_8297345528371363430.png',
@@ -958,7 +973,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.5,
+      "atk": 0,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -1003,7 +1018,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/02/26/279865110/82d9d262932d8fccdbd65cdf1aecbd2e_2996859870084700871.png',
     artifacts: [
       {
-        setNames: Object.entries(artifactIcons).filter(([key, { head }]) => head).map(([key]) => key).concat([PenaconyLandoftheDreams]),
+        setNames: Object.entries(artifactIcons).filter(([key, { head }]) => head).map(([key]) => key).concat([BrokenKeel]),
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
@@ -1016,12 +1031,12 @@ export const characters = {
 
   "符玄": {
     weights: {
-      "hp": 1,
+      "hp": 0,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
-      "def": 0.75,
-      "def_": 0.75,
+      "def": 0,
+      "def_": 0.05,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
@@ -1047,8 +1062,8 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
+      "atk": 0,
+      "atk_": 0.05,
       "def": 0,
       "def_": 0,
       "spd": 0.75,
@@ -1062,6 +1077,15 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/d8dc3ca987dd2b9911893718bb610375_7218912827536937727.png',
     artifacts: [
       {
+        setNames: [EagleofTwilightLine, SprightlyVonwacq],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd"],
+        planarSphere: ["quantumDmg"],
+        linkRope: ["enerRegen"],
+      },
+      {
         setNames: [GeniusofBrilliantStars, PenaconyLandoftheDreams],
         head: ["hp"],
         hands: ["atk"],
@@ -1074,7 +1098,7 @@ export const characters = {
   },
   "藿藿": {
     weights: {
-      "hp": 0.5,
+      "hp": 0.05,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1084,7 +1108,7 @@ export const characters = {
       "critRate": 0,
       "critDMG": 0,
       "eff": 0,
-      "effRes": 0.75,
+      "effRes": 0.5,
       "break": 0,
     },
     ace: 200,
@@ -1113,7 +1137,7 @@ export const characters = {
   "阮•梅": {
     weights: {
       "hp": 0,
-      "hp_": 0,
+      "hp_": 0.1,
       "atk": 0,
       "atk_": 0,
       "def": 0,
@@ -1122,7 +1146,7 @@ export const characters = {
       "critRate": 0,
       "critDMG": 0,
       "eff": 0,
-      "effRes": 0.5,
+      "effRes": 0.05,
       "break": 1,
     },
     ace: 205,
@@ -1132,7 +1156,7 @@ export const characters = {
         setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
-        body: ["any"],
+        body: ["hp_", "def_"],
         feet: ["spd"],
         planarSphere: ["any"],
         linkRope: ["enerRegen"],
@@ -1143,7 +1167,7 @@ export const characters = {
         hands: ["atk"],
         body: ["any"],
         feet: ["spd"],
-        planarSphere: ["any"],
+        planarSphere: ["hp_", "def_"],
         linkRope: ["enerRegen"],
       },
     ],
@@ -1153,7 +1177,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1191,7 +1215,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1209,10 +1233,10 @@ export const characters = {
         setNames: [TheAshblazingGrandDuke, '奔狼的都蓝王朝'],
         head: ["hp"],
         hands: ["atk"],
-        body: ["critDMG"],
-        feet: ["atk_"],
+        body: ["critDMG", "critRate"],
+        feet: ["atk_", "spd"],
         planarSphere: ["fireDmg"],
-        linkRope: ["enerRegen"],
+        linkRope: ["enerRegen", "atk_"],
       },
     ],
   },
@@ -1228,7 +1252,7 @@ export const characters = {
       "critRate": 0.75,
       "critDMG": 1,
       "eff": 0,
-      "effRes": 0.5,
+      "effRes": 0.05,
       "break": 0,
     },
     ace: 230,
@@ -1248,11 +1272,11 @@ export const characters = {
   "知更鸟": {
     weights: {
       "hp": 0,
-      "hp_": 0,
+      "hp_": 0.01,
       "atk": 0,
       "atk_": 1,
       "def": 0,
-      "def_": 0,
+      "def_": 0.01,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
@@ -1264,7 +1288,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/05/09/377220814/ac1fd0bcae1f7e4ca03a961326dc8bd5_8947133206918210825.png',
     artifacts: [
       {
-        setNames: [PrisonerinDeepConfinement, MusketeerofWildWheat, PenaconyLandoftheDreams],
+        setNames: [PrisonerinDeepConfinement, MusketeerofWildWheat, SprightlyVonwacq],
         head: ["hp"],
         hands: ["atk"],
         body: ["atk_"],
@@ -1298,7 +1322,7 @@ export const characters = {
         hands: ["atk"],
         body: ["critRate"],
         feet: ["spd"],
-        planarSphere: ["physicalDmg", "atk"],
+        planarSphere: ["atk", "physicalDmg"],
         linkRope: ["break"],
       }
     ],
@@ -1317,7 +1341,7 @@ export const characters = {
       "critRate": 0,
       "critDMG": 1,
       "eff": 0,
-      "effRes": 0.5,
+      "effRes": 0.1,
       "break": 0,
     },
     ace: 221,
@@ -1338,7 +1362,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 1,
+      "atk": 0.01,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -1364,11 +1388,40 @@ export const characters = {
     ],
   },
 
+  "姬子": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.05,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
+    artifacts: [
+      {
+        setNames: [TheAshblazingGrandDuke, '奔狼的都蓝王朝'],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["fireDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
   "黑塔": {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.5,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1387,7 +1440,7 @@ export const characters = {
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
-        feet: ["atk_"],
+        feet: ["spd"],
         planarSphere: ["iceDmg"],
         linkRope: ["atk_"],
       },
@@ -1426,7 +1479,7 @@ export const characters = {
 
   "白露": {
     weights: {
-      "hp": 0.5,
+      "hp": 0.05,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1457,11 +1510,11 @@ export const characters = {
   "开拓者·同协": {
     weights: {
       "hp": 0,
-      "hp_": 0,
+      "hp_": 0.01,
       "atk": 0,
       "atk_": 0,
       "def": 0,
-      "def_": 0,
+      "def_": 0.01,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
@@ -1476,9 +1529,9 @@ export const characters = {
         setNames: ["机心戏梦的钟表匠", TaliaKingdomofBanditry],
         head: ["hp"],
         hands: ["atk"],
-        body: ["hp_"],
+        body: ["hp_", "def_"],
         feet: ["spd"],
-        planarSphere: ["hp_"],
+        planarSphere: ["hp_", "def_"],
         linkRope: ["break"],
       },
     ],
@@ -1489,7 +1542,7 @@ export const characters = {
       "hp_": 0,
       "atk": 0,
       "atk_": 0,
-      "def": 0.1,
+      "def": 0.01,
       "def_": 0.5,
       "spd": 0.75,
       "critRate": 0,
@@ -1545,7 +1598,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.5,
+      "atk": 0.05,
       "atk_": 0.5,
       "def": 0,
       "def_": 0,
@@ -1563,9 +1616,9 @@ export const characters = {
         setNames: [MessengerTraversingHackerspace, FleetoftheAgeless],
         head: ["hp"],
         hands: ["atk"],
-        body: ["any"],
+        body: ["hp_"],
         feet: ["spd"],
-        planarSphere: ["any"],
+        planarSphere: ["hp_"],
         linkRope: ["enerRegen"],
       },
     ],
@@ -1574,7 +1627,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1603,13 +1656,13 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
       "spd": 1,
-      "critRate": 0.75,
-      "critDMG": 0.75,
+      "critRate": 0.5,
+      "critDMG": 0.1,
       "eff": 1,
       "effRes": 0,
       "break": 0,
@@ -1623,53 +1676,24 @@ export const characters = {
         hands: ["atk"],
         body: ["eff"],
         feet: ["spd"],
-        planarSphere: ["iceDmg"],
+        planarSphere: ["hp_"],
         linkRope: ["enerRegen"],
       },
     ],
   },
 
-  "姬子": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.05,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 0.5,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 225,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
-    artifacts: [
-      {
-        setNames: [TheAshblazingGrandDuke, '奔狼的都蓝王朝'],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["atk_", "spd"],
-        planarSphere: ["fireDmg"],
-        linkRope: ["atk_"],
-      },
-    ],
-  },
   "瓦尔特": {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
       "spd": 1,
       "critRate": 1,
       "critDMG": 1,
-      "eff": 1,
+      "eff": 0,
       "effRes": 0,
       "break": 0,
     },
@@ -1677,20 +1701,20 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/08/103492603/15eeac95fd249c249c67d5c30e27b0e0_4123173124092912491.png',
     artifacts: [
       {
-        setNames: [WastelanderofBanditryDesert, PanGalacticCommercialEnterprise],
+        setNames: ['死水深潜的先驱', '出云显世与高天神国'],
         head: ["hp"],
         hands: ["atk"],
-        body: ["eff", "critRate", "critDMG"],
+        body: ["critRate", "critDMG"],
         feet: ["spd"],
         planarSphere: ["imaginaryDmg"],
-        linkRope: ["enerRegen", "break", "atk_"],
+        linkRope: ["atk_", "enerRegen",],
       },
     ],
   },
 
   "玲可": {
     weights: {
-      "hp": 1,
+      "hp": 0.01,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1723,7 +1747,7 @@ export const characters = {
       "hp_": 0,
       "atk": 0,
       "atk_": 0,
-      "def": 1,
+      "def": 0.05,
       "def_": 1,
       "spd": 1,
       "critRate": 0,
@@ -1761,7 +1785,7 @@ export const characters = {
       "hp_": 0,
       "atk": 0,
       "atk_": 0,
-      "def": 1,
+      "def": 0.01,
       "def_": 1,
       "spd": 1,
       "critRate": 0,
@@ -1780,13 +1804,13 @@ export const characters = {
         body: ["eff"],
         feet: ["spd"],
         planarSphere: ["def_"],
-        linkRope: ["enerRegen"],
+        linkRope: ["def_", "enerRegen",],
       },
     ],
   },
   "娜塔莎": {
     weights: {
-      "hp": 1,
+      "hp": 0.05,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1817,7 +1841,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.05,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1832,20 +1856,11 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/11/103492603/6c924158527197dbadc323ecfbede95d_2213127508670668756.png',
     artifacts: [
       {
-        setNames: [EagleofTwilightLine, MusketeerofWildWheat, RutilantArena],
+        setNames: [EagleofTwilightLine, FirmamentFronlineGlamoth],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
-        feet: ["atk_"],
-        planarSphere: ["windDmg"],
-        linkRope: ["atk_"],
-      },
-      {
-        setNames: [EagleofTwilightLine, MusketeerofWildWheat, RutilantArena],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG"],
-        feet: ["atk_"],
+        feet: ["spd"],
         planarSphere: ["windDmg"],
         linkRope: ["atk_"],
       },
@@ -1855,7 +1870,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.05,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1870,19 +1885,10 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/26/103492603/aa7685675c64a32e8f9d7a9f07571620_7580995524190517691.png',
     artifacts: [
       {
-        setNames: [BandofSizzlingThunder, SpaceSealingStation],
+        setNames: [LongevousDisciple, SpaceSealingStation],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
-        feet: ["spd"],
-        planarSphere: ["lightningDmg"],
-        linkRope: ["atk_"],
-      },
-      {
-        setNames: [BandofSizzlingThunder, SpaceSealingStation],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG"],
         feet: ["spd"],
         planarSphere: ["lightningDmg"],
         linkRope: ["atk_"],
@@ -1893,7 +1899,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 1,
+      "atk": 0.05,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -1914,7 +1920,7 @@ export const characters = {
         body: ["atk_"],
         feet: ["spd"],
         planarSphere: ["windDmg"],
-        linkRope: ["enerRegen"],
+        linkRope: ["atk_"],
       },
     ],
   },
@@ -1922,7 +1928,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.05,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1937,7 +1943,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/8311a9bb723409bc8cc85e2cda6db213_1893651197391730889.png',
     artifacts: [
       {
-        setNames: [BandofSizzlingThunder, SpaceSealingStation],
+        setNames: [BandofSizzlingThunder, FirmamentFronlineGlamoth],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -1951,11 +1957,11 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
-      "spd": 0.75,
+      "spd": 0.1,
       "critRate": 1,
       "critDMG": 1,
       "eff": 0.5,
@@ -1966,11 +1972,11 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/27/103492603/fd041544e7f54bcaf0527d378d2abd92_6836185614774662354.png',
     artifacts: [
       {
-        setNames: [FiresmithofLavaForging, RutilantArena],
+        setNames: ['死水深潜的先驱', RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
-        feet: ["spd"],
+        feet: ["atk_"],
         planarSphere: ["fireDmg"],
         linkRope: ["atk_"],
       },
@@ -1989,8 +1995,8 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
+      "atk": 0,
+      "atk_": 0.05,
       "def": 0,
       "def_": 0,
       "spd": 0.75,
@@ -2027,7 +2033,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.05,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2052,11 +2058,40 @@ export const characters = {
       },
     ],
   },
+  "彦卿": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.05,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.1,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 230,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/4da092a2e4af764147ed3c29cd5fa29e_5447218417173761567.png',
+    artifacts: [
+      {
+        setNames: [HunterofGlacialForest, CelestialDifferentiator],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG"],
+        feet: ["atk_"],
+        planarSphere: ["iceDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
   "卢卡": {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 1,
+      "atk": 0.05,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -2081,40 +2116,11 @@ export const characters = {
       },
     ],
   },
-  "彦卿": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.75,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 0.75,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 230,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/4da092a2e4af764147ed3c29cd5fa29e_5447218417173761567.png',
-    artifacts: [
-      {
-        setNames: [HunterofGlacialForest, SpaceSealingStation],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG", "critRate"],
-        feet: ["atk_"],
-        planarSphere: ["iceDmg"],
-        linkRope: ["atk_"],
-      },
-    ],
-  },
   "桂乃芬": {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 1,
+      "atk": 0.05,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -2143,9 +2149,9 @@ export const characters = {
 
   "罗刹": {
     weights: {
-      "hp": 0.75,
-      "hp_": 0.75,
-      "atk": 1,
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.05,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -2174,7 +2180,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2189,7 +2195,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/10/10/279865110/409aaa2be978f26aba04c710ead6235e_4496049587887127675.png',
     artifacts: [
       {
-        setNames: [GeniusofBrilliantStars, RutilantArena],
+        setNames: [HunterofGlacialForest, RutilantArena],
         head: ["hp"],
         hands: ["atk"],
         body: ["critDMG"],
@@ -2201,10 +2207,10 @@ export const characters = {
   },
   "刃": {
     weights: {
-      "hp": 0.75,
+      "hp": 0.01,
       "hp_": 0.75,
-      "atk": 0.25,
-      "atk_": 0.25,
+      "atk": 0,
+      "atk_": 0,
       "def": 0,
       "def_": 0,
       "spd": 0.5,
@@ -2224,16 +2230,7 @@ export const characters = {
         body: ["critDMG", "critRate"],
         feet: ["hp_", "spd"],
         planarSphere: ["windDmg"],
-        linkRope: ["hp_", "enerRegen"],
-      },
-      {
-        setNames: [LongevousDisciple, InertSalsotto],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critDMG", "critRate"],
-        feet: ["hp_", "spd"],
-        planarSphere: ["windDmg"],
-        linkRope: ["hp_", "enerRegen"],
+        linkRope: ["hp_"],
       },
     ],
   },
@@ -2241,11 +2238,11 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
-      "spd": 0.5,
+      "spd": 0.1,
       "critRate": 1,
       "critDMG": 1,
       "eff": 0,
@@ -2279,7 +2276,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.05,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2318,7 +2315,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.75,
+      "atk": 0.01,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2333,7 +2330,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/07/103492603/926eb9a6f2bd3f320dbddb1906eb676b_3801146874367971021.png',
     artifacts: [
       {
-        setNames: [RutilantArena, InertSalsotto, FirmamentFronlineGlamoth, "出云显世与高天神国", "无主的荒星茨冈尼亚", GeniusofBrilliantStars,'奔狼的都蓝王朝'],
+        setNames: [RutilantArena, InertSalsotto, FirmamentFronlineGlamoth, "出云显世与高天神国", "无主的荒星茨冈尼亚", GeniusofBrilliantStars, '奔狼的都蓝王朝'],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate", "critDMG"],
