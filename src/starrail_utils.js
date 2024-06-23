@@ -1388,35 +1388,7 @@ export const characters = {
     ],
   },
 
-  "姬子": {
-    weights: {
-      "hp": 0,
-      "hp_": 0,
-      "atk": 0.05,
-      "atk_": 0.75,
-      "def": 0,
-      "def_": 0,
-      "spd": 0.5,
-      "critRate": 1,
-      "critDMG": 1,
-      "eff": 0,
-      "effRes": 0,
-      "break": 0,
-    },
-    ace: 225,
-    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
-    artifacts: [
-      {
-        setNames: [TheAshblazingGrandDuke, '奔狼的都蓝王朝'],
-        head: ["hp"],
-        hands: ["atk"],
-        body: ["critRate", "critDMG"],
-        feet: ["spd", "atk_"],
-        planarSphere: ["fireDmg"],
-        linkRope: ["atk_"],
-      },
-    ],
-  },
+
   "黑塔": {
     weights: {
       "hp": 0,
@@ -1446,7 +1418,35 @@ export const characters = {
       },
     ],
   },
-
+  "姬子": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0.05,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.5,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/10/103492603/9c020f9e12e6e38acb84a5e7067b9e5a_7699418020432269045.png',
+    artifacts: [
+      {
+        setNames: [TheAshblazingGrandDuke, '奔狼的都蓝王朝'],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate", "critDMG"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["fireDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
   "克拉拉": {
     weights: {
       "hp": 0,
