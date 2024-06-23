@@ -1077,7 +1077,7 @@ export const characters = {
     badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/d8dc3ca987dd2b9911893718bb610375_7218912827536937727.png',
     artifacts: [
       {
-        setNames: [EagleofTwilightLine, SprightlyVonwacq],
+        setNames: [GeniusofBrilliantStars, PenaconyLandoftheDreams],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
@@ -1086,7 +1086,7 @@ export const characters = {
         linkRope: ["enerRegen"],
       },
       {
-        setNames: [GeniusofBrilliantStars, PenaconyLandoftheDreams],
+        setNames: [EagleofTwilightLine, SprightlyVonwacq],
         head: ["hp"],
         hands: ["atk"],
         body: ["critRate"],
