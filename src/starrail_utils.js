@@ -869,10 +869,10 @@ export const characters = {
       "hp": 0,
       "hp_": 0,
       "atk": 0,
-      "atk_": 0.75,
+      "atk_": 0.5,
       "def": 0,
       "def_": 0,
-      "spd": 0.2,
+      "spd": 0.1,
       "critRate": 1,
       "critDMG": 1,
       "eff": 0,
@@ -886,7 +886,7 @@ export const characters = {
         setNames: ['死水深潜的先驱', '出云显世与高天神国'],
         head: ["hp"],
         hands: ["atk"],
-        body: ["critRate"],
+        body: ["critRate", "critDMG"],
         feet: ["atk_"],
         planarSphere: ["lightningDmg", "atk_"],
         linkRope: ["atk_"],
@@ -918,7 +918,7 @@ export const characters = {
         body: ["atk_"],
         feet: ["spd"],
         planarSphere: ["lightningDmg"],
-        linkRope: ["atk_","enerRegen"],
+        linkRope: ["atk_", "enerRegen"],
       },
     ],
   },
@@ -2332,7 +2332,7 @@ export const characters = {
 };
 const StarrailUID = localStorage.getItem("StarrailUID");
 if (StarrailUID?.includes('10036')) {
-  const dlist = ['真理', '砂金', '波提欧', '托帕&账账', '知更鸟','罗刹',"丹恒•饮月","刃","镜流"]
+  const dlist = ['真理', '砂金', '波提欧', '托帕&账账', '知更鸟', '罗刹', "丹恒•饮月", "刃", "镜流"]
   for (const key of dlist) {
     const v = characters[key]
     delete characters[key]
