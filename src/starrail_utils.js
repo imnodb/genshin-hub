@@ -2331,7 +2331,8 @@ export const characters = {
     ],
   },
 };
-if (window.location.href?.includes('10036')) {
+const StarrailUID = localStorage.getItem("StarrailUID");
+if (StarrailUID?.includes('10036')) {
   const dlist = ['真理', '砂金', '波提欧', '托帕&账账', '知更鸟','罗刹',"丹恒•饮月","刃","镜流"]
   for (const key of dlist) {
     const v = characters[key]
