@@ -586,6 +586,10 @@ function Starrail() {
           }
           if (pos === "uid") {
             localStorage.setItem("StarrailUID", arts);
+            if (StarrailUID !== arts) {
+              StarrailArts.length = 0
+              break;
+            }
             continue;
           }
           if (pos === "characters") {
