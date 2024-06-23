@@ -1036,7 +1036,7 @@ export const characters = {
       "atk": 0,
       "atk_": 0,
       "def": 0,
-      "def_": 0.05,
+      "def_": 0.75,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
