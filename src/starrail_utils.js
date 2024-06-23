@@ -839,7 +839,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.5,
       "def": 0,
       "def_": 0,
@@ -872,7 +872,7 @@ export const characters = {
       "atk_": 0.5,
       "def": 0,
       "def_": 0,
-      "spd": 0.1,
+      "spd": 0.01,
       "critRate": 1,
       "critDMG": 1,
       "eff": 0,
@@ -968,7 +968,7 @@ export const characters = {
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
-      "spd": 0.5,
+      "spd": 0.1,
       "critRate": 1,
       "critDMG": 1,
       "eff": 0,
@@ -1002,7 +1002,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1040,7 +1040,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1098,7 +1098,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1125,7 +1125,7 @@ export const characters = {
   },
   "刃": {
     weights: {
-      "hp": 0.01,
+      "hp": 0,
       "hp_": 0.75,
       "atk": 0,
       "atk_": 0,
@@ -1156,11 +1156,11 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
-      "spd": 0.1,
+      "spd": 0.01,
       "critRate": 1,
       "critDMG": 1,
       "eff": 0,
@@ -1194,7 +1194,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1223,7 +1223,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1252,7 +1252,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1281,7 +1281,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1329,7 +1329,7 @@ export const characters = {
       "critRate": 0.75,
       "critDMG": 1,
       "eff": 0,
-      "effRes": 0.05,
+      "effRes": 0.01,
       "break": 0,
     },
     ace: 230,
@@ -1349,11 +1349,11 @@ export const characters = {
   "知更鸟": {
     weights: {
       "hp": 0,
-      "hp_": 0.01,
+      "hp_": 0,
       "atk": 0,
       "atk_": 1,
       "def": 0,
-      "def_": 0.01,
+      "def_": 0,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
@@ -1387,7 +1387,7 @@ export const characters = {
       "critRate": 0,
       "critDMG": 1,
       "eff": 0,
-      "effRes": 0.1,
+      "effRes": 0.01,
       "break": 0,
     },
     ace: 221,
@@ -1407,7 +1407,7 @@ export const characters = {
   "阮•梅": {
     weights: {
       "hp": 0,
-      "hp_": 0.1,
+      "hp_": 0,
       "atk": 0,
       "atk_": 0,
       "def": 0,
@@ -1416,7 +1416,7 @@ export const characters = {
       "critRate": 0,
       "critDMG": 0,
       "eff": 0,
-      "effRes": 0.05,
+      "effRes": 0,
       "break": 1,
     },
     ace: 205,
@@ -1449,12 +1449,12 @@ export const characters = {
       "atk": 0,
       "atk_": 0,
       "def": 0,
-      "def_": 0.75,
+      "def_": 0.5,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
       "eff": 0,
-      "effRes": 0.75,
+      "effRes": 0.5,
       "break": 0,
     },
     ace: 209,
@@ -1476,7 +1476,7 @@ export const characters = {
       "hp": 0,
       "hp_": 0,
       "atk": 0,
-      "atk_": 0.05,
+      "atk_": 0.01,
       "def": 0,
       "def_": 0,
       "spd": 0.75,
@@ -1511,7 +1511,7 @@ export const characters = {
   },
   "藿藿": {
     weights: {
-      "hp": 0.05,
+      "hp": 0,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1551,7 +1551,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -1579,11 +1579,11 @@ export const characters = {
   "开拓者·同协": {
     weights: {
       "hp": 0,
-      "hp_": 0.01,
+      "hp_": 0,
       "atk": 0,
       "atk_": 0,
       "def": 0,
-      "def_": 0.01,
+      "def_": 0,
       "spd": 1,
       "critRate": 0,
       "critDMG": 0,
@@ -1611,7 +1611,7 @@ export const characters = {
       "hp_": 0,
       "atk": 0,
       "atk_": 0,
-      "def": 0.01,
+      "def": 0,
       "def_": 0.5,
       "spd": 0.75,
       "critRate": 0,
@@ -1646,7 +1646,7 @@ export const characters = {
       "critRate": 0,
       "critDMG": 1,
       "eff": 0,
-      "effRes": 0.1,
+      "effRes": 0.01,
       "break": 0,
     },
     ace: 221,
@@ -1667,7 +1667,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -1694,7 +1694,7 @@ export const characters = {
   },
   "白露": {
     weights: {
-      "hp": 0.05,
+      "hp": 0,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1727,7 +1727,7 @@ export const characters = {
       "hp_": 0,
       "atk": 0,
       "atk_": 0,
-      "def": 0.05,
+      "def": 0,
       "def_": 1,
       "spd": 1,
       "critRate": 0,
@@ -1790,7 +1790,7 @@ export const characters = {
   },
   "加拉赫": {
     weights: {
-      "hp": 0.1,
+      "hp": 0,
       "hp_": 0.5,
       "atk": 0,
       "atk_": 0,
@@ -1821,7 +1821,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.5,
       "def": 0,
       "def_": 0,
@@ -1850,7 +1850,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -1906,7 +1906,7 @@ export const characters = {
   },
   "玲可": {
     weights: {
-      "hp": 0.01,
+      "hp": 0,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1939,7 +1939,7 @@ export const characters = {
       "hp_": 0,
       "atk": 0,
       "atk_": 0,
-      "def": 0.01,
+      "def": 0,
       "def_": 1,
       "spd": 1,
       "critRate": 0,
@@ -1964,7 +1964,7 @@ export const characters = {
   },
   "娜塔莎": {
     weights: {
-      "hp": 0.05,
+      "hp": 0,
       "hp_": 1,
       "atk": 0,
       "atk_": 0,
@@ -1995,7 +1995,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2024,7 +2024,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2053,7 +2053,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2082,7 +2082,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -2111,7 +2111,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2140,7 +2140,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2179,7 +2179,7 @@ export const characters = {
       "hp": 0,
       "hp_": 0,
       "atk": 0,
-      "atk_": 0.05,
+      "atk_": 0,
       "def": 0,
       "def_": 0,
       "spd": 0.75,
@@ -2216,7 +2216,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
@@ -2245,7 +2245,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -2274,7 +2274,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.05,
+      "atk": 0,
       "atk_": 1,
       "def": 0,
       "def_": 0,
@@ -2304,7 +2304,7 @@ export const characters = {
     weights: {
       "hp": 0,
       "hp_": 0,
-      "atk": 0.01,
+      "atk": 0,
       "atk_": 0.75,
       "def": 0,
       "def_": 0,
