@@ -576,6 +576,12 @@ function Starrail() {
     fileReader.readAsText(file);
     fileReader.onload = async function (e) {
       try {
+        window.Pickup = window.confirm('开启捡垃圾模式？');
+        if (window.Pickup) {
+          localStorage.setItem("Pickup", window.Pickup);
+        } else {
+          localStorage.setItem("Pickup", '');
+        }
         const mona = JSON.parse(fileReader.result);
         // console.log(mona);
         // console.log(Object.entries(mona));
@@ -629,6 +635,10 @@ function Starrail() {
   };
   const exportJSON = () => {
     // console.log("click");
+    if (localStorage.getItem("Pickup")) {
+      alert('捡垃圾就不要导出了！')
+      return
+    }
     const content = JSON.stringify({
       uid: StarrailUID,
       allArts: allArts.map(({ token, save = false }) => ({ token, save }))

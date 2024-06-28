@@ -2347,10 +2347,10 @@ if (StarrailUID?.includes('10036')) {
 export function calScore(art) {
   let scores = [];
 
-  const normalTags = Object.assign(
-    Object.fromEntries(subStats.map((name) => [name, BigNumber(0)])),
-    Object.fromEntries(art.normalTags.map(({ name, value }) => [name, BigNumber(value)]))
-  );
+  // const normalTags = Object.assign(
+  //   Object.fromEntries(subStats.map((name) => [name, BigNumber(0)])),
+  //   Object.fromEntries(art.normalTags.map(({ name, value }) => [name, BigNumber(value)]))
+  // );
   // console.log("scores");
   // console.log(normalTags);
 
@@ -2373,6 +2373,52 @@ export function calScore(art) {
     if (['feet', 'linkRope'].includes(art.position)) {
       score = BigNumber.minimum(15.83, BigNumber(5.83).multipliedBy(weights[art.mainTag.name] ?? 1))
     }
+    let art_normalTags = art.normalTags.map(a => ({ ...a }));
+    if (window.Pickup) {
+      // 需要强化的次数
+      let tagCount = Math.ceil((15 - art.level) / 3);
+      // 每个副属性强化一次的预期值
+      const AverageEff = Object.fromEntries(
+        Object.entries(artifactEff[5]).map(([eff, values]) => [
+          eff,
+          BigNumber(values.reduce((p, v) => p + v)).div(values.length),
+        ])
+      );
+      if (art_normalTags.length < 4) {
+        tagCount = tagCount - 1
+        // 原本存在的属性
+        const existingTags = [
+          art.mainTag.name,
+          ...art_normalTags.map(({ name }) => name),
+        ];
+        // 强化可能新增的属性
+        const wishTags = Object.entries(AverageEff).filter(
+          ([eff]) => !existingTags.includes(eff)
+        );
+        const maxName = Object.entries(weights).filter(a => wishTags.map((tag) => tag[0]).includes(a[0])).sort((a, b) => b[1] - a[1])[0][0]
+        art_normalTags.push(
+          {
+            name: maxName,
+            value: Number(AverageEff[maxName]),
+          }
+        )
+      }
+      if (tagCount > 0) {
+        const maxName = Object.entries(weights).filter(a => art_normalTags.map((tag) => tag.name).includes(a[0])).sort((a, b) => b[1] - a[1])[0][0]
+        art_normalTags = art_normalTags.map((tag) => {
+          let aaaa = 0
+          if (tag.name === maxName) {
+            aaaa = BigNumber(AverageEff[maxName]).multipliedBy(tagCount)
+          }
+          return Object.assign({}, tag, { value: BigNumber(tag.value).plus(aaaa) })
+        });
+      }
+    }
+    const normalTags = Object.assign(
+      Object.fromEntries(subStats.map((name) => [name, BigNumber(0)])),
+      Object.fromEntries(art_normalTags.map(({ name, value }) => [name, BigNumber(value)]))
+    );
+    // console.log(Object.entries(normalTags).map(a => [a[0], Number(a[1])]));
     for (const name of subStats) {
       // console.log("subStats", name, normalTags[name].toNumber());
       switch (name) {
@@ -2415,7 +2461,7 @@ export function calScore(art) {
         default:
           break;
       }
-      // console.log("分数", score.toNumber());
+      // console.log(characterName + name + "分数", score.toNumber());
     }
     scores.push({ characterName, badge, score: Number(score.toFixed(1, 0)) });
   }
@@ -2434,8 +2480,7 @@ export function importScore(art) {
   if (art.star === 4) {
     return undefined;
   }
-
-  if (art.star === 5 && art.level < 15) {
+  if (!window.Pickup && art.star === 5 && art.level < 15) {
     const normalTags = art.normalTags.map((tag) => Object.assign({}, tag, { value: BigNumber(tag.value) }));
     // console.log("art-------\n");
     // console.log(art);
