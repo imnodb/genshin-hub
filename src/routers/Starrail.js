@@ -633,15 +633,39 @@ function Starrail() {
     };
     return false;
   };
-  const exportJSON = () => {
+  const exportUpload = (file) => {
+    // console.log(file);
+    const fileReader = new FileReader();
+    fileReader.readAsText(file);
+    fileReader.onload = async function (e) {
+      try {
+        const lockjson = JSON.parse(fileReader.result);
+        console.log(lockjson);
+        // console.log(Object.entries(mona));
+        exportJSON(lockjson)
+
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    return false;
+  };
+  const Pickup = localStorage.getItem("Pickup")
+  const exportJSON = (lockjson) => {
     // console.log("click");
-    if (localStorage.getItem("Pickup")) {
-      alert('捡垃圾就不要导出了！')
-      return
+    let old_lock = {}
+    if (Pickup) {
+      if (lockjson.uid !== StarrailUID) {
+        alert(`${lockjson.uid}不是${StarrailUID}的锁文件`)
+        return
+      }
+      // alert('捡垃圾就不要导出了！')
+      old_lock = Object.fromEntries(lockjson.allArts.map(a => [a.token, a.save]))
     }
+    console.log(old_lock);
     const content = JSON.stringify({
       uid: StarrailUID,
-      allArts: allArts.map(({ token, save = false }) => ({ token, save }))
+      allArts: allArts.map(({ token, save }) => ({ token, save: save || old_lock[token] || false }))
     }
     );
     var a = document.createElement("a");
@@ -656,7 +680,11 @@ function Starrail() {
         <Upload accept=".json" beforeUpload={beforeUpload}>
           <FloatButton icon={<FileAddOutlined />} />
         </Upload>
-        <FloatButton onClick={exportJSON} icon={<ShareAltOutlined />} />
+        {Pickup ?
+          <Upload accept=".json" beforeUpload={exportUpload}>
+            <FloatButton icon={<ShareAltOutlined />} />
+          </Upload>
+          : <FloatButton onClick={exportJSON} icon={<ShareAltOutlined />} />}
       </FloatButton.Group>
 
       <artContext.Provider value={setArt}>
