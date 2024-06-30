@@ -1315,7 +1315,35 @@ export const characters = {
       },
     ],
   },
-
+  "翡翠": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0.5,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.01,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 235,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/04/24/279865110/d7ef7edce1341df1ea8b4f01e0e9d5d7_3792571634035226787.png',
+    artifacts: [
+      {
+        setNames: ['风举云飞的勇烈', '奔狼的都蓝王朝'],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG", "critRate",],
+        feet: ["atk_"],
+        planarSphere: ["quantumDmg", "atk_"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
 
   "砂金": {
     weights: {
