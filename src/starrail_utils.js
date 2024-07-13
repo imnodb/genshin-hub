@@ -1314,6 +1314,35 @@ export const characters = {
       },
     ],
   },
+  "银枝": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0.75,
+      "def": 0,
+      "def_": 0,
+      "spd": 0.1,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 225,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2023/08/25/299598919/1abe5e0d3a46527366806879e8e4c051_7215228569782958459.png',
+    artifacts: [
+      {
+        setNames: [ChampionofStreetwiseBoxing, InertSalsotto],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critRate"],
+        feet: ["spd", "atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
   "景元": {
     weights: {
       "hp": 0,
@@ -2369,7 +2398,7 @@ export const characters = {
 };
 const StarrailUID = localStorage.getItem("StarrailUID");
 if (StarrailUID?.includes('10036')) {
-  const dlist = ['真理', '砂金', '波提欧', '托帕&账账', '知更鸟', '罗刹', "丹恒•饮月", "刃", "镜流", "景元"];
+  const dlist = ['真理', '砂金', '波提欧', '托帕&账账', '知更鸟', '罗刹', "丹恒•饮月", "刃", "镜流", "景元", "银枝"];
   const c = characters["暴击c·占位"];
   delete characters["暴击c·占位"];
   for (const key of dlist) {
