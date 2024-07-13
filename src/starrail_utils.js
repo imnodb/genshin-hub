@@ -1098,7 +1098,7 @@ export const characters = {
         body: ["critDMG", "critRate"],
         feet: ["atk_", "spd"],
         planarSphere: ["fireDmg"],
-        linkRope: ["enerRegen", "atk_"],
+        linkRope: ["atk_", "enerRegen",],
       },
     ],
   },
