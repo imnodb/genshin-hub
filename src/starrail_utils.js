@@ -834,6 +834,73 @@ export const subStats = [
 ];
 export const positions = ["flower", "feather", "sand", "cup", "head"];
 export const characters = {
+  "椒丘": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0.01,
+      "def": 0,
+      "def_": 0,
+      "spd": 1,
+      "critRate": 0,
+      "critDMG": 0,
+      "eff": 1,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 235,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/08/21/279865110/0c0fea7edd0b90a0c89dff4917ee6ef0_370394757390519348.png',
+    artifacts: [
+      {
+        setNames: [EagleofTwilightLine, PanGalacticCommercialEnterprise],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff"],
+        feet: ["spd"],
+        planarSphere: ["atk_", "fireDmg"],
+        linkRope: ["enerRegen"],
+      },
+      {
+        setNames: [EagleofTwilightLine, SprightlyVonwacq],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["eff"],
+        feet: ["spd"],
+        planarSphere: ["atk_", "fireDmg"],
+        linkRope: ["enerRegen"],
+      },
+    ],
+  },
+  "云璃": {
+    weights: {
+      "hp": 0,
+      "hp_": 0,
+      "atk": 0,
+      "atk_": 0.1,
+      "def": 0,
+      "def_": 0,
+      "spd": 0,
+      "critRate": 1,
+      "critDMG": 1,
+      "eff": 0,
+      "effRes": 0,
+      "break": 0,
+    },
+    ace: 235,
+    badge: 'https://act-upload.mihoyo.com/sr-wiki/2024/07/22/159300832/db149fd42f00284d0f36f567916d8725_637873865513334027.png',
+    artifacts: [
+      {
+        setNames: ['风举云飞的勇烈', '奔狼的都蓝王朝'],
+        head: ["hp"],
+        hands: ["atk"],
+        body: ["critDMG", "critRate",],
+        feet: ["atk_"],
+        planarSphere: ["physicalDmg"],
+        linkRope: ["atk_"],
+      },
+    ],
+  },
   "翡翠": {
     weights: {
       "hp": 0,
